@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Recanto dos Códigos</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <main>
+      <h2>Formulário de Contato</h2>
+      <p>
+        Ficou com dúvidas sobre nossos serviços ou deseja fazer uma reserva?
+        Entre em contato com a gente. Preencha os dados do formulário e deixe
+        sua mensagem.
+      </p>
+      <form>
+        <label for="name">Nome:</label><br />
+        <input type="text" id="name" placeholder="Digite seu nome" required />
+
+        <br /><br />
+
+        <label for="email">E-mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu e-mail"
+          required
+        />
+
+        <br /><br />
+
+        <label for="phone">Telefone:</label><br />
+        <input type="tel" id="phone" placeholder="(00) 90000-0000" required />
+
+        <br /><br />
+
+        <label for="subject">Assunto:</label><br />
+        <select name="subject" id="subject">
+          <optgroup label="Selecione uma opção"></optgroup>
+          <option value="1">Cancelamento de Reserva</option>
+          <option value="2">Ouvidoria</option>
+          <option value="3">Departamento Financeiro</option>
+        </select>
+
+        <br /><br />
+
+        <label for="message">Mensagem:</label><br />
+        <textarea name="message" id="message" cols="45" rows="10"></textarea>
+
+        <br /><br />
+
+        <button id="send">Enviar Mensagem</button>
+      </form>
+    </main>
+
+    <!-- Footer -->
+  </body>
+</html>

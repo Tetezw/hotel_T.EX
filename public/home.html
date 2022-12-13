@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <header></header>
+    <main>
+        <div class="banner">
+            <!-- FOTO DO HOTEL -->
+            <img class="foto-banner" src="images/foto_banner.jpg" alt="FOTO DO HOTEL" width="100%" height="500">
+            <!-- CHAMADA DENTRO DA FOTO DO HOTEL -->
+            <div class="titulo-subtitulo-banner">
+                <h1>Conheça o Hotel Recanto dos Códigos.</h1>
+                <h2>Traga sua família e divirta-se!</h2>
+            </div>
+        </div>
+        <!-- FAÇA SUA RESERVA NA HOME -->
+        <div class="form-reserva">
+            <form action="">
+                <fieldset>
+                    <form action="" method="get">
+                        <legend>Faça a sua reserva.</legend>
+                        <ul>
+                            <li>
+                                <label for="check-in">Data do check-in</label><br />
+                                <input type="date" id="check-in" name="check-in" required />
+                            </li>
+                            <li>
+                                <label for="check-out">Data do check-out</label><br />
+                                <input type="date" id="check-out" name="check-out" required />
+                            </li>
+                            <li>
+                                <label for="adultos">Quantidade de adultos.</label><br />
+                                <input type="number" min="0" max="100" id="adultos" name="adultos" placeholder="0"
+                                    required />
+                            </li>
+                            <li>
+                                <label for="crianças">Quantidade de crianças.</label><br />
+                                <input type="number" min="0" max="100" id="crianças" name="crianças" placeholder="0" />
+                            </li><br />
+                            <button>Reservar</button>
+                        </ul>
+                </fieldset>
+            </form>
+        </div>
+        <!-- ASIDES: UM DO LADO ESQUERDO, OUTRO DO LADO DIREITO -->
+        <aside class="descricao">
+            <h2>Conforto, tecnologia e diversão.</h2>
+            <p>
+                Um luxuoso hotel 5 estrelas para quem gosta de relaxar, aproveitar a natureza e estar conectado com a
+                tecnologia.
+            </p>
+            <p>
+                Localizado na XXXXXX, o Hotel Recanto dos Códigos está cercado por paisagens exuberantes e à 30 minutos
+                de distância do centro de XXXXXX.
+            </p>
+            <p>
+                A melhor opção para você que busca praticidade em suas mãos e lazer, o Hotel Recanto dos Códigos tem
+                todos seus quartos equipados com as melhores alternativas possíveis, trazendo conforto e modernidade
+                juntos.
+            </p>
+        </aside>
+        <aside class="diferenciais">
+            <div class="titulo-diferenciais">
+                <h2>Diferenciais</h2>
+            </div>
+            <div class="box-diferenciais">
+                <div class="item1-diferenciais">
+                    <img src="images/wi-fi.png" alt="Internet de alta velocidade" width="30">
+                    <h3>Internet de alta velocidade</h3>
+                    <p>
+                        Usufrua da internet de alta velocidade do hotel: curta, compartilhe e aproveite para alavancar
+                        suas redes sociais.
+                    </p>
+                </div>
+                <div class="item2-diferenciais">
+                    <img src="images/swimming-pool.png" alt="Internet de alta velocidade" width="30">
+                    <h3>Piscinas aquecidas</h3>
+                    <p>
+                        Aproveite as piscinas aquecidas a qualquer momento do dia. Chegou o frio? As piscinas aquecidas
+                        estarão a seu dispor.
+                    </p>
+                </div>
+                <div class="item3-diferenciais">
+                    <img src="images/cinema.png" alt="Internet de alta velocidade" width="30">
+                    <h3>Sala de cinema</h3>
+                    <p>
+                        As salas de cinema são equipadas com telas gigantes, perfeitas para ver seus filmes em
+                        qualidades altíssimas, além de um som capaz de fazer você se sentir dentro do filme.
+                    </p>
+                </div>
+                <div class="item4-diferenciais">
+                    <img src="images/animal-care.png" alt="Internet de alta velocidade" width="30">
+                    <h3>Pet-friendly</h3>
+                    <p>
+                        Traga seu melhor amigo para aproveitar os dias de estadia juntos.
+                    </p>
+                </div>
+                <div class="item5-diferenciais">
+                    <img src="images/cocktail.png" alt="Internet de alta velocidade" width="30">
+                    <h3>Bares</h3>
+                    <p>
+                        Sinta-se a vontade para usufruir dos bares, que estão equipados com diversos drinks e bebidas.
+                        Aproveite enquanto está na piscina e relaxe tomando seus drinks favoritos.
+                    </p>
+                </div>
+            </div>
+        </aside>
+        <!-- FOTOS OCUPAM 80% DA LARGURA HORIZONTAL-->
+        <div class="quartos">
+            <div class="quartos-titulo">
+                <h2>Quartos</h2>
+            </div>
+            <div class="quarto1">
+                <img src="images/foto_quarto1.jpg" alt="FOTO 1 QUARTO" width="200" height="150">
+                <span>DESCRIÇÃO QUARTO 1</span>
+            </div>
+            <div class="quarto2">
+                <img src="images/foto_quarto2.jpg" alt="FOTO 2 QUARTO" width="200" height="150">
+                <span>DESCRIÇÃO QUARTO 2</span>
+            </div>
+            <div class="quarto3">
+                <img src="images/foto_quarto3.jpg" alt="FOTO 3 QUARTO" width="200" height="150">
+                <span>DESCRIÇÃO QUARTO 3</span>
+            </div>
+        </div>
+        <!-- FOTOS OCUPAM 80% DA LARGURA HORIZONTAL-->
+        <div class="gastronomia">
+            <div class="gastronomia-titulo">
+                <h2>Gastronomia</h2>
+            </div>
+            <div class="pratos">
+                <img src="images/foto_gastronomia.jpg" alt="FOTO PRATO" width="80%" height="400">
+                <span>Experimente a gastronomia renomada e reconhecida mundialmente por sua riqueza de sabores.</span>
+            </div>
+        </div>
+        <!-- FOTOS OCUPAM 80% DA LARGURA HORIZONTAL-->
+        <div class="galeria">
+            <div class="galeria-titulo">
+                <h2>Galeria de Fotos</h2>
+            </div>
+            <div class="quarto1">
+                <img src="images/foto_galeria1.jpg" alt="FOTO 1 QUARTO" width="200" height="150">
+            </div>
+            <div class="quarto2">
+                <img src="images/foto_galeria2.jpg" alt="FOTO 2 QUARTO" width="200" height="150">
+            </div>
+            <div class="quarto3">
+                <img src="images/foto_galeria3.jpg" alt="FOTO 3 QUARTO" width="200" height="150">
+            </div>
+        </div>
+        <div class="localizacao">
+            <div class="localizacao-titulo">
+                <h2>Localização</h2>
+            </div>
+            <!-- QUANDO CLICADO ABRE O MAPS -->
+            <div class="localizacao-foto">
+                <a href="#" class="link-maps"><img class="foto-maps" src="images/foto_banner.jpg"
+                        alt="LOCALIZAÇÃO FICTÍCIA" width="80%" height="300"></a>
+            </div>
+        </div>
+        <div class="contato">
+            <h2>Entre em Contato</h2>
+            <p>
+                Ficou com dúvidas sobre nossos serviços ou deseja fazer uma reserva?
+                Entre em contato com a gente. Preencha os dados do formulário e deixe
+                sua mensagem.
+            </p>
+            <form>
+                <label for="name">Nome:</label><br />
+                <input type="text" id="name" placeholder="Digite seu nome" required />
+
+                <br /><br />
+
+                <label for="email">E-mail:</label><br />
+                <input type="email" id="email" placeholder="Digite seu e-mail" required />
+
+                <br /><br />
+
+                <label for="phone">Telefone:</label><br />
+                <input type="tel" id="phone" placeholder="(00) 90000-0000" required />
+
+                <br /><br />
+
+                <label for="subject">Assunto:</label><br />
+                <select name="subject" id="subject">
+                    <optgroup label="Selecione uma opção"></optgroup>
+                    <option value="1">Cancelamento de Reserva</option>
+                    <option value="2">Ouvidoria</option>
+                    <option value="3">Departamento Financeiro</option>
+                </select>
+
+                <br /><br />
+
+                <label for="message">Mensagem:</label><br />
+                <textarea name="message" id="message" cols="45" rows="10"></textarea>
+
+                <br /><br />
+
+                <button id="send">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

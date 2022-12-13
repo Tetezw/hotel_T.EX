@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <fieldset>
+        <form action="" method="get">
+        <legend>Faça aqui a sua reserva.</legend>
+        <ul>
+          <li>
+            <label for="check-in">Data do check-in</label><br />
+            <input type="date" id="check-in" name="check-in" required/>
+          </li>
+          <li>
+            <label for="check-out">Data do check-out</label><br />
+            <input type="date" id="check-out" name="check-out" required/>
+          </li>
+          <li>
+            <label for="adultos">Quantidade de adultos.</label><br />
+            <input
+              type="number"
+              min="0"
+              max="100"
+              id="adultos"
+              name="adultos"
+              placeholder="0"
+              required
+            />
+          </li>
+          <li>
+            <label for="crianças">Quantidade de crianças.</label><br />
+            <input
+              type="number"
+              min="0"
+              max="100"
+              id="crianças"
+              name="crianças"
+              placeholder="0"
+            />
+          </li><br/>
+          <li>
+            <button>Reservar</button>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

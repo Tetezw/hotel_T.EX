@@ -7,15 +7,38 @@
         <title>Login - Public</title>
     </head>
     <body>
-        <header></header>
+        <header>
+            <div class="img-logo">
+                <img
+                    src="images/Logo Hotel.jpeg"
+                    alt="Logo Hotel"
+                    width="200" />
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <a href="../public/home.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../public/sobre.html">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="../public/acomodacoes.html">
+                        <li>Quartos</li>
+                    </a>
+                    <a href="../public/contatos.html">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
         <main>
             <h1>Login - Public</h1>
             <section>
                 <article>
-                    <form action="" method="get">
+                    <form action="home.html">
                         <fieldset>
                             <img
-                                src="/images/avatar.png"
+                                src="images/avatar.png"
                                 alt="avatar"
                                 width="5%" />
                             <legend>Prencha os campos necessários</legend>
@@ -46,6 +69,13 @@
                                         name="remember" />
                                     <button type="submit">Entrar</button>
                                 </li>
+                                <li>
+                                    <p>Usuários Administrativos</p>
+                                    <button
+                                        onclick="window.location.href='../admin/login_admin.html'">
+                                        Login - ADMIN
+                                    </button>
+                                </li>
                                 <p>Não possui uma conta?</p>
                                 <li>
                                     <button type="submit" href="">
@@ -59,6 +89,10 @@
             </section>
         </main>
         <aside></aside>
-        <footer></footer>
+        <footer>
+            <div>
+                <span>Hotel Recanto dos Códigos &copy; 2022</span>
+            </div>
+        </footer>
     </body>
 </html>

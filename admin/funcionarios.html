@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Funcionários</h1>
+    </header>
+    <nav>
+        
+    </nav>
+    <main>
+        <form action="form-funcionarios.html" method="POST">
+            <fieldset>
+                <legend>Formulário de Funcionários</legend>
+                <ul>
+                    <li>
+                        <label for="codigo">Código:</label>
+                        <input type="number" name="codigo" id="codigo">
+                    </li>
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </li>
+                    <li>
+                        <label for="tempoEmpresa">Tempo de empresa:</label>
+                        <input type="number" name="tempoEmpresa" id="tempoEmpresa">
+                    </li>
+                    <li>
+                        <label for="atividadeAtual">Atividade Atual:</label>
+                        <select name="atividadeAtual" id="atividadeAtual">
+                            <option value="recepcao">Recepção</option>
+                            <option value="restaurante">Restaurante</option>
+                            <option value="servicoQuarto">Serviço de Quarto</option>
+                            <option value="gerencia">Gerência</option>
+                            <option value="concierge">Concierge</option>
+                            <option value="supervisorAndar">Supervisor de Andar</option>
+                        </select>
+                    </li>
+                    <li>
+                        <radio type="radio" name="ferias" id="ferias" value="sim">
+                            <label for="ferias">Férias:</label>
+                                <label for="ferias">Sim</label>
+                                <input type="radio" name="ferias" id="ferias" value="sim">
+                                <label for="ferias">Não</label>
+                                <input type="radio" name="ferias" id="ferias" value="nao">
+                        </radio>
+                    </li>
+                    <li>
+                        <radio type="radio" name="afastamentoMedico" id="afastamentoMedico" value="sim">
+                            <label for="afastamentoMedico">Afastamento médico:</label>
+                                <label for="afastamentoMedico">Sim</label>
+                                <input type="radio" name="afastamentoMedico" id="afastamentoMedico" value="sim">
+                                <label for="afastamentoMedico">Não</label>
+                                <input type="radio" name="afastamentoMedico" id="afastamentoMedico" value="nao">
+                        </radio>
+                    </li>
+                </ul>
+        </fieldset>
+        </form>
+    </main>
+    <footer id="footer">
+        <p>Desenvolvido por <strong>Hotel Recanto dos Códigos</strong></p>
+    </footer>
+    
+    
+</body>
+</html>

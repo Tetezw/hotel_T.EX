@@ -1,6 +1,6 @@
 # Hotel Recanto dos Códigos
 
-<img src="images/Logo%20Hotel.jpeg" width="60%" alt="Logo Hotel Recanto dos Códigos"/>
+<img src="public/images/Logo%20Hotel.jpeg" width="60%" alt="Logo Hotel Recanto dos Códigos"/>
 
 ---
 ## Sobre

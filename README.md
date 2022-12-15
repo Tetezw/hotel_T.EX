@@ -25,10 +25,10 @@ Rascunho inicial de um site de hotel construído basicamente com o uso de HTML e
 
 [Hewerton Folli](https://github.com/hewertonfl)
 
-[Rodrigo Batista de Oliveira]()
+[Rodrigo Batista de Oliveira](https://github.com/roliveira22)
 
 [Tereza Zeizer Wisser](https://github.com/Tetezw)
 
-[Vanderson Ribeiro Friedrich]()
+[Vanderson Ribeiro Friedrich](https://github.com/VaanRF)
 
 

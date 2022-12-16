@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* variáveis */
+
+:root {
+  --azul-escuro: #063f57;
+  --azul-claro: #176485;
+  --laranja: #a35700;
+  --marrom: #573106;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 7px;
+}
+
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+/* Fontes */
+.courier {
+  font-family: "Courier Prime", monospace;
+}
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* Header */
+.header-cor {
+  background-color: var(--azul-escuro);
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-btn {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  margin: 2rem 2rem 0 0;
+}
+
+.header-logo-slogan {
+  display: flex;
+  gap: 50px;
+}
+
+.img-logo {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+  padding-left: 5rem;
+}
+
+.slogan {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.barra-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

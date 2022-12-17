@@ -189,6 +189,7 @@ body {
 
 .img-sobre img{
   width: 50%;
+  align-self: flex-start;
 }
 
 .sobre-texto{
@@ -200,5 +201,56 @@ body {
 }
 
 .sobre-texto p{
+  margin-bottom: 20px;
+}
+
+/*Botão conheça mais sobre nossos serviços*/
+.btn-conheca-mais{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btn-conheca-mais a button{
+  font-size: 1.5rem;
+  padding: 15px 40px 15px 40px;
+  border-radius: 100px;
+  background-color: var(--azul-escuro);
+  border: none;
+  color: white;
+}
+
+.btn-conheca-mais a:hover button{
+  background: var(--azul-claro);
+}
+
+/* Gastronomia */
+.gastronomia-titulo{
+  color: var(--azul-escuro);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem 0;
+}
+
+.foto-texto-gastronomia {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.foto-texto-gastronomia img {
+  width: 50%;
+  align-self: flex-start;
+}
+
+.texto-gastronomia {
+  font-size: 1.2rem;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 10px 0 10px 0;
+}
+
+.texto-gastronomia p{
   margin-bottom: 20px;
 }

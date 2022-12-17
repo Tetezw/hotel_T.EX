@@ -129,8 +129,16 @@ body {
 
 .telefone-local{
   display:flex;
-  justify-content: space-between;
   padding: 20px;
+}
+
+.telefone {
+  flex: 1;
+}
+
+.localizacao {
+  flex: 1;
+  text-align: right;
 }
 
 .email-redes a:active,
@@ -144,6 +152,7 @@ body {
   justify-content: center;
   align-items: center;
   gap:10px;
+  flex: 1;
 }
 
 .links-pags-footer a:active,

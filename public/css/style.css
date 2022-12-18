@@ -360,3 +360,144 @@ body {
 .btn-conheca-mais{
   margin-top: 60px;
 }
+
+/* PÁGINA LOGIN */
+.container-form {
+  padding: 30px;
+  background-color: var(--azul-claro);
+}
+
+form {
+  margin: 0 auto;
+  height: auto;
+  width: 400px;
+  background-color: var(--azul-escuro);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 30px 0px var(--azul-claro);
+  padding: 50px 35px;
+}
+
+form * {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.link-login:hover {
+  text-decoration: none;
+}
+
+form h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+input[type=text],
+input[type=password] {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: .9rem;
+  font-weight: 400;
+  color: grey;
+}
+
+::placeholder {
+  color: gray;
+}
+
+input[type=checkbox] {
+  margin: 0px 2px 0px 2px;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.lembrar-esqueci {
+  margin: 15px 0px 15px 0px;
+}
+
+span {
+  font-weight: 400;
+}
+
+.esqueci-senha {
+  font-size: .8rem;
+  margin-left: 60px;
+}
+
+.esqueci-senha:hover {
+  color: var(--azul-claro);
+  transition: .2s;
+}
+
+.btn-entrar {
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-entrar:hover {
+  background-color: var(--laranja);
+  transition: .3s;
+  color: white;
+}
+
+h3 {
+  padding-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social {
+  margin-top: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.social div {
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 3px;
+  background-color: var(--azul-claro);
+  color: white;
+  text-align: center;
+}
+
+.social div:hover {
+  background-color: var(--laranja);
+  transition: .3s;
+}
+
+.social .google-icon .facebook-icon {
+  width: 50%;
+}
+
+div.google-icon > a.link-login,
+div.facebook-icon > a.link-login{
+  color: white;
+}
+/* PÁGINA LOGIN */

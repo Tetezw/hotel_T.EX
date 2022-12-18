@@ -135,6 +135,14 @@ body {
     flex: 1;
 }
 
+.telefone a, 
+.telefone a:hover
+.telefone a:active
+.telefone a:active {
+  color: white;
+  text-decoration: none;
+}
+
 .localizacao {
     flex: 1;
     text-align: right;
@@ -210,26 +218,6 @@ body {
     margin-bottom: 20px;
 }
 
-/*Botão conheça mais sobre nossos serviços*/
-.btn-conheca-mais {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.btn-conheca-mais a button {
-    font-size: 1.5rem;
-    padding: 15px 40px 15px 40px;
-    border-radius: 100px;
-    background-color: var(--azul-escuro);
-    border: none;
-    color: white;
-}
-
-.btn-conheca-mais a:hover button {
-    background: var(--azul-claro);
-}
-
 /* Acomodações */
 .cards-quartos {
     margin-top: 60px;
@@ -265,9 +253,31 @@ body {
     text-align: center;
 }
 
-.foto-ilha {
-    display: flex;
-    justify-content: center;
+.foto-ilha img {
+  display: flex;
+  width: 70%;
+  margin: 0 auto 0 auto;
+  border: solid 3px var(--azul-escuro);
+  padding: 2px;
+}
+
+/*Botão conheça mais sobre nossos serviços*/
+.btn-conheca-mais {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.btn-conheca-mais a button {
+  font-size: 1.5rem;
+  padding: 15px 40px 15px 40px;
+  background-color: var(--azul-escuro);
+  border: none;
+  color: white;
+}
+
+.btn-conheca-mais a:hover button {
+  background: var(--azul-claro);
 }
 
 /* Gastronomia */
@@ -354,9 +364,7 @@ body {
     background-color: #176485;
 }
 
-.btn-conheca-mais {
-    margin-top: 60px;
-}
+
 
 /* PÁGINA LOGIN */
 .container-form {

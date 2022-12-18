@@ -62,9 +62,8 @@ body {
 }
 
 .login-btn {
-  font-size: 1rem;
-  padding: 0.5rem;
-  border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 0.8rem;
   border: none;
   background-color: white;
   margin: 2rem 2rem 0 0;
@@ -89,7 +88,7 @@ body {
   justify-self: center;
   align-items: center;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 50px;
   text-align: center;
   flex-grow: 1.7;
@@ -117,18 +116,18 @@ body {
 }
 
 /*Footer*/
-.footer-cor{
+.footer-cor {
   background-color: var(--azul-escuro);
   color: white;
 }
 
-.nav-footer{
+.nav-footer {
   display: flex;
   justify-content: space-between;
 }
 
-.telefone-local{
-  display:flex;
+.telefone-local {
+  display: flex;
   padding: 20px;
 }
 
@@ -147,11 +146,11 @@ body {
   color: white;
 }
 
-.email-redes{
+.email-redes {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   flex: 1;
 }
 
@@ -167,16 +166,15 @@ body {
   text-underline-offset: 7px;
 }
 
-.links-pags-footer{
+.links-pags-footer {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 0px 20px 20px 0px;
-
 }
 
-.nome-hotel-footer{
+.nome-hotel-footer {
   display: flex;
   justify-content: center;
   padding: 0px 0px 20px 20px;
@@ -190,37 +188,36 @@ body {
   margin: 2rem 0 2rem 0;
 }
 
-.img-sobre{
+.img-sobre {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.img-sobre img{
+.img-sobre img {
   width: 50%;
   align-self: flex-start;
 }
 
-.sobre-texto{
+.sobre-texto {
   font-size: 1.2rem;
   text-indent: 20px;
   text-align: justify;
   margin: 10px 0 10px 0;
-  
 }
 
-.sobre-texto p{
+.sobre-texto p {
   margin-bottom: 20px;
 }
 
 /*Botão conheça mais sobre nossos serviços*/
-.btn-conheca-mais{
+.btn-conheca-mais {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
-.btn-conheca-mais a button{
+.btn-conheca-mais a button {
   font-size: 1.5rem;
   padding: 15px 40px 15px 40px;
   border-radius: 100px;
@@ -229,12 +226,54 @@ body {
   color: white;
 }
 
-.btn-conheca-mais a:hover button{
+.btn-conheca-mais a:hover button {
   background: var(--azul-claro);
 }
 
+/* Acomodações */
+.cards-quartos {
+  margin-top: 60px;
+}
+
+.titulo-quartos {
+  color: var(--azul-escuro);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+.quartos {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Conheça a Ilha */
+.ilha{
+  margin-top: 60px;
+}
+
+.titulo-ilha {
+  color: var(--azul-escuro);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem 0;
+  flex: 1;
+  text-align: center;
+}
+
+.foto-ilha {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  margin-left: 150px;    
+}
+
 /* Gastronomia */
-.gastronomia-titulo{
+.gastronomia-titulo {
   color: var(--azul-escuro);
   font-size: 2rem;
   font-weight: bold;
@@ -260,12 +299,12 @@ body {
   margin: 10px 0 10px 0;
 }
 
-.texto-gastronomia p{
+.texto-gastronomia p {
   margin-bottom: 20px;
 }
 
 /* página sobre */
-.about{
+.about {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -285,19 +324,18 @@ body {
   margin: 30px;
 }
 
-.container-contact{
+.container-contact {
   width: 80%;
   display: block;
   text-align: center;
   margin: auto;
 }
 
-.container-contact h4{
+.container-contact h4 {
   margin: 10px;
 }
 .container-contact p {
   margin-top: 8px;
-
 }
 .container-contact button {
   margin: 10px;
@@ -307,8 +345,9 @@ body {
   color: white;
   font-weight: bold;
   background-color: #063f57;
+  
 }
-.container-contact button:hover{
+.container-contact button:hover {
   margin: 10px;
   border-radius: 10px 10px 10px 10px;
   width: 150px;
@@ -318,3 +357,6 @@ body {
   background-color: #176485;
 }
 
+.btn-conheca-mais{
+  margin-top: 60px;
+}

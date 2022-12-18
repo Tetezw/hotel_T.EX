@@ -22,7 +22,7 @@ a {
 a:active,
 a:visited,
 a:link {
-  color: white;
+  color: var(--azul-escuro);
 }
 
 a:hover {
@@ -72,14 +72,16 @@ body {
 
 .header-logo-slogan {
   display: flex;
-  gap: 50px;
+  justify-content: space-around;
 }
 
 .img-logo {
   display: flex;
   justify-self: flex-start;
   align-self: flex-start;
-  padding-left: 5rem;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  flex-grow: 1;
 }
 
 .slogan {
@@ -89,6 +91,8 @@ body {
   color: white;
   font-size: 1.3rem;
   margin-bottom: 50px;
+  text-align: center;
+  flex-grow: 1.7;
 }
 
 .navbar-list {
@@ -100,12 +104,17 @@ body {
   font-size: 1.3rem;
 }
 
-.barra-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.navbar-list a:active,
+.navbar-list a:visited,
+.navbar-list a:link {
+  color: white;
 }
 
+.navbar-list a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 7px;
+}
 
 /*Footer*/
 .footer-cor{
@@ -120,14 +129,42 @@ body {
 
 .telefone-local{
   display:flex;
-  justify-content: space-between;
   padding: 20px;
 }
+
+.telefone {
+  flex: 1;
+}
+
+.localizacao {
+  flex: 1;
+  text-align: right;
+}
+
+.email-redes a:active,
+.email-redes a:visited,
+.email-redes a:link {
+  color: white;
+}
+
 .email-redes{
   display: flex;
   justify-content: center;
   align-items: center;
   gap:10px;
+  flex: 1;
+}
+
+.links-pags-footer a:active,
+.links-pags-footer a:visited,
+.links-pags-footer a:link {
+  color: white;
+}
+
+.links-pags-footer a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 7px;
 }
 
 .links-pags-footer{
@@ -145,7 +182,89 @@ body {
   padding: 0px 0px 20px 20px;
 }
 
-/* sobre */
+/* Home sobre */
+.titulo-sobre {
+  color: var(--azul-escuro);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem 0;
+}
+
+.img-sobre{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.img-sobre img{
+  width: 50%;
+  align-self: flex-start;
+}
+
+.sobre-texto{
+  font-size: 1.2rem;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 10px 0 10px 0;
+  
+}
+
+.sobre-texto p{
+  margin-bottom: 20px;
+}
+
+/*Botão conheça mais sobre nossos serviços*/
+.btn-conheca-mais{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btn-conheca-mais a button{
+  font-size: 1.5rem;
+  padding: 15px 40px 15px 40px;
+  border-radius: 100px;
+  background-color: var(--azul-escuro);
+  border: none;
+  color: white;
+}
+
+.btn-conheca-mais a:hover button{
+  background: var(--azul-claro);
+}
+
+/* Gastronomia */
+.gastronomia-titulo{
+  color: var(--azul-escuro);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem 0;
+}
+
+.foto-texto-gastronomia {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.foto-texto-gastronomia img {
+  width: 50%;
+  align-self: flex-start;
+}
+
+.texto-gastronomia {
+  font-size: 1.2rem;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 10px 0 10px 0;
+}
+
+.texto-gastronomia p{
+  margin-bottom: 20px;
+}
+
+/* página sobre */
 .about{
   display: flex;
   align-items: center;
@@ -198,3 +317,4 @@ body {
   font-weight: bold;
   background-color: #176485;
 }
+

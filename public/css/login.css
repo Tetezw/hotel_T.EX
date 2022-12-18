@@ -113,7 +113,7 @@ span {
     transition: .2s;
 }
 
-button {
+.btn-entrar{
     width: 100%;
     background-color: #ffffff;
     color: #080710;
@@ -124,7 +124,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-entrar:hover {
     background-color: var(--laranja);
     transition: .3s;
     color: white;

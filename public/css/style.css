@@ -144,3 +144,57 @@ body {
   justify-content: center;
   padding: 0px 0px 20px 20px;
 }
+
+/* sobre */
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-div {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about img {
+  width: 100%;
+}
+
+.about p {
+  margin: 30px;
+}
+
+.container-contact{
+  width: 80%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.container-contact h4{
+  margin: 10px;
+}
+.container-contact p {
+  margin-top: 8px;
+
+}
+.container-contact button {
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #063f57;
+}
+.container-contact button:hover{
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #176485;
+}

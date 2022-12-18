@@ -576,3 +576,162 @@ div.facebook-icon > a.link-login {
     margin: 0 3rem;
     margin-bottom: 3rem;
 }
+
+/* pagina acomodações */
+
+/* Acomodações */
+.nossas-acomodacoes h2 {
+  font-size: 2rem;
+  font-family: "Courier Prime", monospace;
+  color: var(--azul-escuro);
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.nossas-acomodacoes p {
+  text-align: left;
+  font-family: "noto sans", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+.detalhes-apartamentos h2 {
+    font-size: 2rem;
+    font-family: "Courier Prime", monospace;
+    color: var(--azul-escuro);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.detalhes-apartamentos ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: inside;
+  padding-bottom: 20px;
+  font-size: 1rem;
+  font-family: "noto sans", sans-serif;
+}
+.detalhes-apartamentos ul li {
+  padding: 5px 0;
+}
+.detalhes-apartamentos p {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: "noto sans", sans-serif;
+}
+
+/* Acomodações - Imagens */
+.acomodacoes-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  padding-top: 20px;
+}
+.acomodacoes-imagens .card {
+  height: 500px;
+  width: 380px;
+  background: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+.acomodacoes-imagens .card .inferior-text {
+  display: grid;
+  grid-template-rows: 200px 48px;
+  padding: 20px;
+}
+.acomodacoes-imagens .card .inferior-text .inferior-text-top h3 {
+  font-size: 1.5rem;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+.acomodacoes-imagens .card .inferior-text .inferior-text-top p {
+  font-size: 1rem;
+  font-family: "noto sans", sans-serif;
+}
+.acomodacoes-imagens .card .inferior-text .inferior-text-button {
+  display: grid;
+  grid-template-columns: 125px 125px;
+  justify-content: space-between;
+}
+.acomodacoes-imagens .card .inferior-text .inferior-text-button .inferior-right {
+  background-color: var(--azul-claro);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.acomodacoes .card .inferior-text .inferior-text-button .inferior-right:hover {
+  background-color: var(--azul-escuro);
+}
+.acomodacoes-imagens .card .inferior-text .inferior-text-button .inferior-right a {
+  color: #ffffff;
+  font-family: "noto sans", sans-serif;
+}
+.acomodacoes-imagens .card .inferior-text .inferior-text-button .inferior-left .text2 {
+  font-size: .8rem;
+  font-family: "noto sans", sans-serif;
+  padding-bottom: 10px;
+}
+.acomodacoes-imagens .card .inferior-text .inferior-text-button .inferior-left .text-valor {
+  font-size: 1.2rem;
+  font-family: "noto sans", sans-serif;
+  font-weight: bold;
+}
+.inferior .inferior-left{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+}
+/* Produtos em Destaque */
+.produtos-destaque {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px 0;
+}
+.produtos-destaque .description {
+  display: grid;
+  grid-template-rows: 200px 48px;
+  align-content: space-between;
+  padding: 20px;
+}
+.produtos-destaque div:nth-of-type(1) h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  font-family: "Courier Prime", monospace;
+  color: var(--azul-escuro);
+}
+.produtos-destaque div:nth-of-type(1) p {
+  margin-bottom: 10px;
+  font-family: "noto sans", sans-serif;
+  line-height: 1.6rem;
+}
+.content {
+  display: grid;
+  grid-template-columns: 125px 125px;
+  justify-content: space-between;
+}
+.produtos-destaque .content-text div:nth-of-type(1){
+  font-size: .8rem;
+  font-family: "noto sans", sans-serif;
+}
+.produtos-destaque .content-text div:nth-of-type(2){
+  font-size: 1.2rem;
+  font-family: "noto sans", sans-serif;
+  font-weight: bold;
+}
+.produtos-destaque .content-button {
+background-color: #176485;
+}
+.produtos-destaque .content-button:hover {
+  background-color: var(--azul-escuro);
+}
+.produtos-destaque .content-button a {
+  color: #ffffff;
+  font-family: "noto sans", sans-serif;
+}
+.produtos-destaque .content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+

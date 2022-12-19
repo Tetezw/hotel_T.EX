@@ -114,7 +114,9 @@ body {
   background-color: var(--azul-escuro);
 }
 
-/* Header */
+/******************** 
+* Header   - Avaliar
+********************/
 .login {
   display: flex;
   justify-content: flex-end;
@@ -143,7 +145,9 @@ body {
   text-underline-offset: 7px;
 }
 
-/*Footer*/
+/******************** 
+* Footer   - Avaliar
+********************/
 
 footer {
   color: white;
@@ -158,6 +162,7 @@ footer {
 .column-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   color: #ffffff;
 }
@@ -202,7 +207,9 @@ footer {
   color: #ffffff;
 }
 
-/* Home Sobre */
+/******************** 
+* Página Home (Sobre)  - Avaliar
+********************/
 
 .img-sobre {
   display: flex;
@@ -215,7 +222,10 @@ footer {
   align-self: flex-start;
 }
 
-/* Home Acomodações */
+/******************** 
+* Página Home (Acomodações)  - Avaliar
+********************/
+
 .cards-quartos {
   margin-top: 60px;
 }
@@ -232,7 +242,10 @@ footer {
   width: calc((100% / 3) - 20px);
 }
 
-/* Conheça a Ilha */
+/******************** 
+* Página Home (Ilha)  - Avaliar
+********************/
+
 .ilha {
   margin-top: 60px;
 }
@@ -264,7 +277,9 @@ footer {
   background: var(--azul-claro);
 }
 
-/* Gastronomia */
+/******************** 
+* Página Home (Gastronomia)  - Avaliar
+********************/
 
 .foto-texto-gastronomia {
   display: flex;
@@ -278,7 +293,10 @@ footer {
   align-self: flex-start;
 }
 
-/* página sobre */
+/******************** 
+* Página Sobre - Avaliar
+********************/
+
 .about {
   display: flex;
   align-items: center;
@@ -542,9 +560,9 @@ div.facebook-icon > a.link-login {
   margin-bottom: 3rem;
 }
 
-/* pagina acomodações */
-
-/* Acomodações */
+/******************** 
+* Página Acomodações - Avaliar
+********************/
 
 .detalhes-apartamentos ul {
   display: grid;

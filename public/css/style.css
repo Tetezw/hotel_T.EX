@@ -7,41 +7,77 @@
   --azul-claro: #176485;
   --laranja: #a35700;
   --marrom: #573106;
+  --titulo-branco: #ffffff;
 }
+
 /* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
 }
-
 a:active,
 a:visited,
 a:link {
   color: var(--azul-escuro);
 }
 
+/* Aqui está pegando em todos os links */
 a:hover {
   text-decoration: underline;
   text-decoration-thickness: 6px;
   text-underline-offset: 7px;
 }
-
 ul {
   list-style: none;
 }
 body {
   font-family: "Noto Sans", sans-serif;
 }
-
 .container {
   width: 80%;
   margin: auto;
 }
+
+/* Margem Padrão*/
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+/* Títulos */
+/* Títulos das seções */
+.titulo-h1 {
+  font-size: 2.2rem;
+  color: var(--titulo-branco);
+}
+.titulo-h2 {
+  color: var(--azul-escuro);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 2rem 0 2rem 0;
+}
+.titulo-h3 {
+  font-size: 1.5rem;
+  font-family: "Courier Prime", monospace;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+/* Textos */
+/* Para os parágrafos e caso quiserem centralizar */
+.paragrafo {
+  font-size: 1.1rem;
+  margin: 10px 0 10px 0;
+}
+
+.center {
+  text-align: center;
+}
+
 /* Fontes */
 .courier {
   font-family: "Courier Prime", monospace;
@@ -51,64 +87,56 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 
-/* Header */
-.header-cor {
-  background-color: var(--azul-escuro);
-}
-
-.login {
-  display: flex;
-  justify-content: space-between;
-}
-
-.login-btn {
+/* Botões */
+.btn-white {
   font-size: 1.2rem;
-  padding: 0.8rem;
+  padding: 0.8rem 1rem;
   border: none;
   background-color: white;
   margin: 2rem 2rem 0 0;
+  text-transform: uppercase;
+}
+.btn-blue {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  background-color: var(--azul-claro);
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn-blue:hover {
+  background-color: var(--azul-escuro);
 }
 
+/* Background-color */
+/* Para o fundo do header + footer */
+.bg-color-primary {
+  background-color: var(--azul-escuro);
+}
+
+/* Header */
+.login {
+  display: flex;
+  justify-content: flex-end;
+}
 .header-logo-slogan {
   display: flex;
-  justify-content: space-around;
-}
-
-.img-logo {
-  display: flex;
-  justify-self: flex-start;
-  align-self: flex-start;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  flex-grow: 1;
-}
-
-.slogan {
-  display: flex;
-  justify-self: center;
+  justify-content: space-between;
   align-items: center;
-  color: white;
-  font-size: 1.1rem;
-  margin-bottom: 50px;
-  text-align: center;
-  flex-grow: 1.7;
 }
-
-.navbar-list {
+.navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  padding-bottom: 2rem;
+  gap: 5.5rem;
+  padding: 1rem 0;
   font-size: 1.3rem;
 }
-
-.navbar-list a:active,
-.navbar-list a:visited,
-.navbar-list a:link {
+.navbar a:active,
+.navbar a:visited,
+.navbar a:link {
   color: white;
 }
-
 .navbar-list a:hover {
   text-decoration: underline;
   text-decoration-thickness: 6px;
@@ -116,83 +144,65 @@ body {
 }
 
 /*Footer*/
-.footer-cor {
-  background-color: var(--azul-escuro);
+
+footer {
   color: white;
+  padding: 10px 0;
 }
 
-.nav-footer {
+.box-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-footer {
   display: flex;
   justify-content: space-between;
-}
-
-.telefone-local {
-  display: flex;
-  padding: 20px;
-}
-
-.telefone {
-  flex: 1;
-}
-
-.telefone a,
-.telefone a:hover .telefone a:active .telefone a:active {
-  color: white;
-  text-decoration: none;
-}
-
-.localizacao {
-  flex: 1;
-  text-align: right;
-}
-
-.email-redes a:active,
-.email-redes a:visited,
-.email-redes a:link {
-  color: white;
-}
-
-.email-redes {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  color: #ffffff;
+}
+
+.telefone-endereco,
+.redes-sociais,
+.suporte,
+.navbar-footer ul {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
   flex: 1;
+  padding: 5px;
+  font-size: 1rem;
+  text-transform: capitalize;
 }
 
-.links-pags-footer a:active,
-.links-pags-footer a:visited,
-.links-pags-footer a:link {
-  color: white;
+.icons {
+  display: flex;
+  flex-direction: column;
 }
 
-.links-pags-footer a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 6px;
-  text-underline-offset: 7px;
+.telefone a {
+  color: #ffffff;
 }
 
-.links-pags-footer {
+.redes-sociais i {
+  color: #fff;
+  font-size: 1.3rem;
+  padding-right: 5px;
+}
+
+.navbar-footer ul li a,
+.suporte a {
+  color: #ffffff;
+}
+
+.direitos {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 0px 20px 20px 0px;
+  padding-top: 30px;
+  color: #ffffff;
 }
 
-.nome-hotel-footer {
-  display: flex;
-  justify-content: center;
-  padding: 0px 0px 20px 20px;
-}
-
-/* Home sobre */
-.titulo-sobre {
-  color: var(--azul-escuro);
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 2rem 0 2rem 0;
-}
+/* Home Sobre */
 
 .img-sobre {
   display: flex;
@@ -205,50 +215,26 @@ body {
   align-self: flex-start;
 }
 
-.sobre-texto {
-  font-size: 1.2rem;
-  text-indent: 20px;
-  text-align: justify;
-  margin: 10px 0 10px 0;
-}
-
-.sobre-texto p {
-  margin-bottom: 20px;
-}
-
-/* Acomodações */
+/* Home Acomodações */
 .cards-quartos {
   margin-top: 60px;
 }
 
-.titulo-quartos {
-  color: var(--azul-escuro);
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 2rem 0 2rem 0;
-  text-align: center;
-}
-
 .quartos {
   display: flex;
-  flex: 1;
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
+  gap: 20px;
+}
+
+.quartos img {
+  width: calc((100% / 3) - 20px);
 }
 
 /* Conheça a Ilha */
 .ilha {
   margin-top: 60px;
-}
-
-.titulo-ilha {
-  color: var(--azul-escuro);
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 2rem 0 2rem 0;
-  flex: 1;
-  text-align: center;
 }
 
 .foto-ilha img {
@@ -279,12 +265,6 @@ body {
 }
 
 /* Gastronomia */
-.gastronomia-titulo {
-  color: var(--azul-escuro);
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 2rem 0 2rem 0;
-}
 
 .foto-texto-gastronomia {
   display: flex;
@@ -296,17 +276,6 @@ body {
 .foto-texto-gastronomia img {
   width: 50%;
   align-self: flex-start;
-}
-
-.texto-gastronomia {
-  font-size: 1.2rem;
-  text-indent: 20px;
-  text-align: justify;
-  margin: 10px 0 10px 0;
-}
-
-.texto-gastronomia p {
-  margin-bottom: 20px;
 }
 
 /* página sobre */
@@ -576,27 +545,7 @@ div.facebook-icon > a.link-login {
 /* pagina acomodações */
 
 /* Acomodações */
-.nossas-acomodacoes h2 {
-  font-size: 2rem;
-  font-family: "Courier Prime", monospace;
-  color: var(--azul-escuro);
-  padding-top: 50px;
-  padding-bottom: 10px;
-  text-align: left;
-}
-.nossas-acomodacoes p {
-  text-align: left;
-  font-family: "noto sans", sans-serif;
-  font-size: 1rem;
-  padding-bottom: 20px;
-}
-.detalhes-apartamentos h2 {
-  font-size: 2rem;
-  font-family: "Courier Prime", monospace;
-  color: var(--azul-escuro);
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
+
 .detalhes-apartamentos ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -608,17 +557,14 @@ div.facebook-icon > a.link-login {
 .detalhes-apartamentos ul li {
   padding: 5px 0;
 }
-.detalhes-apartamentos p {
-  padding: 10px;
-  font-size: 1.2rem;
-  font-family: "noto sans", sans-serif;
-}
 
 /* Acomodações - Imagens */
+/* Passei pra flexbox ao invés de grid */
 .acomodacoes-imagens {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 20px;
   gap: 10px;
 }
@@ -626,26 +572,16 @@ div.facebook-icon > a.link-login {
   width: 100%;
 }
 .acomodacoes-imagens .card {
-  height: 500px;
   width: 350px;
   background: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
+/* Parte interna pode ser grid */
 .acomodacoes-imagens .card .inferior-text {
   display: grid;
   grid-template-rows: 200px 48px;
   padding: 20px;
-}
-.acomodacoes-imagens .card .inferior-text .inferior-text-top h3 {
-  font-size: 1.5rem;
-  font-family: "Courier Prime", monospace;
-  font-weight: 800;
-  padding-bottom: 10px;
-}
-.acomodacoes-imagens .card .inferior-text .inferior-text-top p {
-  font-size: 1rem;
-  font-family: "noto sans", sans-serif;
 }
 .acomodacoes-imagens .card .inferior-text .inferior-text-button {
   display: grid;
@@ -692,7 +628,6 @@ div.facebook-icon > a.link-login {
   .inferior-left
   .text-valor {
   font-size: 1.2rem;
-  font-family: "noto sans", sans-serif;
   font-weight: bold;
 }
 .inferior .inferior-left {
@@ -702,54 +637,25 @@ div.facebook-icon > a.link-login {
 }
 /* Produtos em Destaque */
 .produtos-destaque {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* Passando para flexbox */
+  display: flex;
+  justify-content: center;
   padding: 100px 0;
 }
 .produtos-destaque .description {
-  display: grid;
-  grid-template-rows: 200px 48px;
-  align-content: space-between;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
-.produtos-destaque div:nth-of-type(1) h2 {
-  font-size: 2rem;
-  padding-bottom: 20px;
-  font-family: "Courier Prime", monospace;
-  color: var(--azul-escuro);
-}
-.produtos-destaque div:nth-of-type(1) p {
-  margin-bottom: 10px;
-  font-family: "noto sans", sans-serif;
-  line-height: 1.6rem;
-}
 .content {
-  display: grid;
-  grid-template-columns: 125px 125px;
+  display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .produtos-destaque .content-text div:nth-of-type(1) {
   font-size: 0.8rem;
-  font-family: "noto sans", sans-serif;
 }
 .produtos-destaque .content-text div:nth-of-type(2) {
   font-size: 1.2rem;
-  font-family: "noto sans", sans-serif;
   font-weight: bold;
-}
-.produtos-destaque .content-button {
-  background-color: #176485;
-}
-.produtos-destaque .content-button:hover {
-  background-color: var(--azul-escuro);
-}
-.produtos-destaque .content-button a {
-  color: #ffffff;
-  font-family: "noto sans", sans-serif;
-}
-.produtos-destaque .content-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }

@@ -1,153 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/18dedb8cc9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hotel Recanto dos Códigos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hotel Recanto dos Códigos</title>
-</head>
-
-<body>
-  <header>
-    <div class="img-logo">
-      <img src="images/Logo Hotel.jpeg" alt="Logo Hotel" width="200" />
-    </div>
-    <nav class="navbar">
-      <ul>
-        <a href="home.html">
-          <li>Home</li>
-        </a>
-        <a href="sobre.html">
-          <li>Sobre</li>
-        </a>
-        <a href="acomodacoes.html">
-          <li>Quartos</li>
-        </a>
-        <a href="contatos.html">
-          <li>Contato</li>
-        </a>
-      </ul>
-      <div class="btn-reservas">
-        <a href="reservas.html">
-          <button>Faça sua reserva</button>
-        </a>
-        <a href="login.html">
-          <button>
-            Faça login
-          </button>
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <h2>Formulário de Contato</h2>
-    <p>
-      Ficou com dúvidas sobre nossos serviços ou deseja fazer uma reserva?
-      Entre em contato com a gente. Preencha os dados do formulário e deixe
-      sua mensagem.
-    </p>
-    <form>
-      <label for="name">Nome:</label><br />
-      <input type="text" id="name" placeholder="Digite seu nome" required />
-
-      <br /><br />
-
-      <label for="email">E-mail:</label><br />
-      <input type="email" id="email" placeholder="Digite seu e-mail" required />
-
-      <br /><br />
-
-      <label for="phone">Telefone:</label><br />
-      <input type="tel" id="phone" placeholder="(00) 90000-0000" required />
-
-      <br /><br />
-
-      <label for="subject">Assunto:</label><br />
-      <select name="subject" id="subject">
-        <optgroup label="Selecione uma opção"></optgroup>
-        <option value="1">Cancelamento de Reserva</option>
-        <option value="2">Ouvidoria</option>
-        <option value="3">Departamento Financeiro</option>
-      </select>
-
-      <br /><br />
-
-      <label for="message">Mensagem:</label><br />
-      <textarea name="message" id="message" cols="45" rows="10"></textarea>
-
-      <br /><br />
-
-      <button id="send">Enviar Mensagem</button>
-    </form>
-  </main>
-
-  <footer>
-    <div class="newsletter">
-      <span>Receba novidades em seu e-mail</span>
-      <input type="text" placeholder="Nome" />
-      <input type="email" placeholder="Email" />
-      <input type="submit" value="Cadastrar" />
-    </div>
-    <div class="logo-footer">
-      <img src="images/Logo Hotel.jpeg" alt="Logo Hotel" width="200" />
-    </div>
-    <div class="infos-footer">
-      <div class="telefone">
-        <a href="tel:+">
-          <img src="images/telefone.png" alt="Telefone" width="30" />
-          <p>(00) 0000-0000</p>
-        </a>
-      </div>
-      <div class="localizacao">
-        <a href="https://www.google.com.br/maps">
-          <img src="images/local.png" alt="Localização" width="30" />
-          <p>Nam venenatis nibh vitae Local / Estado 11250-520</p>
-        </a>
-      </div>
-      <div class="email">
-        <a href="mailto:reservas@hotel.com.br">
-          <img src="images/email.png" alt="E-mail" width="30" />
-          <p>reservas@hotel.com.br</p>
-        </a>
-      </div>
-    </div>
-    <hr />
-    <div class="nav-footer">
-      <div class="nome-hotel-footer">
-        <span> Hotel Recanto dos Códigos &copy; 2022 </span>
-      </div>
-      <div class="redes-sociais-footer">
-        <span>
-          <a href="https://pt-br.facebook.com/">
-            <img src="images/facebook.png" alt="Facebook Logo" width="30" />
+  <body>
+    <header class="bg-color-primary">
+      <!-- Adicionado o container de 80% -->
+      <div class="container">
+        <div class="login">
+          <a href="login.html">
+            <button class="btn-white courier">Faça login</button>
           </a>
-        </span>
-        <span>
-          <a href="https://www.instagram.com/">
-            <img src="images/instagram.png" alt="Instagram Logo" width="30" />
-          </a>
-        </span>
-      </div>
-      <div class="links-pags-footer">
-        <ul>
-          <a href="home.html">
-            <li>Home</li>
-          </a>
-          <a href="sobre.html">
-            <li>Sobre</li>
-          </a>
-          <a href="acomodacoes.html">
-            <li>Quartos</li>
-          </a>
-          <a href="contatos.html">
-            <li>Contato</li>
-          </a>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
+        </div>
+        <div class="header-logo-slogan">
+          <div class="img-logo">
+            <img src="images/Logo-Branca.png" alt="Logo Hotel" width="200" />
+          </div>
 
+          <div class="slogan courier">
+            <h1 class="titulo-h1">
+              Desconecte-se e venha se conectar <br />
+              com a natureza
+            </h1>
+          </div>
+        </div>
+
+        <!-- Os links estavam fora das listas -->
+        <nav class="navbar">
+          <ul class="noto-sans">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="acomodacoes.html">Quartos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="reservas.html">Faça sua reserva</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2 class="titulo-h2">Formulário de Contato</h2>
+        <p>
+          Ficou com dúvidas sobre nossos serviços ou deseja fazer uma reserva?
+          Entre em contato com a gente. Preencha os dados do formulário e deixe
+          sua mensagem.
+        </p>
+        <form>
+          <label for="name">Nome:</label><br />
+          <input type="text" id="name" placeholder="Digite seu nome" required />
+
+          <br /><br />
+
+          <label for="email">E-mail:</label><br />
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+
+          <br /><br />
+
+          <label for="phone">Telefone:</label><br />
+          <input type="tel" id="phone" placeholder="(00) 90000-0000" required />
+
+          <br /><br />
+
+          <label for="subject">Assunto:</label><br />
+          <select name="subject" id="subject">
+            <optgroup label="Selecione uma opção"></optgroup>
+            <option value="1">Cancelamento de Reserva</option>
+            <option value="2">Ouvidoria</option>
+            <option value="3">Departamento Financeiro</option>
+          </select>
+
+          <br /><br />
+
+          <label for="message">Mensagem:</label><br />
+          <textarea name="message" id="message" cols="45" rows="10"></textarea>
+
+          <br /><br />
+
+          <button id="send">Enviar Mensagem</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="bg-color-primary">
+      <div class="container box-footer">
+        <div class="column-footer">
+          <div class="telefone-endereco">
+            <h3 class="mb1">Contato</h3>
+            <div class="telefone">
+              <a href="tel:7133650000">
+                <p>(71) 3365-0000</p>
+              </a>
+            </div>
+
+            <div class="endereco">
+              <p>Ilha dos Frades, Salvador - BA</p>
+            </div>
+          </div>
+
+          <div class="redes-sociais">
+            <h3 class="mb1">Siga-nos nas Redes</h3>
+            <div>
+              <a href="mailto:reservas@hotel.com.br">
+                <i class="fa-regular fa-envelope fa-lg"></i>
+              </a>
+
+              <a href="https://pt-br.facebook.com/">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+              </a>
+
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram fa-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="suporte">
+            <h3 class="mb1">Suporte</h3>
+            <a href="#"> Deixe aqui sua dúvida </a>
+          </div>
+
+          <div class="links">
+            <h3 class="mb1">Links</h3>
+            <nav class="navbar-footer">
+              <ul class="noto-sans">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="acomodacoes.html">Quartos</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="reservas.html">Faça sua reserva</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="direitos">
+          <span> Hotel Recanto dos Códigos &copy; 2022 </span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

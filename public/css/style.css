@@ -42,6 +42,9 @@ body {
   width: 80%;
   margin: auto;
 }
+.hidden {
+  display: none;
+}
 
 /* Margem Padrão*/
 .mb1 {
@@ -95,6 +98,7 @@ body {
   background-color: white;
   margin: 2rem 2rem 0 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .btn-blue {
   font-size: 1rem;
@@ -103,6 +107,7 @@ body {
   background-color: var(--azul-claro);
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .btn-blue:hover {
   background-color: var(--azul-escuro);
@@ -120,7 +125,15 @@ body {
 .login {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
+
+.login-user span {
+  color: #ffffff;
+  padding-right: 15px;
+  font-size: 1.2rem;
+}
+
 .header-logo-slogan {
   display: flex;
   justify-content: space-between;

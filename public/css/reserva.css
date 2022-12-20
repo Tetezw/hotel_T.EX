@@ -1,0 +1,85 @@
+/* página de Formulário de Reserva */
+.reserva {
+    border: none;
+}
+
+.reserva form {
+    margin: 30px 0 30px 30px;
+    width: 50%;
+    color: #080710;
+    padding: 10px 20px;
+}
+
+.reserva ul {
+    display: flex;
+    text-align: center;
+    color: #080710;
+}
+
+.reserva ul li {
+    margin: auto;
+}
+
+.reserva ul li label {
+    margin: 5px 0 -20px 0;
+    font-size: 14px;
+
+}
+
+.reserva ul li input {
+    margin-top: -50%;
+    color: #080710;
+}
+
+.quarto-reserva {
+    display: flex;
+}
+
+
+/* Caixa Flutuante de Resumo reserva */
+.resumo-reserva {
+    width: 400px;
+    position: absolute;
+    right: 10px;
+    top: 550px;
+    background-color: var(--azul-escuro);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px 0px var(--azul-claro);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.5px;
+    padding: 30px;
+}
+
+.resumo-box {
+    background-color: #ffffff;
+    opacity: 90%;
+    width: 250px;
+    color: #063f57;
+    font-size: 14px;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+}
+
+.resumo-reserva a {
+    color: #ffffff;
+}
+
+.novoform input[type="number"],
+input[type="date"] {
+    display: flex-end;
+    background-color: white;
+    border-radius: 3px;
+    color: grey;
+
+}
+
+.reserva-titulo {
+    font-size: 32px;
+    color: var(--azul-escuro);
+    margin-left: 52px;
+    margin-top: 30PX;
+}

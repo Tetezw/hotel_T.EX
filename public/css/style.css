@@ -514,24 +514,22 @@ div.facebook-icon > a.link-login {
 /*Section - Sobre o hotel*/
 .sobre-container-img-txt {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 100%;
+    justify-content: center;
+    gap: 30px;
 }
 .sobre-container-img-txt .sobre-container-img {
     width: 50%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    justify-content: start;
 }
 .sobre-container-img-txt .sobre-container-img .banner-img {
-    max-width: 100%;
+    width: 100%;
+    align-self: start;
 }
 .sobre-container-img-txt .sobre-container-texto {
     width: 50%;
 }
-.sobre-container-img-txt .sobre-container-texto .texto-artigo {
-    margin-left: 1rem;
-}
+
 /* Section - Comodidades Adicionais */
 .container-comodidades {
     display: flex;

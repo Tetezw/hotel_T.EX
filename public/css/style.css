@@ -51,6 +51,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.display-f {
+  display: flex;
+}
+
 /* Títulos */
 /* Títulos das seções */
 .titulo-h1 {
@@ -123,7 +127,6 @@ body {
 * Header   - Avaliar
 ********************/
 .login {
-  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
@@ -135,12 +138,10 @@ body {
 }
 
 .header-logo-slogan {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .navbar ul {
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 5.5rem;
@@ -168,12 +169,10 @@ footer {
 }
 
 .box-footer {
-  display: flex;
   flex-direction: column;
 }
 
 .column-footer {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
@@ -184,7 +183,6 @@ footer {
 .redes-sociais,
 .suporte,
 .navbar-footer ul {
-  display: flex;
   flex-direction: column;
   align-self: baseline;
   flex: 1;
@@ -193,6 +191,7 @@ footer {
   text-transform: capitalize;
 }
 
+/* ----Não encontrado no html---- */
 .icons {
   display: flex;
   flex-direction: column;
@@ -214,7 +213,6 @@ footer {
 }
 
 .direitos {
-  display: flex;
   justify-content: center;
   padding-top: 30px;
   color: #ffffff;
@@ -225,7 +223,6 @@ footer {
 ********************/
 
 .img-sobre {
-  display: flex;
   justify-content: center;
   gap: 30px;
 }
@@ -244,7 +241,6 @@ footer {
 }
 
 .quartos {
-  display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 50px;
@@ -264,7 +260,6 @@ footer {
 }
 
 .foto-ilha img {
-  display: flex;
   width: 70%;
   margin: 0 auto 0 auto;
   border: solid 3px var(--azul-escuro);
@@ -273,7 +268,6 @@ footer {
 
 /*Botão conheça mais sobre nossos serviços*/
 .btn-conheca-mais {
-  display: flex;
   justify-content: center;
   margin: 40px 0;
 }
@@ -295,7 +289,6 @@ footer {
 ********************/
 
 .foto-texto-gastronomia {
-  display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 20px;
@@ -526,7 +519,6 @@ div.facebook-icon > a.link-login {
 }
 /* Section - Comodidades Adicionais */
 .container-comodidades {
-  display: flex;
   justify-content: center;
 }
 .comodidades-img {
@@ -538,7 +530,6 @@ div.facebook-icon > a.link-login {
   justify-content: center;
 }
 .img-hero {
-  display: flex;
   margin: 0 3rem;
   width: auto;
   height: 95%;
@@ -562,7 +553,6 @@ div.facebook-icon > a.link-login {
 }
 
 .container-time {
-  display: flex;
   grid-area: container-time;
   width: 100%;
   justify-content: center;
@@ -592,7 +582,6 @@ div.facebook-icon > a.link-login {
 /* Acomodações - Imagens */
 /* Passei pra flexbox ao invés de grid */
 .acomodacoes-imagens {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -626,7 +615,6 @@ div.facebook-icon > a.link-login {
   .inferior-right {
   background-color: var(--azul-claro);
   cursor: pointer;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -669,17 +657,14 @@ div.facebook-icon > a.link-login {
 /* Produtos em Destaque */
 .produtos-destaque {
   /* Passando para flexbox */
-  display: flex;
   justify-content: center;
   padding: 100px 0;
 }
 .produtos-destaque .description {
-  display: flex;
   flex-direction: column;
   padding: 20px;
 }
 .content {
-  display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }

@@ -1,150 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Login - Hotel Recanto dos Códigos</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <div class="header-cor">
-            <div class="login">
-                <!-- esconder .hidden -->
-                <div class="hidden">
-                  <a href="login.html">
-                    <button class="btn-white courier">Faça login</button>
-                  </a>
-                </div>
-                <div class="login-user">
-                  <span>Olá usuário</span>
-                  <button class="btn-white">Sair</button>
-                </div>
-              </div>
-            <div class="header-logo-slogan">
-                <div class="img-logo">
-                    <img src="images/Logo-Branca.png" alt="Logo Hotel" width="200" />
-                </div>
-
-                <div class="slogan courier">
-                    <h1>
-                        Desconecte-se <br />
-                        e venha se conectar <br />
-                        com a natureza
-                    </h1>
-                </div>
-            </div>
-            <div class="navbar">
-                <nav>
-                    <ul class="navbar-list noto-sans">
-                        <a href="home.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="sobre.html">
-                            <li>Sobre</li>
-                        </a>
-                        <a href="acomodacoes.html">
-                            <li>Quartos</li>
-                        </a>
-                        <a href="contatos.html">
-                            <li>Contato</li>
-                        </a>
-                        <a href="reservas.html">
-                            <li>Faça sua reserva</li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
+  <body>
+    <header class="bg-color-primary">
+      <!-- Adicionado o container de 80% -->
+      <div class="container">
+        <div class="login display-f">
+          <!-- esconder .hidden -->
+          <div class="hidden">
+            <a href="login.html">
+              <button class="btn-white courier">Faça login</button>
+            </a>
+          </div>
+          <div class="login-user">
+            <span>Olá usuário</span>
+            <button class="btn-white">Sair</button>
+          </div>
         </div>
+        <div class="header-logo-slogan display-f">
+          <div class="img-logo">
+            <img src="images/Logo-Branca.png" alt="Logo Hotel" width="200" />
+          </div>
+
+          <div class="slogan courier">
+            <h1 class="titulo-h1">
+              Desconecte-se e venha se conectar <br />
+              com a natureza
+            </h1>
+          </div>
+        </div>
+
+        <!-- Os links estavam fora das listas -->
+        <nav class="navbar">
+          <ul class="noto-sans display-f">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="acomodacoes.html">Quartos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="reservas.html">Faça sua reserva</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div class="container-form">
-        <form action="home.html">
-            <h2>Faça Login</h2>
+      <form action="home.html">
+        <h2>Faça Login</h2>
 
-            <label for="username">E-mail</label>
-            <input type="text" placeholder="Digite seu e-mail" id="username">
+        <label for="username">E-mail</label>
+        <input type="text" placeholder="Digite seu e-mail" id="username" />
 
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" id="password">
+        <label for="password">Senha</label>
+        <input type="password" placeholder="Digite sua senha" id="password" />
 
-            <div class="lembrar-esqueci">
-                <input type="checkbox" name="check-terms"> <span>Lembrar-me</span>
-                <a href="#" class="link-login"><span class="esqueci-senha">Esqueci minha senha</span></a>
-            </div>
+        <div class="lembrar-esqueci">
+          <input type="checkbox" name="check-terms" /> <span>Lembrar-me</span>
+          <a href="#" class="link-login"
+            ><span class="esqueci-senha">Esqueci minha senha</span></a
+          >
+        </div>
 
-            <button class="btn-entrar">Entrar</button>
-            <h3>Entre com suas redes sociais</h3>
-            <div class="social">
-                <div class="google-icon"><a href="#" class="link-login"><i class="fab fa-google"></i> Google</a></div>
-                <div class="facebook-icon"><a href="#" class="link-login"><i class="fab fa-facebook"></i> Facebook</a>
-                </div>
-            </div>
+        <button class="btn-entrar">Entrar</button>
+        <h3>Entre com suas redes sociais</h3>
+        <div class="social">
+          <div class="google-icon">
+            <a href="#" class="link-login"
+              ><i class="fab fa-google"></i> Google</a
+            >
+          </div>
+          <div class="facebook-icon">
+            <a href="#" class="link-login"
+              ><i class="fab fa-facebook"></i> Facebook</a
+            >
+          </div>
+        </div>
 
-            <!-- <p>Usuários Administrativos</p>
+        <!-- <p>Usuários Administrativos</p>
         <button onclick="window.location.href='../admin/login_admin.html'">
             Login - ADMIN
         </button> -->
-        </form>
+      </form>
     </div>
-    <footer class="footer-cor">
-        <div class="infos-footer">
-            <div class="telefone-local">
-                <div class="telefone">
-                    <a href="tel:+">
-                        <p>(71) 3365-0000</p>
-                    </a>
-                </div>
-                <div class="email-redes">
-                    <a href="mailto:reservas@hotel.com.br">
-                        <i class="fa-regular fa-envelope fa-lg"></i>
-                    </a>
-                    <span>
-                        <a href="https://pt-br.facebook.com/">
-                            <i class="fa-brands fa-facebook fa-lg"></i>
-                        </a>
-                    </span>
-                    <span>
-                        <a href="https://www.instagram.com/">
-                            <i class="fa-brands fa-instagram fa-lg"></i>
-                        </a>
-                    </span>
-                </div>
-                <div class="localizacao">
-                    <p>Ilha dos Frades, Salvador - BA</p>
-                </div>
+    <footer class="bg-color-primary">
+        <div class="container box-footer display-f">
+          <div class="column-footer display-f">
+            <div class="telefone-endereco">
+              <h3 class="mb1">Contato</h3>
+              <div class="telefone display-f">
+                <a href="tel:7133650000">
+                  <p>(71) 3365-0000</p>
+                </a>
+              </div>
+  
+              <div class="endereco">
+                <p>Ilha dos Frades, Salvador - BA</p>
+              </div>
             </div>
-
-            <div class="nav-footer">
-                <div class="nome-hotel-footer">
-                    <span> Hotel Recanto dos Códigos &copy; 2022 </span>
-                </div>
-
-                <div>
-                    <ul class="links-pags-footer">
-                        <a href="home.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="sobre.html">
-                            <li>Sobre</li>
-                        </a>
-                        <a href="acomodacoes.html">
-                            <li>Quartos</li>
-                        </a>
-                        <a href="contatos.html">
-                            <li>Contato</li>
-                        </a>
-                    </ul>
-                </div>
+  
+            <div class="redes-sociais display-f">
+              <h3 class="mb1">Siga-nos nas Redes</h3>
+              <div>
+                <a href="mailto:reservas@hotel.com.br">
+                  <i class="fa-regular fa-envelope fa-lg"></i>
+                </a>
+  
+                <a href="https://pt-br.facebook.com/">
+                  <i class="fa-brands fa-facebook fa-lg"></i>
+                </a>
+  
+                <a href="https://www.instagram.com/">
+                  <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+              </div>
             </div>
+  
+            <div class="suporte display-f">
+              <h3 class="mb1">Suporte</h3>
+              <a href="#"> Deixe aqui sua dúvida </a>
+            </div>
+  
+            <div class="links">
+              <h3 class="mb1">Links</h3>
+              <nav class="navbar-footer display-f">
+                <ul class="noto-sans">
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="sobre.html">Sobre</a></li>
+                  <li><a href="acomodacoes.html">Quartos</a></li>
+                  <li><a href="contatos.html">Contato</a></li>
+                  <li><a href="reservas.html">Faça sua reserva</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+  
+          <div class="direitos display-f">
+            <span> Hotel Recanto dos Códigos &copy; 2022 </span>
+          </div>
         </div>
-    </footer>
-</body>
-
+      </footer>
+  </body>
 </html>

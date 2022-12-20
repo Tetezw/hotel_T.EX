@@ -514,9 +514,9 @@ div.facebook-icon > a.link-login {
 /*Section - Sobre o hotel*/
 .sobre-container-img-txt {
     display: flex;
-    border: 1px solid;
-    justify-content: center;
-    /* column-gap: 1rem; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
 }
 .sobre-container-img-txt .sobre-container-img {
     width: 50%;
@@ -528,7 +528,6 @@ div.facebook-icon > a.link-login {
 }
 .sobre-container-img-txt .sobre-container-texto {
     width: 50%;
-    border: 1px solid;
 }
 .sobre-container-img-txt .sobre-container-texto .texto-artigo {
     margin-left: 1rem;
@@ -537,23 +536,19 @@ div.facebook-icon > a.link-login {
 .container-comodidades {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    border: 1px solid;
-    column-gap: 1px;
+    column-gap: 20px;
 }
 .container-comodidades .container-comodidades-img {
-    width: auto;
+    width: 33.33%;
 }
 .container-comodidades .container-comodidades-img .comodidades-img {
-    width: 300px;
-    height: 225px;
+    width: 100%;
 }
 /* Section - Diferenciais */
 .container-diferenciais {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border: 1px solid;
     column-gap: 1rem;
 }
 .container-diferenciais .container-diferenciais-img {
@@ -562,16 +557,19 @@ div.facebook-icon > a.link-login {
 }
 
 .container-diferenciais .container-diferenciais-img .img-style {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
-
+.container-diferenciais .container-diferenciais-img strong {
+    font-size: 1rem;
+}
 .container-diferenciais
     .container-diferenciais-img
     .legenda-diferenciais-style {
-    width: 200px;
+    width: 180px;
     height: 160px;
     text-align: justify;
+    overflow-wrap: break-word;
 }
 /* Section - Nosso time */
 

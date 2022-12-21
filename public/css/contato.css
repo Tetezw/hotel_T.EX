@@ -192,20 +192,20 @@ body {
 /* PÁGINA CONTATO */
 .container-contato {
     padding: 30px;
-    background-color: var(--azul-claro);
 }
 
 .form-contato {
     width: 40%;
-    height: 600px;
+    height: auto;
     font-size: 14px;
-    background: white;
+    background: var(--azul-escuro);
     border-radius: 8px;
     margin: 0 auto;
     box-shadow: 0 0 40px -10px var(--azul-escuro);
     padding: 20px 30px;
     box-sizing: border-box;
-
+    color: white;
+    letter-spacing: 0.5px;
 }
 
 .titulo-form-contato {
@@ -213,7 +213,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--azul-claro);
     margin-bottom: 30px;
 }
 
@@ -225,24 +225,28 @@ body {
 .form-contato > h2 {
     margin: 10px 0;
     padding-bottom: 10px;
-    width: 180px;
-    color: var(--azul-claro);
-    border-bottom: 3px solid var(--laranja)
+    width: 60%;
+    border-bottom: 3px solid var(--laranja);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 42px;
 }
 
-input {
+.form-contato > p > input {
     width: 100%;
+    height: 50px;
     padding: 10px;
-    background: none;
-    outline: none;
+    font-size: 0.9rem;
     resize: none;
     border: 0;
     transition: all .3s;
-    border-bottom: 1px solid var(--azul-claro);
+    border-radius: 3px;
+    outline: none;
 }
 
-input:focus {
-    border-bottom: 3px solid var(--azul-claro);
+.form-contato > p {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .form-contato > p:before {
@@ -250,42 +254,43 @@ input:focus {
     display: block;
     margin: 28px 0 0;
     font-size: 14px;
-    color: grey
 }
 
-p[type="Telefone:"] {
+.telefone-contato {
     width: 49%;
     display: inline-block;
 }
 
-p[type="Assunto:"] {
+.assunto-contato {
     width: 50%;
     display: inline-block;
 }
 
-select {
+.assunto-contato > select {
     width: 100%;
-    height: 40px;
+    height: 50px;
     border-radius: 3px;
-    border: 1px solid var(--azul-claro);
     text-align: center;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
-select:focus {
-    border: 2px solid var(--azul-escuro);
-}
-
-textarea {
+.comentários-contato > textarea {
     width: 100%;
     height: 100px;
+    padding: 10px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: .9rem;
     border: 1px solid var(--azul-claro);
     border-radius: 3px;
     resize: none;
+    outline: none;
 }
 
 .btn-enviar-contato {
     width: 100px;
+    height: 50px;
     margin-top: 28px;
     border: none;
     background-color: var(--azul-claro);
@@ -305,6 +310,7 @@ textarea {
 div.linha-final {
     text-align: center;
     width: 60%;
+    height: 50px;
     padding: 16px 0 16px 0;
     margin-top: 28px;
     float: right;
@@ -318,4 +324,5 @@ div.linha-final > a {
     text-decoration: none;
     color: white;
 }
+
 /* PÁGINA CONTATO */

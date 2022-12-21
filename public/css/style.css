@@ -26,29 +26,46 @@ a:link {
   color: var(--azul-escuro);
 }
 
-/* Aqui está pegando em todos os links */
-a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 6px;
-  text-underline-offset: 7px;
-}
 ul {
   list-style: none;
 }
 body {
   font-family: "Noto Sans", sans-serif;
 }
+
+/* Classes Framework */
+
 .container {
   width: 80%;
   margin: auto;
 }
+
 .hidden {
   display: none;
 }
 
 /* Margem Padrão*/
+
 .mb1 {
   margin-bottom: 1rem;
+}
+
+/* Displays */
+.display-f {
+  display: flex;
+}
+
+.display-g {
+  display: grid;
+}
+
+/* Justify Content e Align Items */
+
+.justify-c {
+  justify-content: center;
+}
+.align-c {
+  align-items: center;
 }
 
 /* Títulos */
@@ -123,9 +140,7 @@ body {
 * Header   - Avaliar
 ********************/
 .login {
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .login-user span {
@@ -135,9 +150,7 @@ body {
 }
 
 .header-logo-slogan {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .responsive-menu {
   display: none;
@@ -147,9 +160,6 @@ body {
   font-size: 1.5rem;
 }
 .navbar ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 5.5rem;
   padding: 1rem 0;
   font-size: 1.3rem;
@@ -159,12 +169,11 @@ body {
 .navbar a:link {
   color: white;
 }
-.navbar-list a:hover {
+.navbar a:hover {
   text-decoration: underline;
   text-decoration-thickness: 6px;
   text-underline-offset: 7px;
 }
-
 /******************** 
 * Footer   - Avaliar
 ********************/
@@ -175,15 +184,12 @@ footer {
 }
 
 .box-footer {
-  display: flex;
   flex-direction: column;
 }
 
 .column-footer {
-  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
   color: #ffffff;
 }
 
@@ -191,11 +197,9 @@ footer {
 .redes-sociais,
 .suporte,
 .navbar-footer ul {
-  display: flex;
   flex-direction: column;
   align-self: baseline;
   flex: 1;
-  padding: 5px;
   font-size: 1rem;
   text-transform: capitalize;
 }
@@ -208,10 +212,13 @@ footer {
   border-left: 5px solid var(--laranja);
   padding-left: 5px;
 }
-
-.icons {
-  display: flex;
-  flex-direction: column;
+.telefone-endereco h3,
+.redes-sociais h3,
+.suporte h3,
+.navbar-footer h3,
+.links h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .telefone a {
@@ -230,19 +237,14 @@ footer {
 }
 
 .direitos {
-  display: flex;
-  justify-content: center;
   padding-top: 30px;
   color: #ffffff;
 }
-
 /******************** 
 * Página Home (Sobre)  - Avaliar
 ********************/
 
 .img-sobre {
-  display: flex;
-  justify-content: center;
   gap: 30px;
 }
 
@@ -260,9 +262,7 @@ footer {
 }
 
 .quartos {
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   margin-top: 50px;
   gap: 20px;
 }
@@ -280,7 +280,6 @@ footer {
 }
 
 .foto-ilha img {
-  display: flex;
   width: 70%;
   margin: 0 auto 0 auto;
   border: solid 3px var(--azul-escuro);
@@ -289,8 +288,6 @@ footer {
 
 /*Botão conheça mais sobre nossos serviços*/
 .btn-conheca-mais {
-  display: flex;
-  justify-content: center;
   margin: 40px 0;
 }
 
@@ -311,8 +308,6 @@ footer {
 ********************/
 
 .foto-texto-gastronomia {
-  display: flex;
-  justify-content: center;
   gap: 30px;
   margin-bottom: 20px;
 }
@@ -434,7 +429,6 @@ h3 {
 
 .social {
   margin-top: 10px;
-  display: flex;
   cursor: pointer;
 }
 
@@ -541,7 +535,6 @@ div.facebook-icon > a.link-login {
 ********************/
 
 .detalhes-apartamentos ul {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   list-style: inside;
   padding-bottom: 20px;
@@ -555,13 +548,11 @@ div.facebook-icon > a.link-login {
 /* Acomodações - Imagens */
 /* Passei pra flexbox ao invés de grid */
 .acomodacoes-imagens {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 20px;
   gap: 10px;
 }
+
 .acomodacoes-imagens .card img {
   width: 100%;
 }
@@ -573,12 +564,10 @@ div.facebook-icon > a.link-login {
 }
 /* Parte interna pode ser grid */
 .acomodacoes-imagens .card .inferior-text {
-  display: grid;
   grid-template-rows: 200px 48px;
   padding: 20px;
 }
 .acomodacoes-imagens .card .inferior-text .inferior-text-button {
-  display: grid;
   grid-template-columns: 125px 125px;
   justify-content: space-between;
 }
@@ -589,10 +578,8 @@ div.facebook-icon > a.link-login {
   .inferior-right {
   background-color: var(--azul-claro);
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
 .acomodacoes .card .inferior-text .inferior-text-button .inferior-right:hover {
   background-color: var(--azul-escuro);
 }
@@ -625,24 +612,19 @@ div.facebook-icon > a.link-login {
   font-weight: bold;
 }
 .inferior .inferior-left {
-  display: grid;
   grid-template-rows: 1fr 1fr;
   padding: 20px;
 }
 /* Produtos em Destaque */
 .produtos-destaque {
   /* Passando para flexbox */
-  display: flex;
-  justify-content: center;
   padding: 100px 0;
 }
 .produtos-destaque .description {
-  display: flex;
   flex-direction: column;
   padding: 20px;
 }
 .content {
-  display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }

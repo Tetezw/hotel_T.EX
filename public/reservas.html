@@ -8,6 +8,7 @@
     <title>Reserva</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reserva.css">
+    <script src="https://kit.fontawesome.com/18dedb8cc9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -55,9 +56,8 @@
             </div>
         </div>
     </header>
-    <br />
-    <main>
-
+    <main class="container">
+        <section>
         <h2 class="reserva-titulo courier">MINHA RESERVA</h2>
         <fieldset class="reserva">
             <form class="novoform" action="" method="get">
@@ -71,99 +71,76 @@
                         <input type="date" id="check-out" name="check-out" required />
                     </li>
                     <li>
-                        <label for="adultos">Quantidade de pessoas</label><br />
+                        <label for="adultos">Nº de pessoas</label><br />
                         <input style="justify-content: center;" type="number" min="0" max="4" id="adultos"
                             name="adultos" placeholder="0" required />
                     </li>
                 </ul>
         </fieldset>
         </form>
+        </section>
 
-        <div> <!-- Quarto 1 -->
+        <section>
+        <div class="todos-os-quartos-reserva"> 
+            <!-- Quarto 1 -->
             <div class="quarto-reserva">
                 <div class="img">
                     <img src="https://via.placeholder.com/380X200" alt="Imagem" />
                 </div>
                 <div class="">
-                    <div class="">
+                    <div class="cada-quarto-reserva">
                         <h3>SUÍTE LUXUOSA</h3>
-                        <p>Uma suíte espaçosa com cama king-size,
-                            <br>
-                            vista para a cidade,
-                            TV de tela plana, mini-bar,
-                            <br> banheira de
-                            hidromassagem e área de estar separada.
+                        <p>Uma suíte espaçosa com cama king-size, vista para a cidade, TV de tela plana, mini-bar, banheira de hidromassagem e área de estar separada.
                         </p>
                     </div>
-                    <div class="inferior-text-button">
-                        <div class="inferior-left">
-                            <div class="text2">A partir de</div>
-                            <div class="text-valor">R$500,00</div>
-                        </div>
-                        <div class="inferior-right">
-                            <a href="#">Reservar</a>
-                        </div>
+                        <div class="text-valor">R$500,00</div>
+                    <div class="radio-reserva">
+                        <label for="reservar-quarto"></label>
+                        <input type="radio" name="reservar-quarto" id="reservar-quarto1"> Selecionar Suíte Luxuosa
                     </div>
                 </div>
             </div>
 
-            <hr>
+           
             <!-- Quarto 2 -->
             <div class="quarto-reserva">
                 <div class="img">
                     <img src="https://via.placeholder.com/380X200" alt="Imagem" />
                 </div>
                 <div class="">
-                    <div class="">
-                        <h3>SUÍTE LUXUOSA</h3>
-                        <p>Uma suíte espaçosa com cama king-size,
-                            <br>
-                            vista para a cidade,
-                            TV de tela plana, mini-bar,
-                            <br> banheira de
-                            hidromassagem e área de estar separada.
+                    <div class="cada-quarto-reserva">
+                        <h3>SUÍTE COM VARANDA</h3>
+                        <p>Uma suíte com cama king-size, varanda com vista para a piscina, TV de tela plana, mini-bar, banheira de hidromassagem e área de estar separada.
                         </p>
                     </div>
-                    <div class="inferior-text-button">
-                        <div class="inferior-left">
-                            <div class="text2">A partir de</div>
-                            <div class="text-valor">R$500,00</div>
-                        </div>
-                        <div class="inferior-right">
-                            <a href="#">Reservar</a>
-                        </div>
+                    <div class="text-valor">R$500,00</div>
+                    <div class="radio-reserva">
+                        <label for="reservar-quarto"></label>
+                        <input type="radio" name="reservar-quarto" id="reservar-quarto2"> Selecionar Suíte com Varanda
                     </div>
                 </div>
             </div>
-            <hr>
+            
             <!-- Quarto 3 -->
             <div class="quarto-reserva">
                 <div class="img">
                     <img src="https://via.placeholder.com/380X200" alt="Imagem" />
                 </div>
                 <div class="">
-                    <div class="">
-                        <h3>SUÍTE LUXUOSA</h3>
-                        <p>Uma suíte espaçosa com cama king-size,
-                            <br>
-                            vista para a cidade,
-                            TV de tela plana, mini-bar,
-                            <br> banheira de
-                            hidromassagem e área de estar separada.
+                    <div class="cada-quarto-reserva">
+                        <h3>QUARTO SUPERIOR</h3>
+                        <p>Uma suíte espaçosa com cama king-size, vista para a cidade, TV de tela plana, mini-bar, banheira de hidromassagem e área de estar separada.
                         </p>
                     </div>
-                    <div class="inferior-text-button">
-                        <div class="inferior-left">
-                            <div class="text2">A partir de</div>
-                            <div class="text-valor">R$500,00</div>
-                        </div>
-                        <div class="inferior-right">
-                            <a href="#">Reservar</a>
-                        </div>
+                    <div class="text-valor">R$500,00</div>
+                    <div class="radio-reserva">
+                        <label for="reservar-quarto"></label>
+                        <input type="radio" name="reservar-quarto" id="reservar-quarto3"> Selecionar Quarto Superior
                     </div>
                 </div>
             </div>
         </div>
+        </section>
     </main>
 
 
@@ -172,17 +149,14 @@
             <h2>Resumo da Reserva</h2>
             <div class="resumo-box">
                 <ul>
-                    <li>Apartamento Escolhido</li>
-                    <li>check-in dia marcado</li>
-                    <li>check-out dia marcado</li>
-                    <li>Quantidade de pessoas</li>
+                    <li>Apartamento: <span>xxx</span></li>
+                    <li>Check-in: <span>xxx</span></li>
+                    <li>Check-out: <span>xxx</span></li>
+                    <li>Quantidade de pessoas: <span>xxx</span></li>
                 </ul>
-
-
-
             </div>
             <a href="#">Adicionar mais serviços</a>
-            <br>
+            <div><p>Valor total: R$ <span>XXX</span></p></div>
             <button>Confirmar reserva</button>
         </div>
     </aside>
@@ -215,12 +189,12 @@
                     <p>Ilha dos Frades, Salvador - BA</p>
                 </div>
             </div>
-
+    
             <div class="nav-footer">
                 <div class="nome-hotel-footer">
                     <span> Hotel Recanto dos Códigos &copy; 2022 </span>
                 </div>
-
+    
                 <div>
                     <ul class="links-pags-footer">
                         <a href="home.html">

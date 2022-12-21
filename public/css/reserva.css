@@ -17,13 +17,13 @@
 }
 
 .reserva ul {
-    display: flex;
-    text-align: center;
     color: #080710;
+    display: flex;
 }
 
 .reserva ul li {
     margin: auto;
+    display: flex;
 }
 
 .reserva ul li label {
@@ -33,13 +33,12 @@
 }
 
 .reserva ul li input {
-    margin-top: -50%;
+    margin-left: 10px;
     color: #080710;
 }
 
 .novoform input[type="number"],
 input[type="date"] {
-    display: flex-end;
     background-color: white;
     border-radius: 3px;
     color: grey;
@@ -52,7 +51,7 @@ input[type="date"] {
 }
 
 .todos-os-quartos-reserva{
-    width: 60%;
+    width: 63%;
     position: relative;
 }
 
@@ -73,12 +72,13 @@ input[type="date"] {
     font-weight: 800;
     margin: 10px 0;
     text-align: justify;
-    white-space: nowrap;
+    white-space: wrap;
 }
 
 .cada-quarto-reserva p {
     text-align: justify;
     margin: 0 10px 0 0;
+    white-space: wrap;
 }
 
 .text-valor {
@@ -117,7 +117,7 @@ input[type="date"] {
 .resumo-box {
     background-color: #ffffff;
     opacity: 90%;
-    width: 250px;
+    width: auto;
     color: #063f57;
     font-size: 14px;
     padding: 10px;

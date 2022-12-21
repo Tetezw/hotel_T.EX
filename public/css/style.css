@@ -139,6 +139,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.responsive-menu {
+  display: none;
+}
+.fa-bars {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -191,6 +198,15 @@ footer {
   padding: 5px;
   font-size: 1rem;
   text-transform: capitalize;
+}
+
+.telefone-endereco h3::before,
+.redes-sociais h3::before,
+.suporte h3::before,
+.links h3::before {
+  content: "";
+  border-left: 5px solid var(--laranja);
+  padding-left: 5px;
 }
 
 .icons {
@@ -304,62 +320,6 @@ footer {
 .foto-texto-gastronomia img {
   width: 50%;
   align-self: flex-start;
-}
-
-/******************** 
-* Página Sobre - Avaliar
-********************/
-
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-div {
-  width: 300px;
-  height: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.about img {
-  width: 100%;
-}
-
-.about p {
-  margin: 30px;
-}
-
-.container-contact {
-  width: 80%;
-  display: block;
-  text-align: center;
-  margin: auto;
-}
-
-.container-contact h4 {
-  margin: 10px;
-}
-.container-contact p {
-  margin-top: 8px;
-}
-.container-contact button {
-  margin: 10px;
-  border-radius: 10px 10px 10px 10px;
-  width: 150px;
-  height: 30px;
-  color: white;
-  font-weight: bold;
-  background-color: #063f57;
-}
-.container-contact button:hover {
-  margin: 10px;
-  border-radius: 10px 10px 10px 10px;
-  width: 150px;
-  height: 30px;
-  color: white;
-  font-weight: bold;
-  background-color: #176485;
 }
 
 /* PÁGINA LOGIN */
@@ -503,74 +463,77 @@ div.facebook-icon > a.link-login {
 }
 /* PÁGINA LOGIN */
 
-/******************************************************************************** Página Sobre **************************************************************************************************/
-
-/* Títulos */
-.titulo-style {
-  font-family: Courier Prime;
-}
-
-/* Container Principal */
-.sobre-container {
-  width: 80%;
-  margin: auto;
-}
-/*Section - Sobre o hotel*/
+/******************** 
+* Página Sobre - Avaliar
+********************/
 .sobre-container-img-txt {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5%;
 }
-
-.texto-artigo {
-  margin: 0 5%;
+.sobre-container-img-txt img.sobre-img {
+  width: 50%;
 }
 /* Section - Comodidades Adicionais */
 .container-comodidades {
   display: flex;
-  justify-content: center;
-}
-.comodidades-img {
-  margin: 0 6rem;
+  justify-content: space-between;
 }
 /* Section - Diferenciais */
 .container-img {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
 }
 .img-hero {
-  display: flex;
-  margin: 0 3rem;
-  width: auto;
-  height: 95%;
-  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
-
+.img-hero .img-hero-title {
+  text-align: center;
+  padding-top: 20px;
+}
 .img-style {
   padding: 5%;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 .legenda-diferenciais-style {
   width: 200px;
   height: 160px;
   text-align: justify;
+  padding-top: 20px;
 }
 /* Section - Nosso time */
-.nosso-time {
-  grid-area: titulo3;
-}
-
 .container-time {
   display: flex;
-  grid-area: container-time;
-  width: 100%;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 50px;
 }
 
-.nosso-time-img {
-  margin: 0 3rem;
-  margin-bottom: 3rem;
+/* Section - Ajuda */
+.contato-ajuda {
+  padding: 50px 0;
+}
+.container-contact {
+  text-align: center;
+}
+
+.container-contact p {
+  margin-top: 8px;
+}
+.container-contact button {
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: #063f57;
+}
+.container-contact button a {
+  color: #ffffff;
 }
 
 /******************** 
@@ -689,4 +652,188 @@ div.facebook-icon > a.link-login {
 .produtos-destaque .content-text div:nth-of-type(2) {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+/* Smartphone */
+@media (max-width: 414px) and (orientation: portrait) {
+  /* Home */
+  .titulo-h2 {
+    text-align: center;
+  }
+  .login,
+  .navbar,
+  .slogan {
+    display: none;
+  }
+  .responsive-menu {
+    display: flex;
+  }
+  .img-sobre,
+  .quartos,
+  .foto-texto-gastronomia,
+  .column-footer {
+    flex-direction: column;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .quartos img,
+  .img-sobre img,
+  .foto-texto-gastronomia img,
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    width: 100%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    margin-bottom: 10px;
+  }
+  /* Sobre */
+
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    width: 100%;
+    height: 160px;
+    text-align: justify;
+    padding: 20px;
+  }
+  /* Section - Nosso time */
+  .container-time {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+  /* Home */
+  .titulo-h2 {
+    text-align: center;
+  }
+  .login-user,
+  .navbar,
+  .slogan {
+    display: none;
+  }
+  .responsive-menu {
+    display: flex;
+  }
+  .img-sobre,
+  .quartos,
+  .foto-texto-gastronomia {
+    flex-direction: column;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .quartos img,
+  .img-sobre img,
+  .foto-texto-gastronomia img {
+    width: 100%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    flex-basis: 50%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    margin-bottom: 10px;
+  }
+  /* Sobre */
+
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    width: 100%;
+    height: 160px;
+    text-align: justify;
+    padding: 20px;
+  }
+  /* Section - Nosso time */
+  .container-time {
+    gap: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (orientation: portrait) {
+  /* Home */
+  .titulo-h2 {
+    text-align: center;
+  }
+  .login-user,
+  .navbar,
+  .slogan {
+    display: none;
+  }
+  .responsive-menu {
+    display: flex;
+  }
+  .img-sobre,
+  .quartos,
+  .foto-texto-gastronomia,
+  .column-footer {
+    flex-direction: column;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .quartos img,
+  .img-sobre img,
+  .foto-texto-gastronomia img,
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    width: 100%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    margin-bottom: 10px;
+  }
+  /* Sobre */
+}
+
+@media (max-width: 1194px) and (orientation: landscape) {
+  /* Home */
+  .login-user,
+  .navbar {
+    display: none;
+  }
+  .slogan h1 {
+    font-size: 1.3rem;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .responsive-menu {
+    display: flex;
+  }
 }

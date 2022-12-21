@@ -141,10 +141,10 @@ input[type="date"] {
     
 }
 
-.resumo-reserva p {
+.resumo-reserva p{
     margin: 30px 0;
     font-weight: bold;
     text-align: center;
     border: solid 2px var(--azul-claro);
-    padding: 2px
+    padding: 2px;
 }

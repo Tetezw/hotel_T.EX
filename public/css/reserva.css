@@ -11,7 +11,7 @@
 
 .reserva form {
     margin: 30px 0 30px 0px;
-    width: 50%;
+    width: 100%;
     color: #080710;
     padding: 20px 20px;
 }
@@ -47,9 +47,15 @@ input[type="date"] {
 }
 
 /*Seção dos quartos na página reserva*/
-.todos-os-quartos-reserva{
-    width: 75%;
+.quartos-resumo {
+    position: relative;
 }
+
+.todos-os-quartos-reserva{
+    width: 60%;
+    position: relative;
+}
+
 .quarto-reserva {
     display: flex;
     background: #f8f8f8;
@@ -88,10 +94,10 @@ input[type="date"] {
 
 /* Caixa Flutuante de Resumo reserva */
 .resumo-reserva {
-    width: 350px;
+    width: 33%;
     position: absolute;
-    right: 10px;
-    top: 580px;
+    right: 0px;
+    top: 0;
     background-color: var(--azul-escuro);
     border-radius: 10px;
     backdrop-filter: blur(10px);

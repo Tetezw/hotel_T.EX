@@ -26,18 +26,15 @@ a:link {
   color: var(--azul-escuro);
 }
 
-/* Aqui está pegando em todos os links */
-a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 6px;
-  text-underline-offset: 7px;
-}
 ul {
   list-style: none;
 }
 body {
   font-family: "Noto Sans", sans-serif;
 }
+
+/* Classes Framework */
+
 .container {
   width: 80%;
   margin: auto;
@@ -47,12 +44,26 @@ body {
 }
 
 /* Margem Padrão*/
+
 .mb1 {
   margin-bottom: 1rem;
 }
-
+ /* Displays */
 .display-f {
   display: flex;
+}
+
+.display-g{
+  display: grid;
+}
+
+/* Justify Content e Align Items */
+
+.justify-c{
+  justify-content: center;
+}
+.align-c{
+  align-items: center;
 }
 
 /* Títulos */
@@ -153,12 +164,11 @@ body {
 .navbar a:link {
   color: white;
 }
-.navbar-list a:hover {
+.navbar a:hover {
   text-decoration: underline;
   text-decoration-thickness: 6px;
   text-underline-offset: 7px;
 }
-
 /******************** 
 * Footer   - Avaliar
 ********************/
@@ -186,16 +196,21 @@ footer {
   flex-direction: column;
   align-self: baseline;
   flex: 1;
-  padding: 5px;
+
   font-size: 1rem;
-  text-transform: capitalize;
+  text-transform: capitalize;  
+}
+
+.telefone-endereco h3,
+.redes-sociais h3,
+.suporte h3,
+.navbar-footer h3,
+.links h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 /* ----Não encontrado no html---- */
-.icons {
-  display: flex;
-  flex-direction: column;
-}
 
 .telefone a {
   color: #ffffff;

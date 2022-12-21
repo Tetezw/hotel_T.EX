@@ -40,6 +40,7 @@ body {
     width: 80%;
     margin: auto;
 }
+
 .hidden {
     display: none;
 }
@@ -49,6 +50,7 @@ body {
 .mb1 {
     margin-bottom: 1rem;
 }
+
  /* Displays */
 .display-f {
   display: flex;
@@ -140,7 +142,6 @@ body {
 ********************/
 .login {
   justify-content: flex-end;
-  align-items: center;
 }
 
 .login-user span {
@@ -151,11 +152,8 @@ body {
 
 .header-logo-slogan {
   justify-content: space-between;
-  align-items: center;
 }
 .navbar ul {
-  justify-content: center;
-  align-items: center;
   gap: 5.5rem;
   padding: 1rem 0;
   font-size: 1.3rem;
@@ -187,7 +185,6 @@ footer {
 .column-footer {
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
   color: #ffffff;
 }
 
@@ -199,7 +196,6 @@ footer {
   flex-direction: column;
   align-self: baseline;
   flex: 1;
-
   font-size: 1rem;
   text-transform: capitalize;  
 }
@@ -212,8 +208,6 @@ footer {
   font-weight: 600;
   font-size: 1.2rem;
 }
-
-/* ----Não encontrado no html---- */
 
 .telefone a {
     color: #ffffff;
@@ -231,16 +225,14 @@ footer {
 }
 
 .direitos {
-  justify-content: center;
   padding-top: 30px;
   color: #ffffff;
-
+}
 /******************** 
 * Página Home (Sobre)  - Avaliar
 ********************/
 
 .img-sobre {
-  justify-content: center;
   gap: 30px;
 }
 
@@ -259,7 +251,6 @@ footer {
 
 .quartos {
   justify-content: space-around;
-  align-items: center;
   margin-top: 50px;
   gap: 20px;
 }
@@ -285,7 +276,6 @@ footer {
 
 /*Botão conheça mais sobre nossos serviços*/
 .btn-conheca-mais {
-  justify-content: center;
   margin: 40px 0;
 }
 
@@ -306,7 +296,6 @@ footer {
 ********************/
 
 .foto-texto-gastronomia {
-  justify-content: center;
   gap: 30px;
   margin-bottom: 20px;
 }
@@ -484,7 +473,6 @@ h3 {
 
 .social {
     margin-top: 10px;
-    display: flex;
     cursor: pointer;
 }
 
@@ -523,8 +511,6 @@ div.facebook-icon > a.link-login {
 }
 /*Section - Sobre o hotel*/
 .sobre-container-img-txt {
-    display: flex;
-    justify-content: center;
     gap: 30px;
 }
 .sobre-container-img-txt .sobre-container-img {
@@ -542,7 +528,6 @@ div.facebook-icon > a.link-login {
 
 /* Section - Comodidades Adicionais */
 .container-comodidades {
-    display: flex;
     justify-content: space-between;
     column-gap: 20px;
 }
@@ -554,14 +539,9 @@ div.facebook-icon > a.link-login {
 }
 /* Section - Diferenciais */
 .container-diferenciais {
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 1rem;
-}
-.container-diferenciais .container-diferenciais-img {
-    display: flex;
-    justify-content: center;
 }
 
 .container-diferenciais .container-diferenciais-img .img-style {
@@ -582,14 +562,10 @@ div.facebook-icon > a.link-login {
 /* Section - Nosso time */
 
 .container-time {
-    display: flex;
-    justify-content: center;
     column-gap: 3rem;
 }
 
 .container-time .nosso-time-img {
-    display: flex;
-    justify-content: center;
     width: 20%;
     margin-bottom: 4rem;
 }
@@ -603,7 +579,6 @@ div.facebook-icon > a.link-login {
 ********************/
 
 .detalhes-apartamentos ul {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: inside;
     padding-bottom: 20px;
@@ -617,12 +592,11 @@ div.facebook-icon > a.link-login {
 /* Acomodações - Imagens */
 /* Passei pra flexbox ao invés de grid */
 .acomodacoes-imagens {
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   padding-top: 20px;
   gap: 10px;
 }
+
 .acomodacoes-imagens .card img {
     width: 100%;
 }
@@ -634,12 +608,10 @@ div.facebook-icon > a.link-login {
 }
 /* Parte interna pode ser grid */
 .acomodacoes-imagens .card .inferior-text {
-    display: grid;
     grid-template-rows: 200px 48px;
     padding: 20px;
 }
 .acomodacoes-imagens .card .inferior-text .inferior-text-button {
-    display: grid;
     grid-template-columns: 125px 125px;
     justify-content: space-between;
 }
@@ -649,10 +621,9 @@ div.facebook-icon > a.link-login {
   .inferior-text-button
   .inferior-right {
   background-color: var(--azul-claro);
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
+  cursor: pointer;  
 }
+
 .acomodacoes .card .inferior-text .inferior-text-button .inferior-right:hover {
     background-color: var(--azul-escuro);
 }
@@ -685,7 +656,6 @@ div.facebook-icon > a.link-login {
     font-weight: bold;
 }
 .inferior .inferior-left {
-    display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 20px;
 }
@@ -693,7 +663,6 @@ div.facebook-icon > a.link-login {
 .produtos-destaque {
 
   /* Passando para flexbox */
-  justify-content: center;
   padding: 100px 0;
 }
 .produtos-destaque .description {

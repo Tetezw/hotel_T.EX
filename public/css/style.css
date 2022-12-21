@@ -26,18 +26,16 @@ a:link {
     color: var(--azul-escuro);
 }
 
-/* Aqui está pegando em todos os links */
-a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-underline-offset: 7px;
-}
+
 ul {
     list-style: none;
 }
 body {
     font-family: "Noto Sans", sans-serif;
 }
+
+/* Classes Framework */
+
 .container {
     width: 80%;
     margin: auto;
@@ -47,8 +45,26 @@ body {
 }
 
 /* Margem Padrão*/
+
 .mb1 {
     margin-bottom: 1rem;
+}
+ /* Displays */
+.display-f {
+  display: flex;
+}
+
+.display-g{
+  display: grid;
+}
+
+/* Justify Content e Align Items */
+
+.justify-c{
+  justify-content: center;
+}
+.align-c{
+  align-items: center;
 }
 
 /* Títulos */
@@ -123,9 +139,8 @@ body {
 * Header   - Avaliar
 ********************/
 .login {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .login-user span {
@@ -135,29 +150,26 @@ body {
 }
 
 .header-logo-slogan {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .navbar ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5.5rem;
-    padding: 1rem 0;
-    font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5rem;
+  padding: 1rem 0;
+  font-size: 1.3rem;
 }
 .navbar a:active,
 .navbar a:visited,
 .navbar a:link {
     color: white;
 }
-.navbar-list a:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 6px;
-    text-underline-offset: 7px;
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 6px;
+  text-underline-offset: 7px;
 }
-
 /******************** 
 * Footer   - Avaliar
 ********************/
@@ -168,35 +180,40 @@ footer {
 }
 
 .box-footer {
-    display: flex;
-    flex-direction: column;
+
+  flex-direction: column;
 }
 
 .column-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    color: #ffffff;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #ffffff;
 }
 
 .telefone-endereco,
 .redes-sociais,
 .suporte,
 .navbar-footer ul {
-    display: flex;
-    flex-direction: column;
-    align-self: baseline;
-    flex: 1;
-    padding: 5px;
-    font-size: 1rem;
-    text-transform: capitalize;
+
+  flex-direction: column;
+  align-self: baseline;
+  flex: 1;
+
+  font-size: 1rem;
+  text-transform: capitalize;  
 }
 
-.icons {
-    display: flex;
-    flex-direction: column;
+.telefone-endereco h3,
+.redes-sociais h3,
+.suporte h3,
+.navbar-footer h3,
+.links h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
+
+/* ----Não encontrado no html---- */
 
 .telefone a {
     color: #ffffff;
@@ -214,20 +231,17 @@ footer {
 }
 
 .direitos {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    color: #ffffff;
-}
+  justify-content: center;
+  padding-top: 30px;
+  color: #ffffff;
 
 /******************** 
 * Página Home (Sobre)  - Avaliar
 ********************/
 
 .img-sobre {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .img-sobre img {
@@ -244,11 +258,10 @@ footer {
 }
 
 .quartos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-    gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
 }
 
 .quartos img {
@@ -264,18 +277,16 @@ footer {
 }
 
 .foto-ilha img {
-    display: flex;
-    width: 70%;
-    margin: 0 auto 0 auto;
-    border: solid 3px var(--azul-escuro);
-    padding: 2px;
+  width: 70%;
+  margin: 0 auto 0 auto;
+  border: solid 3px var(--azul-escuro);
+  padding: 2px;
 }
 
 /*Botão conheça mais sobre nossos serviços*/
 .btn-conheca-mais {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 .btn-conheca-mais a button {
@@ -295,10 +306,9 @@ footer {
 ********************/
 
 .foto-texto-gastronomia {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .foto-texto-gastronomia img {
@@ -607,12 +617,11 @@ div.facebook-icon > a.link-login {
 /* Acomodações - Imagens */
 /* Passei pra flexbox ao invés de grid */
 .acomodacoes-imagens {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 10px;
 }
 .acomodacoes-imagens .card img {
     width: 100%;
@@ -635,15 +644,14 @@ div.facebook-icon > a.link-login {
     justify-content: space-between;
 }
 .acomodacoes-imagens
-    .card
-    .inferior-text
-    .inferior-text-button
-    .inferior-right {
-    background-color: var(--azul-claro);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .card
+  .inferior-text
+  .inferior-text-button
+  .inferior-right {
+  background-color: var(--azul-claro);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 .acomodacoes .card .inferior-text .inferior-text-button .inferior-right:hover {
     background-color: var(--azul-escuro);
@@ -683,20 +691,18 @@ div.facebook-icon > a.link-login {
 }
 /* Produtos em Destaque */
 .produtos-destaque {
-    /* Passando para flexbox */
-    display: flex;
-    justify-content: center;
-    padding: 100px 0;
+
+  /* Passando para flexbox */
+  justify-content: center;
+  padding: 100px 0;
 }
 .produtos-destaque .description {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  flex-direction: column;
+  padding: 20px;
 }
 .content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 .produtos-destaque .content-text div:nth-of-type(1) {
     font-size: 0.8rem;

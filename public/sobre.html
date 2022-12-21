@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <script
-            src="https://kit.fontawesome.com/18dedb8cc9.js"
-            crossorigin="anonymous"></script>
-        <title>Hotel Recanto dos Códigos</title>
-    </head>
-    <body>
-        <header class="bg-color-primary">
-            <!-- Adicionado o container de 80% -->
-            <div class="container">
-                <div class="login">
-                    <!-- esconder .hidden -->
-                    <div class="hidden">
-                        <a href="login.html">
-                            <button class="btn-white courier">
-                                Faça login
-                            </button>
-                        </a>
-                    </div>
-                    <div class="login-user">
-                        <span>Olá usuário</span>
-                        <button class="btn-white">Sair</button>
-                    </div>
-                </div>
-                <div class="header-logo-slogan">
-                    <div class="img-logo">
-                        <img
-                            src="images/Logo-Branca.png"
-                            alt="Logo Hotel"
-                            width="200" />
-                    </div>
 
-                    <div class="slogan courier">
-                        <h1 class="titulo-h1">
-                            Desconecte-se e venha se conectar <br />
-                            com a natureza
-                        </h1>
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/18dedb8cc9.js" crossorigin="anonymous"></script>
+    <title>Hotel Recanto dos Códigos</title>
+  </head>
+  <body>
+    <header class="bg-color-primary">
+      <!-- Adicionado o container de 80% -->
+      <div class="container">
+        <div class="login display-f">
+          <!-- esconder .hidden -->
+          <div class="hidden">
+            <a href="login.html">
+              <button class="btn-white courier">Faça login</button>
+            </a>
+          </div>
+          <div class="login-user">
+            <span>Olá usuário</span>
+            <button class="btn-white">Sair</button>
+          </div>
+        </div>
+        <div class="header-logo-slogan display-f">
+          <div class="img-logo">
+            <img src="images/Logo-Branca.png" alt="Logo Hotel" width="200" />
+          </div>
+
+          <div class="slogan courier">
+            <h1 class="titulo-h1">
+              Desconecte-se e venha se conectar <br />
+              com a natureza
+            </h1>
+          </div>
+        </div>
+
+        <!-- Os links estavam fora das listas -->
+        <nav class="navbar">
+          <ul class="noto-sans display-f">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="acomodacoes.html">Quartos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="reservas.html">Faça sua reserva</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+        <main class="sobre-container">
+        <section id="sobre-hotel">
+            <h2 class="titulo-h2 courier">Sobre o Hotel Recanto dos Códigos</h2>
+            <div class="sobre-container-img-txt">
+                <div>
+                    <img width="100%" title="Foto do Hotel" alt="Foto do Hotel" src="images/foto_banners.jpg" alt="banner" />
                 </div>
 
                 <!-- Os links estavam fora das listas -->
@@ -139,6 +153,7 @@
                 <h2 class="titulo-h2 courier">DIFERENCIAIS</h2>
                 <div class="container-diferenciais">
                     <div class="container-diferenciais-img">
+
                         <figure>
                             <figcaption style="text-align: center">
                                 <strong> Internet ultrarrápida</strong>
@@ -222,8 +237,8 @@
                 </div>
             </section>
             <section id="nosso-time">
-                <h2 class="titulo-h2 courier">NOSSO TIME</h2>
-                <div class="container-time">
+                <h2 class="titulo-h2 courier">Nosso Time</h2>
+                <div class="container-time display-f">
                     <div class="nosso-time-img">
                         <figure>
                             <img
@@ -287,63 +302,62 @@
         </div>   -->
 
         <footer class="bg-color-primary">
-            <div class="container box-footer">
-                <div class="column-footer">
-                    <div class="telefone-endereco">
-                        <h3 class="mb1">Contato</h3>
-                        <div class="telefone">
-                            <a href="tel:7133650000">
-                                <p>(71) 3365-0000</p>
-                            </a>
-                        </div>
-
-                        <div class="endereco">
-                            <p>Ilha dos Frades, Salvador - BA</p>
-                        </div>
-                    </div>
-
-                    <div class="redes-sociais">
-                        <h3 class="mb1">Siga-nos nas Redes</h3>
-                        <div>
-                            <a href="mailto:reservas@hotel.com.br">
-                                <i class="fa-regular fa-envelope fa-lg"></i>
-                            </a>
-
-                            <a href="https://pt-br.facebook.com/">
-                                <i class="fa-brands fa-facebook fa-lg"></i>
-                            </a>
-
-                            <a href="https://www.instagram.com/">
-                                <i class="fa-brands fa-instagram fa-lg"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="suporte">
-                        <h3 class="mb1">Suporte</h3>
-                        <a href="#"> Deixe aqui sua dúvida </a>
-                    </div>
-
-                    <div class="links">
-                        <h3 class="mb1">Links</h3>
-                        <nav class="navbar-footer">
-                            <ul class="noto-sans">
-                                <li><a href="home.html">Home</a></li>
-                                <li><a href="sobre.html">Sobre</a></li>
-                                <li><a href="acomodacoes.html">Quartos</a></li>
-                                <li><a href="contatos.html">Contato</a></li>
-                                <li>
-                                    <a href="reservas.html">Faça sua reserva</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+          <div class="container box-footer display-f">
+            <div class="column-footer display-f">
+              <div class="telefone-endereco">
+                <h3 class="mb1">Contato</h3>
+                <div class="telefone display-f">
+                  <a href="tel:7133650000">
+                    <p>(71) 3365-0000</p>
+                  </a>
                 </div>
-
-                <div class="direitos">
-                    <span> Hotel Recanto dos Códigos &copy; 2022 </span>
+    
+                <div class="endereco">
+                  <p>Ilha dos Frades, Salvador - BA</p>
                 </div>
+              </div>
+    
+              <div class="redes-sociais display-f">
+                <h3 class="mb1">Siga-nos nas Redes</h3>
+                <div>
+                  <a href="mailto:reservas@hotel.com.br">
+                    <i class="fa-regular fa-envelope fa-lg"></i>
+                  </a>
+    
+                  <a href="https://pt-br.facebook.com/">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                  </a>
+    
+                  <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="suporte display-f">
+                <h3 class="mb1">Suporte</h3>
+                <a href="#"> Deixe aqui sua dúvida </a>
+              </div>
+    
+              <div class="links">
+                <h3 class="mb1">Links</h3>
+                <nav class="navbar-footer display-f">
+                  <ul class="noto-sans">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="acomodacoes.html">Quartos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                    <li><a href="reservas.html">Faça sua reserva</a></li>
+                  </ul>
+                </nav>
+              </div>
             </div>
+    
+            <div class="direitos display-f">
+              <span> Hotel Recanto dos Códigos &copy; 2022 </span>
+            </div>
+          </div>
         </footer>
-    </body>
+  </body>
+
 </html>

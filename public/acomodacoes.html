@@ -9,9 +9,8 @@
   </head>
 
   <body>
-    <header class="bg-color-primary">
-      <!-- Adicionado o container de 80% -->
-      <div class="container">
+    <header>
+      <div class="container display-f flex-dc justify-csb box-header">
         <div class="login display-f align-c">
           <!-- esconder .hidden -->
           <div class="hidden">
@@ -35,9 +34,12 @@
               com a natureza
             </h1>
           </div>
+
+          <div class="responsive-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
 
-        <!-- Os links estavam fora das listas -->
         <nav class="navbar">
           <ul class="noto-sans display-f justify-c align-c">
             <li><a href="home.html">Home</a></li>
@@ -49,7 +51,6 @@
         </nav>
       </div>
     </header>
-    <!-- iniccio do conteudo da pagina -->
     <main>
       <div class="container">
         <section class="acomodacoes">
@@ -65,16 +66,20 @@
               tudo que você precisa para tornar a experiência inesquecível.
             </p>
           </article>
-          <article class="detalhes-apartamentos display-g">
+          <article class="detalhes-apartamentos">
             <h2 class="titulo-h2">TODOS OS APARTAMENTOS INCLUEM</h2>
             <div class="lista-detalhes">
-              <ul>
-                <li>Mini bar</li>
-                <li>Cofre</li>
-                <li>Smart TV</li>
-                <li>Vidros antirruído</li>
-                <li>Ferro e tábua para passar roupa</li>
-                <li>Acesso WiFi</li>
+              <ul class="noto-sans display-f">
+                <span class="itens">
+                  <li>Mini bar</li>
+                  <li>Cofre</li>
+                  <li>Smart TV</li>
+                </span>
+                <span class="itens">
+                  <li>Vidros antirruído</li>
+                  <li>Ferro e tábua para passar roupa</li>
+                  <li>Acesso WiFi</li>
+                </span>
               </ul>
             </div>
             <p class="paragrafo">
@@ -100,9 +105,9 @@
                     de estar separada.
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
-                    <div class="text2">A partir de</div>
+                    <div class="text2 noto-sans">A partir de</div>
                     <div class="text-valor">R$500,00</div>
                   </div>
                   <div class="inferior-right display-f justify-c align-c">
@@ -125,7 +130,7 @@
                     hidromassagem e área de estar separada.
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -150,7 +155,7 @@
                     de estar separada.
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -175,7 +180,7 @@
                     banheiro privativo.
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -200,7 +205,7 @@
                     escrivaninha e banheiro privativo.
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -225,7 +230,7 @@
                     área de estar separada e banheiro privativo.
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -251,7 +256,7 @@
                     deficiência.
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -276,7 +281,7 @@
                     mini-bar e banheiro privativo
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -300,7 +305,7 @@
                     tela plana, mini-bar e banheiro compartilhado
                   </p>
                 </div>
-                <div class="inferior-text-button display-g">
+                <div class="inferior-text-button display-g justify-csb">
                   <div class="inferior-left display-g">
                     <div class="text2">A partir de</div>
                     <div class="text-valor">R$500,00</div>
@@ -314,17 +319,20 @@
           </div>
         </section>
         <section class="produtos-destaque display-f justify-c">
-          <div class="description display-f">
-            <h2 class="titulo-h2">SUÍTE LUXUOSA</h2>
-            <p class="paragrafo">
-              Uma suíte espaçosa com cama king-size, sala de estar separada, TV
-              de tela plana, mini-bar, banheiro privativo e vista para a cidade.
-            </p>
+          <div class="description display-f flex-dc justify-csb">
+            <div>
+              <h2 class="titulo-h2">SUÍTE LUXUOSA</h2>
+              <p class="paragrafo">
+                Uma suíte espaçosa com cama king-size, sala de estar separada,
+                TV de tela plana, mini-bar, banheiro privativo e vista para a
+                cidade.
+              </p>
+            </div>
 
-            <div class="content display-f">
+            <div class="content display-f justify-csb">
               <div class="content-text">
-                <div class="noto-sans">A partir de</div>
-                <div class="noto-sans">R$500,00</div>
+                <div class="texto noto-sans">A partir de</div>
+                <div class="preco noto-sans">R$500,00</div>
               </div>
               <div class="content-button">
                 <button class="btn-blue" href="#">Reservar</button>
@@ -340,11 +348,10 @@
         </section>
       </div>
     </main>
-    <!-- fim do conteudo da pagina -->
     <footer class="bg-color-primary">
-      <div class="container box-footer display-f">
-        <div class="column-footer display-f align-c">
-          <div class="telefone-endereco">
+      <div class="container box-footer display-f flex-dc">
+        <div class="column-footer display-f align-c justify-csb">
+          <div class="telefone-endereco flex-dc">
             <h3 class="mb1">Contato</h3>
             <div class="telefone display-f">
               <a href="tel:7133650000">
@@ -357,7 +364,7 @@
             </div>
           </div>
 
-          <div class="redes-sociais display-f">
+          <div class="redes-sociais display-f flex-dc">
             <h3 class="mb1">Siga-nos nas Redes</h3>
             <div>
               <a href="mailto:reservas@hotel.com.br">
@@ -374,15 +381,15 @@
             </div>
           </div>
 
-          <div class="suporte display-f">
+          <div class="suporte display-f flex-dc">
             <h3 class="mb1">Suporte</h3>
             <a href="#"> Deixe aqui sua dúvida </a>
           </div>
 
           <div class="links">
             <h3 class="mb1">Links</h3>
-            <nav class="navbar-footer display-f">
-              <ul class="noto-sans">
+            <nav class="navbar-footer">
+              <ul class="noto-sans display-f flex-dc">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="acomodacoes.html">Quartos</a></li>

@@ -1,17 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* variáveis */
-
 :root {
   --azul-escuro: #063f57;
   --azul-claro: #176485;
   --laranja: #a35700;
   --marrom: #573106;
-  --titulo-branco: #ffffff;
 }
-
 /* Reset */
-
 * {
   margin: 0;
   padding: 0;
@@ -25,60 +21,62 @@ a:visited,
 a:link {
   color: var(--azul-escuro);
 }
-
 ul {
   list-style: none;
 }
 body {
   font-family: "Noto Sans", sans-serif;
 }
-
 /* Classes Framework */
-
 .container {
   width: 80%;
   margin: auto;
 }
-
 .hidden {
   display: none;
 }
-
 /* Margem Padrão*/
-
 .mb1 {
   margin-bottom: 1rem;
 }
-
+/* Padding Padrão */
+.pt3 {
+  padding-top: 3rem;
+}
+.pb5 {
+  padding-bottom: 5rem;
+}
 /* Displays */
 .display-f {
   display: flex;
 }
-
 .display-g {
   display: grid;
 }
-
 /* Justify Content e Align Items */
-
 .justify-c {
   justify-content: center;
+}
+.justify-csb {
+  justify-content: space-between;
 }
 .align-c {
   align-items: center;
 }
-
-/* Títulos */
+/* Flex Direction */
+.flex-dc {
+  flex-direction: column;
+}
 /* Títulos das seções */
 .titulo-h1 {
   font-size: 2.2rem;
-  color: var(--titulo-branco);
+  color: #ffffff;
 }
 .titulo-h2 {
   color: var(--azul-escuro);
   font-size: 1.8rem;
   font-weight: bold;
-  margin: 2rem 0 2rem 0;
+  padding: 5rem 0 2rem 0;
 }
 .titulo-h3 {
   font-size: 1.5rem;
@@ -86,27 +84,21 @@ body {
   font-weight: 800;
   padding-bottom: 10px;
 }
-
 /* Textos */
-/* Para os parágrafos e caso quiserem centralizar */
 .paragrafo {
   font-size: 1.1rem;
   margin: 10px 0 10px 0;
 }
-
 .center {
   text-align: center;
 }
-
 /* Fontes */
 .courier {
   font-family: "Courier Prime", monospace;
 }
-
 .noto-sans {
   font-family: "Noto Sans", sans-serif;
 }
-
 /* Botões */
 .btn-white {
   font-size: 1.2rem;
@@ -129,26 +121,39 @@ body {
 .btn-blue:hover {
   background-color: var(--azul-escuro);
 }
-
+.saiba-mais::before {
+  content: "🔺";
+}
+.link-border-bottom {
+  border-bottom: 3px solid var(--laranja);
+}
+.link-border-all {
+  border: 3px solid var(--laranja);
+  padding: 30px 50px;
+}
 /* Background-color */
-/* Para o fundo do header + footer */
 .bg-color-primary {
   background-color: var(--azul-escuro);
 }
-
-/******************** 
-* Header   - Avaliar
-********************/
+/* Header */
+header {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
+    url(https://picsum.photos/id/1043/800/600);
+  background-size: cover;
+}
+.box-header {
+  height: 90vh;
+}
 .login {
   justify-content: flex-end;
 }
-
 .login-user span {
   color: #ffffff;
   padding-right: 15px;
   font-size: 1.2rem;
 }
-
 .header-logo-slogan {
   justify-content: space-between;
 }
@@ -174,36 +179,22 @@ body {
   text-decoration-thickness: 6px;
   text-underline-offset: 7px;
 }
-/******************** 
-* Footer   - Avaliar
-********************/
-
+/* Footer */
 footer {
-  color: white;
   padding: 10px 0;
 }
-
-.box-footer {
-  flex-direction: column;
-}
-
 .column-footer {
-  justify-content: space-between;
-  flex-wrap: wrap;
   color: #ffffff;
 }
-
 .telefone-endereco,
 .redes-sociais,
 .suporte,
 .navbar-footer ul {
-  flex-direction: column;
   align-self: baseline;
   flex: 1;
   font-size: 1rem;
   text-transform: capitalize;
 }
-
 .telefone-endereco h3::before,
 .redes-sociais h3::before,
 .suporte h3::before,
@@ -220,77 +211,64 @@ footer {
   font-weight: 600;
   font-size: 1.2rem;
 }
-
-.telefone a {
-  color: #ffffff;
-}
-
 .redes-sociais i {
-  color: #fff;
   font-size: 1.3rem;
   padding-right: 5px;
 }
-
 .navbar-footer ul li a,
-.suporte a {
+.suporte a,
+.telefone a,
+.direitos,
+.redes-sociais i,
+footer {
   color: #ffffff;
 }
-
 .direitos {
   padding-top: 30px;
+}
+/* Página Home*/
+/* Sobre      */
+.box-sobre {
+  width: 100%;
+}
+.img-sobre img {
+  width: 300px;
+  margin-right: 30px;
+  box-shadow: 0 0 10px #ccc;
+}
+/* Página Home */
+/* Acomodações */
+.box-acomodacoes {
+  background: #f1f1f1;
+}
+.cards-quartos-titulo a {
   color: #ffffff;
 }
-/******************** 
-* Página Home (Sobre)  - Avaliar
-********************/
-
-.img-sobre {
-  gap: 30px;
-}
-
-.img-sobre img {
-  width: 50%;
-  align-self: flex-start;
-}
-
-/******************** 
-* Página Home (Acomodações)  - Avaliar
-********************/
-
-.cards-quartos {
-  margin-top: 60px;
-}
-
-.quartos {
-  justify-content: space-around;
-  margin-top: 50px;
-  gap: 20px;
-}
-
 .quartos img {
   width: calc((100% / 3) - 20px);
+  background: #ffffff;
+  padding: 10px;
 }
-
-/******************** 
-* Página Home (Ilha)  - Avaliar
-********************/
-
+/* Página Home */
+/* Ilha        */
+.box-ilha {
+  background: linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
+    url(https://picsum.photos/id/1043/800/600);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
 .ilha {
-  margin-top: 60px;
+  height: 350px;
 }
-
-.foto-ilha img {
-  width: 70%;
-  margin: 0 auto 0 auto;
-  border: solid 3px var(--azul-escuro);
-  padding: 2px;
+.ilha h2 a {
+  color: #ffffff;
 }
-
-/*Botão conheça mais sobre nossos serviços*/
+/* Página Home */
+/* Serviços    */
 .btn-conheca-mais {
   margin: 40px 0;
 }
-
 .btn-conheca-mais a button {
   font-size: 1.5rem;
   padding: 15px 40px 15px 40px;
@@ -298,31 +276,24 @@ footer {
   border: none;
   color: white;
 }
-
 .btn-conheca-mais a:hover button {
   background: var(--azul-claro);
 }
-
-/******************** 
-* Página Home (Gastronomia)  - Avaliar
-********************/
-
+/* Página Home */
+/* Gastronomia */
 .foto-texto-gastronomia {
   gap: 30px;
   margin-bottom: 20px;
 }
-
 .foto-texto-gastronomia img {
   width: 50%;
   align-self: flex-start;
 }
-
-/* PÁGINA LOGIN */
+/* Página Login */
 .container-form {
   padding: 30px;
   background-color: var(--azul-claro);
 }
-
 form {
   margin: 0 auto;
   height: auto;
@@ -334,7 +305,6 @@ form {
   box-shadow: 0px 0px 30px 0px var(--azul-claro);
   padding: 50px 35px;
 }
-
 form * {
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
@@ -343,25 +313,21 @@ form * {
   outline: none;
   border: none;
 }
-
 .link-login:hover {
   text-decoration: none;
 }
-
 form h2 {
   font-size: 2rem;
   font-weight: 700;
   line-height: 42px;
   text-align: center;
 }
-
 label {
   display: block;
   margin-top: 30px;
   font-size: 1.2rem;
   font-weight: 700;
 }
-
 input[type="text"],
 input[type="password"] {
   display: block;
@@ -375,35 +341,28 @@ input[type="password"] {
   font-weight: 400;
   color: grey;
 }
-
 ::placeholder {
   color: gray;
 }
-
 input[type="checkbox"] {
   margin: 0px 2px 0px 2px;
   cursor: pointer;
   transform: scale(1.5);
 }
-
 .lembrar-esqueci {
   margin: 15px 0px 15px 0px;
 }
-
 span {
   font-weight: 400;
 }
-
 .esqueci-senha {
   font-size: 0.8rem;
   margin-left: 60px;
 }
-
 .esqueci-senha:hover {
   color: var(--azul-claro);
   transition: 0.2s;
 }
-
 .btn-entrar {
   width: 100%;
   background-color: #ffffff;
@@ -414,24 +373,20 @@ span {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .btn-entrar:hover {
   background-color: var(--laranja);
   transition: 0.3s;
   color: white;
 }
-
 h3 {
   padding-top: 10px;
   font-size: 1rem;
   font-weight: 500;
 }
-
 .social {
   margin-top: 10px;
   cursor: pointer;
 }
-
 .social div {
   width: 100%;
   border-radius: 3px;
@@ -441,43 +396,28 @@ h3 {
   color: white;
   text-align: center;
 }
-
 .social div:hover {
   background-color: var(--laranja);
   transition: 0.3s;
 }
-
 .social .google-icon .facebook-icon {
   width: 50%;
 }
-
 div.google-icon > a.link-login,
 div.facebook-icon > a.link-login {
   color: white;
 }
-/* PÁGINA LOGIN */
-
-/******************** 
-* Página Sobre - Avaliar
-********************/
+/* Página Sobre */
 .sobre-container-img-txt {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   gap: 5%;
 }
 .sobre-container-img-txt img.sobre-img {
   width: 50%;
 }
-/* Section - Comodidades Adicionais */
-.container-comodidades {
-  display: flex;
-  justify-content: space-between;
-}
-/* Section - Diferenciais */
+/* Página Sobre */
+/* Diferenciais */
 .container-img {
-  display: flex;
-  justify-content: space-between;
   gap: 10px;
 }
 .img-hero {
@@ -495,29 +435,25 @@ div.facebook-icon > a.link-login {
   display: block;
   margin: 0 auto;
 }
-
 .legenda-diferenciais-style {
   width: 200px;
   height: 160px;
   text-align: justify;
   padding-top: 20px;
 }
-/* Section - Nosso time */
+/* Página Sobre */
+/* Nosso time */
 .container-time {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin: 0 0 50px;
 }
-
-/* Section - Ajuda */
+/* Página Sobre */
+/* Ajuda */
 .contato-ajuda {
   padding: 50px 0;
 }
 .container-contact {
   text-align: center;
 }
-
 .container-contact p {
   margin-top: 8px;
 }
@@ -529,118 +465,97 @@ div.facebook-icon > a.link-login {
 .container-contact button a {
   color: #ffffff;
 }
-
-/******************** 
-* Página Acomodações - Avaliar
-********************/
-
+/* Página Acomodações */
 .detalhes-apartamentos ul {
-  grid-template-columns: 1fr 1fr;
   list-style: inside;
   padding-bottom: 20px;
   font-size: 1rem;
-  font-family: "noto sans", sans-serif;
 }
 .detalhes-apartamentos ul li {
   padding: 5px 0;
 }
-
-/* Acomodações - Imagens */
-/* Passei pra flexbox ao invés de grid */
+.itens {
+  width: 50%;
+}
+/* Página Acomodações */
+/* Imagens */
 .acomodacoes-imagens {
   flex-wrap: wrap;
   padding-top: 20px;
   gap: 10px;
 }
-
-.acomodacoes-imagens .card img {
+.card img {
   width: 100%;
 }
-.acomodacoes-imagens .card {
+.card {
   width: 350px;
   background: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
 }
-/* Parte interna pode ser grid */
-.acomodacoes-imagens .card .inferior-text {
+.inferior-text {
   grid-template-rows: 200px 48px;
   padding: 20px;
 }
-.acomodacoes-imagens .card .inferior-text .inferior-text-button {
+.inferior-text-button {
   grid-template-columns: 125px 125px;
-  justify-content: space-between;
 }
-.acomodacoes-imagens
-  .card
-  .inferior-text
-  .inferior-text-button
-  .inferior-right {
+.inferior-right {
   background-color: var(--azul-claro);
   cursor: pointer;
 }
-
-.acomodacoes .card .inferior-text .inferior-text-button .inferior-right:hover {
+.inferior-right:hover {
   background-color: var(--azul-escuro);
 }
-.acomodacoes-imagens
-  .card
-  .inferior-text
-  .inferior-text-button
-  .inferior-right
-  a {
-  color: #ffffff;
-  font-family: "noto sans", sans-serif;
-}
-.acomodacoes-imagens
-  .card
-  .inferior-text
-  .inferior-text-button
-  .inferior-left
-  .text2 {
+.text2 {
   font-size: 0.8rem;
-  font-family: "noto sans", sans-serif;
   padding-bottom: 10px;
 }
-.acomodacoes-imagens
-  .card
-  .inferior-text
-  .inferior-text-button
-  .inferior-left
-  .text-valor {
+.text-valor {
   font-size: 1.2rem;
   font-weight: bold;
 }
-.inferior .inferior-left {
+.inferior-left {
   grid-template-rows: 1fr 1fr;
-  padding: 20px;
+  padding: 0 20px;
 }
+/* Página Acomodações */
 /* Produtos em Destaque */
 .produtos-destaque {
-  /* Passando para flexbox */
   padding: 100px 0;
 }
-.produtos-destaque .description {
-  flex-direction: column;
+.description {
   padding: 20px;
+  border-left: 5px solid #063f57;
 }
-.content {
-  justify-content: space-between;
-  margin-top: 50px;
+.description h2 {
+  padding: 0 0 20px;
 }
-.produtos-destaque .content-text div:nth-of-type(1) {
+.texto {
   font-size: 0.8rem;
 }
-.produtos-destaque .content-text div:nth-of-type(2) {
+.preco {
   font-size: 1.2rem;
   font-weight: bold;
 }
-
+/* Design Responsivo */
 /* Smartphone */
 @media (max-width: 414px) and (orientation: portrait) {
   /* Home */
   .titulo-h2 {
     text-align: center;
+  }
+  header {
+    height: 30vh;
+  }
+  .box-header {
+    height: 30vh;
+  }
+  .link-border-bottom {
+    border: none;
+  }
+  .link-border-all {
+    padding: 1.5rem;
   }
   .login,
   .navbar,
@@ -703,6 +618,12 @@ div.facebook-icon > a.link-login {
   /* Home */
   .titulo-h2 {
     text-align: center;
+  }
+  header {
+    height: 30vh;
+  }
+  .box-header {
+    height: 30vh;
   }
   .login-user,
   .navbar,
@@ -767,6 +688,12 @@ div.facebook-icon > a.link-login {
   /* Home */
   .titulo-h2 {
     text-align: center;
+  }
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
   }
   .login-user,
   .navbar,

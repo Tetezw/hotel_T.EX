@@ -12,9 +12,8 @@
     <title>Hotel Recanto dos Códigos</title>
   </head>
   <body>
-    <header class="bg-color-primary">
-      <!-- Adicionado o container de 80% -->
-      <div class="container">
+    <header>
+      <div class="container display-f flex-dc justify-csb box-header">
         <div class="login display-f align-c">
           <!-- esconder .hidden -->
           <div class="hidden">
@@ -44,7 +43,6 @@
           </div>
         </div>
 
-        <!-- Os links estavam fora das listas -->
         <nav class="navbar">
           <ul class="noto-sans display-f justify-c align-c">
             <li><a href="home.html">Home</a></li>
@@ -57,19 +55,20 @@
       </div>
     </header>
 
-    <main class="container">
-      <section>
-        <article>
+    <main>
+      <section class="box-sobre pb5">
+        <article class="container">
           <h2 class="titulo-h2 courier">
-            <a href="sobre.html">SOBRE O NOSSO HOTEL</a>
+            <a class="link-border-bottom" href="sobre.html"
+              >SOBRE O NOSSO HOTEL</a
+            >
           </h2>
 
-          <div class="img-sobre display-f justify-c">
+          <div class="img-sobre display-f justify-c pt3">
             <img
               src="https://via.placeholder.com/550x700"
               alt="FOTO DO HOTEL"
             />
-            <!-- CHAMADA DENTRO DA FOTO DO HOTEL -->
             <div class="noto-sans">
               <p class="paragrafo">
                 O Hotel Recanto dos Códigos é o lugar perfeito para aqueles que
@@ -105,65 +104,74 @@
                 de uma estadia relaxante e rejuvenescedora neste oásis de
                 bem-estar natural e praiano.
               </p>
-              <a href="sobre.html">Saiba mais</a>
+              <a class="saiba-mais" href="sobre.html">Saiba mais</a>
             </div>
           </div>
         </article>
+      </section>
 
-        <!-- NOSSAS ACOMODAÇÕES-->
-        <article>
+      <section class="box-acomodacoes pb5">
+        <article class="container">
           <div class="cards-quartos">
             <div class="courier">
-              <h2 class="titulo-h2 center">
-                <a href="acomodacoes.html">CONFIRA NOSSAS ACOMODAÇÕES</a>
+              <h2 class="titulo-h2">
+                <a class="link-border-bottom" href="acomodacoes.html"
+                  >CONFIRA NOSSAS ACOMODAÇÕES</a
+                >
               </h2>
             </div>
-            <div class="quartos display-f align-c">
+            <div class="quartos display-f justify-csb align-c pt3">
               <img
-                src="https://via.placeholder.com/380x200"
+                src="https://via.placeholder.com/380x500"
                 alt="Quarto Individual"
               />
               <img
-                src="https://via.placeholder.com/380x200"
+                src="https://via.placeholder.com/380x500"
                 alt="Quarto duplo"
               />
               <img
-                src="https://via.placeholder.com/380x200"
+                src="https://via.placeholder.com/380x500"
                 alt="Suite master"
               />
             </div>
           </div>
         </article>
+      </section>
 
-        <!-- Conheça a Ilha-->
-        <article>
-          <div class="ilha">
-            <div class="courier">
-              <h2 class="titulo-h2 center"><a href="#">CONHEÇA A ILHA</a></h2>
-            </div>
-            <div class="foto-ilha display-f">
+      <section class="box-ilha">
+        <article class="container">
+          <div class="ilha display-f justify-c align-c">
+            <h2 class="titulo-h2 courier">
+              <a class="link-border-all" href="#">CONHEÇA A ILHA</a>
+            </h2>
+
+            <!--
+            <div class="foto-ilha display-f pt3">
               <img src="images/ilha-satelite.png" alt="foto ilha" />
             </div>
+            -->
           </div>
         </article>
+      </section>
 
-        <!-- BOTÃO CONHEÇA MAIS SOBRE NOSSOS SERVIÇOS -->
-        <article>
+      <section class="box-action">
+        <article class="container">
           <div class="btn-conheca-mais noto-sans display-f justify-c">
             <a href="#">
               <button>Conheça mais sobre nossos serviços</button>
             </a>
           </div>
         </article>
+      </section>
 
-        <!-- FOTOS OCUPAM 50% DA LARGURA HORIZONTAL-->
-        <article>
+      <section class="box-gastronomia pb5">
+        <article class="container">
           <div class="gastronomia">
             <h2 class="titulo-h2 courier">
-              <a href="#">GASTRONOMIA</a>
+              <a href="#" class="link-border-bottom">GASTRONOMIA</a>
             </h2>
-            <div class="foto-texto-gastronomia display-f justify-c">
-              <img src="images/Gastronomy-2.jpg" alt="FOTO PRATO" />
+            <div class="foto-texto-gastronomia display-f justify-c pt3">
+              <img src="https://via.placeholder.com/380x500" alt="FOTO PRATO" />
               <div class="texto-gastronomia noto-sans">
                 <p class="paragrafo">
                   A gastronomia no Hotel Recanto dos Códigos é bastante
@@ -190,7 +198,7 @@
                   queijos. Há também uma área de churrasco ao ar livre, onde os
                   hóspedes podem preparar suas próprias refeições.
                 </p>
-                <a href="#">Saiba mais</a>
+                <a class="saiba-mais" href="#">Saiba mais</a>
               </div>
             </div>
           </div>
@@ -199,9 +207,9 @@
     </main>
 
     <footer class="bg-color-primary">
-      <div class="container box-footer display-f">
-        <div class="column-footer display-f align-c">
-          <div class="telefone-endereco">
+      <div class="container box-footer display-f flex-dc">
+        <div class="column-footer display-f align-c justify-csb">
+          <div class="telefone-endereco flex-dc">
             <h3 class="mb1">Contato</h3>
             <div class="telefone display-f">
               <a href="tel:7133650000">
@@ -214,7 +222,7 @@
             </div>
           </div>
 
-          <div class="redes-sociais display-f">
+          <div class="redes-sociais display-f flex-dc">
             <h3 class="mb1">Siga-nos nas Redes</h3>
             <div>
               <a href="mailto:reservas@hotel.com.br">
@@ -231,15 +239,15 @@
             </div>
           </div>
 
-          <div class="suporte display-f">
+          <div class="suporte display-f flex-dc">
             <h3 class="mb1">Suporte</h3>
             <a href="#"> Deixe aqui sua dúvida </a>
           </div>
 
           <div class="links">
             <h3 class="mb1">Links</h3>
-            <nav class="navbar-footer display-f">
-              <ul class="noto-sans">
+            <nav class="navbar-footer">
+              <ul class="noto-sans display-f flex-dc">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="acomodacoes.html">Quartos</a></li>

@@ -13,10 +13,9 @@
   </head>
 
   <body>
-    <header class="bg-color-primary">
-      <!-- Adicionado o container de 80% -->
-      <div class="container">
-        <div class="login">
+    <header>
+      <div class="container display-f flex-dc justify-csb box-header">
+        <div class="login display-f align-c">
           <!-- esconder .hidden -->
           <div class="hidden">
             <a href="login.html">
@@ -28,7 +27,7 @@
             <button class="btn-white">Sair</button>
           </div>
         </div>
-        <div class="header-logo-slogan">
+        <div class="header-logo-slogan display-f align-c">
           <div class="img-logo">
             <img src="images/Logo-Branca.png" alt="Logo Hotel" width="200" />
           </div>
@@ -39,11 +38,14 @@
               com a natureza
             </h1>
           </div>
+
+          <div class="responsive-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
 
-        <!-- Os links estavam fora das listas -->
         <nav class="navbar">
-          <ul class="noto-sans">
+          <ul class="noto-sans display-f justify-c align-c">
             <li><a href="home.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="acomodacoes.html">Quartos</a></li>
@@ -53,7 +55,6 @@
         </nav>
       </div>
     </header>
-
     <main>
       <div class="container">
         <h2 class="titulo-h2">Formulário de Contato</h2>
@@ -104,11 +105,11 @@
     </main>
 
     <footer class="bg-color-primary">
-      <div class="container box-footer">
-        <div class="column-footer">
-          <div class="telefone-endereco">
+      <div class="container box-footer display-f flex-dc">
+        <div class="column-footer display-f align-c justify-csb">
+          <div class="telefone-endereco flex-dc">
             <h3 class="mb1">Contato</h3>
-            <div class="telefone">
+            <div class="telefone display-f">
               <a href="tel:7133650000">
                 <p>(71) 3365-0000</p>
               </a>
@@ -119,7 +120,7 @@
             </div>
           </div>
 
-          <div class="redes-sociais">
+          <div class="redes-sociais display-f flex-dc">
             <h3 class="mb1">Siga-nos nas Redes</h3>
             <div>
               <a href="mailto:reservas@hotel.com.br">
@@ -136,7 +137,7 @@
             </div>
           </div>
 
-          <div class="suporte">
+          <div class="suporte display-f flex-dc">
             <h3 class="mb1">Suporte</h3>
             <a href="#"> Deixe aqui sua dúvida </a>
           </div>
@@ -144,7 +145,7 @@
           <div class="links">
             <h3 class="mb1">Links</h3>
             <nav class="navbar-footer">
-              <ul class="noto-sans">
+              <ul class="noto-sans display-f flex-dc">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="acomodacoes.html">Quartos</a></li>
@@ -155,7 +156,7 @@
           </div>
         </div>
 
-        <div class="direitos">
+        <div class="direitos display-f justify-c">
           <span> Hotel Recanto dos Códigos &copy; 2022 </span>
         </div>
       </div>

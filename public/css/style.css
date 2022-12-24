@@ -289,125 +289,84 @@ footer {
   width: 50%;
   align-self: flex-start;
 }
-/* Página Login */
-.container-form {
-  padding: 30px;
-  background-color: var(--azul-claro);
-}
-form {
-  margin: 0 auto;
-  height: auto;
-  width: 400px;
-  background-color: var(--azul-escuro);
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 0px 30px 0px var(--azul-claro);
-  padding: 50px 35px;
-}
-form * {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 0.5px;
-  outline: none;
-  border: none;
-}
-.link-login:hover {
-  text-decoration: none;
-}
-form h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 42px;
-  text-align: center;
-}
-label {
-  display: block;
-  margin-top: 30px;
+
+.texto-gastronomia {
   font-size: 1.2rem;
-  font-weight: 700;
+  text-indent: 20px;
+  text-align: justify;
+  margin: 10px 0 10px 0;
 }
-input[type="text"],
-input[type="password"] {
-  display: block;
-  height: 50px;
+
+.texto-gastronomia p {
+  margin-bottom: 20px;
+}
+
+/* página sobre */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-div {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about img {
   width: 100%;
-  background-color: white;
-  border-radius: 3px;
-  padding: 0 10px;
+}
+
+.about p {
+  margin: 30px;
+}
+
+.container-contact {
+  width: 80%;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.container-contact h4 {
+  margin: 10px;
+}
+.container-contact p {
   margin-top: 8px;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: grey;
 }
-::placeholder {
-  color: gray;
-}
-input[type="checkbox"] {
-  margin: 0px 2px 0px 2px;
-  cursor: pointer;
-  transform: scale(1.5);
-}
-.lembrar-esqueci {
-  margin: 15px 0px 15px 0px;
-}
-span {
-  font-weight: 400;
-}
-.esqueci-senha {
-  font-size: 0.8rem;
-  margin-left: 60px;
-}
-.esqueci-senha:hover {
-  color: var(--azul-claro);
-  transition: 0.2s;
-}
-.btn-entrar {
-  width: 100%;
-  background-color: #ffffff;
-  color: #080710;
-  padding: 15px 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.btn-entrar:hover {
-  background-color: var(--laranja);
-  transition: 0.3s;
+.container-contact button {
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 150px;
+  height: 30px;
   color: white;
+  font-weight: bold;
+  background-color: #063f57;
 }
-h3 {
-  padding-top: 10px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.social {
-  margin-top: 10px;
-  cursor: pointer;
-}
-.social div {
-  width: 100%;
-  border-radius: 3px;
-  padding: 10px;
-  margin: 3px;
-  background-color: var(--azul-claro);
+.container-contact button:hover {
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  width: 150px;
+  height: 30px;
   color: white;
-  text-align: center;
+  font-weight: bold;
+  background-color: #176485;
 }
-.social div:hover {
-  background-color: var(--laranja);
-  transition: 0.3s;
+
+/******************************************************************************** Página Sobre **************************************************************************************************/
+
+/* Títulos */
+.titulo-style {
+  font-family: Courier Prime;
 }
-.social .google-icon .facebook-icon {
-  width: 50%;
+
+/* Container Principal */
+.sobre-container {
+  width: 80%;
+  margin: auto;
 }
-div.google-icon > a.link-login,
-div.facebook-icon > a.link-login {
-  color: white;
-}
-/* Página Sobre */
+/*Section - Sobre o hotel*/
 .sobre-container-img-txt {
   align-items: flex-start;
   gap: 5%;
@@ -538,6 +497,437 @@ div.facebook-icon > a.link-login {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
+/* PÁGINA LOGIN */
+.container-form-image {
+  padding: 30px;
+  width: auto;
+}
+
+.container-login {
+  width: 50%;
+  display: inline-block;
+}
+
+.container-img-login {
+  width: auto;
+  display: inline-block;
+}
+
+.container-img-login > img {
+  border-radius: 3px;
+}
+
+.form-login {
+  margin: 0 auto;
+  height: auto;
+  width: 400px;
+  background-color: var(--azul-escuro);
+  border-radius: 3px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 0px var(--azul-claro);
+  padding: 50px 35px;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.link-login:hover {
+  text-decoration: none;
+}
+
+.form-login > h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 80%;
+  border-bottom: 3px solid var(--laranja);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.form-login > label {
+  display: block;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: grey;
+  border: none;
+  outline: none;
+}
+
+.form-login > input::placeholder {
+  color: gray;
+}
+
+input[type="checkbox"] {
+  margin: 0px 2px 0px 2px;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.lembrar-esqueci {
+  margin: 15px 0px 30px 0px;
+}
+
+.esqueci-senha {
+  font-size: 0.8rem;
+  margin-left: 60px;
+  font-weight: 400;
+  color: white;
+}
+
+.esqueci-senha:hover {
+  color: var(--azul-claro);
+  transition: 0.2s;
+}
+
+.btn-entrar {
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.btn-entrar:hover {
+  background-color: var(--laranja);
+  transition: 0.3s;
+  color: white;
+}
+
+.form-login > h3 {
+  padding-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-login {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.social-login div {
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 3px;
+  background-color: var(--azul-claro);
+  color: white;
+  text-align: center;
+}
+
+.social-login div:hover {
+  background-color: var(--laranja);
+  transition: 0.3s;
+}
+
+.social-login .google-icon .facebook-icon {
+  width: 50%;
+}
+
+div.google-icon > a.link-login,
+div.facebook-icon > a.link-login {
+  color: white;
+  font-weight: 700;
+}
+
+/* PÁGINA CONTATO */
+.container-contato {
+  padding: 30px;
+}
+
+.form-contato {
+  width: 40%;
+  height: auto;
+  font-size: 14px;
+  background: var(--azul-escuro);
+  border-radius: 8px;
+  margin: 0 auto;
+  box-shadow: 0 0 40px -10px var(--azul-escuro);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.titulo-form-contato {
+  text-align: center;
+  color: var(--azul-claro);
+  margin-bottom: 30px;
+}
+
+.titulo-form-contato > h2 {
+  display: flex;
+  text-align: center;
+}
+
+.form-contato > h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 60%;
+  border-bottom: 3px solid var(--laranja);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.form-contato > p > input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 0.9rem;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-radius: 3px;
+  outline: none;
+}
+
+.form-contato > p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.form-contato > p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+}
+
+.telefone-contato {
+  width: 49%;
+  display: inline-block;
+}
+
+.assunto-contato {
+  width: 50%;
+  display: inline-block;
+}
+
+.assunto-contato > select {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.comentários-contato > textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid var(--azul-claro);
+  border-radius: 3px;
+  resize: none;
+  outline: none;
+}
+
+.btn-enviar-contato {
+  width: 100px;
+  height: 50px;
+  margin-top: 28px;
+  border: none;
+  background-color: var(--azul-claro);
+  color: white;
+  padding: 16px 0 16px 0;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-enviar-contato:hover {
+  background-color: var(--laranja);
+  transition: 0.2s;
+  box-shadow: 10px 10px 40px -14px var(--azul-escuro);
+}
+
+div.linha-final {
+  text-align: center;
+  width: 60%;
+  height: 50px;
+  padding: 16px 0 16px 0;
+  margin-top: 28px;
+  float: right;
+  background: var(--azul-claro);
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 40px -14px var(--azul-escuro);
+}
+
+div.linha-final > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* PÁGINA RESERVA */
+/* página de Formulário de Reserva */
+.reserva-titulo {
+  font-size: 32px;
+  color: var(--azul-escuro);
+  margin-top: 32px;
+}
+
+.reserva {
+  border: none;
+}
+
+.reserva form {
+  margin: 30px 0 30px 0px;
+  width: 100%;
+  color: #080710;
+  padding: 20px 20px;
+}
+
+.reserva ul {
+  color: #080710;
+}
+
+.reserva ul li {
+  margin: auto;
+  display: flex;
+}
+
+.reserva ul li label {
+  margin: 0px 0 -20px 0;
+  font-size: 14px;
+}
+
+.reserva ul li input {
+  margin-left: 10px;
+  color: #080710;
+}
+
+.novoform input[type="number"],
+input[type="date"] {
+  background-color: white;
+  border-radius: 3px;
+  color: grey;
+}
+
+/*Seção dos quartos na página reserva*/
+.quartos-resumo {
+  position: relative;
+}
+
+.todos-os-quartos-reserva {
+  width: 63%;
+  position: relative;
+}
+
+.quarto-reserva {
+  background: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.quarto-reserva .img {
+  margin: 15px;
+}
+
+.cada-quarto-reserva h3 {
+  font-size: 1.5rem;
+  font-family: "Courier Prime", monospace;
+  font-weight: 800;
+  margin: 10px 0;
+  text-align: justify;
+  white-space: wrap;
+}
+
+.cada-quarto-reserva p {
+  text-align: justify;
+  margin: 0 10px 0 0;
+  white-space: wrap;
+}
+
+.text-valor {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.radio-reserva {
+  margin: -15px 0 20px 0;
+  accent-color: var(--azul-escuro);
+}
+
+/* Caixa Flutuante de Resumo reserva */
+.resumo-reserva {
+  width: 33%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-color: var(--azul-escuro);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff1a;
+  box-shadow: 0px 0px 15px 0px var(--azul-claro);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 50px;
+}
+
+.resumo-reserva h2 {
+  margin-bottom: 15px;
+}
+
+.resumo-box {
+  background-color: #ffffff;
+  opacity: 90%;
+  width: auto;
+  color: #063f57;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.resumo-reserva a {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.resumo-reserva button {
+  font-family: "noto sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin: 30px auto 0px auto;
+  padding: 10px;
+}
+
+.resumo-reserva p {
+  margin: 30px 0;
+  font-weight: bold;
+  text-align: center;
+  border: solid 2px var(--azul-claro);
+  padding: 2px;
+}
+
 /* Design Responsivo */
 /* Smartphone */
 @media (max-width: 414px) and (orientation: portrait) {

@@ -290,73 +290,15 @@ footer {
   width: 50%;
   align-self: flex-start;
 }
-
 .texto-gastronomia {
   font-size: 1.2rem;
   text-indent: 20px;
   text-align: justify;
   margin: 10px 0 10px 0;
 }
-
 .texto-gastronomia p {
   margin-bottom: 20px;
 }
-
-/* página sobre */
-.about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.about-div {
-  width: 300px;
-  height: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.about img {
-  width: 100%;
-}
-
-.about p {
-  margin: 30px;
-}
-
-.container-contact {
-  width: 80%;
-  display: block;
-  text-align: center;
-  margin: auto;
-}
-
-.container-contact h4 {
-  margin: 10px;
-}
-.container-contact p {
-  margin-top: 8px;
-}
-.container-contact button {
-  margin: 10px;
-  border-radius: 10px 10px 10px 10px;
-  width: 150px;
-  height: 30px;
-  color: white;
-  font-weight: bold;
-  background-color: #063f57;
-}
-.container-contact button:hover {
-  margin: 10px;
-  border-radius: 10px 10px 10px 10px;
-  width: 150px;
-  height: 30px;
-  color: white;
-  font-weight: bold;
-  background-color: #176485;
-}
-
-/******************************************************************************** Página Sobre **************************************************************************************************/
-
 /* Títulos */
 .titulo-style {
   font-family: Courier Prime;
@@ -381,13 +323,12 @@ footer {
   gap: 10px;
 }
 .img-hero {
-  padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
 .img-hero .img-hero-title {
   text-align: center;
-  padding-top: 20px;
+  padding: 20px 5px 0;
 }
 .img-style {
   padding: 5%;
@@ -397,9 +338,9 @@ footer {
 }
 .legenda-diferenciais-style {
   width: 200px;
-  height: 160px;
+  height: auto;
   text-align: justify;
-  padding-top: 20px;
+  padding: 20px 20px 0;
 }
 /* Página Sobre */
 /* Nosso time */
@@ -1000,7 +941,6 @@ input[type="date"] {
     text-align: justify;
     padding: 20px;
   }
-  /* Section - Nosso time */
   .container-time {
     gap: 20px;
   }
@@ -1070,7 +1010,6 @@ input[type="date"] {
     text-align: justify;
     padding: 20px;
   }
-  /* Section - Nosso time */
   .container-time {
     gap: 20px;
   }
@@ -1129,6 +1068,26 @@ input[type="date"] {
     height: 20vh;
     justify-content: center;
   }
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    width: 100%;
+    height: 160px;
+    text-align: justify;
+    padding: 20px;
+  }
+  .container-time {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 1194px) and (orientation: landscape) {
@@ -1153,5 +1112,25 @@ input[type="date"] {
   .box-header {
     height: 20vh;
     justify-content: center;
+  }
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    width: 100%;
+    height: 160px;
+    text-align: justify;
+    padding: 20px;
+  }
+  .container-time {
+    gap: 20px;
   }
 }

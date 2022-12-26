@@ -145,6 +145,7 @@ header {
 }
 .box-header {
   height: 90vh;
+  justify-content: space-between;
 }
 .login {
   justify-content: flex-end;
@@ -160,7 +161,7 @@ header {
 .responsive-menu {
   display: none;
 }
-.fa-bars {
+.responsive-menu .fa-bars {
   color: #ffffff;
   font-size: 1.5rem;
 }
@@ -936,10 +937,11 @@ input[type="date"] {
     text-align: center;
   }
   header {
-    height: 30vh;
+    height: 20vh;
   }
   .box-header {
-    height: 30vh;
+    height: 20vh;
+    justify-content: center;
   }
   .link-border-bottom {
     border: none;
@@ -1010,10 +1012,11 @@ input[type="date"] {
     text-align: center;
   }
   header {
-    height: 30vh;
+    height: 20vh;
   }
   .box-header {
-    height: 30vh;
+    height: 20vh;
+    justify-content: center;
   }
   .login-user,
   .navbar,
@@ -1084,6 +1087,7 @@ input[type="date"] {
   }
   .box-header {
     height: 20vh;
+    justify-content: center;
   }
   .login-user,
   .navbar,
@@ -1118,6 +1122,13 @@ input[type="date"] {
     margin-bottom: 10px;
   }
   /* Sobre */
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1194px) and (orientation: landscape) {
@@ -1134,5 +1145,13 @@ input[type="date"] {
   }
   .responsive-menu {
     display: flex;
+  }
+  /* Sobre */
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
+    justify-content: center;
   }
 }

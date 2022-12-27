@@ -410,11 +410,11 @@ footer {
 }
 .text2 {
   font-size: 0.8rem;
-  padding-bottom: 10px;
 }
-.text-valor {
+.text-valor-acomodacoes {
   font-size: 1.2rem;
   font-weight: bold;
+  margin-top: 0;
 }
 .inferior-left {
   grid-template-rows: 1fr 1fr;

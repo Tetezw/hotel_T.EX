@@ -761,11 +761,10 @@ div.linha-final > a {
 }
 
 .reserva ul li label {
-  margin: 0px 0 -20px 0;
+  margin: 0 0 0 5px;
   font-size: 14px;
   color: #fff;
   font-weight: bold;
-  margin-top: 20px;
 }
 
 .reserva ul li input {

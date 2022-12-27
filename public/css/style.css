@@ -943,6 +943,20 @@ input[type="date"] {
   .container-time {
     gap: 20px;
   }
+
+  /* Acomodações */
+
+  .produtos-destaque {
+    flex-direction: column;
+  }
+
+  .produtos-destaque img {
+    width: 100%;
+  }
+
+  .description {
+    border-right: 5px solid #063f57;
+  }
 }
 
 @media (max-width: 915px) and (orientation: landscape) {
@@ -1011,6 +1025,20 @@ input[type="date"] {
   }
   .container-time {
     gap: 20px;
+  }
+
+  /* Acomodações */
+
+  .produtos-destaque {
+    flex-direction: column;
+  }
+
+  .produtos-destaque img {
+    width: 100%;
+  }
+
+  .description {
+    border-right: 5px solid #063f57;
   }
 }
 
@@ -1087,6 +1115,21 @@ input[type="date"] {
   .container-time {
     gap: 20px;
   }
+
+  .produtos-destaque {
+    flex-direction: column;
+  }
+
+  .produtos-destaque img {
+    width: 100%;
+  }
+
+  .description {
+    border-top: 5px solid #063f57;
+    border-left: none;
+  }
+
+  
 }
 
 @media (max-width: 1194px) and (orientation: landscape) {

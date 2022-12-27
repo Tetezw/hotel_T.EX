@@ -77,6 +77,7 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   padding: 5rem 0 2rem 0;
+  text-transform: uppercase;
 }
 .titulo-h3 {
   font-size: 1.5rem;
@@ -88,6 +89,8 @@ body {
 .paragrafo {
   font-size: 1.1rem;
   margin: 10px 0 10px 0;
+  text-align: justify;
+  text-indent: 20px;
 }
 .center {
   text-align: center;
@@ -233,7 +236,6 @@ footer {
   width: 100%;
 }
 .img-sobre img {
-  width: 300px;
   margin-right: 30px;
   box-shadow: 0 0 10px #ccc;
 }
@@ -290,12 +292,7 @@ footer {
   width: 50%;
   align-self: flex-start;
 }
-.texto-gastronomia {
-  font-size: 1.2rem;
-  text-indent: 20px;
-  text-align: justify;
-  margin: 10px 0 10px 0;
-}
+
 .texto-gastronomia p {
   margin-bottom: 20px;
 }
@@ -377,6 +374,9 @@ footer {
 }
 .itens {
   width: 50%;
+}
+.inferior-text-top p {
+  text-align: justify;
 }
 /* Página Acomodações */
 /* Imagens */
@@ -734,12 +734,20 @@ div.linha-final > a {
 
 .reserva {
   border: none;
+  background-color: var(--azul-escuro);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff1a;
+  box-shadow: 0px 0px 15px 0px var(--azul-claro);
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+  margin: 20px 0;
 }
 
 .reserva form {
-  margin: 30px 0 30px 0px;
+  margin: 10px 0 10px 0px;
   width: 100%;
-  color: #080710;
   padding: 20px 20px;
 }
 
@@ -753,8 +761,10 @@ div.linha-final > a {
 }
 
 .reserva ul li label {
-  margin: 0px 0 -20px 0;
+  margin: 0 0 0 5px;
   font-size: 14px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .reserva ul li input {
@@ -781,12 +791,13 @@ input[type="date"] {
 
 .quarto-reserva {
   background: #f8f8f8;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #00000033;
   margin-bottom: 15px;
+  padding: 15px;
 }
 
-.quarto-reserva .img {
-  margin: 15px;
+.img-reserva + div {
+  margin-left: 15px;
 }
 
 .cada-quarto-reserva h3 {
@@ -804,13 +815,13 @@ input[type="date"] {
   white-space: wrap;
 }
 
-.text-valor {
+.text-valor-reserva {
   font-weight: bold;
   margin-top: 20px;
 }
 
 .radio-reserva {
-  margin: -15px 0 20px 0;
+  margin: 20px 0 20px 0;
   accent-color: var(--azul-escuro);
 }
 
@@ -865,7 +876,7 @@ input[type="date"] {
   margin: 30px 0;
   font-weight: bold;
   text-align: center;
-  border: solid 2px var(--azul-claro);
+  border: solid 2px var(--laranja);
   padding: 2px;
 }
 
@@ -940,10 +951,83 @@ input[type="date"] {
     text-align: justify;
     padding: 20px;
   }
+
   .container-time {
     gap: 20px;
   }
 
+  /*Página reserva*/
+  .reserva form {
+    padding: 5px 10px;
+  }
+
+  .reserva form ul {
+    flex-direction: column;
+    padding: 2px;
+  }
+
+  .reserva form ul li {
+    padding: 5px 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .reserva input#adultos {
+    width: 42%;
+  }
+
+  .todos-os-quartos-reserva {
+    width: 100%;
+  }
+
+  .quarto-reserva {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .img-reserva{
+    margin: 0 auto;
+  }
+
+  .resumo-reserva {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+  }
+
+  .resumo-reserva h2 {
+    margin-bottom: 2px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .resumo-box {
+    padding: 2px;
+    font-size: smaller;
+  }
+
+  .resumo-reserva a{
+    font-size: smaller;
+  }
+
+  .resumo-reserva p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    color: var(--azul-escuro);
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+  }
+
+  .resumo-reserva button {
+    margin: 8px auto 2px auto;
+    padding: 5px;
+    font-size: 1rem;
+
+  }
   /* Acomodações */
 
   .produtos-destaque {
@@ -1023,9 +1107,71 @@ input[type="date"] {
     text-align: justify;
     padding: 20px;
   }
-  .container-time {
-    gap: 20px;
-  }
+
+  /* Section - Nosso time */
+ .container-time {
+   gap: 20px;
+ }
+
+    /*Página reserva*/
+    .todos-os-quartos-reserva {
+      width: 100%;
+    }
+  
+    .quarto-reserva {
+      padding: 10px;
+    }
+  
+    .img-reserva {
+      margin: 0 15px;
+    }
+  
+    .resumo-reserva {
+      position: sticky;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 5px 10px;
+    }
+  
+    .resumo-reserva h2 {
+      margin-bottom: 2px;
+      font-size: 1rem;
+      position: relative;
+    }
+  
+    .resumo-box {
+      padding: 2px;
+      font-size: smaller;
+    }
+
+    .resumo-box ul div {
+      display: flex;
+    }
+
+    .resumo-box ul div li {
+      flex-basis: 160px;
+    }
+  
+    .resumo-reserva a {
+      font-size: smaller;
+    }
+  
+    .resumo-reserva p {
+      margin: 5px 0;
+      font-size: 0.8rem;
+      color: var(--azul-escuro);
+      position: absolute;
+      right: 5%;
+      bottom: 50%;
+    }
+  
+    .resumo-reserva button {
+      margin: 8px auto 2px auto;
+      padding: 5px;
+      font-size: 1rem;
+    }
 
   /* Acomodações */
 

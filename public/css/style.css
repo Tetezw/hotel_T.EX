@@ -669,6 +669,7 @@ div.facebook-icon > a.link-login {
   width: 100%;
   height: 50px;
   border-radius: 3px;
+  padding: 10px;
   cursor: pointer;
   border: none;
   outline: none;
@@ -1047,10 +1048,7 @@ input[type="date"] {
     border-right: 5px solid #063f57;
   }
   /* Contato */
-  .form-contato,
-  .form-contato p,
-  .form-contato button,
-  .linha-final {
+  .container-contato > .form-contato {
     width: 100%;
   }
   .form-contato h2 {
@@ -1059,8 +1057,20 @@ input[type="date"] {
   .linha-final {
     display: block;
   }
-  div.linha-final a span {
-    display: none;
+
+  /* LOGIN RESP */
+  .container-form-image {
+    padding: 30px 0;
+    font-size: .8rem;
+  }
+
+  .form-login {
+    width: 100%;
+  }
+
+  .esqueci-senha {
+    font-size: .6rem;
+    margin-left: 37%;
   }
 }
 
@@ -1224,6 +1234,15 @@ input[type="date"] {
   div.linha-final a span {
     display: none;
   }
+
+  /* LOGIN RESP */
+  .container-login > .form-login {
+    margin: 0 auto;
+  }
+
+  .container-img-login > img {
+    display: none ;
+  }
 }
 
 /* Tablet */
@@ -1314,7 +1333,9 @@ input[type="date"] {
   }
 
   /* Contato */
-  .form-contato,
+  .form-contato {
+    width: 80%;
+  }
   .form-contato p,
   .form-contato button,
   .linha-final {
@@ -1327,6 +1348,15 @@ input[type="date"] {
     display: block;
   }
   div.linha-final a span {
+    display: none;
+  }
+
+  /* LOGIN RESP */
+  .container-login {
+    width: 100%;
+  }
+
+  .container-img-login>img {
     display: none;
   }
 }
@@ -1376,11 +1406,8 @@ input[type="date"] {
   }
 
   /* Contato */
-  .form-contato,
-  .form-contato p,
-  .form-contato button,
-  .linha-final {
-    width: 100%;
+  .form-contato {
+    width: 80%;
   }
   .form-contato h2 {
     font-size: 1.2rem;
@@ -1388,7 +1415,13 @@ input[type="date"] {
   .linha-final {
     display: block;
   }
-  div.linha-final a span {
-    display: none;
+
+  /* LOGIN RESP */
+  .container-login {
+    width: 100%;
+  }
+
+  .form-login {
+    margin-left: 0;
   }
 }

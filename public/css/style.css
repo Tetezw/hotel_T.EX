@@ -340,7 +340,36 @@ footer {
   padding: 20px 20px 0;
 }
 /* Página Sobre */
+/* Nosso Time */
+.img-funcionarios {
+  padding: 10px;
+  background-color: #ffffff;
+}
+.container-time figcaption {
+  text-transform: uppercase;
+  color: var(--laranja);
+  font-weight: bold;
+}
+/* Página Sobre */
+.box-sobre-hotel {
+  padding-bottom: 100px;
+}
+.comodidades {
+  background: #f1f1f1;
+  padding-bottom: 100px;
+}
+.comodidades-img {
+  padding: 10px;
+  background-color: #ffffff;
+}
+.box-diferenciais {
+  padding-bottom: 100px;
+}
 /* Nosso time */
+.box-time {
+  background-color: #f1f1f1;
+  padding-bottom: 50px;
+}
 .container-time {
   margin: 0 0 50px;
 }
@@ -364,6 +393,9 @@ footer {
   color: #ffffff;
 }
 /* Página Acomodações */
+.acomodacoes {
+  padding-bottom: 50px;
+}
 .detalhes-apartamentos ul {
   list-style: inside;
   padding-bottom: 20px;
@@ -422,6 +454,9 @@ footer {
 }
 /* Página Acomodações */
 /* Produtos em Destaque */
+.box-destaque {
+  background-color: #f1f1f1;
+}
 .produtos-destaque {
   padding: 100px 0;
 }

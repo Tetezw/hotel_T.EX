@@ -832,6 +832,15 @@ input[type="date"] {
   accent-color: var(--azul-escuro);
 }
 
+.reservar {
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked + div {
+  background-color: #063f57;
+  color: #ffffff;
+}
+
 /* Caixa Flutuante de Resumo reserva */
 .resumo-reserva {
   width: 33%;
@@ -1061,7 +1070,7 @@ input[type="date"] {
   /* LOGIN RESP */
   .container-form-image {
     padding: 30px 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .form-login {
@@ -1069,7 +1078,7 @@ input[type="date"] {
   }
 
   .esqueci-senha {
-    font-size: .6rem;
+    font-size: 0.6rem;
     margin-left: 37%;
   }
 }
@@ -1241,7 +1250,7 @@ input[type="date"] {
   }
 
   .container-img-login > img {
-    display: none ;
+    display: none;
   }
 }
 
@@ -1356,7 +1365,7 @@ input[type="date"] {
     width: 100%;
   }
 
-  .container-img-login>img {
+  .container-img-login > img {
     display: none;
   }
 }

@@ -669,7 +669,6 @@ div.facebook-icon > a.link-login {
   width: 100%;
   height: 50px;
   border-radius: 3px;
-  text-align: center;
   cursor: pointer;
   border: none;
   outline: none;
@@ -685,6 +684,10 @@ div.facebook-icon > a.link-login {
   border-radius: 3px;
   resize: none;
   outline: none;
+}
+
+.send-message {
+  gap: 5px;
 }
 
 .btn-enviar-contato {
@@ -708,11 +711,10 @@ div.facebook-icon > a.link-login {
 
 div.linha-final {
   text-align: center;
-  width: 60%;
+  width: 100%;
   height: 50px;
   padding: 16px 0 16px 0;
   margin-top: 28px;
-  float: right;
   background: var(--azul-claro);
   color: #fff;
   border-radius: 3px;
@@ -722,6 +724,10 @@ div.linha-final {
 div.linha-final > a {
   text-decoration: none;
   color: white;
+}
+
+div.linha-final a i {
+  margin-right: 8px;
 }
 
 /* PÁGINA RESERVA */
@@ -985,7 +991,7 @@ input[type="date"] {
     padding: 10px;
   }
 
-  .img-reserva{
+  .img-reserva {
     margin: 0 auto;
   }
 
@@ -1009,7 +1015,7 @@ input[type="date"] {
     font-size: smaller;
   }
 
-  .resumo-reserva a{
+  .resumo-reserva a {
     font-size: smaller;
   }
 
@@ -1026,7 +1032,6 @@ input[type="date"] {
     margin: 8px auto 2px auto;
     padding: 5px;
     font-size: 1rem;
-
   }
   /* Acomodações */
 
@@ -1040,6 +1045,22 @@ input[type="date"] {
 
   .description {
     border-right: 5px solid #063f57;
+  }
+  /* Contato */
+  .form-contato,
+  .form-contato p,
+  .form-contato button,
+  .linha-final {
+    width: 100%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+  div.linha-final a span {
+    display: none;
   }
 }
 
@@ -1109,69 +1130,69 @@ input[type="date"] {
   }
 
   /* Section - Nosso time */
- .container-time {
-   gap: 20px;
- }
+  .container-time {
+    gap: 20px;
+  }
 
-    /*Página reserva*/
-    .todos-os-quartos-reserva {
-      width: 100%;
-    }
-  
-    .quarto-reserva {
-      padding: 10px;
-    }
-  
-    .img-reserva {
-      margin: 0 15px;
-    }
-  
-    .resumo-reserva {
-      position: sticky;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      margin-bottom: 20px;
-      padding: 5px 10px;
-    }
-  
-    .resumo-reserva h2 {
-      margin-bottom: 2px;
-      font-size: 1rem;
-      position: relative;
-    }
-  
-    .resumo-box {
-      padding: 2px;
-      font-size: smaller;
-    }
+  /*Página reserva*/
+  .todos-os-quartos-reserva {
+    width: 100%;
+  }
 
-    .resumo-box ul div {
-      display: flex;
-    }
+  .quarto-reserva {
+    padding: 10px;
+  }
 
-    .resumo-box ul div li {
-      flex-basis: 160px;
-    }
-  
-    .resumo-reserva a {
-      font-size: smaller;
-    }
-  
-    .resumo-reserva p {
-      margin: 5px 0;
-      font-size: 0.8rem;
-      color: var(--azul-escuro);
-      position: absolute;
-      right: 5%;
-      bottom: 50%;
-    }
-  
-    .resumo-reserva button {
-      margin: 8px auto 2px auto;
-      padding: 5px;
-      font-size: 1rem;
-    }
+  .img-reserva {
+    margin: 0 15px;
+  }
+
+  .resumo-reserva {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+  }
+
+  .resumo-reserva h2 {
+    margin-bottom: 2px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .resumo-box {
+    padding: 2px;
+    font-size: smaller;
+  }
+
+  .resumo-box ul div {
+    display: flex;
+  }
+
+  .resumo-box ul div li {
+    flex-basis: 160px;
+  }
+
+  .resumo-reserva a {
+    font-size: smaller;
+  }
+
+  .resumo-reserva p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    color: var(--azul-escuro);
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+  }
+
+  .resumo-reserva button {
+    margin: 8px auto 2px auto;
+    padding: 5px;
+    font-size: 1rem;
+  }
 
   /* Acomodações */
 
@@ -1185,6 +1206,23 @@ input[type="date"] {
 
   .description {
     border-right: 5px solid #063f57;
+  }
+
+  /* Contato */
+  .form-contato,
+  .form-contato p,
+  .form-contato button,
+  .linha-final {
+    width: 100%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+  div.linha-final a span {
+    display: none;
   }
 }
 
@@ -1275,7 +1313,22 @@ input[type="date"] {
     border-left: none;
   }
 
-  
+  /* Contato */
+  .form-contato,
+  .form-contato p,
+  .form-contato button,
+  .linha-final {
+    width: 100%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+  div.linha-final a span {
+    display: none;
+  }
 }
 
 @media (max-width: 1194px) and (orientation: landscape) {
@@ -1320,5 +1373,22 @@ input[type="date"] {
   }
   .container-time {
     gap: 20px;
+  }
+
+  /* Contato */
+  .form-contato,
+  .form-contato p,
+  .form-contato button,
+  .linha-final {
+    width: 100%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+  div.linha-final a span {
+    display: none;
   }
 }

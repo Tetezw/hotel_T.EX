@@ -922,6 +922,7 @@ input[type="radio"]:checked + div {
 
 .resumo-reserva h2 {
     margin-bottom: 15px;
+    font-size: 1.4rem;
 }
 
 .resumo-box {
@@ -1062,13 +1063,13 @@ input[type="radio"]:checked + div {
     }
 
     .reserva form ul li {
-        padding: 5px 0;
+        padding: 3px 0;
         margin: 0;
         justify-content: space-between;
     }
 
-    .reserva input#adultos {
-        width: 42%;
+    .reserva form input {
+        width: 40%;
     }
 
     .todos-os-quartos-reserva {

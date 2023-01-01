@@ -7,7 +7,7 @@
 Projeto desenvolvido como parte integrante do curso Full Stack Javascript Developer da T.EX.
 
 ### O projeto
-Rascunho inicial de um site de hotel construído basicamente com o uso de HTML e Web Semantic. 
+Rascunho inicial de um site de hotel construído com HTML e CSS. 
 
 ---
 ## Licença

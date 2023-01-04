@@ -1,10 +1,4 @@
 @use "mixin" as mx;
 @use "variaveis" as v;
+@use "reset" as r;
 @use "header" as h;
-
-// header {
-//     @include mx.box;
-//     // background-image: url(v.$bgHome);
-//     // background-size: 100%;
-//     // background-position-y: -300px;
-// }

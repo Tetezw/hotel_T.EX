@@ -1,0 +1,23 @@
+.navbar {
+  font-family: "Courier Prime", monospace;
+  display: flex;
+  background-color: rgba(6, 63, 87, 0.9);
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+  height: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 0 0 0;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar__link:hover {
+  color: #a35700;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+.headerContainer {
+    display: flex;
+    box-sizing: border-box;
+    background-image: url("https://via.placeholder.com/1920x1080");
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+.headerContainer__boxTitles {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    height: 50%;
+    width: 20%;
+    padding: 5% 5% 5% 0%;
+    margin-left: 10%;
+}
+.headerContainer__boxTitles__desconto {
+    width: 100%;
+}
+.headerContainer__boxTitles__line1 {
+    font-size: 3rem;
+}
+.headerContainer__boxTitles__line2 {
+    font-size: 2rem;
+    margin: 0;
+}
+.headerContainer__boxTitles__line3 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+.headerContainer__boxReserva {
+    display: block;
+    height: 150px;
+    width: 80%;
+    border: 1px solid red;
+    position: absolute;
+    left: 10%;
+    bottom: -75px;
+    background-color: white;
+    z-index: 10;
+}
+.headerContainer__btn {
+    text-decoration: none;
+    display: flex;
+    background-color: black;
+    color: white;
+    margin-top: 21px;
+    width: 150px;
+    height: 12px;
+    padding: 16px 14px;
+    align-items: center;
+    justify-content: center;
+}
+.headerContainer__btn:hover {
+    color: black;
+    background-color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

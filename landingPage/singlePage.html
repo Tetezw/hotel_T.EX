@@ -1,24 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+        <script src="https://kit.fontawesome.com/18dedb8cc9.js"crossorigin="anonymous"></script>
     <title>Recanto dos Códigos</title>
     <link rel="stylesheet" href="src/css/style.css">
   </head>
   <body>
-    <header></header>
+    <div class="logo"><img src="../public/images/Logo-Branca.png" alt=""></div>
     <nav class="navbar">
       <a class="navbar__link" href="#oferta">Oferta</a>
       <a class="navbar__link" href="#beneficios">Benefícios</a>
       <a class="navbar__link" href="#contato">Contato</a>
       <a class="navbar__link" href="#cadastro">Cadastre-se</a>
     </nav>
+    <header>
+      <div class="headerContainer">
+        <div class="headerContainer__boxTitles">
+          <h2 class="headerContainer__boxTitles__line1">HOTEL</h2>
+          <div class="headerContainer__boxTitles__desconto">
+            <h3 class="headerContainer__boxTitles__line2">UP to 60% OFF</h3>
+            <h3 class="headerContainer__boxTitles__line3">
+              On Hotel booking Online
+            </h3>
+          </div>
+          <a class="headerContainer__btn" href="#">Booking now</a>
+        </div>
+        <div class="headerContainer__boxReserva">
+          <form action="#" class="headerContainer__boxReserva__form">
+            <input type="date" name="check-in" placeholder="Check-in" />
+            <input type="date" name="check-out" placeholder="Check-out" />
+            <input type="number" name="adultos" placeholder="Adultos" />
+            <input type="number" name="criancas" placeholder="Crianças" />
+            <button>Booking Now</button>
+          </form>
+        </div>
+      </div>
+    </header>    
     <main>
       <section class="oferta"></section>
       <section class="beneficios"></section>
-      <section class="contatos"></section>
+
+      <!-- section - contact and social networks -->
+            <section class="container__contatos">
+                <h2 class="contact__title">Lorem, ipsum dolor.</h2>
+
+                <!-- social network -->
+                <aside class="social__network"> 
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                    <a><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                </aside>
+                
+                <!-- form contact us -->
+                <aside class="form__contact">
+
+                </aside>
+            </section>
     </main>
     <footer></footer>
   </body>

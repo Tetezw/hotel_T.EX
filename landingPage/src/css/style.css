@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* Animação no vídeo*/
+@keyframes MotionScale {
+  from {
+    /*
+      Identity matrix is used as basis here.
+      The matrix below describes the
+      following transformations:
+        Translates every X point by -50px
+        Translates every Y point by -100px
+        Translates every Z point by 0
+        Scales down by 10%
+    */
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 150, -110, 0, 1.1);
+  }
+  50% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.9);
+  }
+  to {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -150, 110, 0, 1);
+  }
+}
+.oferta {
+  min-height: 100vh;
+  position: relative;
+}
+.oferta__container {
+  position: relative;
+}
+.oferta__video {
+  width: 100%;
+  position: relative;
+}
+.oferta__background-video {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.oferta__texto {
+  position: absolute;
+  height: 40%;
+  width: 60%;
+  margin: 0 10% 0 10%;
+  left: 10%;
+  top: 25%;
+  bottom: 10%;
+  background-color: rgba(6, 63, 87, 0.4);
+  box-shadow: 2px 2px 5px rgba(6, 63, 87, 0.6);
+  padding: 1% 1%;
+  animation: MotionScale 4s alternate linear infinite;
+}
+.oferta__texto h2 {
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+  font-size: 2rem;
+}
+.oferta__texto h3 {
+  text-align: left;
+  color: #ffffff;
+  font-size: 1rem;
+}
+.oferta__texto p {
+  text-align: left;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+header {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  width: 90%;
+  position: relative;
+  background-size: 100%;
+  background-position-y: -300px;
+}
+
+/*# sourceMappingURL=style.css.map */

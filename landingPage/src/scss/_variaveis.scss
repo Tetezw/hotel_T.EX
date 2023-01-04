@@ -23,10 +23,10 @@ $align-c: center;
 $flex-dc: column;
 /*Text align*/
 $center: center;
-
+/*Container*/
+$container: 80%;
 
 /*Header*/
-$bgImage: "images/";
-$Color1: black;
-$Color2: white;
-$bgImage: "https://via.placeholder.com/1920x1080";
+$bgImage: "../../images/banner.png";
+$color_black: #000000;
+$color_white: #ffffff;

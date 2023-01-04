@@ -1,0 +1,41 @@
+@use "variaveis" as v;
+
+/*Navbar*/
+
+.logo{
+    display: v.$display-f;
+    background-color: v.$azulEscuro;
+    justify-content: v.$justify-c;
+    align-items: v.$align-c;
+}
+
+.logo img{
+    height: 30vh;
+    justify-content: v.$justify-c;
+    align-items: v.$align-c;
+    padding: 30px 0 30px 0;
+}
+    
+.navbar{
+    font-family: v.$courier;
+    display: v.$display-f;
+    background-color: v.$azulEscuro;
+    position: sticky;
+    top:0;
+    width: 100vw;
+    z-index: 1;
+    height: 50px;
+    align-items: v.$align-c;
+    justify-content: space-evenly;
+    margin: 0 0 0 0;
+}
+
+.navbar__link{
+    color: white;   
+    text-decoration: none; 
+    font-weight: bold;
+    &:hover {
+        color: v.$laranja;
+    }
+}
+

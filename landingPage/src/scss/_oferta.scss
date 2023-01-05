@@ -124,6 +124,10 @@
             font-size: 1.1rem;
             font-family: v.$noto-sans;
             margin: 2%;
+            & a {
+                color: #ffffff;
+                text-decoration: underline;
+            }
         }
 
         & p {

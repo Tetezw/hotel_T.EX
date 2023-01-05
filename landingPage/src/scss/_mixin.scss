@@ -1,7 +1,10 @@
-@mixin box {
-  min-width: 1170px;
-  margin: 0 auto;
-  padding: 1.5rem 0;
-  width: 90%;
-  position: relative;
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
 }

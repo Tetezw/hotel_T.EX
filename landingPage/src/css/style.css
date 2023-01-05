@@ -1,31 +1,129 @@
 @charset "UTF-8";
+/* Header */
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/banner.png");
+  background-size: cover;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  height: 100vh;
+  width: 80%;
+}
+.headerContainer__boxTitles {
+  display: flex;
+  flex-flow: column;
+  height: 50%;
+  width: 100%;
+  padding: 5% 5% 5% 0%;
+  color: #ffffff;
+}
+.headerContainer__boxTitles__desconto {
+  width: 100%;
+}
+.headerContainer__boxTitles__line1 {
+  font-size: 4.5rem;
+}
+.headerContainer__boxTitles__line2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+.headerContainer__boxTitles__line3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+}
+.headerContainer__boxReserva {
+  height: 100px;
+  width: 100%;
+  margin-bottom: -45px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px #000;
+}
+.headerContainer__boxReserva__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerContainer__boxReserva__form input,
+.headerContainer__boxReserva__form button {
+  box-sizing: border-box;
+  background-color: #eee;
+  height: 50px;
+  border-radius: 5px;
+  width: 20%;
+  margin: 5px;
+  padding: 0 20px;
+  border: none;
+  box-shadow: 1px 1px 5px #000;
+}
+.headerContainer__boxReserva__form button {
+  background-color: #000000;
+  color: #ffffff;
+}
+.headerContainer__boxReserva__form button:hover {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.headerContainer__btn {
+  text-decoration: none;
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  margin-top: 70px;
+  width: 150px;
+  height: 12px;
+  padding: 16px 14px;
+  align-items: center;
+  justify-content: center;
+}
+.headerContainer__btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 /* Animação no vídeo*/
-@keyframes MotionScale {
-  from {
-    /*
-      Identity matrix is used as basis here.
-      The matrix below describes the
-      following transformations:
-        Translates every X point by -50px
-        Translates every Y point by -100px
-        Translates every Z point by 0
-        Scales down by 10%
-    */
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 150, -110, 0, 1.1);
+@keyframes animacao1 {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, -50, 0, 1.2);
   }
   50% {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0.9);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 150, 30, 0, 0.9);
   }
-  to {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -150, 110, 0, 1);
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1);
   }
 }
+@keyframes animacao2 {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+/*Seção de ofertas*/
 .oferta {
+  margin-top: 50px;
   min-height: 100vh;
   position: relative;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .oferta__container {
   position: relative;
+  overflow: hidden;
 }
 .oferta__video {
   width: 100%;
@@ -42,42 +140,85 @@
 }
 .oferta__texto {
   position: absolute;
-  height: 40%;
   width: 60%;
-  margin: 0 10% 0 10%;
-  left: 10%;
-  top: 25%;
+  margin: 0 10%;
   bottom: 10%;
-  background-color: rgba(6, 63, 87, 0.4);
-  box-shadow: 2px 2px 5px rgba(6, 63, 87, 0.6);
+  background-color: rgba(6, 63, 87, 0.5);
+  box-shadow: 2px 2px 5px rgba(6, 63, 87, 0.8);
+  border: 2px solid #a35700;
   padding: 1% 1%;
-  animation: MotionScale 4s alternate linear infinite;
+  animation: animacao1 16s alternate linear forwards;
 }
 .oferta__texto h2 {
   text-align: center;
+  margin: 8px;
   color: #ffffff;
   z-index: 2;
-  font-size: 2rem;
+  font-size: 1.9rem;
+  font-family: "Courier Prime", monospace;
 }
 .oferta__texto h3 {
-  text-align: left;
+  text-align: center;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-family: "Noto Sans", sans-serif;
+  margin: 2%;
 }
 .oferta__texto p {
-  text-align: left;
+  text-align: center;
   font-size: 0.9rem;
   color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
+  margin: 2%;
 }
 
-header {
-  min-width: 1170px;
-  margin: 0 auto;
-  padding: 1.5rem 0;
-  width: 90%;
-  position: relative;
-  background-size: 100%;
-  background-position-y: -300px;
+@media (min-width: 415px) and (max-width: 800px) {
+  .oferta {
+    margin-top: 200px;
+    position: relative;
+  }
+  .oferta__video {
+    margin: 0;
+  }
+  .oferta__texto {
+    animation: animacao2 16s alternate linear forwards;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 200px;
+    margin: 0;
+    padding: 0 20px;
+  }
+  .oferta__texto h2 {
+    font-size: 1.5rem;
+  }
+  .oferta__texto h3 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 414px) and (orientation: portrait) {
+  .oferta {
+    margin-top: 30px;
+  }
+  .oferta__video {
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+  .oferta__texto {
+    animation: none;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-color: #063f57;
+  }
+  .oferta h2 {
+    font-size: 1.5rem;
+  }
+  .oferta h3 {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

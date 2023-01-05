@@ -28,14 +28,14 @@ ul {
 header {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/banner.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../src/img/banner.png");
   background-size: cover;
 }
 
 .headerContainer {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   margin: auto;
   height: 100vh;
   width: 80%;
@@ -65,13 +65,13 @@ header {
   margin: 0;
 }
 .headerContainer__boxReserva {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
   width: 100%;
   margin-bottom: -45px;
   background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 1px 1px 10px #000;
 }
 .headerContainer__boxReserva__form {
@@ -100,16 +100,16 @@ header {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .headerContainer__btn {
-  text-decoration: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background-color: #000000;
   color: #ffffff;
   margin-top: 70px;
   width: 150px;
   height: 12px;
   padding: 16px 14px;
-  align-items: center;
-  justify-content: center;
 }
 .headerContainer__btn:hover {
   color: #000000;
@@ -117,15 +117,3 @@ header {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
-.container__social_icons {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container__social_icons img{
-  width: 72px;
-  cursor: pointer;
-}
-

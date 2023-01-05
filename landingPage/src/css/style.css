@@ -43,16 +43,17 @@ header {
 }
 .headerContainer__boxTitles__line1 {
   font-size: 4.5rem;
+  margin-top: 120px;
 }
 .headerContainer__boxTitles__line2 {
   font-size: 3rem;
   font-weight: bold;
-  margin: 0 0 15px;
+  margin-top: 50px;
 }
 .headerContainer__boxTitles__line3 {
   font-size: 2rem;
   font-weight: normal;
-  margin: 0;
+  margin-top: 10px;
 }
 .headerContainer__boxReserva {
   display: flex;
@@ -98,14 +99,45 @@ header {
   color: #ffffff;
   margin-top: 70px;
   width: 150px;
-  height: 12px;
+  height: 50px;
   padding: 16px 14px;
+  box-shadow: 1px 1px 5px #000;
+  border-radius: 5px;
 }
 .headerContainer__btn:hover {
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
+@media (max-width: 414px) and (orientation: portrait) {
+  .headerContainer__boxTitles__line1 {
+    font-size: 2rem;
+    margin-top: 150px;
+  }
+  .headerContainer__boxTitles__line2 {
+    font-size: 1.5rem;
+  }
+  .headerContainer__boxTitles__line3 {
+    font-size: 1rem;
+  }
+  .headerContainer__boxReserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    box-shadow: 1px 1px 10px #000;
+    margin-bottom: -305px;
+    border-radius: 5px;
+  }
+  .headerContainer__boxReserva__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContainer__boxReserva__form input,
+  .headerContainer__boxReserva__form button {
+    width: 100%;
+  }
+}
 /*Navbar*/
 .logo {
   display: flex;

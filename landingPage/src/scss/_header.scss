@@ -32,6 +32,7 @@ header {
       font: {
         size: 4.5rem;
       }
+      margin-top: 120px;
     }
 
     &__line2 {
@@ -39,7 +40,7 @@ header {
         size: 3rem;
         weight: bold;
       }
-      margin: 0 0 15px;
+      margin-top: 50px;
     }
 
     &__line3 {
@@ -47,7 +48,7 @@ header {
         size: 2rem;
         weight: normal;
       }
-      margin: 0;
+      margin-top: 10px;
     }
   }
 
@@ -94,12 +95,56 @@ header {
     color: v.$color_white;
     margin-top: 70px;
     width: 150px;
-    height: 12px;
+    height: 50px;
     padding: 16px 14px;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 5px;
 
     &:hover {
-      color: v.$color_black;
-      background-color: v.$color_white;
+      color: v.$color_white;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .headerContainer {
+    &__boxTitles {
+      &__line1 {
+        font: {
+          size: 2rem;
+        }
+        margin-top: 150px;
+      }
+
+      &__line2 {
+        font: {
+          size: 1.5rem;
+        }
+      }
+
+      &__line3 {
+        font: {
+          size: 1rem;
+        }
+      }
+    }
+
+    &__boxReserva {
+      @include mx.flex_center;
+      height: 360px;
+      box-shadow: 1px 1px 10px #000;
+      margin-bottom: -305px;
+      border-radius: 5px;
+
+      &__form {
+        @include mx.flex_column;
+
+        input,
+        button {
+          width: 100%;
+        }
+      }
     }
   }
 }

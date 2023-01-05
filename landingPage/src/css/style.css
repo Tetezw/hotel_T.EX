@@ -117,3 +117,15 @@ header {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.container__social_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__social_icons img{
+  width: 72px;
+  cursor: pointer;
+}
+

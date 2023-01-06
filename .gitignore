@@ -1,3 +1,5 @@
-landingPage/src/css/
-.vscode
-.vscode/settings.json
+/landingPage/src/css/style.css
+/landingPage/src/css/style.css.map
+/.vscode
+/.vscode/settings.json
+

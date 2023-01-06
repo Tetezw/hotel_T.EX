@@ -1,8 +1,13 @@
+@use 'variaveis' as v;
+
+/*HEADER*/
+
+/*NAVBAR*/
 
 /*SEÇÃO OFERTA*/ 
 @media (max-width: 414px) and (orientation: portrait) {
     .oferta {
-        margin-top: 30px;
+        margin-top: 310px;
 
         &__video {
             margin: 0;
@@ -26,4 +31,11 @@
             font-size: 1rem;
         }
     }
+
+    /*SEÇÃO BENEFÍCIOS*/
+
+    /*SEÇÃO CONTATO*/
+
+    /*FOOTER*/
+
 }

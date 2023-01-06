@@ -1,71 +1,9 @@
 @use 'variaveis' as v;
-/* Animação no vídeo*/
-@keyframes animacao1 {
-    0% {
-        //   Identity matrix is used as basis here.
-        //   The matrix below describes the
-        //   following transformations:
-        //     Translates every X point by -50px
-        //     Translates every Y point by -100px
-        //     Translates every Z point by 0
-        //     Scales down by 10%
+@use 'mixin' as mx;
 
-        transform: matrix3d(
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            50,
-            -50,
-            0,
-            1.2
-        );
-    }
-
-    50% {
-        transform: matrix3d(
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            0,
-            0,
-            0,
-            1,
-            0,
-            150,
-            30,
-            0,
-            0.9
-        );
-    }
-
-    100% {
-        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1);
-    }
-}
-@keyframes animacao2 {
-    0% {
-        top: 0%;
-    }
-    100% {
-        top: 50%;
-    }
-}
 /*Seção de ofertas*/
 .oferta {
-    margin-top: 50px;
+    margin: 60px 0;
     min-height: 100vh;
     position: relative;
     width: v.$container;
@@ -98,7 +36,7 @@
     &__texto {
         position: absolute;
         width: 60%;
-        margin: 0 10%;
+        margin: 0 20%;
         // top: 0;
         // left: 10%;
         // top: 30%;
@@ -107,7 +45,8 @@
         box-shadow: 2px 2px 5px rgba(6, 63, 87, 0.8);
         border: 2px solid v.$laranja;
         padding: 1% 1%;
-        animation: animacao1 16s alternate linear forwards;
+        @include mx.animacao1;
+        // animation: animacao1 16s linear alternate forwards;
         
         & h2 {
             text-align: center;
@@ -148,7 +87,7 @@
 //             margin: 0;
 //         }
 //         &__texto {
-//             animation: animacao2 16s alternate linear forwards;
+//             @include mx.animacao2;
 //             position: absolute;
 //             bottom: 0;
 //             right: 0;

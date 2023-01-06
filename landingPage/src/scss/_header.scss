@@ -14,13 +14,14 @@ header {
     flex-direction: v.$flex-dc;
     margin: auto;
     height: 100vh;
-    width: v.$container;
+    // width: v.$container;
 
     &__boxTitles {
         display: v.$display-f;
         flex-flow: column;
         height: 50%;
-        width: 100%;
+        width: v.$container;
+        margin: auto;
         padding: 5% 5% 5% 0%;
         color: v.$color_white;
 
@@ -59,7 +60,8 @@ header {
     &__boxReserva {
         @include mx.flex_center;
         height: 120px;
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         margin-bottom: -60px;
         background-color: v.$color_white;
         box-shadow: 1px 1px 10px #000;
@@ -198,17 +200,26 @@ header {
 
         &__boxReserva {
             @include mx.flex_center;
-            height: 360px;
+            height: 450px;
+            width: 100%;
             box-shadow: 1px 1px 10px #000;
-            margin-bottom: -305px;
+            margin-bottom: -450px;
             border-radius: 5px;
 
             &__form {
                 @include mx.flex_column;
+                width: 100%;
+                padding: 20px;
 
                 input,
                 button {
                     width: 100%;
+                }
+
+                &__boxInput {
+                    &__boxTitle {
+                        padding-top: 0.625rem;
+                    }
                 }
             }
         }

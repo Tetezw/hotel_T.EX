@@ -563,7 +563,8 @@ ul > li {
     padding-bottom: 20px;
     font-size: x-large;
   }
-  input, h3 {
+  .container-div1 h3,
+  .container-div1 input {
     display: none !important;
   }
 }

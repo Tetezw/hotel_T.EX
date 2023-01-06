@@ -127,7 +127,7 @@ header {
 .headerContainer__boxReserva__form button span {
   font-family: "Noto Sans", sans-serif;
   font-weight: bold;
-  font-size: 100%;
+  font-size: 80%;
   text-transform: uppercase;
 }
 .headerContainer__btn {
@@ -141,7 +141,7 @@ header {
   margin-top: 70px;
   width: 200px;
   height: 40px;
-  padding: 16px 14px;
+  padding: 30px;
   border-radius: 5px;
   border: none;
   outline: none;

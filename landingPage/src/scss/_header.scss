@@ -12,16 +12,15 @@ header {
 .headerContainer {
     @include mx.flex_between;
     flex-direction: v.$flex-dc;
+    width: v.$container;
     margin: auto;
     height: 100vh;
-    // width: v.$container;
 
     &__boxTitles {
         display: v.$display-f;
         flex-flow: column;
         height: 50%;
-        width: v.$container;
-        margin: auto;
+        width: 100%;
         padding: 5% 5% 5% 0%;
         color: v.$color_white;
 
@@ -60,8 +59,7 @@ header {
     &__boxReserva {
         @include mx.flex_center;
         height: 120px;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
         margin-bottom: -60px;
         background-color: v.$color_white;
         box-shadow: 1px 1px 10px #000;
@@ -175,9 +173,13 @@ header {
     }
 }
 
+.spacing {
+    height: 60px;
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
     .headerContainer {
-        &__boxTitles {
+        &__boxTitle {
             &__line1 {
                 font: {
                     size: 2rem;
@@ -200,28 +202,29 @@ header {
 
         &__boxReserva {
             @include mx.flex_center;
-            height: 450px;
+            height: 410px;
             width: 100%;
             box-shadow: 1px 1px 10px #000;
-            margin-bottom: -450px;
+            margin-bottom: -430px;
             border-radius: 5px;
 
             &__form {
                 @include mx.flex_column;
-                width: 100%;
-                padding: 20px;
 
                 input,
                 button {
                     width: 100%;
                 }
-
                 &__boxInput {
                     &__boxTitle {
-                        padding-top: 0.625rem;
+                        padding-top: 10px;
+                        padding-bottom: 0;
                     }
                 }
             }
         }
+    }
+    .spacing {
+        height: 430px;
     }
 }

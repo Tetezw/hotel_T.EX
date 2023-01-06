@@ -26,6 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 80%;
   margin: auto;
   height: 100vh;
 }
@@ -33,8 +34,7 @@ header {
   display: flex;
   flex-flow: column;
   height: 50%;
-  width: 80%;
-  margin: auto;
+  width: 100%;
   padding: 5% 5% 5% 0%;
   color: #ffffff;
 }
@@ -64,8 +64,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 120px;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   margin-bottom: -60px;
   background-color: #ffffff;
   box-shadow: 1px 1px 10px #000;
@@ -161,39 +160,45 @@ header {
   text-transform: uppercase;
 }
 
+.spacing {
+  height: 60px;
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
-  .headerContainer__boxTitles__line1 {
+  .headerContainer__boxTitle__line1 {
     font-size: 2rem;
     margin-top: 150px;
   }
-  .headerContainer__boxTitles__line2 {
+  .headerContainer__boxTitle__line2 {
     font-size: 1.5rem;
   }
-  .headerContainer__boxTitles__line3 {
+  .headerContainer__boxTitle__line3 {
     font-size: 1rem;
   }
   .headerContainer__boxReserva {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 450px;
+    height: 410px;
     width: 100%;
     box-shadow: 1px 1px 10px #000;
-    margin-bottom: -450px;
+    margin-bottom: -430px;
     border-radius: 5px;
   }
   .headerContainer__boxReserva__form {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 20px;
   }
   .headerContainer__boxReserva__form input,
   .headerContainer__boxReserva__form button {
     width: 100%;
   }
   .headerContainer__boxReserva__form__boxInput__boxTitle {
-    padding-top: 0.625rem;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .spacing {
+    height: 430px;
   }
 }
 /*Navbar*/

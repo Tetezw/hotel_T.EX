@@ -360,8 +360,6 @@ header {
     font-size: 1rem;
   }
 }
-
-/*BENEFÍCIOS*/
 .box-title {
   justify-content: center;
 }
@@ -413,7 +411,6 @@ header {
     width: 100%;
   }
 }
-
 /* FOOTER */
 footer {
   display: flex;
@@ -505,6 +502,5 @@ ul > li {
 }
 
 /* FINAL FOOTER */
-
 
 /*# sourceMappingURL=style.css.map */

@@ -2,26 +2,26 @@
 
 /*Navbar*/
 
-.logo{
+.logo {
     display: v.$display-f;
     background-color: v.$azulEscuro;
     justify-content: v.$justify-c;
     align-items: v.$align-c;
 }
 
-.logo img{
+.logo img {
     height: 30vh;
     justify-content: v.$justify-c;
     align-items: v.$align-c;
     padding: 30px 0 30px 0;
 }
-    
-.navbar{
+
+.navbar {
     font-family: v.$courier;
     display: v.$display-f;
     background-color: v.$azulEscuro;
     position: sticky;
-    top:0;
+    top: 0;
     width: 100%;
     z-index: 1;
     height: 50px;
@@ -30,12 +30,11 @@
     margin: 0 0 0 0;
 }
 
-.navbar__link{
-    color: white;   
-    text-decoration: none; 
+.navbar__link {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
     &:hover {
         color: v.$laranja;
     }
 }
-

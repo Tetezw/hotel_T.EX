@@ -108,7 +108,7 @@
         border: 2px solid v.$laranja;
         padding: 1% 1%;
         animation: animacao1 16s alternate linear forwards;
-
+        
         & h2 {
             text-align: center;
             margin: 8px;
@@ -140,54 +140,31 @@
     }
 }
 
-@media (min-width: 415px) and (max-width: 800px) {
-    .oferta {
-        margin-top: 200px;
-        position: relative;
-        &__video {
-            margin: 0;
-        }
-        &__texto {
-            animation: animacao2 16s alternate linear forwards;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 60%;
-            height: 200px;
-            margin: 0;
-            padding: 0 20px;
+// @media (min-width: 415px) and (max-width: 800px) {
+//     .oferta {
+//         margin-top: 200px;
+//         position: relative;
+//         &__video {
+//             margin: 0;
+//         }
+//         &__texto {
+//             animation: animacao2 16s alternate linear forwards;
+//             position: absolute;
+//             bottom: 0;
+//             right: 0;
+//             width: 60%;
+//             height: 200px;
+//             margin: 0;
+//             padding: 0 20px;
 
-            & h2 {
-                font-size: 1.5rem;
-            }
+//             & h2 {
+//                 font-size: 1.5rem;
+//             }
 
-            & h3 {
-                font-size: 1rem;
-            }
-        }
-    }
-}
+//             & h3 {
+//                 font-size: 1rem;
+//             }
+//         }
+//     }
+// }
 
-@media (max-width: 414px) and (orientation: portrait) {
-    .oferta {
-        margin-top: 30px;
-        &__video {
-            margin: 0;
-            width: 100%;
-            position: relative;
-        }
-        &__texto {
-            animation: none;
-            position: relative;
-            width: 100%;
-            margin: 0;
-            background-color: v.$azulEscuro;
-        }
-        & h2 {
-            font-size: 1.5rem;
-        }
-        & h3 {
-            font-size: 1rem;
-        }
-    }
-}

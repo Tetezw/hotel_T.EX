@@ -1,0 +1,29 @@
+
+/*SEÇÃO OFERTA*/ 
+@media (max-width: 414px) and (orientation: portrait) {
+    .oferta {
+        margin-top: 30px;
+
+        &__video {
+            margin: 0;
+            width: 100%;
+            position: relative;
+        }
+
+        &__texto {
+            animation: none;
+            position: relative;
+            width: 100%;
+            margin: 0;
+            background-color: v.$azulEscuro;
+        }
+
+        & h2 {
+            font-size: 1.5rem;
+        }
+
+        & h3 {
+            font-size: 1rem;
+        }
+    }
+}

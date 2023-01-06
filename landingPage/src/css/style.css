@@ -26,9 +26,9 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 80%;
   margin: auto;
   height: 100vh;
-  width: 80%;
 }
 .headerContainer__boxTitles {
   display: flex;
@@ -160,24 +160,29 @@ header {
   text-transform: uppercase;
 }
 
+.spacing {
+  height: 60px;
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
-  .headerContainer__boxTitles__line1 {
+  .headerContainer__boxTitle__line1 {
     font-size: 2rem;
     margin-top: 150px;
   }
-  .headerContainer__boxTitles__line2 {
+  .headerContainer__boxTitle__line2 {
     font-size: 1.5rem;
   }
-  .headerContainer__boxTitles__line3 {
+  .headerContainer__boxTitle__line3 {
     font-size: 1rem;
   }
   .headerContainer__boxReserva {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 360px;
+    height: 410px;
+    width: 100%;
     box-shadow: 1px 1px 10px #000;
-    margin-bottom: -305px;
+    margin-bottom: -430px;
     border-radius: 5px;
   }
   .headerContainer__boxReserva__form {
@@ -187,6 +192,13 @@ header {
   .headerContainer__boxReserva__form input,
   .headerContainer__boxReserva__form button {
     width: 100%;
+  }
+  .headerContainer__boxReserva__form__boxInput__boxTitle {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .spacing {
+    height: 430px;
   }
 }
 /*Navbar*/
@@ -556,7 +568,8 @@ ul > li {
     padding-bottom: 20px;
     font-size: x-large;
   }
-  input, h3 {
+  .container-div1 h3,
+  .container-div1 input {
     display: none !important;
   }
 }

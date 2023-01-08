@@ -29,6 +29,7 @@
   animation-iteration-count: $count;
 
 }
+
 @mixin animacao1 {
   @include animacao(20s, alternate, linear, forwards) {
     0%{    
@@ -49,7 +50,7 @@
 }
 
 @mixin animacao2 {
-  @include animacao(16s, alternate, linear, forwards) {
+  @include animacao(16s, alternate, linear, infinite) {
     0% {
         top: 0%;
       }

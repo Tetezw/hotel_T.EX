@@ -7,10 +7,10 @@
 /*SEÇÃO OFERTA*/ 
 @media (max-width: 414px) and (orientation: portrait) {
     .oferta {
-        margin-top: 310px;
+        // margin-top: 310px;
 
         &__video {
-            margin: 0;
+            margin-top: 60px;
             width: 100%;
             position: relative;
         }

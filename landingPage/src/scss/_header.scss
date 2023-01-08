@@ -12,9 +12,9 @@ header {
 .headerContainer {
     @include mx.flex_between;
     flex-direction: v.$flex-dc;
+    width: v.$container;
     margin: auto;
     height: 100vh;
-    width: v.$container;
 
     &__boxTitles {
         display: v.$display-f;
@@ -173,9 +173,13 @@ header {
     }
 }
 
+.spacing {
+    height: 60px;
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
     .headerContainer {
-        &__boxTitles {
+        &__boxTitle {
             &__line1 {
                 font: {
                     size: 2rem;
@@ -198,9 +202,10 @@ header {
 
         &__boxReserva {
             @include mx.flex_center;
-            height: 360px;
+            height: 410px;
+            width: 100%;
             box-shadow: 1px 1px 10px #000;
-            margin-bottom: -305px;
+            margin-bottom: -430px;
             border-radius: 5px;
 
             &__form {
@@ -210,7 +215,16 @@ header {
                 button {
                     width: 100%;
                 }
+                &__boxInput {
+                    &__boxTitle {
+                        padding-top: 10px;
+                        padding-bottom: 0;
+                    }
+                }
             }
         }
+    }
+    .spacing {
+        height: 430px;
     }
 }

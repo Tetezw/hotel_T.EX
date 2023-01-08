@@ -212,21 +212,6 @@ header {
   width: 7vw;
 }
 
-@media (max-width: 414px) and (orientation: portrait) {
-  .navbar__link {
-    display: flex;
-    flex-wrap: wrap;
-    flex: none;
-    justify-content: space-around;
-  }
-  .navbar__link img {
-    display: none;
-  }
-  .logo img {
-    height: 70px;
-    padding-bottom: 10px;
-  }
-}
 /*Seção de ofertas*/
 .oferta {
   margin: 60px 0;
@@ -264,13 +249,13 @@ header {
   border: 2px solid #a35700;
   padding: 1% 1%;
   /*Animação oferta*/
-  animation-name: animacao1-u148z3w;
+  animation-name: animacao1-u0vlmnr;
   animation-duration: 20s;
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: forwards;
 }
-@keyframes animacao1-u148z3w {
+@keyframes animacao1-u0vlmnr {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.2);
   }
@@ -311,52 +296,55 @@ header {
   margin: 2%;
 }
 
-@media (min-width: 415px) and (max-width: 800px) {
-  .oferta {
-    margin-top: 200px;
-    position: relative;
-  }
-  .oferta__video {
-    margin: 0;
-  }
-  .oferta__texto {
-    animation: animacao2 16s alternate linear forwards;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60%;
-    height: 200px;
-    margin: 0;
-    padding: 0 20px;
-  }
-  .oferta__texto h2 {
-    font-size: 1.5rem;
-  }
-  .oferta__texto h3 {
-    font-size: 1rem;
-  }
+.box-title {
+  justify-content: center;
 }
+.box-title h2 {
+  text-align: center;
+  color: #063f57;
+  font-size: 1.9rem;
+  font-family: "Courier Prime", monospace;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.imagecontainer {
+  background-color: #176485;
+  width: 30%;
+  margin: 8px;
+  border: 5px #063f57;
+  border-radius: 8px 8px 8px 8px;
+  justify-items: center;
+  transition: all 0.5s;
+}
+.imagecontainer h3 {
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 10px;
+}
+.imagecontainer:hover {
+  transform: scale(1.3);
+  display: block;
+}
+
+.imagecontainer img {
+  border-radius: 5px;
+  width: 100%;
+  height: 70%;
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
-  .oferta {
-    margin-top: 30px;
+  .beneficios {
+    display: flex;
   }
-  .oferta__video {
-    margin: 0;
+  .imagecontainer {
     width: 100%;
-    position: relative;
-  }
-  .oferta__texto {
-    animation: none;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    background-color: #063f57;
-  }
-  .oferta h2 {
-    font-size: 1.5rem;
-  }
-  .oferta h3 {
-    font-size: 1rem;
   }
 }
 /* Section contact */
@@ -495,57 +483,6 @@ section .container__contact .container__form .contact__term p a {
   color: rgba(23, 100, 133, 0.9);
 }
 
-.box-title {
-  justify-content: center;
-}
-.box-title h2 {
-  text-align: center;
-  color: #063f57;
-  font-size: 1.9rem;
-  font-family: "Courier Prime", monospace;
-}
-
-.beneficios {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
-  margin: auto;
-}
-
-.imagecontainer {
-  background-color: #176485;
-  width: 30%;
-  margin: 8px;
-  border: 5px #063f57;
-  border-radius: 8px 8px 8px 8px;
-  justify-items: center;
-  transition: all 0.5s;
-}
-.imagecontainer h3 {
-  color: #ffffff;
-  text-align: center;
-  padding: 5px 10px;
-}
-.imagecontainer:hover {
-  transform: scale(1.3);
-  display: block;
-}
-
-.imagecontainer img {
-  border-radius: 5px;
-  width: 100%;
-  height: 70%;
-}
-
-@media (max-width: 414px) and (orientation: portrait) {
-  .beneficios {
-    display: flex;
-  }
-  .imagecontainer {
-    width: 100%;
-  }
-}
 /* FOOTER */
 footer {
   display: flex;
@@ -592,12 +529,12 @@ footer {
   padding-left: 0;
 }
 .container-div1 > input {
-  padding: 25px;
+  padding: 20px;
   border-radius: 8px;
   border: none;
   display: flex;
   height: 5vh;
-  width: 60%;
+  width: 70%;
   background-color: rgba(106, 103, 103, 0.5);
   outline: none;
   color: white;
@@ -622,13 +559,12 @@ a:hover {
   transition: 0.2s;
 }
 
-ul {
+.container-footer > ul {
   list-style-type: none;
-  margin-left: 5%;
   border-left: 2px #a35700 solid;
   height: 90%;
 }
-ul > li {
+.container-footer > ul > li {
   padding: 10px;
 }
 
@@ -676,7 +612,7 @@ ul > li {
     width: 90%;
     padding: 0 0 8% 5%;
   }
-  ul {
+  .container-footer > ul {
     border-left: none;
     border-top: 2px #a35700 solid;
     width: 80%;
@@ -736,6 +672,21 @@ ul > li {
   }
 }
 /*NAVBAR*/
+@media (max-width: 414px) and (orientation: portrait) {
+  .navbar__link {
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+    justify-content: space-around;
+  }
+  .navbar__link img {
+    display: none;
+  }
+  .logo img {
+    height: 70px;
+    padding-bottom: 10px;
+  }
+}
 /*SEÇÃO OFERTA*/
 @media (max-width: 414px) and (orientation: portrait) {
   .oferta {

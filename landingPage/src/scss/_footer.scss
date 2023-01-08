@@ -51,12 +51,12 @@ footer {
     }
 
     & > input {
-        padding: 25px;
+        padding: 20px;
         border-radius: 8px;
         border: none;
         display: flex;
         height: 5vh;
-        width: 60%;
+        width: 70%;
         background-color: rgba($color: #6a6767, $alpha: 0.5);
         outline: none;
         color: white;
@@ -85,9 +85,8 @@ a {
     }
 }
 
-ul {
+.container-footer > ul {
     list-style-type: none;
-    margin-left: 5%;
     border-left: 2px v.$laranja solid;
     height: 90%;
 
@@ -147,7 +146,7 @@ ul {
         padding: 0 0 8% 5%;
     }
 
-    ul {
+    .container-footer > ul {
         border-left: none;
         border-top: 2px v.$laranja solid;
         width: 80%;

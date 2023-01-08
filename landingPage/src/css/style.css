@@ -300,13 +300,13 @@ header {
   border: 2px solid #a35700;
   padding: 1% 1%;
   /*Animação oferta*/
-  animation-name: animacao1-ubktw8q;
+  animation-name: animacao1-ukx4gvy;
   animation-duration: 20s;
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: forwards;
 }
-@keyframes animacao1-ubktw8q {
+@keyframes animacao1-ukx4gvy {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.2);
   }
@@ -553,6 +553,9 @@ ul > li {
 /*NAVBAR*/
 /*SEÇÃO OFERTA*/
 @media (max-width: 414px) and (orientation: portrait) {
+  .oferta {
+    width: 100%;
+  }
   .oferta__video {
     margin-top: 60px;
     width: 100%;

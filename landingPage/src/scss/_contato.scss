@@ -1,6 +1,7 @@
 @use "variaveis" as v;
 @use "mixin" as mx;
 
+/* Section contact */
 section {
   width: v.$container;
   margin: auto;
@@ -120,13 +121,16 @@ section {
         padding-bottom: 10%;
       }
     }
-    section .contact__title {
-      text-align: left;
-      padding-left: 16px;
+    & .contact__title {
+    font-family: v.$courier;
+    font-size: 3rem;
+    text-align: center;
+    color: v.$azulEscuro;
+    height: 6rem;
+    margin-top: calc(v.$mb1 + 1rem);
     }
   }
 }
-
 ::placeholder {
   @include mx.placeholder__form;
   color: rgba(v.$azulClaro, 0.9);

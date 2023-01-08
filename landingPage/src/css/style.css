@@ -373,6 +373,7 @@ header {
     font-size: 1rem;
   }
 }
+/* Section contact */
 section {
   width: 80%;
   margin: auto;
@@ -492,9 +493,13 @@ section .container__contact .container__form .contact__term p a {
     width: 100%;
     padding-bottom: 10%;
   }
-  section section .contact__title {
-    text-align: left;
-    padding-left: 16px;
+  section .contact__title {
+    font-family: "Courier Prime", monospace;
+    font-size: 3rem;
+    text-align: center;
+    color: #063f57;
+    height: 6rem;
+    margin-top: 2rem;
   }
 }
 ::placeholder {

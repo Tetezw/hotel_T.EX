@@ -1,9 +1,11 @@
-@use "mixin" as mx;
-@use "variaveis" as v;
-@use "reset" as r;
-@use "header" as h;
+@use "mixin";
+@use "variaveis";
+@use "reset";
+@use "header";
 @use "navbar";
 @use 'oferta';
 @use "beneficio";
+@use "contato";
 @use "footer";
 @use 'media';
+

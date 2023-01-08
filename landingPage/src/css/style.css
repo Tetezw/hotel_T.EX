@@ -26,9 +26,9 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 80%;
   margin: auto;
   height: 100vh;
-  width: 80%;
 }
 .headerContainer__boxTitles {
   display: flex;
@@ -160,24 +160,29 @@ header {
   text-transform: uppercase;
 }
 
+.spacing {
+  height: 60px;
+}
+
 @media (max-width: 414px) and (orientation: portrait) {
-  .headerContainer__boxTitles__line1 {
+  .headerContainer__boxTitle__line1 {
     font-size: 2rem;
     margin-top: 150px;
   }
-  .headerContainer__boxTitles__line2 {
+  .headerContainer__boxTitle__line2 {
     font-size: 1.5rem;
   }
-  .headerContainer__boxTitles__line3 {
+  .headerContainer__boxTitle__line3 {
     font-size: 1rem;
   }
   .headerContainer__boxReserva {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 360px;
+    height: 410px;
+    width: 100%;
     box-shadow: 1px 1px 10px #000;
-    margin-bottom: -305px;
+    margin-bottom: -430px;
     border-radius: 5px;
   }
   .headerContainer__boxReserva__form {
@@ -187,6 +192,13 @@ header {
   .headerContainer__boxReserva__form input,
   .headerContainer__boxReserva__form button {
     width: 100%;
+  }
+  .headerContainer__boxReserva__form__boxInput__boxTitle {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .spacing {
+    height: 430px;
   }
 }
 /*Navbar*/
@@ -360,8 +372,6 @@ header {
     font-size: 1rem;
   }
 }
-
-/*BENEFÍCIOS*/
 .box-title {
   justify-content: center;
 }
@@ -413,7 +423,6 @@ header {
     width: 100%;
   }
 }
-
 /* FOOTER */
 footer {
   display: flex;
@@ -422,7 +431,7 @@ footer {
   background-color: rgb(11, 13, 23);
   font-size: 1rem;
   font-family: "Noto Sans", sans-serif;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.1rem;
 }
 
 .container-footer {
@@ -444,7 +453,7 @@ footer {
 .container-div1 > h3 {
   padding-top: 45%;
   width: 70%;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
   margin-left: 20%;
 }
@@ -454,9 +463,13 @@ footer {
 }
 .container-div1 > .contato-img-div1 > a > i {
   font-size: xx-large;
+  padding-left: 20px;
+}
+.container-div1 > .contato-img-div1 > a > i.fa-instagram {
+  padding-left: 0;
 }
 .container-div1 > input {
-  padding: 10px;
+  padding: 25px;
   border-radius: 8px;
   border: none;
   display: flex;
@@ -466,6 +479,8 @@ footer {
   outline: none;
   color: white;
   margin-left: 20%;
+  font-size: 100%;
+  letter-spacing: 0.1rem;
 }
 .container-div1 > input::placeholder {
   color: white;
@@ -504,7 +519,60 @@ ul > li {
   line-height: 2rem;
 }
 
-/* FINAL FOOTER */
+.i-resposive-footer {
+  display: none;
+}
 
+@media (max-width: 414px) and (orientation: portrait) {
+  footer {
+    font-size: 14px;
+    letter-spacing: normal;
+    position: relative;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-footer {
+    all: initial;
+    left: 144px;
+    width: 30vw !important;
+    margin-left: 0 !important;
+  }
+  .contato-img-div1 > a > i {
+    all: initial;
+    position: absolute;
+    bottom: 0;
+  }
+  .container-div2 {
+    margin-top: 120px;
+  }
+  .container-div2,
+  .container-div3,
+  .container-div4 {
+    display: flex;
+    width: 90%;
+    padding: 0 0 8% 5%;
+  }
+  ul {
+    border-left: none;
+    border-top: 2px #a35700 solid;
+    width: 80%;
+  }
+  .container-div4 {
+    display: block !important;
+  }
+  .i-resposive-footer {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: x-large;
+  }
+  .container-div1 h3,
+  .container-div1 input {
+    display: none !important;
+  }
+}
+/* FINAL FOOTER */
 
 /*# sourceMappingURL=style.css.map */

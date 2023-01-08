@@ -44,7 +44,7 @@ header {
 .headerContainer__boxTitles__line1 {
   font-size: 4.5rem;
   font-family: "Courier Prime", monospace;
-  margin-top: 120px;
+  margin-top: 50px;
   letter-spacing: 0.4rem;
 }
 .headerContainer__boxTitles__line2 {
@@ -164,43 +164,6 @@ header {
   height: 60px;
 }
 
-@media (max-width: 414px) and (orientation: portrait) {
-  .headerContainer__boxTitle__line1 {
-    font-size: 2rem;
-    margin-top: 150px;
-  }
-  .headerContainer__boxTitle__line2 {
-    font-size: 1.5rem;
-  }
-  .headerContainer__boxTitle__line3 {
-    font-size: 1rem;
-  }
-  .headerContainer__boxReserva {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 410px;
-    width: 100%;
-    box-shadow: 1px 1px 10px #000;
-    margin-bottom: -430px;
-    border-radius: 5px;
-  }
-  .headerContainer__boxReserva__form {
-    display: flex;
-    flex-direction: column;
-  }
-  .headerContainer__boxReserva__form input,
-  .headerContainer__boxReserva__form button {
-    width: 100%;
-  }
-  .headerContainer__boxReserva__form__boxInput__boxTitle {
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-  .spacing {
-    height: 430px;
-  }
-}
 /*Navbar*/
 .logo {
   display: flex;
@@ -263,29 +226,9 @@ header {
     padding-bottom: 10px;
   }
 }
-/* Animação no vídeo*/
-@keyframes animacao1 {
-  0% {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 50, -50, 0, 1.2);
-  }
-  50% {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 150, 30, 0, 0.9);
-  }
-  100% {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 0, 0, 1);
-  }
-}
-@keyframes animacao2 {
-  0% {
-    top: 0%;
-  }
-  100% {
-    top: 50%;
-  }
-}
 /*Seção de ofertas*/
 .oferta {
-  margin-top: 50px;
+  margin: 60px 0;
   min-height: 100vh;
   position: relative;
   width: 80%;
@@ -313,13 +256,32 @@ header {
 .oferta__texto {
   position: absolute;
   width: 60%;
-  margin: 0 10%;
+  margin: 0 20%;
   bottom: 10%;
   background-color: rgba(6, 63, 87, 0.5);
   box-shadow: 2px 2px 5px rgba(6, 63, 87, 0.8);
   border: 2px solid #a35700;
   padding: 1% 1%;
-  animation: animacao1 16s alternate linear forwards;
+  /*Animação oferta*/
+  animation-name: animacao1-u148z3w;
+  animation-duration: 20s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: forwards;
+}
+@keyframes animacao1-u148z3w {
+  0% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.2);
+  }
+  33% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 100, 10, 0, 0.9);
+  }
+  66% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100, 10, 0, 0.95);
+  }
+  100% {
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  }
 }
 .oferta__texto h2 {
   text-align: center;
@@ -348,54 +310,6 @@ header {
   margin: 2%;
 }
 
-@media (min-width: 415px) and (max-width: 800px) {
-  .oferta {
-    margin-top: 200px;
-    position: relative;
-  }
-  .oferta__video {
-    margin: 0;
-  }
-  .oferta__texto {
-    animation: animacao2 16s alternate linear forwards;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60%;
-    height: 200px;
-    margin: 0;
-    padding: 0 20px;
-  }
-  .oferta__texto h2 {
-    font-size: 1.5rem;
-  }
-  .oferta__texto h3 {
-    font-size: 1rem;
-  }
-}
-@media (max-width: 414px) and (orientation: portrait) {
-  .oferta {
-    margin-top: 30px;
-  }
-  .oferta__video {
-    margin: 0;
-    width: 100%;
-    position: relative;
-  }
-  .oferta__texto {
-    animation: none;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    background-color: #063f57;
-  }
-  .oferta h2 {
-    font-size: 1.5rem;
-  }
-  .oferta h3 {
-    font-size: 1rem;
-  }
-}
 .box-title {
   justify-content: center;
 }
@@ -598,5 +512,71 @@ ul > li {
   }
 }
 /* FINAL FOOTER */
+/*HEADER*/
+@media (max-width: 414px) and (orientation: portrait) {
+  .headerContainer__boxTitle__line1 {
+    font-size: 2rem;
+    margin-top: 150px;
+  }
+  .headerContainer__boxTitle__line2 {
+    font-size: 1.5rem;
+  }
+  .headerContainer__boxTitle__line3 {
+    font-size: 1rem;
+  }
+  .headerContainer__boxReserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    width: 100%;
+    box-shadow: 1px 1px 10px #000;
+    margin-bottom: -430px;
+    border-radius: 5px;
+  }
+  .headerContainer__boxReserva__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContainer__boxReserva__form input,
+  .headerContainer__boxReserva__form button {
+    width: 100%;
+  }
+  .headerContainer__boxReserva__form__boxInput__boxTitle {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .spacing {
+    height: 430px;
+  }
+}
+/*NAVBAR*/
+/*SEÇÃO OFERTA*/
+@media (max-width: 414px) and (orientation: portrait) {
+  .oferta {
+    width: 100%;
+  }
+  .oferta__video {
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+  }
+  .oferta__texto {
+    animation: none;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-color: #063f57;
+  }
+  .oferta h2 {
+    font-size: 1.5rem;
+  }
+  .oferta h3 {
+    font-size: 1rem;
+  }
+  /*SEÇÃO BENEFÍCIOS*/
+  /*SEÇÃO CONTATO*/
+  /*FOOTER*/
+}
 
 /*# sourceMappingURL=style.css.map */

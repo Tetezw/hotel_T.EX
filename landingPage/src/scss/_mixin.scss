@@ -9,7 +9,7 @@
   justify-content: space-between;
 }
 
-@mixin social-icons {
-
-  
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
 }

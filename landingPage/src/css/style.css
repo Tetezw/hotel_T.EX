@@ -27,9 +27,9 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  width: 80%;
   margin: auto;
   height: 100vh;
-  width: 80%;
 }
 .headerContainer__boxTitles {
   display: flex;
@@ -44,24 +44,29 @@ header {
 }
 .headerContainer__boxTitles__line1 {
   font-size: 4.5rem;
+  font-family: "Courier Prime", monospace;
+  margin-top: 120px;
+  letter-spacing: 0.4rem;
 }
 .headerContainer__boxTitles__line2 {
   font-size: 3rem;
   font-weight: bold;
-  margin: 0 0 15px;
+  font-family: "Courier Prime", monospace;
+  margin-top: 50px;
 }
 .headerContainer__boxTitles__line3 {
   font-size: 2rem;
   font-weight: normal;
-  margin: 0;
+  font-family: "Courier Prime", monospace;
+  margin-top: 10px;
 }
 .headerContainer__boxReserva {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 120px;
   width: 100%;
-  margin-bottom: -45px;
+  margin-bottom: -60px;
   background-color: #ffffff;
   box-shadow: 1px 1px 10px #000;
 }
@@ -69,44 +74,134 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
+}
+.headerContainer__boxReserva__form__boxInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1%;
+  margin-right: 10px;
+}
+.headerContainer__boxReserva__form__boxInput__boxTitle {
+  text-transform: uppercase;
+  text-align: start;
+  font-family: "Courier Prime", monospace;
+  font-weight: bold;
+  font-size: 0.6875rem;
+  letter-spacing: 0.15625rem;
+  padding: 0 0 0.625rem;
 }
 .headerContainer__boxReserva__form input,
 .headerContainer__boxReserva__form button {
   box-sizing: border-box;
-  background-color: #eee;
-  height: 50px;
+  background-color: rgba(106, 103, 103, 0.5);
+  height: 40px;
   border-radius: 5px;
-  width: 20%;
+  width: 100%;
   margin: 5px;
   padding: 0 20px;
-  border: none;
+  color: white;
   box-shadow: 1px 1px 5px #000;
+  outline: none;
+  border: none;
+}
+.headerContainer__boxReserva__form input:hover,
+.headerContainer__boxReserva__form button:hover {
+  cursor: pointer;
+  background-color: rgba(132, 128, 128, 0.5);
+}
+.headerContainer__boxReserva__form input::placeholder,
+.headerContainer__boxReserva__form button::placeholder {
+  color: white;
 }
 .headerContainer__boxReserva__form button {
-  background-color: #000000;
+  background-color: #a35700;
   color: #ffffff;
+  width: 100%;
 }
 .headerContainer__boxReserva__form button:hover {
+  cursor: pointer;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #d67200;
+}
+.headerContainer__boxReserva__form button span {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 80%;
+  text-transform: uppercase;
 }
 .headerContainer__btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   text-decoration: none;
-  background-color: #000000;
+  background-color: #a35700;
   color: #ffffff;
   margin-top: 70px;
-  width: 150px;
-  height: 12px;
-  padding: 16px 14px;
+  width: 200px;
+  height: 40px;
+  padding: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 5px #000;
 }
 .headerContainer__btn:hover {
-  color: #000000;
-  background-color: #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #d67200;
+  border: white 20px;
+}
+.headerContainer__btn span {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 100%;
+  text-transform: uppercase;
 }
 
+.spacing {
+  height: 60px;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .headerContainer__boxTitle__line1 {
+    font-size: 2rem;
+    margin-top: 150px;
+  }
+  .headerContainer__boxTitle__line2 {
+    font-size: 1.5rem;
+  }
+  .headerContainer__boxTitle__line3 {
+    font-size: 1rem;
+  }
+  .headerContainer__boxReserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    width: 100%;
+    box-shadow: 1px 1px 10px #000;
+    margin-bottom: -430px;
+    border-radius: 5px;
+  }
+  .headerContainer__boxReserva__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContainer__boxReserva__form input,
+  .headerContainer__boxReserva__form button {
+    width: 100%;
+  }
+  .headerContainer__boxReserva__form__boxInput__boxTitle {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .spacing {
+    height: 430px;
+  }
+}
 /*Navbar*/
 .logo {
   display: flex;
@@ -128,7 +223,7 @@ header {
   background-color: #063f57;
   position: sticky;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
   height: 50px;
   align-items: center;
@@ -278,5 +373,207 @@ header {
     font-size: 1rem;
   }
 }
+.box-title {
+  justify-content: center;
+}
+.box-title h2 {
+  text-align: center;
+  color: #063f57;
+  font-size: 1.9rem;
+  font-family: "Courier Prime", monospace;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.imagecontainer {
+  background-color: #176485;
+  width: 30%;
+  margin: 8px;
+  border: 5px #063f57;
+  border-radius: 8px 8px 8px 8px;
+  justify-items: center;
+  transition: all 0.5s;
+}
+.imagecontainer h3 {
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 10px;
+}
+.imagecontainer:hover {
+  transform: scale(1.3);
+  display: block;
+}
+
+.imagecontainer img {
+  border-radius: 5px;
+  width: 100%;
+  height: 70%;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .beneficios {
+    display: flex;
+  }
+  .imagecontainer {
+    width: 100%;
+  }
+}
+/* FOOTER */
+footer {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(11, 13, 23);
+  font-size: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.container-footer {
+  width: 25vw;
+  padding: 8vh 0;
+}
+
+.container-div1 {
+  position: relative;
+  padding: 0;
+}
+.container-div1 > .logo-footer {
+  width: 10vw;
+  display: block;
+  position: absolute;
+  top: 10px;
+  margin-left: 18%;
+}
+.container-div1 > h3 {
+  padding-top: 45%;
+  width: 70%;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 400;
+  margin-left: 20%;
+}
+.container-div1 > .contato-img-div1 {
+  padding: 20px 0;
+  margin-left: 20%;
+}
+.container-div1 > .contato-img-div1 > a > i {
+  font-size: xx-large;
+  padding-left: 20px;
+}
+.container-div1 > .contato-img-div1 > a > i.fa-instagram {
+  padding-left: 0;
+}
+.container-div1 > input {
+  padding: 25px;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  height: 5vh;
+  width: 60%;
+  background-color: rgba(106, 103, 103, 0.5);
+  outline: none;
+  color: white;
+  margin-left: 20%;
+  font-size: 100%;
+  letter-spacing: 0.1rem;
+}
+.container-div1 > input::placeholder {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.2s;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 5%;
+  border-left: 2px #a35700 solid;
+  height: 90%;
+}
+ul > li {
+  padding: 10px;
+}
+
+.li-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.container-div4 > ul > li {
+  line-height: 2rem;
+}
+
+.i-resposive-footer {
+  display: none;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+  footer {
+    font-size: 14px;
+    letter-spacing: normal;
+    position: relative;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-footer {
+    all: initial;
+    left: 144px;
+    width: 30vw !important;
+    margin-left: 0 !important;
+  }
+  .contato-img-div1 > a > i {
+    all: initial;
+    position: absolute;
+    bottom: 0;
+  }
+  .container-div2 {
+    margin-top: 120px;
+  }
+  .container-div2,
+  .container-div3,
+  .container-div4 {
+    display: flex;
+    width: 90%;
+    padding: 0 0 8% 5%;
+  }
+  ul {
+    border-left: none;
+    border-top: 2px #a35700 solid;
+    width: 80%;
+  }
+  .container-div4 {
+    display: block !important;
+  }
+  .i-resposive-footer {
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-size: x-large;
+  }
+  .container-div1 h3,
+  .container-div1 input {
+    display: none !important;
+  }
+}
+/* FINAL FOOTER */
 
 /*# sourceMappingURL=style.css.map */

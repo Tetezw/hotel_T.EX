@@ -3,103 +3,228 @@
 
 /* Header */
 header {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(v.$bgImage);
-  background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(v.$bgImage);
+    background-size: cover;
 }
 .headerContainer {
-  @include mx.flex_between;
-  flex-direction: v.$flex-dc;
-  margin: auto;
-  height: 100vh;
-  width: v.$container;
+    @include mx.flex_between;
+    flex-direction: v.$flex-dc;
+    width: v.$container;
+    margin: auto;
+    height: 100vh;
 
-  &__boxTitles {
-    display: v.$display-f;
-    flex-flow: column;
-    height: 50%;
-    width: 100%;
-    padding: 5% 5% 5% 0%;
-    color: v.$color_white;
-
-    &__desconto {
-      width: 100%;
-    }
-
-    &__line1 {
-      font: {
-        size: 4.5rem;
-      }
-    }
-
-    &__line2 {
-      font: {
-        size: 3rem;
-        weight: bold;
-      }
-      margin: 0 0 15px;
-    }
-
-    &__line3 {
-      font: {
-        size: 2rem;
-        weight: normal;
-      }
-      margin: 0;
-    }
-  }
-
-  &__boxReserva {
-    @include mx.flex_center;
-    height: 100px;
-    width: 100%;
-    margin-bottom: -45px;
-    background-color: v.$color_white;
-    box-shadow: 1px 1px 10px #000;
-
-    &__form {
-      @include mx.flex_center;
-
-      input,
-      button {
-        box-sizing: border-box;
-        background-color: #eee;
-        height: 50px;
-        border-radius: 5px;
-        width: calc(100% / 5);
-        margin: 5px;
-        padding: 0 20px;
-        border: none;
-        box-shadow: 1px 1px 5px #000;
-      }
-
-      button {
-        background-color: v.$color_black;
+    &__boxTitles {
+        display: v.$display-f;
+        flex-flow: column;
+        height: 50%;
+        width: 100%;
+        padding: 5% 5% 5% 0%;
         color: v.$color_white;
 
-        &:hover {
-          color: v.$color_white;
-          background-color: rgba(0, 0, 0, 0.9);
+        &__desconto {
+            width: 100%;
         }
-      }
-    }
-  }
 
-  &__btn {
-    @include mx.flex_center;
-    text-decoration: none;
-    background-color: v.$color_black;
-    color: v.$color_white;
-    margin-top: 70px;
-    width: 150px;
-    height: 12px;
-    padding: 16px 14px;
+        &__line1 {
+            font: {
+                size: 4.5rem;
+                family: v.$courier;
+            }
+            margin-top: 120px;
+            letter-spacing: 0.4rem;
+        }
 
-    &:hover {
-      color: v.$color_black;
-      background-color: v.$color_white;
+        &__line2 {
+            font: {
+                size: 3rem;
+                weight: bold;
+                family: v.$courier;
+            }
+            margin-top: 50px;
+        }
+
+        &__line3 {
+            font: {
+                size: 2rem;
+                weight: normal;
+                family: v.$courier;
+            }
+            margin-top: 10px;
+        }
     }
-  }
+
+    &__boxReserva {
+        @include mx.flex_center;
+        height: 120px;
+        width: 100%;
+        margin-bottom: -60px;
+        background-color: v.$color_white;
+        box-shadow: 1px 1px 10px #000;
+
+        &__form {
+            @include mx.flex_center;
+            width: 90%;
+
+            &__boxInput {
+                display: v.$display-f;
+                flex-direction: column;
+                width: 100%;
+                padding: 0 1%;
+                margin-right: 10px;
+
+                &__boxTitle {
+                    text: {
+                        transform: uppercase;
+                        align: start;
+                    }
+                    font: {
+                        family: v.$courier;
+                        weight: bold;
+                        size: 0.6875rem;
+                    }
+                    letter-spacing: 0.15625rem;
+                    padding: 0 0 0.625rem;
+                }
+            }
+            input,
+            button {
+                box-sizing: border-box;
+                background-color: rgba($color: #6a6767, $alpha: 0.5);
+                height: 40px;
+                border-radius: 5px;
+                width: 100%;
+                margin: 5px;
+                padding: 0 20px;
+                color: white;
+                box-shadow: 1px 1px 5px #000;
+                outline: none;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: lighten(
+                        rgba($color: #6a6767, $alpha: 0.5),
+                        10%
+                    );
+                }
+                &::placeholder {
+                    color: white;
+                }
+            }
+
+            button {
+                background-color: v.$laranja;
+                color: v.$color_white;
+                width: 100%;
+
+                &:hover {
+                    cursor: pointer;
+                    color: v.$color_white;
+                    background-color: lighten(v.$laranja, 10%);
+                }
+                span {
+                    font: {
+                        family: v.$noto-sans;
+                        weight: bold;
+                        size: 80%;
+                    }
+                    text: {
+                        transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    &__btn {
+        @include mx.flex_center;
+        box-sizing: border-box;
+        text-decoration: none;
+        background-color: v.$laranja;
+        color: v.$color_white;
+        margin-top: 70px;
+        width: 200px;
+        height: 40px;
+        padding: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        box-shadow: 1px 1px 5px #000;
+
+        &:hover {
+            cursor: pointer;
+            color: v.$color_white;
+            background-color: lighten(v.$laranja, 10%);
+            border: white 20px;
+        }
+        span {
+            font: {
+                family: v.$noto-sans;
+                weight: bold;
+                size: 100%;
+            }
+            text: {
+                transform: uppercase;
+            }
+        }
+    }
+}
+
+.spacing {
+    height: 60px;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    .headerContainer {
+        &__boxTitle {
+            &__line1 {
+                font: {
+                    size: 2rem;
+                }
+                margin-top: 150px;
+            }
+
+            &__line2 {
+                font: {
+                    size: 1.5rem;
+                }
+            }
+
+            &__line3 {
+                font: {
+                    size: 1rem;
+                }
+            }
+        }
+
+        &__boxReserva {
+            @include mx.flex_center;
+            height: 410px;
+            width: 100%;
+            box-shadow: 1px 1px 10px #000;
+            margin-bottom: -430px;
+            border-radius: 5px;
+
+            &__form {
+                @include mx.flex_column;
+
+                input,
+                button {
+                    width: 100%;
+                }
+                &__boxInput {
+                    &__boxTitle {
+                        padding-top: 10px;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .spacing {
+        height: 430px;
+    }
 }

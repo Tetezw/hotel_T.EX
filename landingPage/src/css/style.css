@@ -373,6 +373,137 @@ header {
     font-size: 1rem;
   }
 }
+section {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5rem;
+}
+section .contact__title {
+  font-family: "Courier Prime", monospace;
+  font-size: 4rem;
+  text-align: center;
+  color: #063f57;
+  height: 8rem;
+  margin-top: 3rem;
+}
+section .container__contact {
+  display: flex;
+  column-gap: 2rem;
+}
+section .container__contact .container__social__network {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 20px;
+  width: 50%;
+  justify-content: center;
+}
+section .container__contact .container__social__network .social__network {
+  font-size: 2rem;
+  font-family: "Courier Prime", monospace;
+  color: #063f57;
+}
+section .container__contact .container__social__network p {
+  font-size: 1rem;
+  color: #000000;
+  font-family: "Noto Sans", sans-serif;
+}
+section .container__contact .container__social__network .container__social__icons {
+  display: flex;
+  gap: 1rem;
+}
+section .container__contact .container__social__network .container__social__icons div {
+  width: 30px;
+}
+section .container__contact .container__social__network .container__social__icons div img {
+  width: 100%;
+}
+section .container__contact .container__form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%;
+  gap: 10px;
+  background-color: rgba(23, 100, 133, 0.1);
+}
+section .container__contact .container__form p {
+  font-size: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  padding: 1rem;
+}
+section .container__contact .container__form .container__form__contact form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 2rem 0;
+  gap: 1rem;
+}
+section .container__contact .container__form .container__form__contact form input,
+section .container__contact .container__form .container__form__contact form select {
+  height: 50px;
+  border: 2px solid #063f57;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-family: "Noto Sans", sans-serif;
+}
+section .container__contact .container__form .container__form__contact textarea {
+  resize: none;
+  height: 150px;
+  border: 2px solid #063f57;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-family: "Noto Sans", sans-serif;
+}
+section .container__contact .container__form .container__form__contact button {
+  height: 50px;
+  width: 200px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  align-self: flex-end;
+  background-color: #573106;
+  border-radius: 4px;
+  font-family: "Noto Sans", sans-serif;
+}
+section .container__contact .container__form .container__form__contact button:hover {
+  background-color: #a35700;
+}
+section .container__contact .container__form .contact__term p {
+  font-size: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  padding: 1rem;
+}
+section .container__contact .container__form .contact__term p a {
+  font-weight: 700;
+  color: #063f57;
+}
+
+/* responsividade */
+@media (max-width: 414px) and (orientation: portrait) {
+  section {
+    width: 100%;
+  }
+  section .container__contact {
+    flex-direction: column-reverse;
+  }
+  section .container__contact .container__social__network {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  section .container__contact .container__form {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  section section .contact__title {
+    text-align: left;
+    padding-left: 16px;
+  }
+}
+::placeholder {
+  padding-left: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  color: rgba(23, 100, 133, 0.9);
+}
+
 .box-title {
   justify-content: center;
 }

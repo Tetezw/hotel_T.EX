@@ -1,0 +1,92 @@
+@use "variaveis" as v;
+@use "mixin" as mx;
+
+/*HEADER*/
+@media (max-width: 414px) and (orientation: portrait) {
+    .headerContainer {
+        &__boxTitle {
+            &__line1 {
+                font: {
+                    size: 2rem;
+                }
+                margin-top: 150px;
+            }
+
+            &__line2 {
+                font: {
+                    size: 1.5rem;
+                }
+            }
+
+            &__line3 {
+                font: {
+                    size: 1rem;
+                }
+            }
+        }
+
+        &__boxReserva {
+            @include mx.flex_center;
+            height: 410px;
+            width: 100%;
+            box-shadow: 1px 1px 10px #000;
+            margin-bottom: -430px;
+            border-radius: 5px;
+
+            &__form {
+                @include mx.flex_column;
+
+                input,
+                button {
+                    width: 100%;
+                }
+                &__boxInput {
+                    &__boxTitle {
+                        padding-top: 10px;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .spacing {
+        height: 430px;
+    }
+}
+
+/*NAVBAR*/
+
+/*SEÇÃO OFERTA*/
+@media (max-width: 414px) and (orientation: portrait) {
+    .oferta {
+        width: 100%;
+
+        &__video {
+            margin-top: 60px;
+            width: 100%;
+            position: relative;
+        }
+
+        &__texto {
+            animation: none;
+            position: relative;
+            width: 100%;
+            margin: 0;
+            background-color: v.$azulEscuro;
+        }
+
+        & h2 {
+            font-size: 1.5rem;
+        }
+
+        & h3 {
+            font-size: 1rem;
+        }
+    }
+
+    /*SEÇÃO BENEFÍCIOS*/
+
+    /*SEÇÃO CONTATO*/
+
+    /*FOOTER*/
+}

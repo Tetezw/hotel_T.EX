@@ -3,6 +3,7 @@
 
 /*Navbar*/
 
+
 .logo {
   display: v.$display-f;
   background-color: v.$azulClaro;
@@ -31,6 +32,7 @@
   margin: 0 0 0 0;
   padding: 0 0 10px 0;
   box-sizing: border-box;
+  
 }
 
 .navbar__link {
@@ -40,6 +42,7 @@
   font-weight: bold;
   align-items: v.$align-c;
   justify-content: v.$justify-c;
+  flex: 1;
 
   &:hover {
     color: v.$laranja;
@@ -54,6 +57,8 @@
   .navbar__link {
     display: flex;
     flex-wrap: wrap;
+    flex: none;
+    justify-content: space-around;
     & img {
         display: none;
     }

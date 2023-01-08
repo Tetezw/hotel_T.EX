@@ -53,18 +53,4 @@
 }
 
 
-@media (max-width: 414px) and (orientation: portrait) {
-  .navbar__link {
-    display: flex;
-    flex-wrap: wrap;
-    flex: none;
-    justify-content: space-around;
-    & img {
-        display: none;
-    }
-  }
-  .logo img{
-    height: 70px;
-    padding-bottom: 10px;
-  }
-}
+

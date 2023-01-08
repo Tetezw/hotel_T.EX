@@ -239,6 +239,7 @@ header {
   font-weight: bold;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 .navbar__link:hover {
   color: #a35700;
@@ -251,6 +252,8 @@ header {
   .navbar__link {
     display: flex;
     flex-wrap: wrap;
+    flex: none;
+    justify-content: space-around;
   }
   .navbar__link img {
     display: none;

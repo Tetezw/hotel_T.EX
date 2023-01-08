@@ -164,43 +164,6 @@ header {
   height: 60px;
 }
 
-@media (max-width: 414px) and (orientation: portrait) {
-  .headerContainer__boxTitle__line1 {
-    font-size: 2rem;
-    margin-top: 150px;
-  }
-  .headerContainer__boxTitle__line2 {
-    font-size: 1.5rem;
-  }
-  .headerContainer__boxTitle__line3 {
-    font-size: 1rem;
-  }
-  .headerContainer__boxReserva {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 410px;
-    width: 100%;
-    box-shadow: 1px 1px 10px #000;
-    margin-bottom: -430px;
-    border-radius: 5px;
-  }
-  .headerContainer__boxReserva__form {
-    display: flex;
-    flex-direction: column;
-  }
-  .headerContainer__boxReserva__form input,
-  .headerContainer__boxReserva__form button {
-    width: 100%;
-  }
-  .headerContainer__boxReserva__form__boxInput__boxTitle {
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
-  .spacing {
-    height: 430px;
-  }
-}
 /*Navbar*/
 .logo {
   display: flex;
@@ -300,13 +263,13 @@ header {
   border: 2px solid #a35700;
   padding: 1% 1%;
   /*Animação oferta*/
-  animation-name: animacao1-ukx4gvy;
+  animation-name: animacao1-u148z3w;
   animation-duration: 20s;
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: forwards;
 }
-@keyframes animacao1-ukx4gvy {
+@keyframes animacao1-u148z3w {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.2);
   }
@@ -550,6 +513,43 @@ ul > li {
 }
 /* FINAL FOOTER */
 /*HEADER*/
+@media (max-width: 414px) and (orientation: portrait) {
+  .headerContainer__boxTitle__line1 {
+    font-size: 2rem;
+    margin-top: 150px;
+  }
+  .headerContainer__boxTitle__line2 {
+    font-size: 1.5rem;
+  }
+  .headerContainer__boxTitle__line3 {
+    font-size: 1rem;
+  }
+  .headerContainer__boxReserva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+    width: 100%;
+    box-shadow: 1px 1px 10px #000;
+    margin-bottom: -430px;
+    border-radius: 5px;
+  }
+  .headerContainer__boxReserva__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerContainer__boxReserva__form input,
+  .headerContainer__boxReserva__form button {
+    width: 100%;
+  }
+  .headerContainer__boxReserva__form__boxInput__boxTitle {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+  .spacing {
+    height: 430px;
+  }
+}
 /*NAVBAR*/
 /*SEÇÃO OFERTA*/
 @media (max-width: 414px) and (orientation: portrait) {

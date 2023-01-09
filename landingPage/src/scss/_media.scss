@@ -4,25 +4,34 @@
 /*HEADER*/
 @media (max-width: 414px) and (orientation: portrait) {
   .headerContainer {
-    &__boxTitle {
+    text-align: center;
+
+    &__boxTitles {
+      padding: 5% 0 5%;
+
       &__line1 {
         font: {
-          size: 2rem;
+          size: 2.5rem;
         }
-        margin-top: 150px;
+        margin-top: 70px;
       }
 
       &__line2 {
         font: {
-          size: 1.5rem;
+          size: 1.7rem;
         }
       }
 
       &__line3 {
         font: {
-          size: 1rem;
+          size: 1.2rem;
         }
       }
+    }
+
+    &__btn {
+      width: 80%;
+      margin: 80px auto 0;
     }
 
     &__boxReserva {
@@ -96,40 +105,40 @@
   }
 
   /*SEÇÃO BENEFÍCIOS*/
-@media (max-width: 414px) and (orientation : portrait) {
-  .beneficios {
-    display: flex;
-    margin: 0%;
-    width: 100%;
-  }
+  @media (max-width: 414px) and (orientation: portrait) {
+    .beneficios {
+      display: flex;
+      margin: 0%;
+      width: 100%;
+    }
 
-  .imagecontainer {
-    width: 100%;
+    .imagecontainer {
+      width: 100%;
+    }
   }
-}
   /*SEÇÃO CONTATO*/
-@media (max-width: 414px) and (orientation: portrait) {
-  section {
-    width: 100%;
-    & .container__contact {
-      flex-direction: column-reverse;
-      & .container__social__network {
-        width: 100%;
-        padding-bottom: 10%;
+  @media (max-width: 414px) and (orientation: portrait) {
+    section {
+      width: 100%;
+      & .container__contact {
+        flex-direction: column-reverse;
+        & .container__social__network {
+          width: 100%;
+          padding-bottom: 10%;
+        }
+        & .container__form {
+          width: 100%;
+          padding-bottom: 10%;
+        }
       }
-      & .container__form {
-        width: 100%;
-        padding-bottom: 10%;
+      & .contact__title {
+        font-size: 3rem;
+        text-align: center;
+        height: 6rem;
+        padding-top: 40px;
+        margin-top: 0;
       }
-    }
-    & .contact__title {
-    font-size: 3rem;
-    text-align: center;
-    height: 6rem;
-    padding-top: 40px;
-    margin-top: 0;
     }
   }
-}
   /*FOOTER*/
 }

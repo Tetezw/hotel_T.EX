@@ -223,13 +223,13 @@ header {
   border: 2px solid #a35700;
   padding: 1% 1%;
   /*Animação oferta*/
-  animation-name: animacao1-uq8zabp;
+  animation-name: animacao1-u2boc86;
   animation-duration: 20s;
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: forwards;
 }
-@keyframes animacao1-uq8zabp {
+@keyframes animacao1-u2boc86 {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.2);
   }
@@ -648,6 +648,7 @@ a:hover {
     flex-wrap: wrap;
     flex: none;
     justify-content: space-around;
+    padding-top: 10px;
   }
   .navbar__link img {
     display: none;

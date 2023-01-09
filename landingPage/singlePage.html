@@ -13,21 +13,20 @@
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
   <body>
-    <div class="logo">
-        <img src="../landingPage/src/img/Logo-logo-Branca.png" alt="" />
-      </div>
-      <nav class="navbar">
-        <a class="navbar__link" href="#home">Home</a>
-        <a class="navbar__link" href="#oferta">Oferta</a>
-        <a class="navbar__link" href="Home"
-          ><img src="../landingPage/src/img/nome-logo-branca.png" alt=""
-        /></a>
-        <a class="navbar__link" href="#beneficios">Benefícios</a>
-        <a class="navbar__link" href="#contato">Contato</a>
-      </nav>
+    <div class="logo" id="home">
+      <img src="../landingPage/src/img/Logo-logo-Branca.png" alt="" />
+    </div>
+    <nav class="navbar">
+      <a class="navbar__link" href="#home">Home</a>
+      <a class="navbar__link" href="#oferta">Oferta</a>
+      <a class="navbar__link" href="#home"
+        ><img src="../landingPage/src/img/nome-logo-branca.png" alt=""
+      /></a>
+      <a class="navbar__link" href="#beneficios">Benefícios</a>
+      <a class="navbar__link" href="#contato">Contato</a>
+    </nav>
 
     <header>
-        
       <div class="headerContainer">
         <div class="headerContainer__boxTitles">
           <h2 class="headerContainer__boxTitles__line1">HOTEL</h2>
@@ -42,126 +41,87 @@
           </button>
         </div>
         <div class="headerContainer__boxReserva">
-          <form action="#" class="headerContainer__boxReserva__form">
-            <div class="headerContainer__boxReserva__form__boxInput">
-              <span
-                class="headerContainer__boxReserva__form__boxInput__boxTitle"
-                >Check-in</span
-              >
-              <input type="date" name="check-in" placeholder="Check-in" />
-            </div>
-            <div class="headerContainer__boxReserva__form__boxInput">
-              <span
-                class="headerContainer__boxReserva__form__boxInput__boxTitle"
-                >Check-Out</span
-              >
-              <input type="date" name="check-out" placeholder="Check-out" />
-            </div>
-            <div class="headerContainer__boxReserva__form__boxInput">
-              <span
-                class="headerContainer__boxReserva__form__boxInput__boxTitle"
-                >Qtd. de adultos</span
-              >
-              <input type="number" name="adultos" placeholder="Adultos" />
-            </div>
-            <div class="headerContainer__boxReserva__form__boxInput">
-              <span
-                class="headerContainer__boxReserva__form__boxInput__boxTitle"
-                >Qtd. de criancas</span
-              >
-              <input type="number" name="criancas" placeholder="Crianças" />
-            </div>
-            <div class="headerContainer__boxReserva__form__boxInput">
-              <span
-                class="headerContainer__boxReserva__form__boxInput__boxTitle"
-                style="color: white; user-select: none"
-                >Qtd. de criancas</span
-              >
-              <button><span>Booking Now</span></button>
-            </div>
+          <form class="headerContainer__boxReserva__form">
+            <input type="date" name="check-in" placeholder="Check-in" />
+            <input type="date" name="check-out" placeholder="Check-Out" />
+            <input type="number" name="criancas" placeholder="Crianças" />
+            <input type="number" name="adultos" placeholder="Adultos" />
+            <button type="submit">Booking Now</button>
           </form>
         </div>
       </div>
-        </header>
-        <div class="spacing"></div>
-        <main>
-            <section id="oferta" class="oferta">
-                <div class="oferta__container">
-                    <div class="oferta__video">
-                        <video
-                            class="oferta__background-video"
-                            autoplay
-                            loop
-                            muted
-                            poster=""
-                        >
-                            <source
-                                src="videos/Hotel_Recanto_dos_Códigos_sem_logo.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
-                    </div>
-                    <div class="oferta__texto">
-                        <h2>FAÇA JÁ SUA RESERVA!</h2>
-                        <h3>
-                            Gostaríamos muito de ter a oportunidade de recebê-lo
-                            em nosso hotel e lhe oferecer uma experiência
-                            inesquecível.
-                        </h3>
-                        <p>
-                            Quartos confortáveis, serviços de primeira linha,
-                            piscina climatizada, restaurante gourmet, bar
-                            aconchegante e um belo ambiente circundante.
-                        </p>
-                        <h3>
-                            SAIBA MAIS SOBRE OS BENEFÍCIOS
-                            <a href="#beneficios">AQUI</a>
-                        </h3>
-                    </div>
-                </div>
-            </section>
+    </header>
+    <div class="spacing"></div>
+    <main>
+      <section id="oferta" class="oferta">
+        <div class="oferta__container">
+          <div class="oferta__video">
+            <video
+              class="oferta__background-video"
+              autoplay
+              loop
+              muted
+              poster=""
+            >
+              <source
+                src="videos/Hotel_Recanto_dos_Códigos_sem_logo.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="oferta__texto">
+            <h2>FAÇA JÁ SUA RESERVA!</h2>
+            <h3>
+              Gostaríamos muito de ter a oportunidade de recebê-lo em nosso
+              hotel e lhe oferecer uma experiência inesquecível.
+            </h3>
+            <p>
+              Quartos confortáveis, serviços de primeira linha, piscina
+              climatizada, restaurante gourmet, bar aconchegante e um belo
+              ambiente circundante.
+            </p>
+            <h3>
+              SAIBA MAIS SOBRE OS BENEFÍCIOS
+              <a href="#beneficios">AQUI</a>
+            </h3>
+          </div>
+        </div>
+      </section>
 
-            <!-- section - benefícios -->
-            <section id="beneficios">
-                <div class="box-title">
-                    <h2>Reserve agora e garanta benefícios exclusivos</h2>
-                    <div class="beneficios">
-                        <div class="imagecontainer">
-                            <img
-                                src="src/img/quartoluxo.jpg"
-                                alt="Upgrade Quarto Luxo"
-                            />
-                            <h3>Upgrade grátis para quarto de luxo</h3>
-                        </div>
-                        <div class="imagecontainer">
-                            <img src="src/img/lancha.jpg" alt="Beneficio 2" />
-                            <h3>Passeio de lancha nas praias próximas</h3>
-                        </div>
-                        <div class="imagecontainer">
-                            <img src="src/img/mergulho.jpg" alt="Beneficio 3" />
-                            <h3>Uma aula de mergulho</h3>
-                        </div>
-                        <div class="imagecontainer">
-                            <img src="src/img/trilha.jpg" alt="Beneficio 4" />
-                            <h3>Trilha guiada até o mirante</h3>
-                        </div>
-                        <div class="imagecontainer">
-                            <img
-                                src="src/img/restaurante.webp"
-                                alt="Beneficio 5"
-                            />
-                            <h3>
-                                Ganhe uma sequencia de frutos do mar no
-                                restaurante do hotel
-                            </h3>
-                        </div>
-                        <div class="imagecontainer">
-                            <img src="src/img/spa.jpg" alt="Beneficio 6" />
-                            <h3>Uma manhã completa no spa</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <!-- section - benefícios -->
+      <section id="beneficios">
+        <div class="box-title">
+          <h2>Reserve agora e garanta benefícios exclusivos</h2>
+          <div class="beneficios">
+            <div class="imagecontainer">
+              <img src="src/img/quartoluxo.jpg" alt="Upgrade Quarto Luxo" />
+              <h3>Upgrade grátis para quarto de luxo</h3>
+            </div>
+            <div class="imagecontainer">
+              <img src="src/img/lancha.jpg" alt="Beneficio 2" />
+              <h3>Passeio de lancha nas praias próximas</h3>
+            </div>
+            <div class="imagecontainer">
+              <img src="src/img/mergulho.jpg" alt="Beneficio 3" />
+              <h3>Uma aula de mergulho</h3>
+            </div>
+            <div class="imagecontainer">
+              <img src="src/img/trilha.jpg" alt="Beneficio 4" />
+              <h3>Trilha guiada até o mirante</h3>
+            </div>
+            <div class="imagecontainer">
+              <img src="src/img/restaurante.webp" alt="Beneficio 5" />
+              <h3>
+                Ganhe uma sequencia de frutos do mar no restaurante do hotel
+              </h3>
+            </div>
+            <div class="imagecontainer">
+              <img src="src/img/spa.jpg" alt="Beneficio 6" />
+              <h3>Uma manhã completa no spa</h3>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- section - contact and social networks -->
       <section>

@@ -96,7 +96,17 @@
   }
 
   /*SEÇÃO BENEFÍCIOS*/
+@media (max-width: 414px) and (orientation : portrait) {
+  .beneficios {
+    display: flex;
+    margin: 0%;
+    width: 100%;
+  }
 
+  .imagecontainer {
+    width: 100%;
+  }
+}
   /*SEÇÃO CONTATO*/
 
   /*FOOTER*/

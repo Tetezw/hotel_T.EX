@@ -2,6 +2,7 @@
 @use "mixin" as mx;
 
 .box-title{
+    padding-top: 60px;
     justify-content: center;
             &   h2 {
                     text-align: center;
@@ -12,6 +13,7 @@
 }
 
 .beneficios{
+    margin-top: 10px;
     display: v.$display-f;
     flex-wrap: wrap;
     justify-content: center;
@@ -30,6 +32,7 @@
     & h3{
         color: v.$color_white;
         text-align: center;
+        font-size: 1.1rem;
         padding: 5px 10px;
     }
     &:hover{

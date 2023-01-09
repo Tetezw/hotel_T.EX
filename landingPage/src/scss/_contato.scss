@@ -107,30 +107,7 @@ section {
   }
 }
 /* responsividade */
-@media (max-width: 414px) and (orientation: portrait) {
-  section {
-    width: 100%;
-    & .container__contact {
-      flex-direction: column-reverse;
-      & .container__social__network {
-        width: 100%;
-        padding-bottom: 10%;
-      }
-      & .container__form {
-        width: 100%;
-        padding-bottom: 10%;
-      }
-    }
-    & .contact__title {
-    font-family: v.$courier;
-    font-size: 3rem;
-    text-align: center;
-    color: v.$azulEscuro;
-    height: 6rem;
-    margin-top: calc(v.$mb1 + 1rem);
-    }
-  }
-}
+
 ::placeholder {
   @include mx.placeholder__form;
   color: rgba(v.$azulClaro, 0.9);

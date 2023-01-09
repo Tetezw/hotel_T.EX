@@ -223,13 +223,13 @@ header {
   border: 2px solid #a35700;
   padding: 1% 1%;
   /*Animação oferta*/
-  animation-name: animacao1-u2boc86;
+  animation-name: animacao1-upt2qp3;
   animation-duration: 20s;
   animation-direction: alternate;
   animation-timing-function: linear;
   animation-iteration-count: forwards;
 }
-@keyframes animacao1-u2boc86 {
+@keyframes animacao1-upt2qp3 {
   0% {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1.2);
   }
@@ -271,6 +271,7 @@ header {
 }
 
 .box-title {
+  padding-top: 60px;
   justify-content: center;
 }
 .box-title h2 {
@@ -281,6 +282,7 @@ header {
 }
 
 .beneficios {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -300,6 +302,7 @@ header {
 .imagecontainer h3 {
   color: #ffffff;
   text-align: center;
+  font-size: 1.1rem;
   padding: 5px 10px;
 }
 .imagecontainer:hover {
@@ -684,6 +687,16 @@ a:hover {
   /*SEÇÃO BENEFÍCIOS*/
   /*SEÇÃO CONTATO*/
   /*FOOTER*/
+}
+@media (max-width: 414px) and (orientation: portrait) and (max-width: 414px) and (orientation: portrait) {
+  .beneficios {
+    display: flex;
+    margin: 0%;
+    width: 100%;
+  }
+  .imagecontainer {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

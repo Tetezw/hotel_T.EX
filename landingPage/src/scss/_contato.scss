@@ -1,0 +1,113 @@
+@use "variaveis" as v;
+@use "mixin" as mx;
+
+/* Section contact */
+section {
+  width: v.$container;
+  margin: auto;
+  padding-bottom: 5rem;
+  & .contact__title {
+    font-family: v.$courier;
+    font-size: 4rem;
+    text-align: center;
+    color: v.$azulEscuro;
+    height: 8rem;
+    margin-top: calc(v.$mb1 + 2rem);
+  }
+  .container__contact {
+    display: v.$display-f;
+    column-gap: 2rem;
+    & .container__social__network {
+      display: v.$display-f;
+      flex-direction: v.$flex-dc;
+      padding: 1rem;
+      gap: 20px;
+      width: 50%;
+      justify-content: v.$justify-c;
+      & .social__network {
+        font-size: 2rem;
+        font-family: v.$courier;
+        color: v.$azulEscuro;
+      }
+      & p {
+        font-size: 1rem;
+        color: v.$preto;
+        font-family: v.$noto-sans;
+      }
+      & .container__social__icons {
+        display: v.$display-f;
+        gap: 1rem;
+        & div {
+          width: 30px;
+          & img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    & .container__form {
+      display: v.$display-f;
+      flex-direction: v.$flex-dc;
+      padding: 1rem;
+      width: 50%;
+      gap: 10px;
+      background-color: rgba(v.$azulClaro, 0.1);
+      & p {
+        font-size: 1rem;
+        font-family: v.$noto-sans;
+        padding: 1rem;
+      }
+      & .container__form__contact {
+        & form {
+          display: v.$display-f;
+          flex-direction: v.$flex-dc;
+          padding: 2rem 0 2rem 0;
+          gap: 1rem;
+          & input,
+          select {
+            height: 50px;
+            border: 2px solid #063f57;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-family: v.$noto-sans;
+          }
+        }
+        & textarea {
+          resize: none;
+          height: 150px;
+          border: 2px solid #063f57;
+          border-radius: 4px;
+          font-size: 1.1rem;
+          font-family: v.$noto-sans;
+        }
+        & button {
+          height: 50px;
+          width: 200px;
+          font-size: 1.2rem;
+          color: #ffffff;
+          align-self: flex-end;
+          background-color: v.$marrom;
+          border-radius: 4px;
+          font-family: v.$noto-sans;
+          &:hover {
+            background-color: v.$laranja;
+          }
+        }
+      }
+      & .contact__term p {
+        font-size: 1rem;
+        font-family: v.$noto-sans;
+        padding: 1rem;
+        & a {
+          font-weight: 700;
+          color: v.$azulEscuro;
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  @include mx.placeholder__form;
+  color: rgba(v.$azulClaro, 0.9);
+}

@@ -1,0 +1,49 @@
+@use "variaveis" as v;
+@use "mixin" as mx;
+
+.box-title{
+    padding-top: 60px;
+    justify-content: center;
+            &   h2 {
+                    text-align: center;
+                    color: v.$azulEscuro;
+                    font-size: 1.9rem;
+                    font-family: v.$courier;
+                }
+}
+
+.beneficios{
+    margin-top: 10px;
+    display: v.$display-f;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: v.$container;
+    margin: auto;
+}
+
+.imagecontainer{
+    background-color: v.$azulClaro;
+    width: calc(90%/3);
+    margin: 8px;
+    border: 5px v.$azulEscuro;
+    border-radius: 8px 8px 8px 8px;
+    justify-items: center;
+    transition: all 0.5s;
+    & h3{
+        color: v.$color_white;
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 5px 10px;
+    }
+    &:hover{
+    transform: scale(1.3);
+    display: block;
+}
+}
+
+.imagecontainer img {
+    border-radius: 5px;
+    width: 100%;
+    height: 70%;
+}
+

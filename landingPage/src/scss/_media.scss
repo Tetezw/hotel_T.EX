@@ -1,0 +1,144 @@
+@use "variaveis" as v;
+@use "mixin" as mx;
+
+/*HEADER*/
+@media (max-width: 414px) and (orientation: portrait) {
+  .headerContainer {
+    text-align: center;
+
+    &__boxTitles {
+      padding: 5% 0 5%;
+
+      &__line1 {
+        font: {
+          size: 2.5rem;
+        }
+        margin-top: 70px;
+      }
+
+      &__line2 {
+        font: {
+          size: 1.7rem;
+        }
+      }
+
+      &__line3 {
+        font: {
+          size: 1.2rem;
+        }
+      }
+    }
+
+    &__btn {
+      width: 80%;
+      margin: 80px auto 0;
+    }
+
+    &__boxReserva {
+      @include mx.flex_center;
+      height: 350px;
+      width: 100%;
+      box-shadow: 1px 1px 10px #000;
+      margin-bottom: -400px;
+      border-radius: 5px;
+
+      &__form {
+        @include mx.flex_column;
+
+        input,
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .spacing {
+    height: 400px;
+  }
+}
+
+/*NAVBAR*/
+
+@media (max-width: 414px) and (orientation: portrait) {
+  .navbar__link {
+    display: flex;
+    flex-wrap: wrap;
+    flex: none;
+    justify-content: space-around;
+    padding-top: 10px;
+    & img {
+      display: none;
+    }
+  }
+  .logo img {
+    height: 70px;
+    padding-bottom: 10px;
+  }
+}
+
+/*SEÇÃO OFERTA*/
+@media (max-width: 414px) and (orientation: portrait) {
+  .oferta {
+    width: 100%;
+
+    &__video {
+      margin-top: 60px;
+      width: 100%;
+      position: relative;
+    }
+
+    &__texto {
+      animation: none;
+      position: relative;
+      width: 100%;
+      margin: 0;
+      background-color: v.$azulEscuro;
+    }
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & h3 {
+      font-size: 1rem;
+    }
+  }
+
+  /*SEÇÃO BENEFÍCIOS*/
+  @media (max-width: 414px) and (orientation: portrait) {
+    .beneficios {
+      display: flex;
+      margin: 0%;
+      width: 100%;
+    }
+
+    .imagecontainer {
+      width: 100%;
+    }
+  }
+  /*SEÇÃO CONTATO*/
+  @media (max-width: 414px) and (orientation: portrait) {
+    section {
+      width: 100%;
+      & .container__contact {
+        flex-direction: column-reverse;
+        & .container__social__network {
+          width: 100%;
+          padding-bottom: 10%;
+        }
+        & .container__form {
+          width: 100%;
+          padding-bottom: 10%;
+        }
+      }
+      & .contact__title {
+        font-size: 3rem;
+        text-align: center;
+        height: 6rem;
+        padding-top: 40px;
+        margin-top: 0;
+      }
+    }
+  }
+  /*FOOTER*/
+}

@@ -1,0 +1,56 @@
+@use "variaveis" as v;
+@use "mixin" as mx;
+
+/*Navbar*/
+
+
+.logo {
+  display: v.$display-f;
+  background-color: v.$azulClaro;
+  justify-content: v.$justify-c;
+  align-items: v.$align-c;
+  & img {
+    height: 20vh;
+    justify-content: v.$justify-c;
+    align-items: v.$align-c;
+    padding: 10px 0 0 0;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.navbar {
+  font-family: v.$courier;
+  display: v.$display-f;
+  background-color: v.$azulClaro;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  align-items: v.$align-c;
+  justify-content: space-evenly;
+  margin: 0 0 0 0;
+  padding: 0 0 10px 0;
+  box-sizing: border-box;
+  
+}
+
+.navbar__link {
+  display: v.$display-f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: v.$align-c;
+  justify-content: v.$justify-c;
+  flex: 1;
+
+  &:hover {
+    color: v.$laranja;
+  }
+  & img {
+    width: 7vw;
+  }
+}
+
+
+

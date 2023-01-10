@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Funcionários</title>
+</head>
+<body>
+    <header>
+             <div class="img-logo">
+        <img src="images/Logo Hotel.jpeg" alt="Logo Hotel" width="200" />
+      </div>
+      <nav class="navbar">
+        <ul>
+          <a href="../public/home.html">
+            <li>Home</li>
+          </a>
+          <a href="../public/sobre.html">
+            <li>Sobre</li>
+          </a>
+          <a href="../public/acomodacoes.html">
+            <li>Quartos</li>
+          </a>
+          <a href="../public/contatos.html">
+            <li>Contato</li>
+          </a>
+        </ul>
+        <div class="btn-reservas-login">
+          <a href="../public/reservas.html">
+            <button>Faça sua reserva</button>
+          </a>
+          <a href="../public/login.html">
+            <button>Faça login</button>
+          </a>
+        </div>
+      </nav>
+
+    </header>
+    <nav>
+        
+    </nav>
+    <main>
+        <h1>Formulário de Funcionários</h1>
+        <form action="form-funcionarios.html" method="POST">
+            <fieldset>
+                <legend>Formulário de Funcionários</legend>
+                <ul>
+                    <li>
+                        <label for="codigo">Código:</label>
+                        <input type="number" name="codigo" id="codigo">
+                    </li>
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </li>
+                    <li>
+                        <label for="tempoEmpresa">Tempo de empresa:</label>
+                        <input type="number" name="tempoEmpresa" id="tempoEmpresa">
+                    </li>
+                    <li>
+                        <label for="atividadeAtual">Atividade Atual:</label>
+                        <select name="atividadeAtual" id="atividadeAtual">
+                            <option value="recepcao">Recepção</option>
+                            <option value="restaurante">Restaurante</option>
+                            <option value="servicoQuarto">Serviço de Quarto</option>
+                            <option value="gerencia">Gerência</option>
+                            <option value="concierge">Concierge</option>
+                            <option value="supervisorAndar">Supervisor de Andar</option>
+                        </select>
+                    </li>
+                    <li>
+                        <radio type="radio" name="ferias" id="ferias" value="sim">
+                            <label for="ferias">Férias:</label>
+                                <label for="ferias">Sim</label>
+                                <input type="radio" name="ferias" id="ferias" value="sim">
+                                <label for="ferias">Não</label>
+                                <input type="radio" name="ferias" id="ferias" value="nao">
+                        </radio>
+                    </li>
+                    <li>
+                        <radio type="radio" name="afastamentoMedico" id="afastamentoMedico" value="sim">
+                            <label for="afastamentoMedico">Afastamento médico:</label>
+                                <label for="afastamentoMedico">Sim</label>
+                                <input type="radio" name="afastamentoMedico" id="afastamentoMedico" value="sim">
+                                <label for="afastamentoMedico">Não</label>
+                                <input type="radio" name="afastamentoMedico" id="afastamentoMedico" value="nao">
+                        </radio>
+                    </li>
+                </ul>
+        </fieldset>
+        </form>
+    </main>
+    <footer>
+            <div>
+                <span>Hotel Recanto dos Códigos &copy; 2022</span>
+            </div>
+    </footer>
+    
+    
+</body>
+</html>

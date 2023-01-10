@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login - ADMIN</title>
+    </head>
+    <body>
+        <header>
+            <div class="img-logo">
+                <img
+                    src="images/Logo Hotel.jpeg"
+                    alt="Logo Hotel"
+                    width="200" />
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <a href="../public/home.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="../public/sobre.html">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="../public/acomodacoes.html">
+                        <li>Quartos</li>
+                    </a>
+                    <a href="../public/contatos.html">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Login - ADMIN</h1>
+            <section>
+                <article>
+                    <form action="home_admin.html">
+                        <fieldset>
+                            <img
+                                src="images/avatar.png"
+                                alt="avatar"
+                                width="5%" />
+                            <legend>Prencha os campos necessários</legend>
+                            <ul>
+                                <label for="usuario">Usuário:</label>
+                                <li>
+                                    <input
+                                        type="text"
+                                        id="usuario"
+                                        placeholder=""
+                                        name="usuario"
+                                        required /><br /><br />
+                                </li>
+                                <label for="senha">Senha:</label>
+                                <li>
+                                    <input
+                                        type="password"
+                                        placeholder=""
+                                        id="senha"
+                                        name="senha"
+                                        required /><br /><br />
+                                </li>
+                                <li>
+                                    <label for="remember">Lembrar-me</label>
+                                    <input
+                                        type="checkbox"
+                                        id="remember"
+                                        name="remember" />
+                                    <button type="submit">Entrar</button>
+                                </li>
+                                <p>Não possui uma conta?</p>
+                                <li>
+                                    <button type="submit" href="">
+                                        Registrar
+                                    </button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <aside></aside>
+        <footer>
+            <div>
+                <span>Hotel Recanto dos Códigos &copy; 2022</span>
+            </div>
+        </footer>
+    </body>
+</html>

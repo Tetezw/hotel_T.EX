@@ -1,0 +1,174 @@
+@use "variaveis" as v;
+
+/* FOOTER */
+footer {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(11, 13, 23, 255);
+    font-size: 1rem;
+    font-family: v.$noto-sans;
+    letter-spacing: 0.1rem;
+}
+
+.container-footer {
+    width: 25vw;
+    padding: 8vh 0;
+}
+
+.container-div1 {
+    position: relative;
+    padding: 0;
+
+    & > .logo-footer {
+        width: 10vw;
+        display: block;
+        position: absolute;
+        top: 10px;
+        margin-left: 18%;
+    }
+
+    & > h3 {
+        padding-top: 45%;
+        width: 70%;
+        color: rgba($color: rgb(255, 255, 255), $alpha: 0.9);
+        font-weight: 400;
+        margin-left: 20%;
+    }
+
+    & > .contato-img-div1 {
+        padding: 20px 0;
+        margin-left: 20%;
+
+        & > a > i {
+            font-size: xx-large;
+            padding-left: 20px;
+
+            &.fa-instagram {
+                padding-left: 0;
+            }
+        }
+    }
+
+    & > input {
+        padding: 20px;
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        height: 5vh;
+        width: 70%;
+        background-color: rgba($color: #6a6767, $alpha: 0.5);
+        outline: none;
+        color: white;
+        margin-left: 20%;
+        font-size: 100%;
+        letter-spacing: 0.1rem;
+    }
+
+    & > input::placeholder {
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    &:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover {
+        color: rgba($color: #ffffff, $alpha: 0.5);
+        transition: 0.2s;
+    }
+}
+
+.container-footer > ul {
+    list-style-type: none;
+    border-left: 2px v.$laranja solid;
+    height: 90%;
+
+    & > li {
+        padding: 10px;
+    }
+}
+
+.li-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container-div4 > ul > li {
+    line-height: 2rem;
+}
+
+.i-resposive-footer {
+    display: none;
+}
+
+@media (max-width: 414px) and (orientation: portrait) {
+    footer {
+        font-size: 14px;
+        letter-spacing: normal;
+        position: relative;
+        height: auto !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-footer {
+        all: initial;
+        left: 144px;
+        width: 30vw !important;
+        margin-left: 0 !important;
+    }
+
+    .contato-img-div1 {
+        & > a > i {
+            all: initial;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+    .container-div2 {
+        margin-top: 120px;
+    }
+
+    .container-div2,
+    .container-div3,
+    .container-div4 {
+        display: flex;
+        width: 90%;
+        padding: 0 0 8% 5%;
+    }
+
+    .container-footer > ul {
+        border-left: none;
+        border-top: 2px v.$laranja solid;
+        width: 80%;
+    }
+
+    .container-div4 {
+        display: block !important;
+    }
+
+    .i-resposive-footer {
+        display: flex;
+        gap: 15px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        font-size: x-large;
+    }
+
+    .container-div1 {
+        h3,
+        input {
+            display: none !important;
+        }
+    }
+}
+/* FINAL FOOTER */

@@ -1,0 +1,68 @@
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin placeholder__form {
+  padding-left: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+//Animações oferta
+@mixin animacao ($duracao, $direcao, $transicao, $count) {
+  $nome: animacao1-#{unique-id()};
+
+  @keyframes #{$nome} {
+    @content;
+  }
+
+  animation-name: $nome;
+  animation-duration: $duracao;
+  animation-direction: $direcao;
+  animation-timing-function: $transicao;
+  animation-iteration-count: $count;
+
+}
+
+@mixin animacao1 {
+  @include animacao(20s, alternate, linear, forwards) {
+    0%{    
+        transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1.2);
+      }
+    
+      33% {
+        transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,100,10,0, 0.9);
+      }
+      66% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -100, 10, 0, 0.95);
+      }
+    
+      100%{
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      }
+  }
+}
+
+@mixin animacao2 {
+  @include animacao(16s, alternate, linear, infinite) {
+    0% {
+        top: 0%;
+      }
+    
+      100% {
+        top: 50%;
+      }
+  }
+}

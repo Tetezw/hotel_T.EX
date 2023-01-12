@@ -1,0 +1,1376 @@
+
+/* Footer */
+footer {
+  padding: 10px 0;
+}
+.column-footer {
+  color: #ffffff;
+}
+.telefone-endereco,
+.redes-sociais,
+.suporte,
+.navbar-footer ul {
+  align-self: baseline;
+  flex: 1;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.telefone-endereco h3::before,
+.redes-sociais h3::before,
+.suporte h3::before,
+.links h3::before {
+  content: "";
+  border-left: 5px solid var(--laranja);
+  padding-left: 5px;
+}
+.telefone-endereco h3,
+.redes-sociais h3,
+.suporte h3,
+.navbar-footer h3,
+.links h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.redes-sociais i {
+  font-size: 1.3rem;
+  padding-right: 5px;
+}
+.navbar-footer ul li a,
+.suporte a,
+.telefone a,
+.direitos,
+.redes-sociais i,
+footer {
+  color: #ffffff;
+}
+.direitos {
+  padding-top: 30px;
+}
+/* Página Home*/
+/* Sobre      */
+.box-sobre {
+  width: 100%;
+}
+.img-sobre img {
+  margin-right: 30px;
+  box-shadow: 0 0 10px #ccc;
+}
+/* Página Home */
+/* Acomodações */
+.box-acomodacoes {
+  background: #f1f1f1;
+}
+.cards-quartos-titulo a {
+  color: #ffffff;
+}
+.quartos img {
+  width: calc((100% / 3) - 20px);
+  background: #ffffff;
+  padding: 10px;
+}
+/* Página Home */
+/* Ilha        */
+.box-ilha {
+  background: linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
+    url(../images/header.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+.ilha {
+  height: 350px;
+}
+.ilha h2 a {
+  color: #ffffff;
+}
+/* Página Home */
+/* Serviços    */
+.btn-conheca-mais {
+  margin: 40px 0;
+}
+.btn-conheca-mais a button {
+  font-size: 1.5rem;
+  padding: 15px 40px 15px 40px;
+  background-color: var(--azul-escuro);
+  border: none;
+  color: white;
+}
+.btn-conheca-mais a:hover button {
+  background: var(--azul-claro);
+}
+/* Página Home */
+/* Gastronomia */
+.foto-texto-gastronomia {
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.foto-texto-gastronomia img {
+  width: 50%;
+  align-self: flex-start;
+}
+
+.texto-gastronomia p {
+  margin-bottom: 20px;
+}
+/* Página Sobre */
+/* Container Principal */
+.sobre-container {
+  width: 80%;
+  margin: auto;
+}
+/* Página Sobre */
+/*Section - Sobre o hotel*/
+.sobre-container-img-txt {
+  align-items: flex-start;
+  gap: 5%;
+}
+.sobre-container-img-txt img.sobre-img {
+  width: 50%;
+}
+/* Página Sobre */
+/* Comodidades Adicionais*/
+.container-comodidades div {
+  width: 30%;
+}
+.container-comodidades div img {
+  width: 100%;
+}
+/* Página Sobre */
+/* Diferenciais */
+.container-img {
+  gap: 10px;
+}
+.img-hero {
+  width: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+}
+.img-hero .img-hero-title {
+  text-align: center;
+  padding: 20px 0;
+}
+.img-style {
+  padding: 5%;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.legenda-diferenciais-style {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+.iconStyle {
+  color: var(--laranja);
+  width: 100%;
+  text-align: center;
+}
+.fa-size {
+  font-size: 4rem;
+}
+/* Página Sobre */
+/* Nosso Time */
+.img-funcionarios {
+  padding: 10px;
+  background-color: #ffffff;
+}
+.container-time figcaption {
+  text-transform: uppercase;
+  color: var(--laranja);
+  font-weight: bold;
+}
+/* Página Sobre */
+.box-sobre-hotel {
+  padding-bottom: 100px;
+}
+.comodidades {
+  background: #f1f1f1;
+  padding-bottom: 100px;
+}
+.comodidades-img {
+  padding: 10px;
+  background-color: #ffffff;
+}
+.box-diferenciais {
+  padding-bottom: 100px;
+}
+/* Nosso time */
+.box-time {
+  background-color: #f1f1f1;
+  padding-bottom: 50px;
+}
+.container-time {
+  margin: 0 0 50px;
+}
+/* Página Sobre */
+/* Ajuda */
+.contato-ajuda {
+  padding: 50px 0;
+}
+.container-contact {
+  text-align: center;
+}
+.container-contact p {
+  margin-top: 8px;
+}
+.container-contact button {
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: #063f57;
+}
+.container-contact button a {
+  color: #ffffff;
+}
+/* Página Acomodações */
+.acomodacoes {
+  padding-bottom: 50px;
+}
+.detalhes-apartamentos ul {
+  list-style: inside;
+  padding-bottom: 20px;
+  font-size: 1rem;
+}
+.detalhes-apartamentos ul li {
+  padding: 5px 0;
+}
+.itens {
+  width: 50%;
+}
+.inferior-text-top p {
+  text-align: justify;
+}
+/* Página Acomodações */
+/* Imagens */
+.acomodacoes-imagens {
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 10px;
+}
+.card img {
+  width: 100%;
+}
+.card {
+  width: 350px;
+  background: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.inferior-text {
+  grid-template-rows: 200px 48px;
+  padding: 20px;
+}
+.inferior-text-button {
+  grid-template-columns: 125px 125px;
+}
+.inferior-right {
+  background-color: var(--azul-claro);
+  cursor: pointer;
+}
+.inferior-right:hover {
+  background-color: var(--azul-escuro);
+}
+.text2 {
+  font-size: 0.8rem;
+}
+.text-valor-acomodacoes {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+.inferior-left {
+  grid-template-rows: 1fr 1fr;
+  padding: 0 20px;
+}
+/* Página Acomodações */
+/* Produtos em Destaque */
+.box-destaque {
+  background-color: #f1f1f1;
+}
+.produtos-destaque {
+  padding: 100px 0;
+}
+.description {
+  padding: 20px;
+  border-left: 5px solid #063f57;
+}
+.description h2 {
+  padding: 0 0 20px;
+}
+.texto {
+  font-size: 0.8rem;
+}
+.preco {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* PÁGINA LOGIN */
+.container-form-image {
+  padding: 30px;
+  width: auto;
+}
+
+.container-login {
+  width: 50%;
+  display: inline-block;
+}
+
+.container-img-login {
+  width: auto;
+  display: inline-block;
+}
+
+.container-img-login > img {
+  border-radius: 3px;
+}
+
+.form-login {
+  margin: 0 auto;
+  height: auto;
+  width: 400px;
+  background-color: var(--azul-escuro);
+  border-radius: 3px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 0px var(--azul-claro);
+  padding: 50px 35px;
+  font-family: "Noto Sans", sans-serif;
+  color: white;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.link-login:hover {
+  text-decoration: none;
+}
+
+.form-login > h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 80%;
+  border-bottom: 3px solid var(--laranja);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.form-login > label {
+  display: block;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-radius: 3px;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: grey;
+  border: none;
+  outline: none;
+}
+
+.form-login > input::placeholder {
+  color: gray;
+}
+
+input[type="checkbox"] {
+  margin: 0px 2px 0px 2px;
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.lembrar-esqueci {
+  margin: 15px 0px 30px 0px;
+}
+
+.esqueci-senha {
+  font-size: 0.8rem;
+  margin-left: 60px;
+  font-weight: 400;
+  color: white;
+}
+
+.esqueci-senha:hover {
+  color: var(--azul-claro);
+  transition: 0.2s;
+}
+
+.btn-entrar {
+  width: 100%;
+  background-color: #ffffff;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.btn-entrar:hover {
+  background-color: var(--laranja);
+  transition: 0.3s;
+  color: white;
+}
+
+.form-login > h3 {
+  padding-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.social-login {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.social-login div {
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 3px;
+  background-color: var(--azul-claro);
+  color: white;
+  text-align: center;
+}
+
+.social-login div:hover {
+  background-color: var(--laranja);
+  transition: 0.3s;
+}
+
+.social-login .google-icon .facebook-icon {
+  width: 50%;
+}
+
+div.google-icon > a.link-login,
+div.facebook-icon > a.link-login {
+  color: white;
+  font-weight: 700;
+}
+
+/* PÁGINA CONTATO */
+.container-contato {
+  padding: 30px;
+}
+
+.form-contato {
+  width: 40%;
+  height: auto;
+  font-size: 14px;
+  background: var(--azul-escuro);
+  border-radius: 8px;
+  margin: 0 auto;
+  box-shadow: 0 0 40px -10px var(--azul-escuro);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.titulo-form-contato {
+  text-align: center;
+  color: var(--azul-claro);
+  margin-bottom: 30px;
+}
+
+.titulo-form-contato > h2 {
+  display: flex;
+  text-align: center;
+}
+
+.form-contato > h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 60%;
+  border-bottom: 3px solid var(--laranja);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.form-contato > p > input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 0.9rem;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-radius: 3px;
+  outline: none;
+}
+
+.form-contato > p {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.form-contato > p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+}
+
+.telefone-contato {
+  width: 49%;
+  display: inline-block;
+}
+
+.assunto-contato {
+  width: 50%;
+  display: inline-block;
+}
+
+.assunto-contato > select {
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.comentários-contato > textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid var(--azul-claro);
+  border-radius: 3px;
+  resize: none;
+  outline: none;
+}
+
+.send-message {
+  gap: 5px;
+}
+
+.btn-enviar-contato {
+  width: 100px;
+  height: 50px;
+  margin-top: 28px;
+  border: none;
+  background-color: var(--azul-claro);
+  color: white;
+  padding: 16px 0 16px 0;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-enviar-contato:hover {
+  background-color: var(--laranja);
+  transition: 0.2s;
+  box-shadow: 10px 10px 40px -14px var(--azul-escuro);
+}
+
+div.linha-final {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  padding: 16px 0 16px 0;
+  margin-top: 28px;
+  background: var(--azul-claro);
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px 40px -14px var(--azul-escuro);
+}
+
+div.linha-final > a {
+  text-decoration: none;
+  color: white;
+}
+
+div.linha-final a i {
+  margin-right: 8px;
+}
+
+/* PÁGINA RESERVA */
+/* página de Formulário de Reserva */
+.reserva-titulo {
+  font-size: 32px;
+  color: var(--azul-escuro);
+  margin-top: 32px;
+}
+
+.reserva {
+  border: none;
+  background-color: var(--azul-escuro);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff1a;
+  box-shadow: 0px 0px 15px 0px var(--azul-claro);
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+  margin: 20px 0;
+}
+
+.reserva form {
+  margin: 10px 0 10px 0px;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.reserva ul {
+  color: #080710;
+}
+
+.reserva ul li {
+  margin: auto;
+  display: flex;
+}
+
+.reserva ul li label {
+  margin: 0 0 0 5px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.reserva ul li input {
+  margin-left: 10px;
+  color: #080710;
+}
+
+.novoform input[type="number"],
+input[type="date"] {
+  background-color: white;
+  border-radius: 3px;
+  color: grey;
+}
+
+/*Seção dos quartos na página reserva*/
+.quartos-resumo {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.todos-os-quartos-reserva {
+  width: 63%;
+  position: relative;
+}
+
+.quarto-reserva {
+  background: #f8f8f8;
+  box-shadow: 0 0 10px #00000033;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.img-reserva + div {
+  margin-left: 15px;
+}
+
+.cada-quarto-reserva h3 {
+  font-size: 1.5rem;
+  font-family: "Courier Prime", monospace;
+  font-weight: 800;
+  margin: 10px 0;
+  text-align: justify;
+  white-space: wrap;
+}
+
+.cada-quarto-reserva p {
+  text-align: justify;
+  margin: 0 10px 0 0;
+  white-space: wrap;
+}
+
+.text-valor-reserva {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.radio-reserva {
+  margin: 20px 0 20px 0;
+  accent-color: var(--azul-escuro);
+}
+
+.reservar {
+  margin-right: 10px;
+  display: none;
+}
+
+.quarto-box label {
+  padding: 10px 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.fa-circle-check {
+  color: var(--azul-escuro);
+}
+
+input[type="radio"]:checked + div {
+  background-color: #063f57;
+  color: #ffffff;
+}
+
+/* Caixa Flutuante de Resumo reserva */
+.resumo-reserva {
+  width: 33%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-color: var(--azul-escuro);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff1a;
+  box-shadow: 0px 0px 15px 0px var(--azul-claro);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 0.5px;
+  padding: 50px;
+}
+
+.resumo-reserva h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.resumo-box {
+  background-color: #ffffff;
+  opacity: 90%;
+  width: auto;
+  color: #063f57;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.resumo-reserva a {
+  color: #ffffff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.resumo-reserva button {
+  font-family: "noto sans", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin: 30px auto 0px auto;
+  padding: 10px;
+}
+
+.resumo-reserva p {
+  margin: 30px 0;
+  font-weight: bold;
+  text-align: center;
+  border: solid 2px var(--laranja);
+  padding: 2px;
+}
+
+/* Design Responsivo */
+/* Smartphone */
+@media (max-width: 414px) and (orientation: portrait) {
+  /* Home */
+  .titulo-h2 {
+    text-align: center;
+  }
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
+    justify-content: center;
+  }
+  .link-border-bottom {
+    border: none;
+  }
+  .link-border-all {
+    padding: 1.5rem;
+  }
+  .login,
+  .navbar,
+  .slogan {
+    display: none;
+  }
+  .responsive-menu {
+    display: flex;
+  }
+  .img-sobre,
+  .quartos,
+  .foto-texto-gastronomia,
+  .column-footer {
+    flex-direction: column;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .quartos img,
+  .img-sobre img,
+  .foto-texto-gastronomia img,
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    width: 100%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    margin-bottom: 10px;
+  }
+  /* Sobre */
+
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 20px 20px 20px;
+    justify-content: center;
+  }
+  .img-hero {
+    height: 300px;
+    align-items: center;
+    width: 100%;
+  }
+  .container-time {
+    gap: 20px;
+  }
+  .fa-size {
+    font-size: 6rem;
+  }
+  .container-comodidades div {
+    width: 100%;
+  }
+  .container-comodidades {
+    gap: 20px;
+  }
+  .img-hero .img-hero-title {
+    padding: 10px 0;
+  }
+
+  /*Página reserva*/
+  .reserva form {
+    padding: 5px 10px;
+  }
+
+  .reserva form ul {
+    flex-direction: column;
+    padding: 2px;
+  }
+
+  .reserva form ul li {
+    padding: 3px 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .reserva form input {
+    width: 40%;
+  }
+
+  .todos-os-quartos-reserva {
+    width: 100%;
+  }
+
+  .quarto-reserva {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .img-reserva {
+    margin: 0 auto;
+  }
+
+  .resumo-reserva {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+  }
+
+  .resumo-reserva h2 {
+    margin-bottom: 2px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .resumo-box {
+    padding: 2px;
+    font-size: smaller;
+  }
+
+  .resumo-reserva a {
+    font-size: smaller;
+  }
+
+  .resumo-reserva p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    color: var(--azul-escuro);
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+  }
+
+  .resumo-reserva button {
+    margin: 8px auto 2px auto;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  /* Acomodações */
+
+  .produtos-destaque {
+    flex-direction: column;
+  }
+
+  .produtos-destaque img {
+    width: 100%;
+  }
+
+  .description {
+    border-right: 5px solid #063f57;
+  }
+  /* Contato */
+  .container-contato > .form-contato {
+    width: 100%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+
+  /* LOGIN RESP */
+  .container-form-image {
+    padding: 30px 0;
+    font-size: 0.8rem;
+  }
+
+  .form-login {
+    width: 100%;
+  }
+
+  .esqueci-senha {
+    font-size: 0.6rem;
+    margin-left: 37%;
+  }
+}
+
+@media (max-width: 915px) and (orientation: landscape) {
+  /* Home */
+  .titulo-h2 {
+    text-align: center;
+  }
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
+    justify-content: center;
+  }
+  .login-user,
+  .navbar,
+  .slogan {
+    display: none;
+  }
+  .responsive-menu {
+    display: flex;
+  }
+  .img-sobre,
+  .quartos,
+  .foto-texto-gastronomia {
+    flex-direction: column;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .quartos img,
+  .img-sobre img,
+  .foto-texto-gastronomia img {
+    width: 100%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    flex-basis: 50%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    margin-bottom: 10px;
+  }
+  /* Sobre */
+
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 20px 20px 20px;
+    justify-content: center;
+  }
+  .img-hero {
+    height: 300px;
+    align-items: center;
+    width: 100%;
+  }
+  .container-time {
+    gap: 20px;
+  }
+  .fa-size {
+    font-size: 6rem;
+  }
+  .container-comodidades div {
+    width: 100%;
+  }
+  .container-comodidades {
+    gap: 20px;
+  }
+
+  /*Página reserva*/
+  .todos-os-quartos-reserva {
+    width: 100%;
+  }
+
+  .quarto-reserva {
+    padding: 10px;
+  }
+
+  .img-reserva {
+    margin: 0 15px;
+  }
+
+  .resumo-reserva {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+  }
+
+  .resumo-reserva h2 {
+    margin-bottom: 2px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .resumo-box {
+    padding: 2px;
+    font-size: smaller;
+  }
+
+  .resumo-box ul div {
+    display: flex;
+  }
+
+  .resumo-box ul div li {
+    flex-basis: 160px;
+  }
+
+  .resumo-reserva a {
+    font-size: smaller;
+  }
+
+  .resumo-reserva p {
+    margin: 5px 0;
+    font-size: 0.8rem;
+    color: var(--azul-escuro);
+    position: absolute;
+    right: 5%;
+    bottom: 50%;
+  }
+
+  .resumo-reserva button {
+    margin: 8px auto 2px auto;
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  /* Acomodações */
+
+  .produtos-destaque {
+    flex-direction: column;
+  }
+
+  .produtos-destaque img {
+    width: 100%;
+  }
+
+  .description {
+    border-right: 5px solid #063f57;
+  }
+
+  /* Contato */
+  .form-contato,
+  .form-contato p,
+  .form-contato button,
+  .linha-final {
+    width: 100%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+  div.linha-final a span {
+    display: none;
+  }
+
+  /* LOGIN RESP */
+  .container-login > .form-login {
+    margin: 0 auto;
+  }
+
+  .container-img-login > img {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) and (orientation: portrait) {
+  /* Home */
+  .titulo-h2 {
+    text-align: center;
+  }
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
+    justify-content: center;
+  }
+  .login-user,
+  .navbar,
+  .slogan {
+    display: none;
+  }
+  .responsive-menu {
+    display: flex;
+  }
+  .img-sobre,
+  .quartos,
+  .foto-texto-gastronomia,
+  .column-footer {
+    flex-direction: column;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .quartos img,
+  .img-sobre img,
+  .foto-texto-gastronomia img,
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    width: 100%;
+  }
+  .telefone-endereco,
+  .redes-sociais,
+  .suporte,
+  .links {
+    margin-bottom: 10px;
+  }
+  /* Sobre */
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
+    justify-content: center;
+  }
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    padding: 0 20px 20px 20px;
+    justify-content: center;
+  }
+  .img-hero {
+    height: 300px;
+    align-items: center;
+    width: 100%;
+  }
+  .container-time {
+    gap: 20px;
+  }
+  .fa-size {
+    font-size: 6rem;
+  }
+  .container-comodidades div {
+    width: 100%;
+  }
+  .container-comodidades {
+    gap: 20px;
+  }
+
+  .produtos-destaque {
+    flex-direction: column;
+  }
+
+  .produtos-destaque img {
+    width: 100%;
+  }
+
+  .description {
+    border-top: 5px solid #063f57;
+    border-left: none;
+  }
+
+  /* Contato */
+  .form-contato {
+    width: 80%;
+  }
+  .form-contato p,
+  .form-contato button,
+  .linha-final {
+    width: 100%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+  div.linha-final a span {
+    display: none;
+  }
+
+  /* LOGIN RESP */
+  .container-login {
+    width: 100%;
+  }
+
+  .container-img-login > img {
+    display: none;
+  }
+}
+
+@media (max-width: 1194px) and (orientation: landscape) {
+  /* Home */
+  .login-user,
+  .navbar {
+    display: none;
+  }
+  .slogan h1 {
+    font-size: 1.3rem;
+  }
+  .img-logo img {
+    width: 100px;
+  }
+  .responsive-menu {
+    display: flex;
+  }
+  /* Sobre */
+  header {
+    height: 20vh;
+  }
+  .box-header {
+    height: 20vh;
+    justify-content: center;
+  }
+  .sobre-container-img-txt,
+  .container-comodidades,
+  .container-img,
+  .container-time {
+    flex-direction: column;
+  }
+  .sobre-container-img-txt img.sobre-img,
+  .container-comodidades img {
+    width: 100%;
+    height: auto;
+  }
+  .legenda-diferenciais-style {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 20px 20px 20px;
+    justify-content: center;
+  }
+  .img-hero {
+    height: 300px;
+    align-items: center;
+    width: 100%;
+  }
+  .container-time {
+    gap: 20px;
+  }
+  .fa-size {
+    font-size: 6rem;
+  }
+  .container-comodidades div {
+    width: 100%;
+  }
+  .container-comodidades {
+    gap: 20px;
+  }
+
+  /* Contato */
+  .form-contato {
+    width: 80%;
+  }
+  .form-contato h2 {
+    font-size: 1.2rem;
+  }
+  .linha-final {
+    display: block;
+  }
+
+  /* LOGIN RESP */
+  .container-login {
+    width: 100%;
+  }
+
+  .form-login {
+    margin-left: 0;
+  }
+}

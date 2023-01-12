@@ -1,0 +1,55 @@
+@use 'variaveis' as v;
+@use 'extend';
+
+/* Footer */
+footer {
+    padding: 10px 0;
+    color: v.$branco;
+}
+.column-footer {
+    color: v.$branco;
+}
+.telefone-endereco,
+.redes-sociais,
+.suporte,
+.navbar-footer ul {
+    align-self: baseline;
+    flex: 1;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.telefone-endereco,
+.redes-sociais,
+.suporte,
+.links {
+    & h3::before {
+        content: '';
+        border-left: 5px solid v.$laranja;
+        padding-left: 5px;
+    }
+}
+.telefone-endereco,
+.redes-sociais,
+.suporte,
+.navbar-footer,
+.links {
+    & h3 {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
+.redes-sociais i {
+    font-size: 1.3rem;
+    padding-right: 5px;
+    color: v.$branco;
+}
+.navbar-footer ul li a,
+.suporte a,
+.telefone a {
+    color: v.$branco;
+}
+.direitos {
+    padding-top: 30px;
+    color: v.$branco;
+}

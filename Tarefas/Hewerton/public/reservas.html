@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/18dedb8cc9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container display-f flex-dc justify-csb box-header">
+        <div class="login display-f align-c">
+          <!-- esconder .hidden -->
+          <div class="hidden">
+            <a href="login.html">
+              <button class="btn-white courier">Faça login</button>
+            </a>
+          </div>
+          <div class="login-user">
+            <span>Olá usuário</span>
+            <button class="btn-white">Sair</button>
+          </div>
+        </div>
+        <div class="header-logo-slogan display-f align-c">
+          <div class="img-logo">
+            <img src="images/Logo-Branca.png" alt="Logo Hotel" width="200" />
+          </div>
+
+          <div class="slogan courier">
+            <h1 class="titulo-h1">
+              Desconecte-se e venha se conectar <br />
+              com a natureza
+            </h1>
+          </div>
+
+          <div class="responsive-menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+
+        <nav class="navbar">
+          <ul class="noto-sans display-f justify-c align-c">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="acomodacoes.html">Quartos</a></li>
+            <li><a href="contatos.html">Contato</a></li>
+            <li><a href="reservas.html">Faça sua reserva</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2 class="titulo-h2 courier">
+          <span class="link-border-bottom"> MINHA RESERVA </span>
+        </h2>
+        <fieldset class="reserva">
+          <form class="novoform" action="" method="get">
+            <ul class="display-f">
+              <li>
+                <label for="check-in">Data do check-in</label><br />
+                <input type="date" id="check-in" name="check-in" required />
+              </li>
+              <li>
+                <label for="check-out">Data do check-out</label><br />
+                <input type="date" id="check-out" name="check-out" required />
+              </li>
+              <li>
+                <label for="adultos">Nº de pessoas</label><br />
+                <input
+                  type="number"
+                  min="0"
+                  max="4"
+                  id="adultos"
+                  name="adultos"
+                  placeholder="0"
+                  required
+                />
+              </li>
+            </ul>
+          </form>
+        </fieldset>
+      </section>
+
+      <section>
+        <div class="quartos-resumo">
+          <div class="todos-os-quartos-reserva">
+            <!-- Quarto 1 -->
+            <div class="quarto-box display-f flex-dc">
+              <label for="reservar-quarto1"
+                ><i class="fa-solid fa-circle-check"></i> Selecionar
+                Quarto</label
+              >
+              <input
+                type="radio"
+                name="reservar-quarto"
+                id="reservar-quarto1"
+                class="reservar"
+              />
+
+              <div class="quarto-reserva display-f">
+                <div class="img-reserva">
+                  <img src="images/reserva1.png" alt="Imagem" />
+                </div>
+                <div>
+                  <div class="cada-quarto-reserva">
+                    <h3>QUARTO EXECUTIVO</h3>
+                    <p>
+                      Um quarto espaçoso com cama king-size ou duas camas de
+                      solteiro, vista para a cidade, TV de tela plana, mini-bar,
+                      escrivaninha e banheiro privativo.
+                    </p>
+                  </div>
+                  <div class="text-valor-reserva">R$500,00</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quarto 2 -->
+            <div class="quarto-box display-f flex-dc">
+              <label for="reservar-quarto2"
+                ><i class="fa-solid fa-circle-check"></i> Selecionar
+                Quarto</label
+              >
+              <input
+                type="radio"
+                name="reservar-quarto"
+                id="reservar-quarto2"
+                class="reservar"
+              />
+              <div class="quarto-reserva display-f">
+                <div class="img-reserva">
+                  <img src="images/reserva2.png" alt="Imagem" />
+                </div>
+                <div class="">
+                  <div class="cada-quarto-reserva">
+                    <h3>QUARTO DELUXE</h3>
+                    <p>
+                      Um quarto espaçoso com cama king-size ou duas camas de
+                      solteiro, vista para a cidade, TV de tela plana, mini-bar
+                      e banheiro privativo.
+                    </p>
+                  </div>
+                  <div class="text-valor-reserva">R$500,00</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quarto 3 -->
+            <div class="quarto-box display-f flex-dc">
+              <label for="reservar-quarto3"
+                ><i class="fa-solid fa-circle-check"></i> Selecionar
+                Quarto</label
+              >
+              <input
+                type="radio"
+                name="reservar-quarto"
+                id="reservar-quarto3"
+                class="reservar"
+              />
+              <div class="quarto-reserva display-f">
+                <div class="img-reserva">
+                  <img src="images/reserva3.png" alt="Imagem" />
+                </div>
+                <div class="">
+                  <div class="cada-quarto-reserva">
+                    <h3>QUARTO FAMÍLIA</h3>
+                    <p>
+                      Um quarto espaçoso com duas camas de casal e duas camas de
+                      solteiro, vista para a cidade, TV de tela plana, mini-bar,
+                      área de estar separada e banheiro privativo.
+                    </p>
+                  </div>
+                  <div class="text-valor-reserva">R$500,00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="resumo-reserva">
+            <div>
+              <h2>Resumo da Reserva</h2>
+              <div class="resumo-box">
+                <ul>
+                  <div>
+                    <li>Apartamento: <span>xxx</span></li>
+                    <li>Nº de pessoas: <span>xxx</span></li>
+                  </div>
+                  <div>
+                    <li>Check-in: <span>xxx</span></li>
+                    <li>Check-out: <span>xxx</span></li>
+                  </div>
+                </ul>
+              </div>
+              <a href="#">Adicionar mais serviços</a>
+              <div>
+                <p>Valor total: R$ <span>XXX</span></p>
+              </div>
+              <button class="display-f">Confirmar reserva</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-color-primary">
+      <div class="container box-footer display-f flex-dc">
+        <div class="column-footer display-f align-c justify-csb">
+          <div class="telefone-endereco flex-dc">
+            <h3 class="mb1">Contato</h3>
+            <div class="telefone display-f">
+              <a href="tel:7133650000">
+                <p>(71) 3365-0000</p>
+              </a>
+            </div>
+
+            <div class="endereco">
+              <p>Ilha dos Frades, Salvador - BA</p>
+            </div>
+          </div>
+
+          <div class="redes-sociais display-f flex-dc">
+            <h3 class="mb1">Siga-nos nas Redes</h3>
+            <div>
+              <a href="mailto:reservas@hotel.com.br">
+                <i class="fa-regular fa-envelope fa-lg"></i>
+              </a>
+
+              <a href="https://pt-br.facebook.com/">
+                <i class="fa-brands fa-facebook fa-lg"></i>
+              </a>
+
+              <a href="https://www.instagram.com/">
+                <i class="fa-brands fa-instagram fa-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="suporte display-f flex-dc">
+            <h3 class="mb1">Suporte</h3>
+            <a href="contatos.html"> Deixe aqui sua dúvida </a>
+          </div>
+
+          <div class="links">
+            <h3 class="mb1">Links</h3>
+            <nav class="navbar-footer">
+              <ul class="noto-sans display-f flex-dc">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="acomodacoes.html">Quartos</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="reservas.html">Faça sua reserva</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="direitos display-f justify-c">
+          <span> Hotel Recanto dos Códigos &copy; 2022 </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

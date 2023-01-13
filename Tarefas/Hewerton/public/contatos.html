@@ -7,12 +7,9 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Login - Hotel Recanto dos Códigos</title>
+    <title>Contato - Hotel Recanto dos Códigos</title>
   </head>
 
   <body>
@@ -59,49 +56,76 @@
       </div>
     </header>
 
-<main>
-    <div class="container-form-image display-f">
-        <div class="container-login">
-            <form action="home.html" class="form-login" id="formLogin">
-                <h2>FAÇA LOGIN</h2>
-
-                <label for="username">E-mail</label>
-                <input type="text" placeholder="Digite seu e-mail" id="username2" autofocus>
-                <span id="alertUserName" style="color: brown;"></span>
-
-                <label for="password">Senha</label>
-                <input type="password" placeholder="Digite sua senha" id="password2">
-                <span id="alertPassword" style="color: brown;"></span>
-
-                <div class="lembrar-esqueci">
-                    <input type="checkbox" name="check-terms"> <span>Lembrar-me</span>
-                    <a href="#" class="link-login"><span class="esqueci-senha">Esqueci minha senha</span></a>
-                </div>
-
-                <button class="btn-entrar" id="btnLogin">Entrar</button>
-
-                
-                <h3>Entre com suas redes sociais</h3>
-                <div class="social-login display-f">
-                    <div class="google-icon"><a href="#" class="link-login"><i class="fab fa-google"></i> Google</a>
-                    </div>
-                    <div class="facebook-icon"><a href="#" class="link-login"><i class="fab fa-facebook"></i>
-                            Facebook</a>
-                    </div>
-                </div>
-
-                <!-- <p>Usuários Administrativos</p>
-        <button onclick="window.location.href='../admin/login_admin.html'">
-            Login - ADMIN
-        </button> -->
-            </form>
+    <main class="container-contato">
+      <div class="titulo-form-contato flex-dc align-c display-f">
+        <h2>Formulário de Contato</h2>
+        <p>
+          Ficou com dúvidas sobre nossos serviços ou deseja fazer uma reserva?
+          Entre em contato com a gente. <br />
+          Preencha os dados do formulário e deixe sua mensagem.
+        </p>
+      </div>
+      <form class="form-contato">
+        <h2>CONTATE-NOS</h2>
+        <p class="nome-contato">
+          <span>Nome:</span>
+          <input
+            type="text"
+            id="name"
+            placeholder="Digite seu nome"
+            autofocus
+            required
+          />
+        </p>
+        <p class="email-contato">
+          <span>E-mail:</span>
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </p>
+        <p class="telefone-contato">
+          <span>Telefone:</span>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="(00) 90000-0000"
+            required
+            maxlength="11"
+          />
+        </p>
+        <p class="assunto-contato">
+          <span>Assunto:</span>
+          <select name="subject" id="subject">
+            <option label="Selecione..." hidden></option>
+            <option value="1">Cancelamento de Reserva</option>
+            <option value="2">Ouvidoria</option>
+            <option value="3">Departamento Financeiro</option>
+          </select>
+        </p>
+        <p class="comentários-contato">
+          <span>Comentários:</span>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Digite seus comentários"
+          ></textarea>
+        </p>
+        <div class="send-message display-f justify-csb">
+          <button class="btn-enviar-contato" id="send">ENVIAR</button>
+          <div class="linha-final">
+            <a href="mailto:reservas@hotel.com.br"
+              ><i class="fa-regular fa-envelope"></i
+              ><span>recantodoscodigos@contato.com</span></a
+            >
+          </div>
         </div>
-        <div class="container-img-login">
-            <img src="images/hotel-login.png" alt="FOTO DO HOTEL" width="700" height="585" />
-        </div>
-    </div>
+      </form>
     </main>
-        <footer class="bg-color-primary">
+
+    <footer class="bg-color-primary">
       <div class="container box-footer display-f flex-dc">
         <div class="column-footer display-f align-c justify-csb">
           <div class="telefone-endereco flex-dc">
@@ -158,6 +182,5 @@
         </div>
       </div>
     </footer>
-    <script src="../Tarefas/Fagner/validacao.js"></script>
   </body>
 </html>

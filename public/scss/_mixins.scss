@@ -1,57 +1,57 @@
-@use "variaveis" as v;
+@use 'variaveis' as v;
 
 /* Container */
 @mixin container {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
 }
 /* Títulos */
 @mixin titulo-h1 {
-  font-size: 2.2rem;
-  color: v.$branco;
+    font-size: 2.2rem;
+    color: v.$branco;
 }
 @mixin titulo-h2 {
-  color: v.$azul-escuro;
-  font-size: 1.8rem;
-  font-weight: bold;
-  padding: 5rem 0 2rem 0;
-  text-transform: uppercase;
+    color: v.$azulEscuro;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 5rem 0 2rem 0;
+    text-transform: uppercase;
 }
 @mixin titulo-h3 {
-  font-size: 1.5rem;
-  font-family: v.$courier;
-  font-weight: 800;
-  padding-bottom: 10px;
+    font-size: 1.5rem;
+    font-family: v.$courier;
+    font-weight: 800;
+    padding-bottom: 10px;
 }
 /* Paragrafo */
 @mixin paragrafo {
-  font-size: 1.1rem;
-  margin: 10px 0 10px 0;
-  text-align: justify;
-  text-indent: 20px;
+    font-size: 1.1rem;
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    text-indent: 20px;
 }
 /* Botões*/
 @mixin btn-white {
-  font-size: 1.2rem;
-  padding: 0.8rem 1rem;
-  border: none;
-  background-color: v.$branco;
-  margin: 2rem 2rem 0 0;
-  text-transform: uppercase;
-  cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    background-color: v.$branco;
+    margin: 2rem 2rem 0 0;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 @mixin btn-blue {
-  font-size: 1rem;
-  padding: 1rem 1rem;
-  border: none;
-  background-color: v.$azul-claro;
-  color: v.$branco;
-  text-transform: uppercase;
-  cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    border: none;
+    background-color: v.$azulClaro;
+    color: v.$branco;
+    text-transform: uppercase;
+    cursor: pointer;
 
-  &:hover {
-    background-color: v.$azul-escuro;
-  }
+    &:hover {
+        background-color: v.$azulEscuro;
+    }
 }
 
 // saiba-mais:: before {
@@ -59,6 +59,6 @@
 // }
 
 @mixin link-border-all {
-  border: 3px solid v.$laranja;
-  padding: 30px 50px;
+    border: 3px solid v.$laranja;
+    padding: 30px 50px;
 }

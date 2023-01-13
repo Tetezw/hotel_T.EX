@@ -6,31 +6,28 @@ let senha = '654'
 const emailUsuario = document.getElementById('username')
 const senhaUsuario = document.getElementById('password')
 const btnEntrar = document.getElementById('btnEntrar')
+const btnSair = document.getElementById('btnSair')
 
-localStorage.usuario ? document.querySelector('.login-user span').innerText = localStorage.getItem('usuario') : null
+//separa toda parte antes do arroba
+let emailLocal = localStorage.getItem('usuario')
+let buscaArroba = emailLocal.indexOf('@')
+let nomeUser = emailLocal.substring(0,buscaArroba)
 
-function remover (email) {
+//Imprime o nome na tela
+localStorage.usuario
+    ? (document.querySelector('.login-user span').innerText = `Olá ${nomeUser}`)
+    : null
+
+function remover(email) {
     //tiras as aspas e espaços em branco
-    let removeAspasEspacos = email.replace(/['"]/g, "").trim()
+    let removeAspasEspacos = email.replace(/['"]/g, '').trim()
     return removeAspasEspacos
 }
-// function remover (email){
-//     //busca pelas aspas
-//     let busca = /"/g
-//     let busca1 = /'/g
 
-//     //exclusão das aspas
-//     if (email.includes('"') || email.includes("'")) {
-//         email = email.replace(busca, '')
-//         email = email.replace(busca1, '')
-//     }
-//     //tira os espaços em branco
-//     var emailTrim = email.trim()
-//     return emailTrim
-// }
-function user (email) {
+//Armazena o email no Local Storage
+function user(email) {
     localStorage.setItem('usuario', email)
-    window.location.href = '../../public/home.html'
+    window.location.href = 'home.html'
 }
 
 btnEntrar.addEventListener('click', () => {
@@ -45,9 +42,10 @@ btnEntrar.addEventListener('click', () => {
     //verifica se os campos estão em branco
     else if (inputEmail === '' || inputSenha === '') {
         window.alert('Preencha todos os campos para prosseguir')
-    } 
+    }
     //se e-mail ou senha não estiverem corretos
     else {
         window.alert('E-mail ou senha incorretos!')
     }
 })
+

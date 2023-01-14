@@ -5,6 +5,7 @@ $laranja: #a35700;
 $marrom: #573106;
 $preto: #000000;
 $branco: #ffffff;
+$fundoCinza: #f1f1f1;
 // Fontes //
 $courier: "Courier Prime", monospace;
 $noto-sans: "Noto Sans", sans-serif;
@@ -32,3 +33,19 @@ $link-border-bottom: 3px solid $laranja;
 $bgImage: "../img/banner.png";
 $color_black: #000000;
 $color_white: #ffffff;
+
+/*imagens*/
+$quartos-acomodacoes-home:(
+    "acomodacao1": "acomodacao1.png",
+    "acomodacao2": "acomodacao2.png",
+    "acomodacao3": "acomodacao3.png"
+);
+$n:0;
+@each $titulo, $url in $quartos-acomodacoes-home {
+    $n:$n + 1;
+    #quarto#{$n}{
+        background-image: url(./../images/#{$url});
+        background-size: cover;
+        background-position: center;
+    }
+}

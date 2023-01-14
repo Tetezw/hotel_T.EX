@@ -1,24 +1,99 @@
-@use "variaveis" as v;
+@use 'variaveis' as v;
+@use 'mixins' as mx;
 
 /* Reset */
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 a:active,
 a:visited,
 a:link {
-  color: v.$azulEscuro;
+    color: v.$azulEscuro;
 }
 ul {
-  list-style: none;
+    list-style: none;
 }
 body {
-  font-family: v.$noto-sans;
+    font-family: v.$noto-sans;
+}
+/*Container*/
+.container {
+    @include mx.container;
+}
+/*Alinhamentos*/
+.display-f {
+    display: v.$display-f;
+}
+.flex-dc {
+    flex-direction: v.$flex-dc;
+}
+.justify-csb {
+    justify-content: v.$justify-csb;
+}
+.align-c {
+    align-items: v.$align-c;
+}
+.justify-c {
+    justify-content: v.$justify-c;
+}
+/*Margem Padrão*/
+.mb1 {
+    margin-bottom: v.$mb1;
+}
+/*Padding Padrão*/
+.pt3 {
+    padding-top: v.$pt3;
+}
+.pb5 {
+    padding-bottom: v.$pb5;
+}
+/*Hidden*/
+.hidden {
+    display: v.$hidden;
+}
+/*Fontes*/
+.courier {
+    font-family: v.$courier;
+}
+.noto-sans {
+    font-family: v.$noto-sans;
+}
+/* Títulos */
+.titulo-h1 {
+    @include mx.titulo-h1;
+}
+.titulo-h2 {
+    @include mx.titulo-h2;
+}
+.titulo-h3 {
+    @include mx.titulo-h3;
+}
+/* Paragrafo */
+.paragrafo {
+    @include mx.paragrafo;
+}
+/* Botões*/
+.btn-white {
+    @include mx.btn-white;
+}
+.btn-blue {
+    @include mx.btn-blue;
+}
+/*Background color*/
+.bg-color-primary {
+    background-color: v.$azulEscuro;
+}
+/*Bordas*/
+.link-border-all{
+  @include mx.link-border-all;
+}
+.link-border-bottom{
+  border-bottom: 3px solid v.$laranja;
 }

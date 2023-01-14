@@ -13,19 +13,18 @@
 }
 /* Acomodações */
 .box-acomodacoes {
-  background: v.$branco;
+  background: v.$fundoCinza;
 }
 .cards-quartos-titulo {
   & a {
     color: v.$branco;
   }
 }
-.quartos {
-  & img {
-    width: calc((100% / 3) - 20px);
-    background: v.$branco;
-    padding: 10px;
-  }
+
+.quartos-home {
+  height: 500px;
+  width: calc((100% / 3) - 20px);
+  border: 10px solid v.$branco;
 }
 
 /* Ilha        */
@@ -47,16 +46,22 @@
 
 /* Serviços    */
 .btn-conheca-mais {
-    margin: 40px 0;
+  margin: 40px 0;
+  a {
+    button {
+      @include mx.btn-blue;
+      font-size: 1.5rem;
+      padding: 15px 40px 15px 40px;
+    }
   }
-  .btn-conheca-mais a button {
-    @include mx.btn-blue;
-    // font-size: 1.5rem;
-    // padding: 15px 40px 15px 40px;
-    // background-color: var(--azul-escuro);
-    // border: none;
-    // color: v.$branco;
+}
+
+/* Gastronomia */
+.foto-texto-gastronomia {
+  gap: 30px;
+  margin-bottom: 20px;
+  img {
+    width: 50%;
+    align-self: flex-start;
   }
-  .btn-conheca-mais a:hover button {
-    background: var(--azul-claro);
-  }
+}

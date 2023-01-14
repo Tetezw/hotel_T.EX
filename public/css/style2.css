@@ -1,88 +1,9 @@
 
-/* Footer */
-footer {
-  padding: 10px 0;
-}
-.column-footer {
-  color: #ffffff;
-}
-.telefone-endereco,
-.redes-sociais,
-.suporte,
-.navbar-footer ul {
-  align-self: baseline;
-  flex: 1;
-  font-size: 1rem;
-  text-transform: capitalize;
-}
-.telefone-endereco h3::before,
-.redes-sociais h3::before,
-.suporte h3::before,
-.links h3::before {
-  content: "";
-  border-left: 5px solid var(--laranja);
-  padding-left: 5px;
-}
-.telefone-endereco h3,
-.redes-sociais h3,
-.suporte h3,
-.navbar-footer h3,
-.links h3 {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-.redes-sociais i {
-  font-size: 1.3rem;
-  padding-right: 5px;
-}
-.navbar-footer ul li a,
-.suporte a,
-.telefone a,
-.direitos,
-.redes-sociais i,
-footer {
-  color: #ffffff;
-}
-.direitos {
-  padding-top: 30px;
-}
 /* Página Home*/
 /* Sobre      */
-.box-sobre {
-  width: 100%;
-}
-.img-sobre img {
-  margin-right: 30px;
-  box-shadow: 0 0 10px #ccc;
-}
+
 /* Página Home */
-/* Acomodações */
-.box-acomodacoes {
-  background: #f1f1f1;
-}
-.cards-quartos-titulo a {
-  color: #ffffff;
-}
-.quartos img {
-  width: calc((100% / 3) - 20px);
-  background: #ffffff;
-  padding: 10px;
-}
-/* Página Home */
-/* Ilha        */
-.box-ilha {
-  background: linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
-    url(../images/header.png);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 400px;
-}
-.ilha {
-  height: 350px;
-}
-.ilha h2 a {
-  color: #ffffff;
-}
+
 /* Página Home */
 /* Serviços    */
 .btn-conheca-mais {

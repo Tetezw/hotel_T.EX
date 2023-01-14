@@ -80,6 +80,69 @@ header {
   text-underline-offset: 7px;
 }
 
+/* Página Home */
+/*Sobre*/
+.box-sobre {
+  width: 100%;
+}
+
+.img-sobre img {
+  margin-right: 30px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+/* Acomodações */
+.box-acomodacoes {
+  background: #ffffff;
+}
+
+.cards-quartos-titulo a {
+  color: #ffffff;
+}
+
+.quartos img {
+  width: calc(33.3333333333% - 20px);
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* Ilha        */
+.box-ilha {
+  background: linear-gradient(0deg, rgb(6, 63, 87), rgba(6, 63, 87, 0.3)), url(../images/header.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.ilha {
+  height: 350px;
+}
+.ilha h2 a {
+  color: #ffffff;
+}
+
+/* Serviços    */
+.btn-conheca-mais {
+  margin: 40px 0;
+}
+
+.btn-conheca-mais a button {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  background-color: #176485;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-conheca-mais a button:hover {
+  background-color: #063f57;
+}
+
+.btn-conheca-mais a:hover button {
+  background: var(--azul-claro);
+}
+
 /* Footer */
 footer {
   padding: 10px 0;

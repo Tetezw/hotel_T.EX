@@ -1,1 +1,62 @@
+@use "../variaveis" as v;
+@use "../mixins" as mx;
+/* Página Home */
+/*Sobre*/
+.box-sobre {
+  width: 100%;
+}
+.img-sobre {
+  & img {
+    margin-right: 30px;
+    box-shadow: 0 0 10px #ccc;
+  }
+}
+/* Acomodações */
+.box-acomodacoes {
+  background: v.$branco;
+}
+.cards-quartos-titulo {
+  & a {
+    color: v.$branco;
+  }
+}
+.quartos {
+  & img {
+    width: calc((100% / 3) - 20px);
+    background: v.$branco;
+    padding: 10px;
+  }
+}
 
+/* Ilha        */
+.box-ilha {
+  background: linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
+    url(../images/header.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+.ilha {
+  height: 350px;
+  h2 {
+    a {
+      color: v.$branco;
+    }
+  }
+}
+
+/* Serviços    */
+.btn-conheca-mais {
+    margin: 40px 0;
+  }
+  .btn-conheca-mais a button {
+    @include mx.btn-blue;
+    // font-size: 1.5rem;
+    // padding: 15px 40px 15px 40px;
+    // background-color: var(--azul-escuro);
+    // border: none;
+    // color: v.$branco;
+  }
+  .btn-conheca-mais a:hover button {
+    background: var(--azul-claro);
+  }

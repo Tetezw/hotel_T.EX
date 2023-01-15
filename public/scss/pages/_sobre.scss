@@ -1,0 +1,104 @@
+@use "../variaveis" as v;
+@use "../mixins" as mx;
+
+/* Página Sobre */
+/* Container Principal */
+.box-sobre-hotel {
+  padding-bottom: 100px;
+}
+
+.sobre-container-img-txt {
+  align-items: flex-start;
+  gap: 5%;
+  img.sobre-img {
+    width: 50%;
+  }
+}
+
+/* Comodidades Adicionais*/
+.container-comodidades div {
+  width: 30%;
+  img {
+    width: 100%;
+  }
+}
+.comodidades {
+  background: v.$fundoCinza;
+  padding-bottom: 100px;
+  &-img {
+    padding: 10px;
+    background-color: v.$branco;
+  }
+}
+/* Diferenciais */
+.box-diferenciais {
+  padding-bottom: 100px;
+}
+.container-img {
+  gap: 10px;
+}
+.img-hero {
+  width: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+  &-title {
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.img-style {
+  padding: 5%;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.legenda-diferenciais-style {
+  width: 100%;
+  height: auto;
+  text-align: justify;
+}
+.iconStyle {
+  color: v.$laranja;
+  width: 100%;
+  text-align: center;
+}
+.fa-size {
+  font-size: 4rem;
+}
+
+/* Nosso Time */
+.img-funcionarios {
+  padding: 10px;
+  background-color: v.$branco;
+}
+.container-time {
+  margin: 0 0 50px;
+  figcaption {
+    text-transform: uppercase;
+    color: v.$laranja;
+    font-weight: bold;
+  }
+}
+.box-time {
+  background-color: v.$fundoCinza;
+  padding-bottom: 50px;
+}
+/* Ajuda */
+.contato-ajuda {
+  padding: 50px 0;
+}
+.container-contact {
+  text-align: center;
+  p {
+    margin-top: 8px;
+  }
+  button {
+    @include mx.btn-blue;
+    margin-top: 10px;
+    font-weight: bold;  
+    a {
+      color: v.$branco;
+    }
+  }
+}

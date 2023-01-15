@@ -1,0 +1,16 @@
+@use "reset";
+@use 'variaveis' as v;
+@use 'mixins' as mx;
+@use 'extend';
+//header
+@use 'header';
+//Pages
+@use 'pages/home';
+@use 'pages/sobre';
+@use 'pages/acomodacoes';
+@use 'pages/reservas';
+@use 'pages/contatos';
+@use 'pages/login';
+//footer
+@use 'footer';
+@use 'media';

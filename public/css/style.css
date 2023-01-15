@@ -60,6 +60,10 @@ body {
   display: flex;
 }
 
+.display-g {
+  display: grid;
+}
+
 .flex-dc {
   flex-direction: column;
 }
@@ -431,6 +435,92 @@ header {
 }
 .container-contact button a {
   color: #ffffff;
+}
+
+/* acomodacoes */
+.acomodacoes {
+  padding-bottom: 50px;
+}
+.acomodacoes .detalhes-apartamentos ul {
+  list-style: inside;
+  padding-bottom: 20px;
+  font-size: 1rem;
+}
+.acomodacoes .detalhes-apartamentos ul li {
+  padding: 5px 0;
+}
+.acomodacoes .detalhes-apartamentos .itens {
+  width: 50%;
+}
+
+.acomodacoes-imagens {
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 10px;
+}
+.acomodacoes-imagens .card {
+  width: 350px;
+  background: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+.acomodacoes-imagens .card img {
+  width: 100%;
+}
+.acomodacoes-imagens .card .inferior-text {
+  grid-template-rows: 200px 48px;
+  padding: 20px;
+}
+.acomodacoes-imagens .card .inferior-text-button {
+  grid-template-columns: 125px 125px;
+}
+.acomodacoes-imagens .card .inferior-text-button .inferior-left {
+  grid-template-rows: 1fr 1fr;
+}
+.acomodacoes-imagens .card .inferior-text-button .inferior-left .text2 {
+  font-size: 0.8rem;
+}
+.acomodacoes-imagens .card .inferior-text-button .inferior-left .text-valor-acomodacoes {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+.acomodacoes-imagens .card .inferior-text-button .inferior-right {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  border: none;
+  background-color: #176485;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0px;
+}
+.acomodacoes-imagens .card .inferior-text-button .inferior-right:hover {
+  background-color: #063f57;
+}
+.acomodacoes-imagens .card .inferior-text-top p {
+  text-align: justify;
+}
+
+.box-destaque {
+  background-color: #f1f1f1;
+}
+.box-destaque .produtos-destaque {
+  padding: 100px 0;
+}
+.box-destaque .description {
+  padding: 20px;
+  border-left: 5px solid #063f57;
+}
+.box-destaque .description h2 {
+  padding: 0 0 20px;
+}
+.box-destaque .texto {
+  font-size: 0.8rem;
+}
+.box-destaque .preco {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Footer */

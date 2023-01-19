@@ -10,7 +10,7 @@
       src="https://kit.fontawesome.com/18dedb8cc9.js"
       crossorigin="anonymous"
     ></script>
-    <script src="modal.js" async></script>
+    <script src="modal.js" defer></script>
     <style>     
       .fade-servicos-modal, .servicos-modal{
         transition: .5s;
@@ -30,8 +30,7 @@
         position: fixed;
         left:50%;
         top: 50%;
-        width: 60%;
-        height: 60%;
+        width: 60%;        
         transform: translate(-50%, -50%);
         background-color: #063f57;
         z-index: 10;
@@ -249,7 +248,7 @@
           <div class="servicos-modal hide">
             <div class="servicos-modal-header">
               <h2>Serviços adicionais</h2>
-              <!-- <button class="close-modal-servicos">Fechar</button> -->
+              <button class="close-modal-servicos">Fechar</button>
             </div>
             <div class="servicos-modal-body">
               <ul>
@@ -312,7 +311,6 @@
         </div>
       </section>
     </main>
-
     <footer class="bg-color-primary">
       <div class="container box-footer display-f flex-dc">
         <div class="column-footer display-f align-c justify-csb">
@@ -370,5 +368,6 @@
         </div>
       </div>
     </footer>
-  </body>
+
+  </body>  
 </html>

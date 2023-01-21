@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="js/scripts.js" async></script>
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Login - Hotel Recanto dos Códigos</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="container display-f flex-dc justify-csb box-header">
+                <div class="login display-f align-c">
+                    <!-- esconder .hidden -->
+                    <div class="hidden">
+                        <a href="login.html">
+                            <button class="btn-white courier">
+                                Faça login
+                            </button>
+                        </a>
+                    </div>
+                    <div class="login-user">
+                        <span id="saudacao">Olá usuário</span>
+                        <button class="btn-white">Sair</button>
+                    </div>
+                </div>
+                <div class="header-logo-slogan display-f align-c">
+                    <div class="img-logo">
+                        <img
+                            src="images/Logo-Branca.png"
+                            alt="Logo Hotel"
+                            width="200"
+                        />
+                    </div>
+
+                    <div class="slogan courier">
+                        <h1 class="titulo-h1">
+                            Desconecte-se e venha se conectar <br />
+                            com a natureza
+                        </h1>
+                    </div>
+
+                    <div class="responsive-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="noto-sans display-f justify-c align-c">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="acomodacoes.html">Quartos</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                        <li><a href="reservas.html">Faça sua reserva</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container-form-image display-f">
+                <div class="container-login">
+                    <form action="home.html" class="form-login">
+                        <h2>FAÇA LOGIN</h2>
+
+                        <label for="username">E-mail</label>
+                        <input
+                            type="text"
+                            placeholder="Digite seu e-mail"
+                            id="username"
+                            autofocus
+                        />
+
+                        <label for="password">Senha</label>
+                        <input
+                            type="password"
+                            placeholder="Digite sua senha"
+                            id="password"
+                        />
+
+                        <div class="lembrar-esqueci">
+                            <input type="checkbox" name="check-terms" />
+                            <span>Lembrar-me</span>
+                            <a href="#" class="link-login"
+                                ><span class="esqueci-senha"
+                                    >Esqueci minha senha</span
+                                ></a
+                            >
+                        </div>
+
+                        <button type="button" class="btn-entrar" id="btn-login">
+                            Entrar
+                        </button>
+                        <h3>Entre com suas redes sociais</h3>
+                        <div class="social-login display-f">
+                            <div class="google-icon">
+                                <a href="#" class="link-login"
+                                    ><i class="fab fa-google"></i> Google</a
+                                >
+                            </div>
+                            <div class="facebook-icon">
+                                <a href="#" class="link-login"
+                                    ><i class="fab fa-facebook"></i> Facebook</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- <p>Usuários Administrativos</p>
+        <button onclick="window.location.href='../admin/login_admin.html'">
+            Login - ADMIN
+        </button> -->
+                    </form>
+                </div>
+                <div class="container-img-login">
+                    <img
+                        src="images/hotel-login.png"
+                        alt="FOTO DO HOTEL"
+                        width="700"
+                        height="585"
+                    />
+                </div>
+            </div>
+        </main>
+        <footer class="bg-color-primary">
+            <div class="container box-footer display-f flex-dc">
+                <div class="column-footer display-f align-c justify-csb">
+                    <div class="telefone-endereco flex-dc">
+                        <h3 class="mb1">Contato</h3>
+                        <div class="telefone display-f">
+                            <a href="tel:7133650000">
+                                <p>(71) 3365-0000</p>
+                            </a>
+                        </div>
+
+                        <div class="endereco">
+                            <p>Ilha dos Frades, Salvador - BA</p>
+                        </div>
+                    </div>
+
+                    <div class="redes-sociais display-f flex-dc">
+                        <h3 class="mb1">Siga-nos nas Redes</h3>
+                        <div>
+                            <a href="mailto:reservas@hotel.com.br">
+                                <i class="fa-regular fa-envelope fa-lg"></i>
+                            </a>
+
+                            <a href="https://pt-br.facebook.com/">
+                                <i class="fa-brands fa-facebook fa-lg"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/">
+                                <i class="fa-brands fa-instagram fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="suporte display-f flex-dc">
+                        <h3 class="mb1">Suporte</h3>
+                        <a href="contatos.html"> Deixe aqui sua dúvida </a>
+                    </div>
+
+                    <div class="links">
+                        <h3 class="mb1">Links</h3>
+                        <nav class="navbar-footer">
+                            <ul class="noto-sans display-f flex-dc">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="sobre.html">Sobre</a></li>
+                                <li><a href="acomodacoes.html">Quartos</a></li>
+                                <li><a href="contatos.html">Contato</a></li>
+                                <li>
+                                    <a href="reservas.html">Faça sua reserva</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="direitos display-f justify-c">
+                    <span> Hotel Recanto dos Códigos &copy; 2022 </span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

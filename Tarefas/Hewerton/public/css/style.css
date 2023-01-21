@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* variáveis */
 :root {
@@ -25,7 +25,7 @@ ul {
     list-style: none;
 }
 body {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 /* Classes Framework */
 .container {
@@ -81,7 +81,7 @@ body {
 }
 .titulo-h3 {
     font-size: 1.5rem;
-    font-family: 'Courier Prime', monospace;
+    font-family: "Courier Prime", monospace;
     font-weight: 800;
     padding-bottom: 10px;
 }
@@ -97,10 +97,10 @@ body {
 }
 /* Fontes */
 .courier {
-    font-family: 'Courier Prime', monospace;
+    font-family: "Courier Prime", monospace;
 }
 .noto-sans {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 /* Botões */
 .btn-white {
@@ -125,7 +125,7 @@ body {
     background-color: var(--azul-escuro);
 }
 .saiba-mais::before {
-    content: '🔺';
+    content: "🔺";
 }
 .link-border-bottom {
     border-bottom: 3px solid var(--laranja);
@@ -203,7 +203,7 @@ footer {
 .redes-sociais h3::before,
 .suporte h3::before,
 .links h3::before {
-    content: '';
+    content: "";
     border-left: 5px solid var(--laranja);
     padding-left: 5px;
 }
@@ -516,7 +516,7 @@ footer {
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 10px 0px var(--azul-claro);
     padding: 50px 35px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     color: white;
     letter-spacing: 0.5px;
     border: none;
@@ -543,8 +543,8 @@ footer {
     font-weight: 700;
 }
 
-input[type='text'],
-input[type='password'] {
+input[type="text"],
+input[type="password"] {
     display: block;
     height: 50px;
     width: 100%;
@@ -562,7 +562,7 @@ input[type='password'] {
     color: gray;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
     margin: 0px 2px 0px 2px;
     cursor: pointer;
     transform: scale(1.5);
@@ -639,146 +639,6 @@ div.facebook-icon > a.link-login {
     font-weight: 700;
 }
 
-/*Página Reserva*/
-.reserva {
-    border: none;
-    background-color: #063f57;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.1019607843);
-    box-shadow: 0px 0px 15px 0px #176485;
-    font-weight: 500;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    margin: 20px 0;
-}
-.reserva form {
-    margin: 10px 0 10px 0px;
-    width: 100%;
-    padding: 20px 20px;
-}
-.reserva ul {
-    color: #080710;
-}
-.reserva ul li {
-    margin: auto;
-    display: flex;
-}
-.reserva ul li label {
-    margin: 0 0 0 5px;
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: bold;
-}
-.reserva ul li input {
-    margin-left: 10px;
-    color: #080710;
-}
-
-/*Seção dos quartos na página reserva*/
-.quartos-resumo {
-    position: relative;
-    padding-bottom: 50px;
-}
-
-.todos-os-quartos-reserva {
-    width: 63%;
-    position: relative;
-}
-
-.quarto-box label {
-    padding: 10px 0;
-    margin: 0;
-    cursor: pointer;
-}
-
-.quarto-reserva {
-    background: #f1f1f1;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 15px;
-    padding: 15px;
-}
-
-.img-reserva + div {
-    margin-left: 15px;
-}
-
-.cada-quarto-reserva h3 {
-    font-size: 1.5rem;
-    font-family: 'Courier Prime', monospace;
-    font-weight: 800;
-    margin: 10px 0;
-    text-align: justify;
-    white-space: wrap;
-}
-.cada-quarto-reserva p {
-    text-align: justify;
-    margin: 0 10px 0 0;
-    white-space: wrap;
-}
-
-.text-valor-reserva {
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.radio-reserva {
-    margin: 20px 0 20px 0;
-    accent-color: #063f57;
-}
-
-/* Caixa Flutuante de Resumo reserva */
-.resumo-reserva {
-    width: 33%;
-    position: absolute;
-    right: 0px;
-    top: 0;
-    background-color: #063f57;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.1019607843);
-    box-shadow: 0px 0px 15px 0px #176485;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    padding: 50px;
-}
-.resumo-reserva h2 {
-    margin-bottom: 15px;
-    font-size: 1.4rem;
-}
-.resumo-reserva a {
-    color: #ffffff;
-    font-size: 14px;
-    margin-top: 10px;
-}
-.resumo-reserva button {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
-    background-color: #ffffff;
-    border: none;
-    cursor: pointer;
-    margin: 30px auto 0px auto;
-    padding: 10px;
-}
-.resumo-reserva p {
-    margin: 30px 0;
-    font-weight: bold;
-    text-align: center;
-    border: solid 2px #a35700;
-    padding: 2px;
-}
-
-.resumo-box {
-    background-color: #ffffff;
-    opacity: 90%;
-    width: auto;
-    color: #063f57;
-    font-size: 14px;
-    padding: 10px;
-}
-
 /* PÁGINA CONTATO */
 .container-contato {
     padding: 30px;
@@ -788,35 +648,38 @@ div.facebook-icon > a.link-login {
     width: 40%;
     height: auto;
     font-size: 14px;
-    background: #063f57;
+    background: var(--azul-escuro);
     border-radius: 8px;
     margin: 0 auto;
-    box-shadow: 0 0 40px -10px #063f57;
+    box-shadow: 0 0 40px -10px var(--azul-escuro);
     padding: 20px 30px;
     box-sizing: border-box;
-    color: #ffffff;
+    color: white;
     letter-spacing: 0.5px;
 }
-.form-contato h2 {
+
+.titulo-form-contato {
+    text-align: center;
+    color: var(--azul-claro);
+    margin-bottom: 30px;
+}
+
+.titulo-form-contato > h2 {
+    display: flex;
+    text-align: center;
+}
+
+.form-contato > h2 {
     margin: 10px 0;
     padding-bottom: 10px;
     width: 60%;
-    border-bottom: 3px solid #a35700;
+    border-bottom: 3px solid var(--laranja);
     font-size: 2rem;
     font-weight: 700;
     line-height: 42px;
 }
-.form-contato p {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-.form-contato p before {
-    content: attr(type);
-    display: block;
-    margin: 28px 0 0;
-    font-size: 14px;
-}
-.form-contato p input {
+
+.form-contato > p > input {
     width: 100%;
     height: 50px;
     padding: 10px;
@@ -828,14 +691,16 @@ div.facebook-icon > a.link-login {
     outline: none;
 }
 
-.titulo-form-contato {
-    text-align: center;
-    color: #176485;
-    margin-bottom: 30px;
+.form-contato > p {
+    font-size: 1.2rem;
+    font-weight: 700;
 }
-.titulo-form-contato h2 {
-    display: flex;
-    text-align: center;
+
+.form-contato > p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
 }
 
 .telefone-contato {
@@ -847,7 +712,8 @@ div.facebook-icon > a.link-login {
     width: 50%;
     display: inline-block;
 }
-.assunto-contato select {
+
+.assunto-contato > select {
     width: 100%;
     height: 50px;
     border-radius: 3px;
@@ -861,9 +727,9 @@ div.facebook-icon > a.link-login {
     width: 100%;
     height: 100px;
     padding: 10px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 0.9rem;
-    border: 1px solid #176485;
+    border: 1px solid var(--azul-claro);
     border-radius: 3px;
     resize: none;
     outline: none;
@@ -878,8 +744,8 @@ div.facebook-icon > a.link-login {
     height: 50px;
     margin-top: 28px;
     border: none;
-    background-color: #176485;
-    color: #ffffff;
+    background-color: var(--azul-claro);
+    color: white;
     padding: 16px 0 16px 0;
     font-weight: 700;
     border-radius: 3px;
@@ -887,9 +753,9 @@ div.facebook-icon > a.link-login {
 }
 
 .btn-enviar-contato:hover {
-    background-color: #a35700;
+    background-color: var(--laranja);
     transition: 0.2s;
-    box-shadow: 10px 10px 40px -14px #063f57;
+    box-shadow: 10px 10px 40px -14px var(--azul-escuro);
 }
 
 div.linha-final {
@@ -898,20 +764,200 @@ div.linha-final {
     height: 50px;
     padding: 16px 0 16px 0;
     margin-top: 28px;
-    background: #176485;
-    color: #ffffff;
+    background: var(--azul-claro);
+    color: #fff;
     border-radius: 3px;
-    box-shadow: 10px 10px 40px -14px #063f57;
+    box-shadow: 10px 10px 40px -14px var(--azul-escuro);
 }
 
 div.linha-final > a {
     text-decoration: none;
-    color: #ffffff;
+    color: white;
 }
 
 div.linha-final a i {
     margin-right: 8px;
 }
+
+/* PÁGINA RESERVA */
+/* página de Formulário de Reserva */
+.reserva-titulo {
+    font-size: 32px;
+    color: var(--azul-escuro);
+    margin-top: 32px;
+}
+
+.reserva {
+    border: none;
+    background-color: var(--azul-escuro);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #ffffff1a;
+    box-shadow: 0px 0px 15px 0px var(--azul-claro);
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+}
+
+.reserva form {
+    margin: 10px 0 10px 0px;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.reserva ul {
+    color: #080710;
+}
+
+.reserva ul li {
+    margin: auto;
+    display: flex;
+}
+
+.reserva ul li label {
+    margin: 0 0 0 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.reserva ul li input {
+    margin-left: 10px;
+    color: #080710;
+}
+
+.novoform input[type="number"],
+input[type="date"] {
+    background-color: white;
+    border-radius: 3px;
+    color: grey;
+}
+
+/*Seção dos quartos na página reserva*/
+.quartos-resumo {
+  position: relative;
+  padding-bottom: 50px;
+
+}
+
+.todos-os-quartos-reserva {
+    width: 63%;
+    position: relative;
+}
+
+.quarto-reserva {
+    background: #f8f8f8;
+    box-shadow: 0 0 10px #00000033;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.img-reserva + div {
+    margin-left: 15px;
+}
+
+.cada-quarto-reserva h3 {
+    font-size: 1.5rem;
+    font-family: "Courier Prime", monospace;
+    font-weight: 800;
+    margin: 10px 0;
+    text-align: justify;
+    white-space: wrap;
+}
+
+.cada-quarto-reserva p {
+    text-align: justify;
+    margin: 0 10px 0 0;
+    white-space: wrap;
+}
+
+.text-valor-reserva {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.radio-reserva {
+    margin: 20px 0 20px 0;
+    accent-color: var(--azul-escuro);
+}
+
+.reservar {
+  margin-right: 10px;
+  display: none;
+}
+
+.quarto-box label {
+  padding: 10px 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.fa-circle-check {
+  color: var(--azul-escuro);
+}
+
+input[type="radio"]:checked + div {
+  background-color: #063f57;
+  color: #ffffff;
+}
+
+/* Caixa Flutuante de Resumo reserva */
+.resumo-reserva {
+    width: 33%;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: var(--azul-escuro);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #ffffff1a;
+    box-shadow: 0px 0px 15px 0px var(--azul-claro);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 0.5px;
+    padding: 50px;
+}
+
+.resumo-reserva h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.resumo-box {
+    background-color: #ffffff;
+    opacity: 90%;
+    width: auto;
+    color: #063f57;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.resumo-reserva a {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.resumo-reserva button {
+    font-family: "noto sans", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin: 30px auto 0px auto;
+    padding: 10px;
+}
+
+.resumo-reserva p {
+    margin: 30px 0;
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px var(--laranja);
+    padding: 2px;
+}
+
 /* Design Responsivo */
 /* Smartphone */
 @media (max-width: 414px) and (orientation: portrait) {

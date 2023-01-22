@@ -2,27 +2,27 @@
 const banners = [
   {
     id: 1,
-    images: "public/images/banner/1.jpg",
+    images: "./images/banner/1.jpg",
     text: "Relaxe em contato com a natureza.",
   },
   {
     id: 2,
-    images: "public/images/banner/2.jpg",
+    images: "./images/banner/2.jpg",
     text: "Arquitetura estilo árabe.",
   },
   {
     id: 3,
-    images: "public/images/banner/3.jpg",
+    images: "./images/banner/3.jpg",
     text: "Cabanas sedutoras",
   },
   {
     id: 4,
-    images: "public/images/banner/4.jpg",
+    images: "./images/banner/4.jpg",
     text: "Por do sol fantástico.",
   },
   {
     id: 5,
-    images: "public/images/banner/5.jpg",
+    images: "./images/banner/5.jpg",
     text: "Piscinas com vista incrível para se refrescar.",
   },
 ];

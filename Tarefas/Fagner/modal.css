@@ -1,0 +1,48 @@
+*{
+  margin: none;
+  box-sizing: border-box;
+  padding: none;
+}
+
+.container__main {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__modal {
+  background-color: #fff;
+  width: 40%;
+  height: 50%;
+  border-radius: 5px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.container__modal p {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #A35700;
+}
+
+.modal__table table {
+  width: 100%;
+}
+
+.modal__table table tr{
+  text-align: left;
+}
+
+.modal__table table tr th{
+  padding-bottom: 8px;
+  font-size: 1.1rem;
+}

@@ -228,11 +228,15 @@
         </div>
       </section>
       <section>
-        <div class="container__main" id="containerMain">
-          <div class="container__modal" id="containerModal">
-            <h2>Serviços</h2>
-            <p>Para o seu maior conforto e bem-estar, escolha nossos serviços adicionais.</p>
-            <div class="modal__table">
+        <div class="container__main active__off" id="containerMain">
+        <img class="img__logo" src="../../public/images/Logo-Branca.png">
+        <div class="container__modal" id="containerModal">
+            <span id="btnExit">X</span>
+            <h2 id="md1" class="active__off">Serviços</h2>
+            <h2 id="md2" class="active__off">Resumo</h2>
+            <p id="md1" class="line__bottom active__off">Para o seu maior conforto e bem-estar, escolha nossos serviços adicionais.</p>
+            <p id="md2"class="line__bottom active__off">Resumo dos serviços e acomodação selecionados</p>
+            <div id="md1"class="modal__table active__off">
               <table>
                 <tr>
                   <th>Selecione</th>
@@ -330,8 +334,23 @@
                   </td>
                 </tr>
               </table>
-              <button type="button">Selecionar serviços</button>
             </div>
+            <div id="md1" class="modal__resume active__off">
+                <div class="modal__resumo__accomm">
+                    <img src="../../public/images/reserva1.png" alt="">
+                    <p>Nome da acomodação</p>
+                </div>
+                <div class="modal__resume__description">
+                    <p>Diária: <span></span></p>
+                    <p>Check-in: <span></span></p>
+                    <p>check-out: <span></span></p>
+                    <p>Adultos: <span></span></p>
+                    <p>Serviços: <span></span></p>
+                    <p>Total: <span></span></p>
+                </div>
+
+            </div>
+            <button class="active__on" type="button" id="btnOk">OK</button>
           </div>
         </div>
       </section>
@@ -396,5 +415,6 @@
         </div>
       </div>
     </footer>
+    <script src="modal.js"></script>
   </body>
 </html>

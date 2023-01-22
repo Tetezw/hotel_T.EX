@@ -11,13 +11,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="modal.js" defer></script>
-    <style>     
-      .fade-servicos-modal, .servicos-modal{
-        transition: .5s;
+    <style>
+      .fade-servicos-modal,
+      .servicos-modal {
+        transition: 0.5s;
         opacity: 1;
         pointer-events: all;
       }
-      .fade-servicos-modal{
+      .fade-servicos-modal,
+      .fade-resumo-modal {
         position: fixed;
         top: 0;
         left: 0;
@@ -26,19 +28,21 @@
         background-color: rgba(0, 0, 0, 0.6);
         z-index: 5;
       }
-      .servicos-modal{
+      .servicos-modal,
+      .resumo-modal {
         position: fixed;
-        left:50%;
+        left: 50%;
         top: 50%;
-        width: 60%;        
+        width: 60%;
         transform: translate(-50%, -50%);
         background-color: #063f57;
-        z-index: 10;
         max-width: 500px;
         padding: 1.2rem;
         border-radius: 0.5rem;
-      }
-      .servicos-modal-header{
+        z-index: 10;      
+      }      
+      .servicos-modal-header,
+      .resumo-modal-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -47,27 +51,26 @@
         padding-bottom: 1rem;
         color: white;
       }
-      .hide{
+      .hide,
+      .hide-resumo {
         opacity: 0;
         pointer-events: none;
       }
-      .servicos-modal-body{
-        display: flex;        
+      .servicos-modal-body,
+      .resumo-modal-body {
+        display: flex;
         align-items: center;
       }
-      .servicos-modal-body ul li{
+      .servicos-modal-body ul li {
         margin: 20px 0 20px 0;
         font-size: 1.5rem;
         text-align: justify;
         color: white;
       }
 
-      .servicos-modal-body ul li p{
+      .servicos-modal-body ul li p {
         font-size: 0.8rem;
-      }  
-      
-      
-      
+      }
     </style>
   </head>
 
@@ -253,62 +256,137 @@
             <div class="servicos-modal-body">
               <ul>
                 <li>
-                  <input type="checkbox" id="passeio">
-                  <label for="passeio">Passeio entre Ilhas</label><span> - R$ 100</span>
-                  <p>Um belo passeio para conhecer as ilhas no entorno da Ilha dos Frades.</p>
+                  <input type="checkbox" id="passeio" />
+                  <label for="passeio">Passeio entre Ilhas</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um belo passeio para conhecer as ilhas no entorno da Ilha
+                    dos Frades.
+                  </p>
                 </li>
                 <li>
-                  <input type="checkbox" id="barco">
-                  <label for="barco">Passeio de Barco</label><span> - R$ 100</span>
-                  <p>Um passeio de barco para conhecer as praias da Ilha dos Frades, bem como pausa para nadar e curtir o mar.</p>
+                  <input type="checkbox" id="barco" />
+                  <label for="barco">Passeio de Barco</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um passeio de barco para conhecer as praias da Ilha dos
+                    Frades, bem como pausa para nadar e curtir o mar.
+                  </p>
                 </li>
                 <li>
-                  <input type="checkbox" id="spa">
+                  <input type="checkbox" id="spa" />
                   <label for="spa">Um dia no Spa</label><span> - R$ 100</span>
-                  <p>Um day-use no nosso Spa, com direito a massagens e banhos especiais para que sua estadia seja ainda mais relaxante.</p>
+                  <p>
+                    Um day-use no nosso Spa, com direito a massagens e banhos
+                    especiais para que sua estadia seja ainda mais relaxante.
+                  </p>
                 </li>
                 <li>
-                  <input type="checkbox" id="trilha">
-                  <label for="trilha">Trilha ecológica com guia</label><span> - R$ 100</span>
-                  <p>Um passeio pela floresta local, com a companhia de um guia local que conhece toda a flora e fauna da ilha.</p>
+                  <input type="checkbox" id="trilha" />
+                  <label for="trilha">Trilha ecológica com guia</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um passeio pela floresta local, com a companhia de um guia
+                    local que conhece toda a flora e fauna da ilha.
+                  </p>
                 </li>
                 <li>
-                  <input type="checkbox" id="cafe">
-                  <label for="cafe">Café da manhã no quarto</label><span> - R$ 100</span>
-                  <p>Um belíssimo café da manhã servido no conforto de seu quarto.</p>
-                  
+                  <input type="checkbox" id="cafe" />
+                  <label for="cafe">Café da manhã no quarto</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um belíssimo café da manhã servido no conforto de seu
+                    quarto.
+                  </p>
                 </li>
               </ul>
             </div>
           </div>
-
-          <aside class="resumo-reserva">            
-            <div>
-              <h2>Resumo da Reserva</h2>
-              <div class="resumo-box">
-                <ul>
-                  <div>
-                    <li>Apartamento: <span>xxx</span></li>
-                    <li>Nº de pessoas: <span>xxx</span></li>
-                  </div>
-                  <div>
-                    <li>Check-in: <span>xxx</span></li>
-                    <li>Check-out: <span>xxx</span></li>
-                  </div>
-                </ul>
-              </div>
-              <a href="#">Adicionar mais serviços</a>
-              <div>
-                <p>Valor total: R$ <span>XXX</span></p>
-              </div>
-              <button data-modal="modal" class="servicos-modal-btn display-f">
-                Adicionar mais serviços
-              </button>
-              <button class="display-f">Confirmar reserva</button>
-              
+          <div class="fade-resumo-modal hide-resumo"></div>
+          <div class="resumo-modal hide-resumo">
+            <div class="resumo-modal-header">
+              <h2>Serviços adicionais</h2>
+              <button class="close-modal-resumo">Fechar</button>
             </div>
-          </aside>
-        </div>
+            <div class="resumo-modal-body">
+              <ul>
+                <li>
+                  <input type="checkbox" id="passeio" />
+                  <label for="passeio">Passeio entre Ilhas</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um belo passeio para conhecer as ilhas no entorno da Ilha
+                    dos Frades.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" id="barco" />
+                  <label for="barco">Passeio de Barco</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um passeio de barco para conhecer as praias da Ilha dos
+                    Frades, bem como pausa para nadar e curtir o mar.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" id="spa" />
+                  <label for="spa">Um dia no Spa</label><span> - R$ 100</span>
+                  <p>
+                    Um day-use no nosso Spa, com direito a massagens e banhos
+                    especiais para que sua estadia seja ainda mais relaxante.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" id="trilha" />
+                  <label for="trilha">Trilha ecológica com guia</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um passeio pela floresta local, com a companhia de um guia
+                    local que conhece toda a flora e fauna da ilha.
+                  </p>
+                </li>
+                <li>
+                  <input type="checkbox" id="cafe" />
+                  <label for="cafe">Café da manhã no quarto</label
+                  ><span> - R$ 100</span>
+                  <p>
+                    Um belíssimo café da manhã servido no conforto de seu
+                    quarto.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+
+        <aside class="resumo-reserva">
+          <div>
+            <h2>Resumo da Reserva</h2>
+            <div class="resumo-box">
+              <ul>
+                <div>
+                  <li>Apartamento: <span>xxx</span></li>
+                  <li>Nº de pessoas: <span>xxx</span></li>
+                </div>
+                <div>
+                  <li>Check-in: <span>xxx</span></li>
+                  <li>Check-out: <span>xxx</span></li>
+                </div>
+              </ul>
+            </div>
+            <a href="#">Adicionar mais serviços</a>
+            <div>
+              <p>Valor total: R$ <span>XXX</span></p>
+            </div>
+            <button data-modal="modal" class="servicos-modal-btn display-f">
+              Adicionar mais serviços
+            </button>
+            <button data-modal="modal" class="resumo-modal-btn display-f">
+              Confirmar reserva
+            </button>
+          </div>
+        </aside>
+      </div>
       </section>
     </main>
     <footer class="bg-color-primary">
@@ -368,6 +446,5 @@
         </div>
       </div>
     </footer>
-
-  </body>  
+  </body>
 </html>

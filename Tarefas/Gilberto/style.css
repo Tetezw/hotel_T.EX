@@ -884,7 +884,7 @@ input[type="date"] {
 
 .reservar {
   margin-right: 10px;
-  display: none;
+  /* display: none; */
 }
 
 .quarto-box label {
@@ -897,10 +897,10 @@ input[type="date"] {
   color: var(--azul-escuro);
 }
 
-input[type="radio"]:checked + div {
+/* input[type="radio"]:checked + div {
   background-color: #063f57;
   color: #ffffff;
-}
+} */
 
 /* Caixa Flutuante de Resumo reserva */
 .resumo-reserva {

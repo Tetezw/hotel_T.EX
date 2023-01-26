@@ -1,4 +1,4 @@
-// Lista de banners
+/* Demanda Banner Aleatório */
 const banners = [
   {
     id: 1,
@@ -34,8 +34,8 @@ function trocarBanner() {
 
   const findBanner = banners.find((elem) => elem.id === banner_aleatorio);
 
-  banner.style.backgroundImage = `linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
-  url("${findBanner.images}")`;
+  banner.style.background = `linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
+    url("${findBanner.images}")`;
   banner.style.backgroundSize = "cover";
   banner.style.backgroundPosition = "center";
   texto.textContent = findBanner.text;

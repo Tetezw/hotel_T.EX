@@ -32,25 +32,31 @@
 }
 /* Botões*/
 @mixin btn-white {
-  font-size: 1.2rem;
-  padding: 0.8rem 1rem;
-  border: none;
-  background-color: v.$branco;
-  margin: 2rem 2rem 0 0;
-  text-transform: uppercase;
-  cursor: pointer;
 }
+
 @mixin btn-blue {
-  font-size: 1rem;
-  padding: 1rem 1rem;
-  border: none;
-  background-color: v.$azulClaro;
-  color: v.$branco;
+}
+
+@mixin botao($color) {
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
 
-  &:hover {
-    background-color: v.$azulEscuro;
+  @if $color == v.$azulEscuro {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    color: v.$branco;
+
+    &:hover {
+      background-color: v.$azulEscuro;
+    }
+
+    background-color: $color;
+  } @else if($color == v.$branco) {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    margin: 2rem 2rem 0 0;
+    background-color: $color;
   }
 }
 
@@ -69,7 +75,7 @@
   background: #f8f8f8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
-  img{
+  img {
     width: 100%;
   }
 }

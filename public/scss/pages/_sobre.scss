@@ -94,9 +94,9 @@
     margin-top: 8px;
   }
   button {
-    @include mx.btn-blue;
+    @include mx.botao(v.$azulEscuro);
     margin-top: 10px;
-    font-weight: bold;  
+    font-weight: bold;
     a {
       color: v.$branco;
     }

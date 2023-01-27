@@ -49,7 +49,7 @@
   margin: 40px 0;
   a {
     button {
-      @include mx.btn-blue;
+      @include mx.botao(v.$azulEscuro);
       font-size: 1.5rem;
       padding: 15px 40px 15px 40px;
     }

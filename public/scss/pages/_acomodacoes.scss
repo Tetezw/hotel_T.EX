@@ -41,7 +41,7 @@
           }
         }
         .inferior-right {
-          @include mx.btn-blue;
+          @include mx.botao(v.$azulEscuro);
           padding: 0px;
         }
       }

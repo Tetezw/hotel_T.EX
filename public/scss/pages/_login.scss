@@ -109,7 +109,7 @@ input {
 }
 
 .btn-entrar {
-    @include mx.btn-white;
+    @include mx.botao(v.$branco);
     width: 100%;
     margin: 0;
     font-weight: 700;

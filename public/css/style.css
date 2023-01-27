@@ -291,8 +291,18 @@ header {
   margin: 40px 0;
 }
 .btn-conheca-mais a button {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  color: #ffffff;
+  background-color: #063f57;
   font-size: 1.5rem;
   padding: 15px 40px 15px 40px;
+}
+.btn-conheca-mais a button:hover {
+  background-color: #063f57;
 }
 
 /* Gastronomia */
@@ -410,8 +420,18 @@ header {
   margin-top: 8px;
 }
 .container-contact button {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  color: #ffffff;
+  background-color: #063f57;
   margin-top: 10px;
   font-weight: bold;
+}
+.container-contact button:hover {
+  background-color: #063f57;
 }
 .container-contact button a {
   color: #ffffff;
@@ -466,7 +486,17 @@ header {
   margin-top: 0;
 }
 .acomodacoes-imagens .card .inferior-text-button .inferior-right {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  color: #ffffff;
+  background-color: #063f57;
   padding: 0px;
+}
+.acomodacoes-imagens .card .inferior-text-button .inferior-right:hover {
+  background-color: #063f57;
 }
 .acomodacoes-imagens .card .inferior-text-top p {
   text-align: justify;
@@ -864,6 +894,13 @@ input[type=checkbox] {
 }
 
 .btn-entrar {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.8rem 1rem;
+  margin: 2rem 2rem 0 0;
+  background-color: #ffffff;
   width: 100%;
   margin: 0;
   font-weight: 700;

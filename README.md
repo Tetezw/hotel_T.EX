@@ -2,15 +2,20 @@
 
 <img src="public/images/Logo%20Hotel.jpeg" width="60%" alt="Logo Hotel Recanto dos Códigos"/>
 
----
 ## Sobre
 Projeto desenvolvido como parte integrante do curso Full Stack Javascript Developer da T.EX.
 
 ### O projeto
-- Rascunho inicial de um site de hotel construído com HTML e CSS. 
-- Landing page construída fazendo uso de SASS, o pré-processador CSS. 
+- [x] Rascunho inicial de um site de hotel construído com HTML e CSS.
 
----
+- [x] Landing page construída fazendo uso de SASS, o pré-processador CSS. 
+
+## Páginas 
+- [Public](public/home.html)
+
+- [Landing Page](landingPage/singlePage.html)
+- [Admin](admin/home_admin.html)
+
 ## Licença
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
 

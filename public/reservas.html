@@ -94,17 +94,6 @@
           <div class="todos-os-quartos-reserva">
             <!-- Quarto 1 -->
             <div class="quarto-box display-f flex-dc">
-              <label for="reservar-quarto1"
-                ><i class="fa-solid fa-circle-check"></i> Selecionar
-                Quarto</label
-              >
-              <input
-                type="radio"
-                name="reservar-quarto"
-                id="reservar-quarto1"
-                class="reservar"
-              />
-
               <div class="quarto-reserva display-f">
                 <div class="img-reserva">
                   <img src="images/reserva1.png" alt="Imagem" />
@@ -119,22 +108,21 @@
                     </p>
                   </div>
                   <div class="text-valor-reserva">R$500,00</div>
+                  <div class="radio-reserva">
+                    <input
+                      type="radio"
+                      name="reservar-quarto"
+                      id="reservar-quarto1"
+                      class="reservar"
+                    />
+                    <label for="reservar-quarto1">Selecionar Quarto</label>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Quarto 2 -->
             <div class="quarto-box display-f flex-dc">
-              <label for="reservar-quarto2"
-                ><i class="fa-solid fa-circle-check"></i> Selecionar
-                Quarto</label
-              >
-              <input
-                type="radio"
-                name="reservar-quarto"
-                id="reservar-quarto2"
-                class="reservar"
-              />
               <div class="quarto-reserva display-f">
                 <div class="img-reserva">
                   <img src="images/reserva2.png" alt="Imagem" />
@@ -149,22 +137,21 @@
                     </p>
                   </div>
                   <div class="text-valor-reserva">R$500,00</div>
+                  <div class="radio-reserva">
+                    <input
+                      type="radio"
+                      name="reservar-quarto"
+                      id="reservar-quarto2"
+                      class="reservar"
+                    />
+                    <label for="reservar-quarto2">Selecionar Quarto</label>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Quarto 3 -->
             <div class="quarto-box display-f flex-dc">
-              <label for="reservar-quarto3"
-                ><i class="fa-solid fa-circle-check"></i> Selecionar
-                Quarto</label
-              >
-              <input
-                type="radio"
-                name="reservar-quarto"
-                id="reservar-quarto3"
-                class="reservar"
-              />
               <div class="quarto-reserva display-f">
                 <div class="img-reserva">
                   <img src="images/reserva3.png" alt="Imagem" />
@@ -179,6 +166,15 @@
                     </p>
                   </div>
                   <div class="text-valor-reserva">R$500,00</div>
+                  <div class="radio-reserva">
+                    <input
+                      type="radio"
+                      name="reservar-quarto"
+                      id="reservar-quarto3"
+                      class="reservar"
+                    />
+                    <label for="reservar-quarto3">Selecionar Quarto</label>
+                  </div>
                 </div>
               </div>
             </div>
@@ -190,24 +186,174 @@
               <div class="resumo-box">
                 <ul>
                   <div>
-                    <li>Apartamento: <span>xxx</span></li>
-                    <li>Nº de pessoas: <span>xxx</span></li>
+                    <li>
+                      Apartamento:
+                      <span id="vAcomodacao">xxx</span>
+                    </li>
+                    <li>
+                      Nº de pessoas:
+                      <span id="vPessoas">xxx</span>
+                    </li>
                   </div>
                   <div>
-                    <li>Check-in: <span>xxx</span></li>
-                    <li>Check-out: <span>xxx</span></li>
+                    <li>
+                      Check-in:
+                      <span id="vCheckin">xxx</span>
+                    </li>
+                    <li>
+                      Check-out:
+                      <span id="vCheckout">xxx</span>
+                    </li>
                   </div>
                 </ul>
               </div>
-              <a href="#">Adicionar mais serviços</a>
+              <button
+                class="display-f"
+                type="button"
+                id="botao__adicionar__servicos"
+              >
+                Adicionar mais serviços
+              </button>
               <div>
-                <p>Valor total: R$ <span>XXX</span></p>
+                <p>
+                  Valor total: R$
+                  <span id="rValorTotal">XXX</span>
+                </p>
               </div>
-              <button class="display-f">Confirmar reserva</button>
+              <button
+                class="display-f"
+                type="button"
+                id="botao__confirmar__reserva"
+              >
+                Confirmar reserva
+              </button>
+              <button
+                class="display-f"
+                type="button"
+                id="botao__detalhes__reserva"
+              >
+                Ver detalhes
+              </button>
             </div>
           </aside>
         </div>
       </section>
+
+      <!-- Modal Serviços -->
+      <div class="modal__overlay hidden" id="modal__overlay">
+        <div class="modal__servicos hidden" id="modal__servicos">
+          <i
+            class="fa-sharp fa-solid fa-xmark fechar"
+            id="btn__fechar__servicos"
+          ></i>
+          <h2><span>Adicione Mais Serviços</span></h2>
+          <div>
+            <input type="checkbox" name="spa" id="spa" value="100" />
+            <label for="spa" class="modal__servicos__spa">
+              <span>Spa</span>
+              <span> - R$ 100,00</span>
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="passeio_de_barco"
+              id="barco"
+              value="100"
+            />
+            <label for="barco" class="modal__servicos__barco">
+              <span>Passeio de Barco</span>
+              <span> - R$ 100,00</span>
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="cafe_da_manha_no_quarto"
+              id="cafe"
+              value="100"
+            />
+            <label for="cafe" class="modal__servicos__cafe">
+              <span>Café da Manhã no Quarto</span>
+              <span> - R$ 100,00</span>
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="passeio_entre_ilhas"
+              id="ilhas"
+              value="100"
+            />
+            <label for="ilhas" class="modal__servicos__ilhas">
+              <span>Passeio entre Ilhas</span>
+              <span> - R$ 100,00</span>
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              name="trilha_ecologica"
+              id="trilha"
+              value="100"
+            />
+            <label for="trilha" class="modal__servicos__trilha">
+              <span>Trilha Ecológica</span>
+              <span> - R$ 100,00</span>
+            </label>
+          </div>
+
+          <button type="button" id="btn__sair__servico">
+            <i class="fa-solid fa-square-plus"></i> Adicionar
+          </button>
+        </div>
+
+        <div class="modal__detalhes hidden" id="modal__detalhes">
+          <div class="modal__detalhes__itens">
+            <div class="modal__detalhes__itens__img" id="dImagem"></div>
+            <div class="modal__detalhes__itens__descricao">
+              <i
+                class="fa-sharp fa-solid fa-xmark fechar"
+                id="btn__fechar__detalhes"
+              ></i>
+              <h2><span>Detalhes da Reserva</span></h2>
+              <div>
+                <span>Acomodação:</span>
+                <span id="dQuarto"></span>
+              </div>
+              <div>
+                <span>Diária:</span>
+                <span id="dPreco"></span>
+              </div>
+              <div>
+                <span>Check-in:</span>
+                <span id="dCheckin"></span>
+              </div>
+              <div>
+                <span>Check-out:</span>
+                <span id="dCheckout"></span>
+              </div>
+              <div>
+                <span>Adultos:</span>
+                <span id="dPessoas"></span>
+              </div>
+              <div>
+                <span>Serviços Adicionas:</span>
+                <span id="dServicos"></span>
+              </div>
+              <div>
+                <span>Total:</span>
+                <span id="dTotal"></span>
+              </div>
+              <button type="button" id="btn__sair__detalhes">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="bg-color-primary">
@@ -256,7 +402,9 @@
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="acomodacoes.html">Quartos</a></li>
                 <li><a href="contatos.html">Contato</a></li>
-                <li><a href="reservas.html">Faça sua reserva</a></li>
+                <li>
+                  <a href="reservas.html">Faça sua reserva</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -267,5 +415,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/reserva.js"></script>
   </body>
 </html>

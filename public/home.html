@@ -12,7 +12,7 @@
     <title>Hotel Recanto dos Códigos</title>
   </head>
   <body>
-    <header>
+    <header id="banner">
       <div class="container display-f flex-dc justify-csb box-header">
         <div class="login display-f align-c">
           <!-- esconder .hidden -->
@@ -22,8 +22,8 @@
             </a>
           </div>
           <div class="login-user">
-            <span>Olá usuário</span>
-            <button class="btn-white">Sair</button>
+            <span id="helloUser">Olá usuário</span>
+            <button type="button" class="btn-white" id="btnLogin">Sair</button>
           </div>
         </div>
         <div class="header-logo-slogan display-f align-c">
@@ -32,7 +32,7 @@
           </div>
 
           <div class="slogan courier">
-            <h1 class="titulo-h1">
+            <h1 class="titulo-h1" id="titulo-h1">
               Desconecte-se e venha se conectar <br />
               com a natureza
             </h1>
@@ -245,5 +245,8 @@
         </div>
       </div>
     </footer>
+    <script src="./js/banner.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/verificarUser.js"></script>
   </body>
 </html>

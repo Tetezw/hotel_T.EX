@@ -1,0 +1,76 @@
+@use "../variaveis" as v;
+@use "../mixins" as mx;
+/* acomodacoes */
+.acomodacoes {
+  padding-bottom: 50px;
+  .detalhes-apartamentos {
+    ul {
+      list-style: inside;
+      padding-bottom: 20px;
+      font-size: 1rem;
+      li {
+        padding: 5px 0;
+      }
+    }
+    .itens {
+      width: 50%;
+    }
+  }
+}
+
+.acomodacoes-imagens {
+  flex-wrap: wrap;
+  padding-top: 20px;
+  gap: 10px;
+  .card {
+    @include mx.card;
+    .inferior-text {
+      grid-template-rows: 200px 48px;
+      padding: 20px;
+      &-button {
+        grid-template-columns: 125px 125px;
+        .inferior-left {
+          grid-template-rows: 1fr 1fr;
+          .text2 {
+            font-size: 0.8rem;
+          }
+          .text-valor-acomodacoes {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0;
+          }
+        }
+        .inferior-right {
+          @include mx.botao(v.$azulEscuro);
+          padding: 0px;
+        }
+      }
+      &-top {
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+.box-destaque {
+  background-color: v.$fundoCinza;
+  .produtos-destaque {
+    padding: 100px 0;
+  }
+  .description {
+    padding: 20px;
+    border-left: 5px solid v.$azulEscuro;
+    h2 {
+      padding: 0 0 20px;
+    }
+  }
+  .texto {
+    font-size: 0.8rem;
+  }
+  .preco {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}

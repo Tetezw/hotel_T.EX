@@ -1,0 +1,81 @@
+@use "variaveis" as v;
+
+/* Container */
+@mixin container {
+  width: 80%;
+  margin: auto;
+}
+/* Títulos */
+@mixin titulo-h1 {
+  font-size: 2.2rem;
+  color: v.$branco;
+}
+@mixin titulo-h2 {
+  color: v.$azulEscuro;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 5rem 0 2rem 0;
+  text-transform: uppercase;
+}
+@mixin titulo-h3 {
+  font-size: 1.5rem;
+  font-family: v.$courier;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+/* Paragrafo */
+@mixin paragrafo {
+  font-size: 1.1rem;
+  margin: 10px 0 10px 0;
+  text-align: justify;
+  text-indent: 20px;
+}
+/* Botões*/
+@mixin btn-white {
+}
+
+@mixin btn-blue {
+}
+
+@mixin botao($color) {
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  @if $color == v.$azulEscuro {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    color: v.$branco;
+
+    &:hover {
+      background-color: v.$azulEscuro;
+    }
+
+    background-color: $color;
+  } @else if($color == v.$branco) {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    margin: 2rem 2rem 0 0;
+    background-color: $color;
+  }
+}
+
+// saiba-mais:: before {
+//   content: "🔺";
+// }
+
+@mixin link-border-all {
+  border: 3px solid v.$laranja;
+  padding: 30px 50px;
+}
+
+//Card
+@mixin card {
+  width: 350px;
+  background: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  img {
+    width: 100%;
+  }
+}

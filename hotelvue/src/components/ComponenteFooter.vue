@@ -66,31 +66,3 @@ export default {
 };
 </script>
 
-<style scoped>
-footer {
-  padding: 10px 0;
-  color: #ffffff;
-}
-
-.column-footer {
-  color: #ffffff;
-  align-items: flex-start;
-}
-
-.telefone a,
-.navbar-footer ul li a,
-.suporte a {
-  color: #ffffff;
-}
-
-.redes-sociais i {
-  font-size: 1.3rem;
-  padding-right: 5px;
-  color: #ffffff;
-}
-
-.direitos {
-  padding-top: 30px;
-  color: #ffffff;
-}
-</style>

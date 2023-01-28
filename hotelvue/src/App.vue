@@ -1,22 +1,20 @@
 <template>
+  <!-- <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </nav>
+  <router-view/> -->
   <section>
     <h1>Hotel Recanto dos Códigos</h1>
-    <ComponenteHeader />
-    <ComponenteFooter />
   </section>
-  
 </template>
 
 <script>
-import ComponenteHeader from './components/ComponenteHeader'
-import ComponenteFooter from './components/ComponenteFooter';
 export default {
   name: "App",
   components: {
-    ComponenteHeader,
-    ComponenteFooter
   },
 };
 </script>
 
-<style lang='scss' src='./scss/style.scss' />
+<style lang='scss' src="./scss/style.scss" />

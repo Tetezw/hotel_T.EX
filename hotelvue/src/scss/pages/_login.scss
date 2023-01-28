@@ -1,0 +1,154 @@
+@use "../variaveis" as v;
+@use "../mixins" as mx;
+
+/* PÁGINA LOGIN */
+.container-form-image {
+    padding: 30px;
+    width: auto;
+}
+
+.container-login {
+    width: 50%;
+    display: inline-block;
+}
+
+.container-img-login {
+    width: auto;
+    display: inline-block;
+
+    &>img {
+        border-radius: 3px;
+    }
+}
+
+.link-login:hover {
+    text-decoration: none;
+}
+
+.form-login {
+    margin: 0 auto;
+    height: auto;
+    width: 400px;
+    background-color: v.$azulEscuro;
+    border-radius: 3px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px 0px v.$azulClaro;
+    padding: 50px 35px;
+    font-family: v.$noto-sans;
+    color: v.$branco;
+    letter-spacing: 0.5px;
+    border: none;
+
+    &>h2 {
+        margin: 10px 0;
+        padding-bottom: 10px;
+        width: 80%;
+        border-bottom: 3px solid v.$laranja;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 42px;
+    }
+
+    &>label {
+        display: block;
+        margin-top: 30px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-bottom: .3rem;
+    }
+
+    &>input::placeholder {
+        color: gray;
+    }
+
+    &>h3 {
+        padding-top: 10px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+input {
+
+    &[type='text'],
+    &[type='password'] {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: v.$branco;
+        border-radius: 3px;
+        padding: 0 10px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: grey;
+        border: none;
+        outline: none;
+    }
+
+    &[type='checkbox'] {
+        margin: 0px 2px 0px 2px;
+        cursor: pointer;
+        transform: scale(1.5);
+    }
+}
+
+.lembrar-esqueci {
+    margin: 15px 0px 30px 0px;
+}
+
+.esqueci-senha {
+    font-size: 0.8rem;
+    margin-left: 60px;
+    font-weight: 400;
+    color: v.$branco;
+
+    &:hover {
+        color: v.$azulClaro;
+        transition: 0.2s;
+    }
+}
+
+.btn-entrar {
+    @include mx.botao(v.$branco);
+    width: 100%;
+    margin: 0;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: capitalize;
+
+    &:hover {
+        background-color: v.$laranja;
+        transition: 0.3s;
+        color: v.$branco;
+    }
+}
+
+.social-login {
+    margin-top: 10px;
+    cursor: pointer;
+
+    &>div {
+        width: 100%;
+        border-radius: 3px;
+        padding: 10px;
+        margin: 3px;
+        background-color: v.$azulClaro;
+        color: v.$branco;
+        text-align: center;
+    }
+
+    &>div:hover {
+        background-color: v.$laranja;
+        transition: 0.3s;
+    }
+
+    &>.facebook-icon,
+    .google-icon {
+        width: 50%;
+
+        &>a.link-login {
+            color: v.$branco;
+            font-weight: 700;
+        }
+    }
+}

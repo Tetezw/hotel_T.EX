@@ -48,39 +48,3 @@ export default {
 };
 </script>
 
-<style scoped>
-header {
-  width: 100%;
-  height: 90vh;
-  background: linear-gradient(0deg, rgb(6, 63, 87), rgba(6, 63, 87, 0.3)),
-    url(../assets/images/header.png);
-  background-size: cover;
-}
-
-.box-header {
-  height: 90vh;
-  justify-content: space-between;
-}
-
-.login {
-  justify-content: flex-end;
-}
-
-.login-user span {
-  color: #ffffff;
-  padding-right: 15px;
-  font-size: 1.2rem;
-}
-
-.header-logo-slogan {
-  justify-content: space-between;
-}
-
-.responsive-menu {
-  display: none;
-}
-.responsive-menu.fa-bars {
-  color: #ffffff;
-  font-size: 1.5rem;
-}
-</style>

@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import ComponenteFormContatos from './components/ComponenteFormContatos.vue'
 export default {
     name: 'App',
     components: {},

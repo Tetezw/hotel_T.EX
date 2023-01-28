@@ -7,13 +7,14 @@
     <section>
         <h1>Hotel Recanto dos Códigos</h1>
     </section>
+    <ComponenteFormContatos />
 </template>
 
 <script>
 import ComponenteFormContatos from './components/ComponenteFormContatos.vue'
 export default {
     name: 'App',
-    components: {},
+    components: { ComponenteFormContatos },
 }
 </script>
 

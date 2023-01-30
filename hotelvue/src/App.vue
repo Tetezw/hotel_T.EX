@@ -116,7 +116,8 @@ export default {
             this.adultos = value
             console.log(value)
         },
-        onChangeCheckin: function (value) {
+
+        formatDates: function (value) {
             let date = value
             date =
                 date.slice(date.length - 2, date.length) +
@@ -124,17 +125,14 @@ export default {
                 date.slice(date.length - 5, date.length - 3) +
                 '/' +
                 date.slice(0, 4)
-            this.checkin = date
+            return date
+        },
+
+        onChangeCheckin: function (value) {
+            this.checkin = this.formatDates(value)
         },
         onChangeCheckout: function (value) {
-            let date = value
-            date =
-                date.slice(date.length - 2, date.length) +
-                '/' +
-                date.slice(date.length - 5, date.length - 3) +
-                '/' +
-                date.slice(0, 4)
-            this.checkout = date
+            this.checkout = this.formatDates(value)
         },
     },
 }

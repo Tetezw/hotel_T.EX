@@ -117,10 +117,24 @@ export default {
             console.log(value)
         },
         onChangeCheckin: function (value) {
-            this.checkin = value
+            let date = value
+            date =
+                date.slice(date.length - 2, date.length) +
+                '/' +
+                date.slice(date.length - 5, date.length - 3) +
+                '/' +
+                date.slice(0, 4)
+            this.checkin = date
         },
         onChangeCheckout: function (value) {
-            this.checkout = value
+            let date = value
+            date =
+                date.slice(date.length - 2, date.length) +
+                '/' +
+                date.slice(date.length - 5, date.length - 3) +
+                '/' +
+                date.slice(0, 4)
+            this.checkout = date
         },
     },
 }

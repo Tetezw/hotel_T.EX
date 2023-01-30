@@ -13,7 +13,11 @@
             <h2 class="titulo-h2 courier">
                 <span class="link-border-bottom"> MINHA RESERVA </span>
             </h2>
-            <ComponenteBarraReservar />
+            <ComponenteBarraReservar
+                @nPessoas="onChangeAdultos"
+                @checkin="onChangeCheckin"
+                @checkout="onChangeCheckout"
+            />
         </section>
         <section>
             <div class="quartos-resumo">
@@ -29,18 +33,20 @@
                                         <span id="vAcomodacao">xxx</span>
                                     </li>
                                     <li>
-                                        Nº de pessoas:
-                                        <span id="vPessoas">xxx</span>
+                                        N° de adultos:
+                                        <span id="vPessoas">{{ adultos }}</span>
                                     </li>
                                 </div>
                                 <div>
                                     <li>
                                         Check-in:
-                                        <span id="vCheckin">xxx</span>
+                                        <span id="vCheckin">{{ checkin }}</span>
                                     </li>
                                     <li>
                                         Check-out:
-                                        <span id="vCheckout">xxx</span>
+                                        <span id="vCheckout">{{
+                                            checkout
+                                        }}</span>
                                     </li>
                                 </div>
                             </ul>
@@ -87,11 +93,35 @@ import ComponenteCardReservar from './components/ComponenteCardReservar.vue'
 import ComponenteFooter from './components/ComponenteFooter.vue'
 export default {
     name: 'App',
+    data() {
+        return {
+            checkin: '',
+            checkout: '',
+            adultos: '',
+        }
+    },
     components: {
         ComponenteHeader,
         ComponenteBarraReservar,
         ComponenteCardReservar,
         ComponenteFooter,
+    },
+
+    // props: {
+    //     checkin: String,
+    // },
+
+    methods: {
+        onChangeAdultos: function (value) {
+            this.adultos = value
+            console.log(value)
+        },
+        onChangeCheckin: function (value) {
+            this.checkin = value
+        },
+        onChangeCheckout: function (value) {
+            this.checkout = value
+        },
     },
 }
 </script>

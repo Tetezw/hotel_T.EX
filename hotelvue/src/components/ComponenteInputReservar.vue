@@ -7,47 +7,38 @@
             :type="item.type"
             :id="item.name"
             :name="item.name"
+            v-model="value"
+            @change="captureValue(item.id, $event)"
             required
         />
         <input
             v-else
             :type="item.type"
-            :id="item.name"
+            :id="item.id"
             :name="item.name"
             :min="item.min"
             :max="item.max"
             :placeholder="item.placeholder"
+            v-model="value"
+            @change="captureValue(item.id, $event)"
             required
         />
     </li>
 </template>
 
 <script>
+import { DadosInputReservar } from './DadosInputReservar.js'
 export default {
     name: 'ComponenteInputReservar',
     data() {
         return {
-            content: {
-                checkin: {
-                    name: 'check-in',
-                    type: 'date',
-                    legenda: 'Data do check-in',
-                },
-                checkout: {
-                    name: 'check-out',
-                    type: 'date',
-                    legenda: 'Data do check-out',
-                },
-                adultos: {
-                    name: 'N° de pessoas',
-                    type: 'number',
-                    min: '0',
-                    max: '4',
-                    placeholder: 0,
-                    legenda: 'N° de pessoas',
-                },
-            },
+            content: DadosInputReservar,
         }
+    },
+    methods: {
+        captureValue: function (name, event) {
+            this.$parent.$emit(name, event.target.value)
+        },
     },
 }
 </script>

@@ -8,7 +8,7 @@
             :id="item.name"
             :name="item.name"
             v-model="value"
-            @change="captureValue(item.id, $event)"
+            @change="updateDadosReserva(item.id, value)"
             required
         />
         <input
@@ -20,7 +20,7 @@
             :max="item.max"
             :placeholder="item.placeholder"
             v-model="value"
-            @change="captureValue(item.id, $event)"
+            @change="updateDadosReserva(item.id, value)"
             required
         />
     </li>
@@ -36,8 +36,21 @@ export default {
         }
     },
     methods: {
-        captureValue: function (name, event) {
-            this.$parent.$emit(name, event.target.value)
+        updateDadosReserva: function (name, value) {
+            name = name[0].toUpperCase() + name.substring(1)
+            name != 'Adultos' ? (value = this.formatDates(value)) : null
+            this.$store.commit(`store${name}`, value)
+        },
+
+        formatDates: function (value) {
+            let date = value
+            date =
+                date.slice(date.length - 2, date.length) +
+                '/' +
+                date.slice(date.length - 5, date.length - 3) +
+                '/' +
+                date.slice(0, 4)
+            return date
         },
     },
 }

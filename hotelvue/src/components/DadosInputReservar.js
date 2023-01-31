@@ -13,7 +13,7 @@ export const DadosInputReservar = {
     },
     adultos: {
         name: 'N° de pessoas',
-        id: 'nPessoas',
+        id: 'adultos',
         type: 'number',
         min: '0',
         max: '4',

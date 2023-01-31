@@ -2,7 +2,7 @@
     <div class="quartos-resumo">
         <div class="todos-os-quartos-reserva">
             <div
-                v-for="item in cardContent"
+                v-for="(item, index) in this.$store.state.cardContent"
                 :key="item"
                 class="quarto-box display-f flex-dc"
             >
@@ -22,6 +22,7 @@
                                 name="reservar-quarto"
                                 :id="item.id"
                                 class="reservar"
+                                @change="updateAcomodacao(item.name, index)"
                             />
                             <label for="reservar-quarto1"
                                 >Selecionar Quarto</label
@@ -35,13 +36,34 @@
 </template>
 
 <script>
-import { cardContent } from './DadosCardReservar.js'
 export default {
     name: 'ComponenteCardReservar',
+
     data() {
         return {
-            cardContent: cardContent,
+            bg: '',
+            cor: '',
+            active: true,
         }
+    },
+
+    methods: {
+        updateAcomodacao: function (value, index) {
+            this.resetCardStyle()
+            const card = document.querySelectorAll('.quarto-reserva')[index]
+            this.$store.commit('storeAcomodacao', value)
+            card.style.backgroundColor = '#063f57'
+            card.style.color = 'white'
+            console.log(index)
+        },
+
+        resetCardStyle: function () {
+            const card = document.querySelectorAll('.quarto-reserva')
+            card.forEach((item) => {
+                item.style.backgroundColor = '#f1f1f1'
+                item.style.color = 'black'
+            })
+        },
     },
 }
 </script>

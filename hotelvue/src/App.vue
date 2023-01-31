@@ -13,11 +13,7 @@
             <h2 class="titulo-h2 courier">
                 <span class="link-border-bottom"> MINHA RESERVA </span>
             </h2>
-            <ComponenteBarraReservar
-                @nPessoas="onChangeAdultos"
-                @checkin="onChangeCheckin"
-                @checkout="onChangeCheckout"
-            />
+            <ComponenteBarraReservar />
         </section>
         <section>
             <div class="quartos-resumo">
@@ -30,22 +26,32 @@
                                 <div>
                                     <li>
                                         Apartamento:
-                                        <span id="vAcomodacao">xxx</span>
+                                        <span id="vAcomodacao">{{
+                                            this.$store.state.dadosReserva
+                                                .acomodacao
+                                        }}</span>
                                     </li>
                                     <li>
                                         N° de adultos:
-                                        <span id="vPessoas">{{ adultos }}</span>
+                                        <span id="vPessoas">{{
+                                            this.$store.state.dadosReserva
+                                                .adultos
+                                        }}</span>
                                     </li>
                                 </div>
                                 <div>
                                     <li>
                                         Check-in:
-                                        <span id="vCheckin">{{ checkin }}</span>
+                                        <span id="vCheckin">{{
+                                            this.$store.state.dadosReserva
+                                                .checkin
+                                        }}</span>
                                     </li>
                                     <li>
                                         Check-out:
                                         <span id="vCheckout">{{
-                                            checkout
+                                            this.$store.state.dadosReserva
+                                                .checkout
                                         }}</span>
                                     </li>
                                 </div>
@@ -93,47 +99,11 @@ import ComponenteCardReservar from './components/ComponenteCardReservar.vue'
 import ComponenteFooter from './components/ComponenteFooter.vue'
 export default {
     name: 'App',
-    data() {
-        return {
-            checkin: '',
-            checkout: '',
-            adultos: '',
-        }
-    },
     components: {
         ComponenteHeader,
         ComponenteBarraReservar,
         ComponenteCardReservar,
         ComponenteFooter,
-    },
-
-    // props: {
-    //     checkin: String,
-    // },
-
-    methods: {
-        onChangeAdultos: function (value) {
-            this.adultos = value
-            console.log(value)
-        },
-
-        formatDates: function (value) {
-            let date = value
-            date =
-                date.slice(date.length - 2, date.length) +
-                '/' +
-                date.slice(date.length - 5, date.length - 3) +
-                '/' +
-                date.slice(0, 4)
-            return date
-        },
-
-        onChangeCheckin: function (value) {
-            this.checkin = this.formatDates(value)
-        },
-        onChangeCheckout: function (value) {
-            this.checkout = this.formatDates(value)
-        },
     },
 }
 </script>

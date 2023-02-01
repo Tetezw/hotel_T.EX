@@ -1,18 +1,12 @@
 <template>
-  <main>
-    <ComponenteHeader/>
-    <ComponenteCardREserva/>
-    <ComponeteFooter/>
-  </main>
-
-  <!-- <nav>
-    <router-link to="/">Home</router-link>
+    <!-- <nav>
+    <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
-  </nav> -->
-  <!-- <router-view/> -->
-  <!-- <section>
-    <h1>Hotel Recanto dos Códigos</h1>
-  </section> -->
+  </nav>
+  <router-view/> -->
+    <section>
+        <h1>Hotel Recanto dos Códigos</h1>
+    </section>
 </template>
 
 <script>
@@ -22,15 +16,9 @@ import ComponenteHeader from "./components/ComponenteHeader.vue"
 import ComponenteCardREserva from "./components/ComponenteCardREserva.vue"
 
 export default {
-  name: "App",
-  components: {
-    // CardTemplate,
-    ComponenteCardREserva,
-    ComponeteFooter,
-    ComponenteHeader
-
-  }
+    name: 'App',
+    components: {},
 }
 </script>
 
-<style lang='scss' src="./scss/style.scss" />
+<style lang="scss" src="./scss/style.scss" />

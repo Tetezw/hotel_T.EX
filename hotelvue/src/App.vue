@@ -90,6 +90,7 @@
         </section>
     </main>
     <ComponenteFooter />
+    <ComponenteModais />
 </template>
 
 <script>
@@ -97,6 +98,7 @@ import ComponenteHeader from './components/ComponenteHeader.vue'
 import ComponenteBarraReservar from './components/ComponenteBarraReservar.vue'
 import ComponenteCardReservar from './components/ComponenteCardReservar.vue'
 import ComponenteFooter from './components/ComponenteFooter.vue'
+import ComponenteModais from './components/ComponenteModais.vue'
 export default {
     name: 'App',
     components: {
@@ -104,6 +106,7 @@ export default {
         ComponenteBarraReservar,
         ComponenteCardReservar,
         ComponenteFooter,
+        ComponenteModais,
     },
 }
 </script>

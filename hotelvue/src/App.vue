@@ -1,5 +1,5 @@
 <template>
-  <!-- <nav>
+    <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/sobre">Sobre</router-link>
     
@@ -25,4 +25,4 @@ export default {
 };
 </script>
 
-<style lang='scss' src="./scss/style.scss" />
+<style lang="scss" src="./scss/style.scss" />

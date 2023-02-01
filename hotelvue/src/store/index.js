@@ -9,7 +9,7 @@ export default createStore({
                 name: 'QUARTO EXECUTIVO',
                 description:
                     'Um quarto espaçoso com cama king-size ou duas camas de solteiro, vista para a cidade, TV detela plana, mini-bar, escrivaninha e banheiro privativo.',
-                path: '/images/reserva1.png',
+                path: require('@/assets/images/reserva1.png'),
                 valor: 'R$500,00',
             },
             {
@@ -17,7 +17,7 @@ export default createStore({
                 name: 'QUARTO DELUXE',
                 description:
                     ' Um quarto espaçoso com cama king-size ou duas camas de solteiro, vista para a cidade, TV de tela plana, mini-bar e banheiro privativo.',
-                path: '/images/reserva2.png',
+                path: require('@/assets/images/reserva2.png'),
                 valor: 'R$500,00',
             },
             {
@@ -25,7 +25,7 @@ export default createStore({
                 name: 'QUARTO FAMÍLIA',
                 description:
                     ' Um quarto espaçoso com duas camas de casal e duas camas desolteiro, vista para a cidade, TV de tela plana, mini-bar, área de estar separada e banheiro privativo.',
-                path: '/images/reserva3.png',
+                path: require('@/assets/images/reserva3.png'),
                 valor: 'R$500,00',
             },
         ],
@@ -35,6 +35,11 @@ export default createStore({
             checkout: '',
             adultos: '',
             acomodação: '',
+        },
+
+        modalProperties: {
+            detalhes: '',
+            servicos: '',
         },
     },
     getters: {},
@@ -50,6 +55,12 @@ export default createStore({
         },
         storeAcomodacao(state, data) {
             state.dadosReserva.acomodacao = data
+        },
+        storeDetalhes(state, data) {
+            state.modalProperties.detalhes = data
+        },
+        storeServicos(state, data) {
+            state.modalProperties.servicos = data
         },
     },
     actions: {},

@@ -61,6 +61,7 @@
                             class="display-f"
                             type="button"
                             id="botao__adicionar__servicos"
+                            @click="showAddServices()"
                         >
                             Adicionar mais serviços
                         </button>
@@ -81,6 +82,7 @@
                             class="display-f"
                             type="button"
                             id="botao__detalhes__reserva"
+                            @click="showAddDetalhes()"
                         >
                             Ver detalhes
                         </button>
@@ -107,6 +109,15 @@ export default {
         ComponenteCardReservar,
         ComponenteFooter,
         ComponenteModais,
+    },
+
+    methods: {
+        showAddServices: function () {
+            this.$store.commit('storeServicos', 'display:block')
+        },
+        showAddDetalhes: function () {
+            this.$store.commit('storeDetalhes', 'display:block')
+        },
     },
 }
 </script>

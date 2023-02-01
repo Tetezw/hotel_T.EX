@@ -1,7 +1,7 @@
 <template>
   <main>
     <ComponenteHeader/>
-    <CardTemplate/>
+    <ComponenteCardREserva/>
     <ComponeteFooter/>
   </main>
 
@@ -16,14 +16,16 @@
 </template>
 
 <script>
-import CardTemplate from "./components/CardTemplate.vue"
+// import CardTemplate from "./components/CardTemplate.vue"
 import ComponeteFooter from "./components/ComponenteFooter.vue"
-import ComponenteHeader from "./components/ComponenteHeader.vue";
+import ComponenteHeader from "./components/ComponenteHeader.vue"
+import ComponenteCardREserva from "./components/ComponenteCardREserva.vue"
 
 export default {
   name: "App",
   components: {
-    CardTemplate,
+    // CardTemplate,
+    ComponenteCardREserva,
     ComponeteFooter,
     ComponenteHeader
 

@@ -40,9 +40,11 @@
           >
         </p>
       </article>
+
       <div class="acomodacoes-imagens display-f justify-c align-c">
         <ComponeteCard />
       </div>
+      
     </div>
   </section>
 </template>

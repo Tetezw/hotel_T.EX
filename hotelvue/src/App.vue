@@ -1,4 +1,5 @@
 <template>
+    <componenteServico />
     <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -10,9 +11,12 @@
 </template>
 
 <script>
+import componenteServico from "./components/ComponenteServiços.vue"
 export default {
     name: 'App',
-    components: {},
+    components: {
+        componenteServico
+    },
 }
 </script>
 

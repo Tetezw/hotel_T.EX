@@ -1,6 +1,7 @@
 <template>
-    <!-- <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
+<<<<<<< HEAD
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/> -->
@@ -120,6 +121,29 @@ export default {
         },
     },
 }
+=======
+    <router-link to="/sobre">Sobre</router-link>
+    
+  </nav>  -->
+  <body>
+    <ComponenteHeaderBanner />
+    <router-view></router-view>
+    <ComponenteFooter />
+  </body>
+</template>
+
+<script>
+import ComponenteHeaderBanner from "./components/ComponenteHeaderBanner.vue";
+import ComponenteFooter from "./components/ComponenteFooter.vue";
+
+export default {
+  name: "App",
+  components: {
+    ComponenteHeaderBanner,
+    ComponenteFooter,
+  },
+};
+>>>>>>> develop
 </script>
 
 <style lang="scss" src="./scss/style.scss" />

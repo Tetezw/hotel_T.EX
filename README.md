@@ -10,11 +10,17 @@ Projeto desenvolvido como parte integrante do curso Full Stack Javascript Develo
 
 - [x] Landing page construída fazendo uso de SASS, o pré-processador CSS. 
 
-## Páginas 
-- [Public](public/home.html)
+- [x] Pasta public totalmente refatorada em SASS.
+- [x] Implementação de Javascript (em  public): banner aleatório na página Home e estruturação da página de reservas.
+  
+- [x] Implementação de Vue 3 <i>(em desenvolvimento)</i>.
 
-- [Landing Page](landingPage/singlePage.html)
-- [Admin](admin/home_admin.html)
+## Páginas 
+- [GitHub Pages](https://tetezw.github.io/hotel_T.EX/):
+  - [Public](public/home.html)
+
+  - [Landing Page](landingPage/singlePage.html)
+  - [Admin](admin/home_admin.html)
 
 ## Licença
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)

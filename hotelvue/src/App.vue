@@ -1,4 +1,4 @@
-<template>
+<template>  
   <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/sobre">Sobre</router-link>
@@ -15,11 +15,12 @@
 import ComponenteHeaderBanner from "./components/ComponenteHeaderBanner.vue";
 import ComponenteFooter from "./components/ComponenteFooter.vue";
 
+
 export default {
   name: "App",
   components: {
     ComponenteHeaderBanner,
-    ComponenteFooter,
+    ComponenteFooter,    
   },
 };
 </script>

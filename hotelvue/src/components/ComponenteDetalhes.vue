@@ -9,19 +9,24 @@
       class="modal__overlay"
       id="modal__overlay"
     >
-      <div class="modal__detalhes" id="modal__detalhes">
+      <div class="modal__detalhes" @click.stop="">
         <div class="modal__detalhes__itens">
-          <div class="modal__detalhes__itens__img" id="dImagem"></div>
           <div class="modal__detalhes__itens__descricao">
             <i
               class="fa-sharp fa-solid fa-xmark fechar"
-              id="btn__fechar__detalhes"
+              @click="showModal = false"
             ></i>
             <h2><span>Detalhes da Reserva</span></h2>
-            <div v-for="item in this.detalhes" :key="item">
-              <img :src="item.imagem" alt="Olá Mundo!" />
+            <div class="conteudo__modal">
+              <img :src="this.imagem" alt="Olá Mundo!" />
+              <div class="itens">
+              <div v-for="item in this.detalhes" :key="item">
+                <!-- <span v-if="item === 'Total'" style="">{{ item }}:</span> -->
+                <span :id="'d' + item">{{ item }} :</span>
+              </div>
             </div>
-            <button type="button" id="btn__sair__detalhes">Sair</button>
+            </div>
+            <button type="button" @click="showModal = false">Sair</button>
           </div>
         </div>
       </div>
@@ -35,10 +40,15 @@ export default {
   data() {
     return {
       detalhes: [
-        {
-          imagem: require("@/assets/images/acomodacao1.png"),
-        },
+        "Acomodação",
+        "Diária",
+        "Check-in",
+        "Check-out",
+        "Adultos",
+        "Serviços Adicionas",
+        "Total",
       ],
+      imagem: require("@/assets/images/acomodacao1.png"),
       showModal: false,
     };
   },
@@ -89,6 +99,19 @@ export default {
       border-bottom: 5px solid #a35700;
     }
   }
+}
+
+.conteudo__modal{
+  display: flex;
+  img{
+    width: 40%;
+  }
+  .itens{
+    display: flex;
+    flex-direction: column;
+    margin-left:50px ;
+    gap: 5px;
+  }  
 }
 
 .modal__detalhes__itens__descricao .modal__detalhes__itens {

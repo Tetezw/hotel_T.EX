@@ -1,30 +1,33 @@
 <template>
-  <main class="container">
-    <section>
-      <ComponeteBarra />
-    </section>
-    <div class="quartos-resumo">
-      <div class="todos-os-quartos-reserva">
-        <CardReserva />
-      </div>
-      <div class="resumo-reserva">
-        <ComponenteResumoReserva />
-      </div>
-    </div>
-  </main>
+    <main class="container">
+        <section>
+            <!-- <ComponeteBarra /> -->
+            <ComponenteBarraReservar />
+        </section>
+        <div class="quartos-resumo">
+            <div class="todos-os-quartos-reserva">
+                <CardReserva />
+            </div>
+            <div class="resumo-reserva">
+                <ComponenteResumoReserva />
+            </div>
+        </div>
+    </main>
 </template>
 
 <script>
-import CardReserva from "./../components/CardReserva.vue";
-import ComponenteResumoReserva from "./../components/ComponenteResumoReserva.vue";
-import ComponeteBarra from "./../components/ComponeteBarra.vue";
-ComponeteBarra;
+import CardReserva from './../components/CardReserva.vue'
+import ComponenteResumoReserva from './../components/ComponenteResumoReserva.vue'
+import ComponeteBarra from './../components/ComponeteBarra.vue'
+import ComponenteBarraReservar from './../components/ComponenteBarraReservar.vue'
+ComponeteBarra
 export default {
-  name: "ComponentCardREserva",
-  components: {
-    CardReserva,
-    ComponenteResumoReserva,
-    ComponeteBarra,
-  },
-};
+    name: 'ComponentCardReserva',
+    components: {
+        CardReserva,
+        ComponenteResumoReserva,
+        // ComponeteBarra,
+        ComponenteBarraReservar,
+    },
+}
 </script>

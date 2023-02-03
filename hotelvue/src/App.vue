@@ -1,149 +1,27 @@
 <template>
-  <!-- <nav>
+    <!-- <nav>
     <router-link to="/">Home</router-link> |
-<<<<<<< HEAD
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/> -->
-    <!-- <section>
-        <h1>Hotel Recanto dos Códigos</h1>
-    </section> -->
-    <ComponenteHeader />
-    <main class="container">
-        <section>
-            <h2 class="titulo-h2 courier">
-                <span class="link-border-bottom"> MINHA RESERVA </span>
-            </h2>
-            <ComponenteBarraReservar />
-        </section>
-        <section>
-            <div class="quartos-resumo">
-                <ComponenteCardReservar />
-                <aside class="resumo-reserva">
-                    <div>
-                        <h2>Resumo da Reserva</h2>
-                        <div class="resumo-box">
-                            <ul>
-                                <div>
-                                    <li>
-                                        Apartamento:
-                                        <span id="vAcomodacao">{{
-                                            this.$store.state.dadosReserva
-                                                .acomodacao
-                                        }}</span>
-                                    </li>
-                                    <li>
-                                        N° de adultos:
-                                        <span id="vPessoas">{{
-                                            this.$store.state.dadosReserva
-                                                .adultos
-                                        }}</span>
-                                    </li>
-                                </div>
-                                <div>
-                                    <li>
-                                        Check-in:
-                                        <span id="vCheckin">{{
-                                            this.$store.state.dadosReserva
-                                                .checkin
-                                        }}</span>
-                                    </li>
-                                    <li>
-                                        Check-out:
-                                        <span id="vCheckout">{{
-                                            this.$store.state.dadosReserva
-                                                .checkout
-                                        }}</span>
-                                    </li>
-                                </div>
-                            </ul>
-                        </div>
-                        <button
-                            class="display-f"
-                            type="button"
-                            id="botao__adicionar__servicos"
-                            @click="showAddServices()"
-                        >
-                            Adicionar mais serviços
-                        </button>
-                        <div>
-                            <p>
-                                Valor total: R$
-                                <span id="rValorTotal">XXX</span>
-                            </p>
-                        </div>
-                        <button
-                            class="display-f"
-                            type="button"
-                            id="botao__confirmar__reserva"
-                        >
-                            Confirmar reserva
-                        </button>
-                        <button
-                            class="display-f"
-                            type="button"
-                            id="botao__detalhes__reserva"
-                            @click="showAddDetalhes()"
-                        >
-                            Ver detalhes
-                        </button>
-                    </div>
-                </aside>
-            </div>
-        </section>
-    </main>
-    <ComponenteFooter />
-    <ComponenteModais />
-</template>
-
-<script>
-import ComponenteHeader from './components/ComponenteHeader.vue'
-import ComponenteBarraReservar from './components/ComponenteBarraReservar.vue'
-import ComponenteCardReservar from './components/ComponenteCardReservar.vue'
-import ComponenteFooter from './components/ComponenteFooter.vue'
-import ComponenteModais from './components/ComponenteModais.vue'
-export default {
-    name: 'App',
-    components: {
-        ComponenteHeader,
-        ComponenteBarraReservar,
-        ComponenteCardReservar,
-        ComponenteFooter,
-        ComponenteModais,
-    },
-
-    methods: {
-        showAddServices: function () {
-            this.$store.commit('storeServicos', 'display:block')
-        },
-        showAddDetalhes: function () {
-            this.$store.commit('storeDetalhes', 'display:block')
-        },
-    },
-}
-=======
     <router-link to="/sobre">Sobre</router-link>
     
   </nav>  -->
-  <body>
-    <ComponenteHeaderBanner />
-    <router-view></router-view>
-    <ComponenteFooter />
-  </body>
+    <body>
+        <ComponenteHeaderBanner />
+        <router-view></router-view>
+        <ComponenteFooter />
+    </body>
 </template>
 
 <script>
-import ComponenteHeaderBanner from "./components/ComponenteHeaderBanner.vue";
-import ComponenteFooter from "./components/ComponenteFooter.vue";
+import ComponenteHeaderBanner from './components/ComponenteHeaderBanner.vue'
+import ComponenteFooter from './components/ComponenteFooter.vue'
 
 export default {
-  name: "App",
-  components: {
-    ComponenteHeaderBanner,
-    ComponenteFooter,
-  },
-};
->>>>>>> develop
+    name: 'App',
+    components: {
+        ComponenteHeaderBanner,
+        ComponenteFooter,
+    },
+}
 </script>
 
 <style lang="scss" src="./scss/style.scss" />

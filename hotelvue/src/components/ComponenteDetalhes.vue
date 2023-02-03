@@ -1,26 +1,32 @@
 <template>
   <div class="detalhes">
-    <button @click="showModal = !showModal" class="btn-white"> Adicionar mais serviços</button>
-  <div v-if="showModal" @click="showModal = false" class="modal__overlay" id="modal__overlay">
-    <div class="modal__detalhes" id="modal__detalhes">
-      <div class="modal__detalhes__itens">
-        <div class="modal__detalhes__itens__img" id="dImagem"></div>
-        <div class="modal__detalhes__itens__descricao">
-          <i
-            class="fa-sharp fa-solid fa-xmark fechar"
-            id="btn__fechar__detalhes"
-          ></i>
-          <h2><span>Detalhes da Reserva</span></h2>
-          <div v-for="item in this.detalhes" :key="item">
-            <span>{{item}}</span>
-            <span :id="'d'+ item"></span>
-          </div>          
-          <button type="button" id="btn__sair__detalhes">Sair</button>
+    <button @click="showModal = !showModal" class="btn-white">
+      Adicionar mais serviços
+    </button>
+    <div
+      v-if="showModal"
+      @click="showModal = false"
+      class="modal__overlay"
+      id="modal__overlay"
+    >
+      <div class="modal__detalhes" id="modal__detalhes">
+        <div class="modal__detalhes__itens">
+          <div class="modal__detalhes__itens__img" id="dImagem"></div>
+          <div class="modal__detalhes__itens__descricao">
+            <i
+              class="fa-sharp fa-solid fa-xmark fechar"
+              id="btn__fechar__detalhes"
+            ></i>
+            <h2><span>Detalhes da Reserva</span></h2>
+            <div v-for="item in this.detalhes" :key="item">
+              <img :src="item.imagem" alt="Olá Mundo!" />
+            </div>
+            <button type="button" id="btn__sair__detalhes">Sair</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -28,8 +34,12 @@ export default {
   name: "ComponenteDetalhes",
   data() {
     return {
-      detalhes: ["Acomodação", "Diária", "Check-in", "Check-out", "Adultos", "Serviços Adicionas", "Total"],
-      showModal: false
+      detalhes: [
+        {
+          imagem: require("@/assets/images/acomodacao1.png"),
+        },
+      ],
+      showModal: false,
     };
   },
 };
@@ -43,7 +53,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  right:0;
+  right: 0;
   bottom: 0;
   width: 100vw;
   height: 100vh;
@@ -62,7 +72,6 @@ export default {
   right: 0;
   justify-content: center;
   align-items: center;
-  
 
   .fechar {
     display: flex;
@@ -107,7 +116,7 @@ export default {
 }
 
 .modal__detalhes__itens__img {
-  background-image: require("@assets/images/acomodacao1.png");
+  background-image: require("@/assets/images/acomodacao1.png");
   background-size: cover;
   background-position: center;
   border-radius: 5px;

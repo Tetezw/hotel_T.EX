@@ -1,26 +1,25 @@
 <template>
-    <!-- <nav>
+  <!-- <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/sobre">Sobre</router-link>
     
   </nav>  -->
   <body>
-  <componente-header-banner />
-  <router-view />
-  <componente-footer/>
+    <ComponenteHeaderBanner />
+    <router-view></router-view>
+    <ComponenteFooter />
   </body>
 </template>
 
 <script>
-import ComponenteFooter from './components/ComponenteFooter.vue';
-import ComponenteHeaderBanner from './components/ComponenteHeaderBanner.vue';
+import ComponenteHeaderBanner from "./components/ComponenteHeaderBanner.vue";
+import ComponenteFooter from "./components/ComponenteFooter.vue";
 
 export default {
   name: "App",
   components: {
     ComponenteHeaderBanner,
-    ComponenteFooter,   
-
+    ComponenteFooter,
   },
 };
 </script>

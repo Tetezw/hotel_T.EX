@@ -44,13 +44,12 @@
       <div class="acomodacoes-imagens display-f justify-c align-c">
         <ComponeteCard />
       </div>
-      
     </div>
   </section>
 </template>
 
 <script>
-import ComponeteCard from "./ComponeteCard.vue";
+import ComponeteCard from "./../components/ComponeteCard.vue";
 export default {
   name: "CardTemplate",
   components: {

@@ -33,7 +33,7 @@
                 </div>
             </ul>
         </div>
-        <button class="display-f" type="button" id="botao__adicionar__servicos">
+        <button @click="showAddServices()" class="btn-white">
             Adicionar mais serviços
         </button>
         <div>
@@ -47,7 +47,12 @@
         <button class="display-f" type="button" id="botao__confirmar__reserva">
             Confirmar reserva
         </button>
-        <button class="display-f" type="button" id="botao__detalhes__reserva">
+        <button
+            class="display-f"
+            type="button"
+            id="botao__detalhes__reserva"
+            @click="showAddDetalhes()"
+        >
             Ver detalhes
         </button>
     </div>
@@ -56,5 +61,13 @@
 <script>
 export default {
     name: 'ComponenteResumoReserva',
+    methods: {
+        showAddServices: function () {
+            this.$store.commit('storeServicos', true)
+        },
+        showAddDetalhes: function () {
+            this.$store.commit('storeDetalhes', true)
+        },
+    },
 }
 </script>

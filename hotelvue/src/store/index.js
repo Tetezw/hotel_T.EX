@@ -98,6 +98,9 @@ export default createStore({
         bookingData(state) {
             return state.dadosReserva
         },
+        modalState(state) {
+            return state.modalProperties
+        },
     },
     mutations: {
         storeCheckin(state, data) {

@@ -13,14 +13,17 @@
             </div>
         </div>
     </main>
+    <ComponenteServicos />
+    <ComponenteDetalhes />
 </template>
 
 <script>
 import CardReserva from './../components/CardReserva.vue'
 import ComponenteResumoReserva from './../components/ComponenteResumoReserva.vue'
-import ComponeteBarra from './../components/ComponeteBarra.vue'
+// import ComponeteBarra from './../components/ComponeteBarra.vue'
 import ComponenteBarraReservar from './../components/ComponenteBarraReservar.vue'
-ComponeteBarra
+import ComponenteServicos from '../components/ComponenteServicos.vue'
+import ComponenteDetalhes from '../components/ComponenteDetalhes.vue'
 export default {
     name: 'ComponentCardReserva',
     components: {
@@ -28,6 +31,8 @@ export default {
         ComponenteResumoReserva,
         // ComponeteBarra,
         ComponenteBarraReservar,
+        ComponenteServicos,
+        ComponenteDetalhes,
     },
 }
 </script>

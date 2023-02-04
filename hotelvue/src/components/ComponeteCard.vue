@@ -23,6 +23,7 @@
                     <button
                         class="btn-blue"
                         @click="changeOrder(i, accommodation.id)"
+                        onclick="location.href='/reserva'"
                     >
                         Reservar
                     </button>

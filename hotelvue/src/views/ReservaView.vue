@@ -41,7 +41,9 @@ export default {
                 'storeCardContent',
                 JSON.parse(localStorage.getItem('cardContent'))
             )
-            this.$store.state.contador = localStorage.getItem('counter')
+            localStorage.getItem('counter')
+                ? (this.$store.state.contador = localStorage.getItem('counter'))
+                : (this.$store.state.contador = 0)
         }
     },
 }

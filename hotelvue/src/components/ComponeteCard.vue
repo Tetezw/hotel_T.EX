@@ -1,6 +1,6 @@
 <template>
     <div
-        v-for="accommodation in $store.getters.rCard"
+        v-for="(accommodation, i) in $store.getters.rCard"
         :key="accommodation.id"
         class="card"
     >
@@ -20,7 +20,9 @@
                     </div>
                 </div>
                 <div class="inferior-right display-f justify-c align-c">
-                    <button class="btn-blue" href="#">Reservar</button>
+                    <button class="btn-blue" href="#" @click="changeOrder(i)">
+                        Reservar
+                    </button>
                 </div>
             </div>
         </div>
@@ -30,5 +32,12 @@
 <script>
 export default {
     name: 'ComponetCard',
+
+    methods: {
+        changeOrder: function (i) {
+            this.$store.commit('order', i)
+            console.log(this.$store.state.dadosReserva.contador)
+        },
+    },
 }
 </script>

@@ -4,7 +4,10 @@
         :key="dado.id"
         class="quarto-box display-f flex-dc"
     >
-        <div v-if="i < 3" class="quarto-reserva display-f">
+        <div
+            v-if="i < $store.getters.bookingData.contador + 3"
+            class="quarto-reserva display-f"
+        >
             <div class="img-reserva">
                 <img :src="dado.img" alt="Imagem" style="" />
             </div>
@@ -47,7 +50,7 @@ export default {
             this.$store.commit('storeAcomodacao', value)
             card.style.backgroundColor = '#063f57'
             card.style.color = 'white'
-            console.log(index)
+            console.log(this.$store.getters.bookingData.contador)
         },
 
         resetCardStyle: function () {

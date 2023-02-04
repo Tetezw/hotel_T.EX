@@ -84,11 +84,12 @@ export default createStore({
             adultos: '',
             acomodacao: '',
             valorTotal: '',
+            contador: 0,
         },
 
         modalProperties: {
-            detalhes: '',
-            servicos: '',
+            detalhes: false,
+            servicos: false,
         },
     },
     getters: {
@@ -101,8 +102,22 @@ export default createStore({
         modalState(state) {
             return state.modalProperties
         },
+        getCardContent(state) {
+            return state.cardContent
+        },
     },
     mutations: {
+        order(state, i) {
+            let cardContent = state.cardContent
+            let aux = []
+            aux.push(cardContent[i])
+            cardContent.splice(i, 1)
+            cardContent.forEach((element) => {
+                aux.push(element)
+            })
+            state.cardContent = aux
+            state.dadosReserva.contador += 1
+        },
         storeCheckin(state, data) {
             state.dadosReserva.checkin = data
         },

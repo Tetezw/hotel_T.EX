@@ -4,7 +4,7 @@
         :key="dado.id"
         class="quarto-box display-f flex-dc"
     >
-        <div v-if="i < 3" class="quarto-reserva display-f">
+        <div v-if="i < soma" class="quarto-reserva display-f">
             <div class="img-reserva">
                 <img :src="dado.img" alt="Imagem" style="" />
             </div>
@@ -19,7 +19,6 @@
                         <input
                             type="radio"
                             name="reservar-quarto"
-                            v-model="quartoSelecionado"
                             class="reservar"
                             @change="updateAcomodacao(dado.title, i)"
                         />
@@ -35,12 +34,6 @@
 export default {
     name: 'CardReserva',
 
-    data() {
-        return {
-            // quartoSelecionado: null,
-            // soma: parseInt(this.$store.getters.getCounter) + 3,
-        }
-    },
     methods: {
         updateAcomodacao: function (value, index) {
             this.resetCardStyle()
@@ -48,7 +41,7 @@ export default {
             this.$store.commit('storeAcomodacao', value)
             card.style.backgroundColor = '#063f57'
             card.style.color = 'white'
-            // console.log(parseInt(this.$store.getters.getCounter))
+            console.log(this.$store.getters.getCounter)
         },
 
         resetCardStyle: function () {
@@ -57,6 +50,13 @@ export default {
                 item.style.backgroundColor = '#f1f1f1'
                 item.style.color = 'black'
             })
+        },
+    },
+    computed: {
+        soma: function () {
+            let soma = parseInt(this.$store.getters.getCounter) + 3
+            console.log(soma)
+            return soma
         },
     },
 }

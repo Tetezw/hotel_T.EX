@@ -35,17 +35,13 @@ export default {
         ComponenteDetalhes,
     },
 
-    mounted() {
+    beforeCreate() {
         if (localStorage.getItem('cardContent')) {
             this.$store.commit(
                 'storeCardContent',
                 JSON.parse(localStorage.getItem('cardContent'))
             )
-            this.$store.commit(
-                'storeDadosReserva',
-                JSON.parse(localStorage.getItem('counter'))
-            )
-            console.log(this.$store.state.contador)
+            this.$store.state.contador = localStorage.getItem('counter')
         }
     },
 }

@@ -147,9 +147,6 @@ export default createStore({
         storeCardContent(state, data) {
             state.cardContent = data
         },
-        storeDadosReserva(state, data) {
-            state.dadosReserva = data
-        },
     },
     actions: {},
     modules: {},

@@ -7,9 +7,10 @@
             :type="item.type"
             :id="item.name"
             :name="item.name"
-            :ref="item.name"
-            v-model="type"
-            @change="updateDadosReserva(item.id, type)"
+            :ref="item.id"
+            value=""
+            v-model="value"
+            @change="updateDadosReserva(item.id, value)"
             required
         />
         <input
@@ -34,7 +35,6 @@ export default {
     data() {
         return {
             content: DadosInputReservar,
-            type: '',
         }
     },
     methods: {

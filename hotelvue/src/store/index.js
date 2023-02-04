@@ -124,6 +124,10 @@ export default createStore({
         },
         counter(state) {
             state.contador += 1
+            localStorage.getItem('counter')
+                ? (state.contador =
+                      parseInt(localStorage.getItem('counter')) + 1)
+                : null
             localStorage.setItem('counter', state.contador)
         },
         storeCheckin(state, data) {

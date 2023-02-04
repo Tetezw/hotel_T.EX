@@ -35,7 +35,7 @@ export default {
         ComponenteDetalhes,
     },
 
-    beforeCreate() {
+    beforeMount() {
         if (localStorage.getItem('cardContent')) {
             this.$store.commit(
                 'storeCardContent',

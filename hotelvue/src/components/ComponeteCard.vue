@@ -20,7 +20,10 @@
                     </div>
                 </div>
                 <div class="inferior-right display-f justify-c align-c">
-                    <button class="btn-blue" href="#" @click="changeOrder(i)">
+                    <button
+                        class="btn-blue"
+                        @click="changeOrder(i, accommodation.id)"
+                    >
                         Reservar
                     </button>
                 </div>
@@ -34,9 +37,15 @@ export default {
     name: 'ComponetCard',
 
     methods: {
-        changeOrder: function (i) {
+        changeOrder: function (i, id) {
             this.$store.commit('order', i)
-            console.log(this.$store.state.dadosReserva.contador)
+            if (id > 3) {
+                this.counter()
+            }
+        },
+
+        counter: function () {
+            this.$store.commit('counter')
         },
     },
 }

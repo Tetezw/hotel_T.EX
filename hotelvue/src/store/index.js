@@ -84,13 +84,14 @@ export default createStore({
             adultos: '',
             acomodacao: '',
             valorTotal: '',
-            contador: 0,
         },
 
         modalProperties: {
             detalhes: false,
             servicos: false,
         },
+
+        contador: 0,
     },
     getters: {
         rCard(state) {
@@ -105,6 +106,9 @@ export default createStore({
         getCardContent(state) {
             return state.cardContent
         },
+        getCounter(state) {
+            return state.contador
+        },
     },
     mutations: {
         order(state, i) {
@@ -116,7 +120,11 @@ export default createStore({
                 aux.push(element)
             })
             state.cardContent = aux
-            state.dadosReserva.contador += 1
+            localStorage.setItem('cardContent', JSON.stringify(aux))
+        },
+        counter(state) {
+            state.contador += 1
+            localStorage.setItem('counter', state.contador)
         },
         storeCheckin(state, data) {
             state.dadosReserva.checkin = data
@@ -135,6 +143,12 @@ export default createStore({
         },
         storeServicos(state, data) {
             state.modalProperties.servicos = data
+        },
+        storeCardContent(state, data) {
+            state.cardContent = data
+        },
+        storeDadosReserva(state, data) {
+            state.dadosReserva = data
         },
     },
     actions: {},

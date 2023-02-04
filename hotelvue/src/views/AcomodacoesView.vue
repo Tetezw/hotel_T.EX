@@ -70,24 +70,5 @@ export default {
                 : (this.$store.state.contador = 0)
         }
     },
-
-    methods: {
-        updateAcomodacao: function (value, index) {
-            this.resetCardStyle()
-            const card = document.querySelectorAll('.quarto-reserva')[index]
-            this.$store.commit('storeAcomodacao', value)
-            card.style.backgroundColor = '#063f57'
-            card.style.color = 'white'
-            console.log(this.$store.getters.getCounter)
-        },
-
-        resetCardStyle: function () {
-            const card = document.querySelectorAll('.quarto-reserva')
-            card.forEach((item) => {
-                item.style.backgroundColor = '#f1f1f1'
-                item.style.color = 'black'
-            })
-        },
-    },
 }
 </script>

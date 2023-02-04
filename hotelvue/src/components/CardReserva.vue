@@ -55,7 +55,6 @@ export default {
     computed: {
         soma: function () {
             let soma = parseInt(this.$store.getters.getCounter) + 3
-            console.log(this.$store.getters.getCounter)
             return soma
         },
     },

@@ -46,5 +46,31 @@ export default {
                 : (this.$store.state.contador = 0)
         }
     },
+    mounted() {
+        this.updateAcomodacao(
+            JSON.parse(localStorage.getItem('cardContent'))[0].title,
+            0
+        )
+    },
+    methods: {
+        updateAcomodacao: function (value, index) {
+            this.resetCardStyle()
+            const card = document.querySelectorAll('.quarto-reserva')[index]
+            this.$store.commit('storeAcomodacao', value)
+            card.style.backgroundColor = '#063f57'
+            card.style.color = 'white'
+            document
+                .querySelectorAll('input[type=radio]')[0]
+                .setAttribute('checked', 'checked')
+        },
+
+        resetCardStyle: function () {
+            const card = document.querySelectorAll('.quarto-reserva')
+            card.forEach((item) => {
+                item.style.backgroundColor = '#f1f1f1'
+                item.style.color = 'black'
+            })
+        },
+    },
 }
 </script>

@@ -7,8 +7,9 @@
             :type="item.type"
             :id="item.name"
             :name="item.name"
-            v-model="value"
-            @change="updateDadosReserva(item.id, value)"
+            :ref="item.name"
+            v-model="type"
+            @change="updateDadosReserva(item.id, type)"
             required
         />
         <input
@@ -19,8 +20,8 @@
             :min="item.min"
             :max="item.max"
             :placeholder="item.placeholder"
-            v-model="value"
-            @change="updateDadosReserva(item.id, value)"
+            v-model="type"
+            @change="updateDadosReserva(item.id, type)"
             required
         />
     </li>
@@ -33,6 +34,7 @@ export default {
     data() {
         return {
             content: DadosInputReservar,
+            type: '',
         }
     },
     methods: {

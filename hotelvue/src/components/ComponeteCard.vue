@@ -22,8 +22,10 @@
                 <div class="inferior-right display-f justify-c align-c">
                     <button
                         class="btn-blue"
-                        @click="changeOrder(i, accommodation.id)"
-                        onclick="location.href='/reserva'"
+                        @click="
+                            this.$router.push('/reserva'),
+                                changeOrder(i, accommodation.id)
+                        "
                     >
                         Reservar
                     </button>

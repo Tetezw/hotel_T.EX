@@ -1,11 +1,23 @@
 <template>
     <nav class="navbar">
         <ul class="noto-sans display-f justify-c align-c">
-            <li><a href="/">Home</a></li>
-            <li><a href="sobre">Sobre</a></li>
-            <li><a href="acomodacoes">Quartos</a></li>
-            <li><a href="contato">Contato</a></li>
-            <li><a href="reserva">Faça sua reserva</a></li>
+            <li>
+                <router-link :to="{ path: '/' }">Home</router-link>
+            </li>
+            <li><router-link :to="{ path: '/sobre' }">Sobre</router-link></li>
+            <li>
+                <router-link :to="{ path: '/acomodacoes' }"
+                    >Quartos</router-link
+                >
+            </li>
+            <li>
+                <router-link :to="{ path: '/contato' }">Contato</router-link>
+            </li>
+            <li>
+                <router-link :to="{ path: '/reserva' }"
+                    >Faça sua reserva</router-link
+                >
+            </li>
         </ul>
     </nav>
 </template>

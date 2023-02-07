@@ -55,6 +55,7 @@ export default {
                 date.slice(0, 4)
             return date
         },
+
         noites: function () {
             if (
                 this.$store.getters.bookingData.checkout &&

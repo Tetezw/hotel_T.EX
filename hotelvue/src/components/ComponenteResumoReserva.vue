@@ -170,13 +170,10 @@ export default {
                 ? this.obterDados('reserva')
                 : ''
 
-            const totalReserva = this.total()
-
             reservas.push(...local, {
                 ...this.$store.getters.bookingData,
                 codigo: String(Math.random()).slice(2),
                 noites: this.$store.getters.bookingData.noites,
-                total: totalReserva,
             })
 
             this.salvar('reserva', reservas)

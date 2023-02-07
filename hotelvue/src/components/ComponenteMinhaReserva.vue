@@ -1,66 +1,134 @@
 <template>
-  <div>
     <table>
-      <tr>  
-          <th class="reserva">Código da Reserva</th>
-          <th class="reserva">Apartamento</th>
-          <th class="reserva">Nº de pessoas</th>
-          <th class="reserva">Check-in</th>
-          <th class="reserva">Check-out</th>
-          <th class="reserva">Valor total</th>
-          <th class="reserva"></th>
+        <tr>
+            <th>Código da Reserva</th>
+            <th>Apartamento</th>
+            <th>Nº de pessoas</th>
+            <th>Check-in</th>
+            <th>Check-out</th>
+            <th>Noites</th>
+            <th>Serviços:</th>
+            <th>Total</th>
         </tr>
-      <tr>
-          <td class="item" id="codReserva">12</td>
-          <td class="item" id="vAcomodacao">Quarto 1</td>
-          <td class="item" id="vPessoas">2</td>
-          <td class="item" id="vCheckin">21/03/2022</td>
-          <td class="item" id="vCheckout">24/03/2022</td>
-          <td class="item" id="rValorTotal">R$ 500,00</td>
-          <td>
-              <button type="button" id="excluir__reserva">
-                Excluir Reserva
-              </button>
-          </td>
-      </tr>
-      <tr>
-        <td class="item" id="codReserva">Cód 2</td>
-        <td class="item" id="vAcomodacao">Quarto 2</td>
-        <td class="item" id="vPessoas">2</td>
-        <td class="item" id="vCheckin">21/03/2022</td>
-        <td class="item" id="vCheckout">24/03/2022</td>
-        <td class="item" id="rValorTotal">R$ 500,00</td>
-        <td>
-          <button type="button" id="excluir__reserva">
-            Excluir Reserva
-          </button>
-        </td>
-      </tr>
+        <tr v-for="(reserva, i) in reservas" :key="i">
+            <td>{{ reserva.codigo }}</td>
+            <td>
+                {{ reserva.acomodacao }} <br />
+                {{ reserva.price }}
+            </td>
+            <td>{{ reserva.adultos }}</td>
+            <td>{{ reserva.checkin }}</td>
+            <td>{{ reserva.checkout }}</td>
+            <td>
+                {{ reserva.noites }}
+            </td>
+            <td>
+                <ul>
+                    <li
+                        v-for="servicos in reserva.servicos"
+                        :key="servicos.nome"
+                    >
+                        {{ servicos.nome }} - {{ servicos.preco }}
+                    </li>
+                </ul>
+            </td>
+            <td>{{ this.moeda(reserva.valorTotal) }}</td>
+            <td>
+                <button
+                    @click="this.excluirReserva(reserva.codigo)"
+                    class="excluir"
+                    type="button"
+                    title="Excluir Reserva"
+                >
+                    Excluir Reserva
+                </button>
+                <ComponenteDetalhes :codigo="reserva.codigo" />
+            </td>
+        </tr>
     </table>
-  </div>
 </template>
 
 <script>
+import ComponenteDetalhes from './ComponenteDetalhes.vue'
+
 export default {
-  name: "ComponenteMinhaReserva",
-};
+    name: 'ComponenteMinhaReserva',
+    components: {
+        ComponenteDetalhes,
+    },
+    data() {
+        return {
+            reservas: '',
+        }
+    },
+    methods: {
+        obterDados(chave) {
+            const dados = localStorage.getItem(chave)
+                ? JSON.parse(localStorage.getItem(chave))
+                : null
+
+            return dados
+        },
+        excluirReserva(indice) {
+            const resposta = confirm(
+                'Tem certeza que deseja excluir essa reserva?'
+            )
+            if (resposta) {
+                this.salvar(
+                    'reserva',
+                    this.reservas.filter((item) => item.codigo !== indice)
+                )
+                this.reservas = this.obterDados('reserva')
+            }
+        },
+        formatarDataBR(data) {
+            const inData = Date(data)
+
+            const dia = inData.getDate()
+            const mes = inData.getMounth()
+            const ano = inData.getFullYear()
+
+            return `${dia}-${mes}-${ano}`
+        },
+        salvar(chave, valor) {
+            localStorage.setItem(chave, JSON.stringify(valor))
+        },
+        moeda(valor) {
+            return valor.toLocaleString('pt-BR', {
+                style: 'currency',
+                currency: 'BRL',
+            })
+        },
+    },
+    computed: {},
+    created() {
+        this.reservas = this.obterDados('reserva')
+    },
+}
 </script>
 <style scoped>
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
 }
-.reserva {
-  border-radius: 0;
-  padding: 10px;
+table th {
+    background: #063f57;
+    padding: 5px;
+    color: #fff;
 }
-tr {
-    border: 1px solid;
-}
-td {
-    border: 1px solid;
-}
-.item {
+table tr td {
+    padding: 8px 0;
     text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.excluir {
+    width: 100%;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    margin: 0 2px 5px 0;
+    cursor: pointer;
+}
+.excluir {
+    background: red;
 }
 </style>

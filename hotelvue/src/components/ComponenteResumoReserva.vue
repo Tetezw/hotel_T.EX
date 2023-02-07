@@ -53,7 +53,7 @@
                     placeholder="Digite o código"
                 />
             </details>
-            <p>Valor total: R$ {{ valorTotal }}</p>
+            <p>Valor total: R$ {{ this.total() }}</p>
         </div>
         <button
             @click="cadastrarReserva"
@@ -79,7 +79,6 @@ export default {
             cupom: '',
             temCupom: false,
             checkout: this.$store.getters.bookingData.checkout,
-            valorTotal: '',
         }
     },
     methods: {
@@ -165,12 +164,12 @@ export default {
                 String(Math.random()).slice(2)
             )
 
-            // const reservas = this.$store.getters.bookingData
+            const reservas = this.$store.getters.bookingData
 
-            // this.salvar('reserva', reservas)
-            // this.limpar()
-            // alert('Reserva realizada com sucesso!')
-            // this.$router.push('/minhasreservas')
+            this.salvar('reserva', reservas)
+            this.limpar()
+            alert('Reserva realizada com sucesso!')
+            this.$router.push('/minhasreservas')
         },
         total() {
             let adultos

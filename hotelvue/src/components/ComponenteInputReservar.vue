@@ -10,7 +10,7 @@
             :ref="item.id"
             value=""
             v-model="value"
-            @change="updateDadosReserva(item.id, value)"
+            @change="updateDadosReserva(item.id, value), noites()"
             required
         />
         <input
@@ -21,8 +21,9 @@
             :min="item.min"
             :max="item.max"
             :placeholder="item.placeholder"
-            v-model="type"
-            @change="updateDadosReserva(item.id, type)"
+            value=""
+            v-model="value"
+            @change="updateDadosReserva(item.id, value)"
             required
         />
     </li>
@@ -53,6 +54,22 @@ export default {
                 '/' +
                 date.slice(0, 4)
             return date
+        },
+        noites: function () {
+            if (
+                this.$store.getters.bookingData.checkout &&
+                this.$store.getters.bookingData.checkin
+            ) {
+                const noites = this.$store.getters.bookingData.checkout
+                    ? Number(
+                          this.$store.getters.bookingData.checkout.slice(0, 2)
+                      ) -
+                      Number(
+                          this.$store.getters.bookingData.checkin.slice(0, 2)
+                      )
+                    : ''
+                this.$store.commit('storeNoites', noites)
+            }
         },
     },
 }

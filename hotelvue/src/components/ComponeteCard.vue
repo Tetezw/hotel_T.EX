@@ -16,7 +16,12 @@
                 <div class="inferior-left display-f flex-dc">
                     <div class="text2 noto-sans">A partir de</div>
                     <div class="text-valor-acomodacoes">
-                        {{ accommodation.price }}
+                        {{
+                            accommodation.price.toLocaleString('pt-BR', {
+                                style: 'currency',
+                                currency: 'BRL',
+                            })
+                        }}
                     </div>
                 </div>
                 <div class="inferior-right display-f justify-c align-c">

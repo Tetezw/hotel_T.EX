@@ -13,14 +13,23 @@
                     <h3>{{ dado.title }}</h3>
                     <p>{{ dado.description }}</p>
                 </div>
-                <div class="text-valor-reserva">{{ dado.price }}</div>
+                <div class="text-valor-reserva">
+                    {{
+                        dado.price.toLocaleString('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL',
+                        })
+                    }}
+                </div>
                 <div class="radio-reserva">
                     <label>
                         <input
                             type="radio"
                             name="reservar-quarto"
                             class="reservar"
-                            @change="updateAcomodacao(dado.title, i)"
+                            @change="
+                                updateAcomodacao(dado.title, dado.price, i)
+                            "
                         />
                         Selecionar Quarto
                     </label>
@@ -35,13 +44,13 @@ export default {
     name: 'CardReserva',
 
     methods: {
-        updateAcomodacao: function (value, index) {
+        updateAcomodacao: function (titulo, valor, index) {
             this.resetCardStyle()
             const card = document.querySelectorAll('.quarto-reserva')[index]
-            this.$store.commit('storeAcomodacao', value)
+            this.$store.commit('storeAcomodacao', titulo)
+            this.$store.commit('storeQuartoPreco', valor)
             card.style.backgroundColor = '#063f57'
             card.style.color = 'white'
-            console.log(this.$store.getters.getCounter)
         },
 
         resetCardStyle: function () {

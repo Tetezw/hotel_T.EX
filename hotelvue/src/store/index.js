@@ -10,7 +10,7 @@ export default createStore({
                 title: 'SUÍTE LUXUOSA',
                 description:
                     'Uma suíte espaçosa com cama king-size, vista para a cidade,TV de tela plana, mini-bar, banheira de hidromassagem e área de estar separada.',
-                price: 'R$800,00',
+                price: 800,
             },
             {
                 id: 2,
@@ -18,7 +18,7 @@ export default createStore({
                 title: 'SUÍTE COM VARANDA',
                 description:
                     'Uma suíte com cama king-size, varanda com vista para a piscina, TV de tela plana, mini-bar, banheira de hidromassagem e área de estar separada.',
-                price: 'R$600,00',
+                price: 600,
             },
             {
                 id: 3,
@@ -26,7 +26,7 @@ export default createStore({
                 title: 'QUARTO SUPERIOR',
                 description:
                     'Uma suíte espaçosa com cama king-size, vista para a cidade, TV de tela plana, mini-bar, banheira de hidromassagem e área de estar separada.',
-                price: 'R$500,00',
+                price: 500,
             },
             {
                 id: 4,
@@ -34,7 +34,7 @@ export default createStore({
                 title: 'QUARTO DELUXE',
                 description:
                     'Um quarto espaçoso com cama king-size ou duas camas de solteiro, vista para a cidade, TV de tela plana, mini-bar e banheiro privativo.',
-                price: 'R$500,00',
+                price: 500,
             },
             {
                 id: 5,
@@ -42,7 +42,7 @@ export default createStore({
                 title: 'QUARTO EXECUTIVO',
                 description:
                     'Um quarto espaçoso com cama king-size ou duas camas de solteiro, vista para a cidade, TV de tela plana, mini-bar, escrivaninha e banheiro privativo.',
-                price: 'R$450,00',
+                price: 450,
             },
             {
                 id: 6,
@@ -50,7 +50,7 @@ export default createStore({
                 title: 'QUARTO FAMÍLIA',
                 description:
                     'Um quarto espaçoso com duas camas de casal e duas camas de solteiro, vista para a cidade, TV de tela plana, mini-bar, área de estar separada e banheiro privativo.',
-                price: 'R$400,00',
+                price: 400,
             },
             {
                 id: 7,
@@ -58,7 +58,7 @@ export default createStore({
                 title: 'QUARTO ADAPTADO PARA DEFICIENTES',
                 description:
                     'Um quarto espaçoso com cama king-size ou duas camas de solteiro, vista para a cidade, TV de tela plana, mini-bar, banheiro privativo e adaptações especiais para hóspedes com deficiência.',
-                price: 'R$350,00',
+                price: 350,
             },
             {
                 id: 8,
@@ -66,7 +66,7 @@ export default createStore({
                 title: 'QUARTO COM VISTA PARA O MAR',
                 description:
                     'Um quarto espaçoso com cama king-size ou duas camas de solteiro, varanda com vista para o mar, TV de tela plana, mini-bar e banheiro privativo',
-                price: 'R$300,00',
+                price: 300,
             },
             {
                 id: 9,
@@ -74,7 +74,7 @@ export default createStore({
                 title: 'QUARTO ECONÔMICO',
                 description:
                     'Um quarto compacto com cama de solteiro ou beliche, TV de tela plana, mini-bar e banheiro compartilhado',
-                price: 'R$250,00',
+                price: 250,
             },
         ],
         // Dados da Reserva
@@ -83,6 +83,10 @@ export default createStore({
             checkout: '',
             adultos: '',
             acomodacao: '',
+            noites: '',
+            servicos: [],
+            quartoPreco: '',
+            cupomDesconto: '',
             valorTotal: '',
         },
 
@@ -111,6 +115,7 @@ export default createStore({
         },
     },
     mutations: {
+        // Muda a ordem dos cards
         order(state, i) {
             let cardContent = state.cardContent
             let aux = []
@@ -122,6 +127,7 @@ export default createStore({
             state.cardContent = aux
             localStorage.setItem('cardContent', JSON.stringify(aux))
         },
+        // Contador
         counter(state) {
             state.contador += 1
             localStorage.getItem('counter')
@@ -129,6 +135,10 @@ export default createStore({
                       parseInt(localStorage.getItem('counter')) + 1)
                 : null
             localStorage.setItem('counter', state.contador)
+        },
+        // Dados da Reserva
+        storeBookingData(state, data) {
+            state.dadosReserva = data
         },
         storeCheckin(state, data) {
             state.dadosReserva.checkin = data
@@ -142,12 +152,22 @@ export default createStore({
         storeAcomodacao(state, data) {
             state.dadosReserva.acomodacao = data
         },
-        storeDetalhes(state, data) {
-            state.modalProperties.detalhes = data
+        storeNoites(state, data) {
+            state.dadosReserva.noites = data
         },
         storeServicos(state, data) {
-            state.modalProperties.servicos = data
+            state.dadosReserva.servicos = data
         },
+        storeValorTotal(state, data) {
+            state.dadosReserva.valorTotal = data
+        },
+        storeCupomDesconto(state, data) {
+            state.dadosReserva.cupomDesconto = data
+        },
+        storeQuartoPreco(state, data) {
+            state.dadosReserva.quartoPreco = data
+        },
+        // Conteudo dos cards
         storeCardContent(state, data) {
             state.cardContent = data
         },

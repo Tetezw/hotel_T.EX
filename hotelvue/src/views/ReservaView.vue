@@ -47,16 +47,21 @@ export default {
         }
     },
     mounted() {
-        this.updateAcomodacao(
-            JSON.parse(localStorage.getItem('cardContent'))[0].title,
-            0
-        )
+        if (localStorage.getItem('cardContent')) {
+            this.updateAcomodacao(
+                JSON.parse(localStorage.getItem('cardContent'))[0].title,
+                JSON.parse(localStorage.getItem('cardContent'))[0].price,
+                0
+            )
+        }
     },
     methods: {
-        updateAcomodacao: function (value, index) {
+        updateAcomodacao: function (title, value, index) {
             this.resetCardStyle()
             const card = document.querySelectorAll('.quarto-reserva')[index]
-            this.$store.commit('storeAcomodacao', value)
+            this.$store.commit('storeAcomodacao', title)
+            this.$store.commit('storeQuartoPreco', value)
+            console.log('cardContent'[0].price)
             card.style.backgroundColor = '#063f57'
             card.style.color = 'white'
             document

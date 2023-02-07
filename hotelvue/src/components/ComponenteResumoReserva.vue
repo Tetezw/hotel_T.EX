@@ -164,7 +164,20 @@ export default {
                 String(Math.random()).slice(2)
             )
 
-            const reservas = this.$store.getters.bookingData
+            const reservas = []
+
+            const local = this.obterDados('reserva')
+                ? this.obterDados('reserva')
+                : ''
+
+            const totalReserva = this.total()
+
+            reservas.push(...local, {
+                ...this.$store.getters.bookingData,
+                codigo: String(Math.random()).slice(2),
+                noites: this.$store.getters.bookingData.noites,
+                total: totalReserva,
+            })
 
             this.salvar('reserva', reservas)
             this.limpar()

@@ -27,7 +27,7 @@
           <span id="alertPassword" style="color: brown"></span>
 
           <div class="lembrar-esqueci">
-            <input type="checkbox" v-model="terms" name="check-terms" />
+            <input type="checkbox" />
             <span>Lembrar-me</span>
             <a href="#" class="link-login"
               ><span class="esqueci-senha">Esqueci minha senha</span></a

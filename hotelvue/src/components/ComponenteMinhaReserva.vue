@@ -14,7 +14,7 @@
             <td>{{ reserva.codigo }}</td>
             <td>
                 {{ reserva.acomodacao }} <br />
-                {{ reserva.price }}
+                {{ this.moeda(reserva.quartoPreco) }}
             </td>
             <td>{{ reserva.adultos }}</td>
             <td>{{ reserva.checkin }}</td>

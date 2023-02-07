@@ -14,7 +14,7 @@
         </div>
     </main>
     <ComponenteServicos />
-    <ComponenteDetalhes />
+    <!-- <ComponenteDetalhes /> -->
 </template>
 
 <script>
@@ -23,7 +23,7 @@ import ComponenteResumoReserva from './../components/ComponenteResumoReserva.vue
 // import ComponeteBarra from './../components/ComponeteBarra.vue'
 import ComponenteBarraReservar from './../components/ComponenteBarraReservar.vue'
 import ComponenteServicos from '../components/ComponenteServicos.vue'
-import ComponenteDetalhes from '../components/ComponenteDetalhes.vue'
+// import ComponenteDetalhes from '../components/ComponenteDetalhes.vue'
 export default {
     name: 'ComponentCardReserva',
     components: {
@@ -32,7 +32,7 @@ export default {
         // ComponeteBarra,
         ComponenteBarraReservar,
         ComponenteServicos,
-        ComponenteDetalhes,
+        // ComponenteDetalhes,
     },
 
     beforeMount() {
@@ -51,16 +51,18 @@ export default {
             this.updateAcomodacao(
                 JSON.parse(localStorage.getItem('cardContent'))[0].title,
                 JSON.parse(localStorage.getItem('cardContent'))[0].price,
+                JSON.parse(localStorage.getItem('cardContent'))[0].img,
                 0
             )
         }
     },
     methods: {
-        updateAcomodacao: function (title, value, index) {
+        updateAcomodacao: function (title, value, img, index) {
             this.resetCardStyle()
             const card = document.querySelectorAll('.quarto-reserva')[index]
             this.$store.commit('storeAcomodacao', title)
             this.$store.commit('storeQuartoPreco', value)
+            this.$store.commit('storeImg', img)
             console.log('cardContent'[0].price)
             card.style.backgroundColor = '#063f57'
             card.style.color = 'white'

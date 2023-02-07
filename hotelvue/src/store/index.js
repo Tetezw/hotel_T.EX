@@ -87,6 +87,7 @@ export default createStore({
             servicos: [],
             quartoPreco: '',
             cupomDesconto: '',
+            img: '',
             valorTotal: '',
         },
 
@@ -166,6 +167,9 @@ export default createStore({
         },
         storeQuartoPreco(state, data) {
             state.dadosReserva.quartoPreco = data
+        },
+        storeImg(state, data) {
+            state.dadosReserva.img = data
         },
         // Conteudo dos cards
         storeCardContent(state, data) {

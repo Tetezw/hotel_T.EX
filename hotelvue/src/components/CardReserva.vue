@@ -28,7 +28,12 @@
                             name="reservar-quarto"
                             class="reservar"
                             @change="
-                                updateAcomodacao(dado.title, dado.price, i)
+                                updateAcomodacao(
+                                    dado.title,
+                                    dado.price,
+                                    dado.img,
+                                    i
+                                )
                             "
                         />
                         Selecionar Quarto
@@ -44,11 +49,12 @@ export default {
     name: 'CardReserva',
 
     methods: {
-        updateAcomodacao: function (titulo, valor, index) {
+        updateAcomodacao: function (titulo, valor, img, index) {
             this.resetCardStyle()
             const card = document.querySelectorAll('.quarto-reserva')[index]
             this.$store.commit('storeAcomodacao', titulo)
             this.$store.commit('storeQuartoPreco', valor)
+            this.$store.commit('storeImg', img)
             card.style.backgroundColor = '#063f57'
             card.style.color = 'white'
         },

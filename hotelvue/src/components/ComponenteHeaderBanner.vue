@@ -2,12 +2,6 @@
   <header id="banner">
     <div class="container display-f flex-dc justify-csb box-header">
       <div class="login display-f align-c">
-        <!-- esconder .hidden -->
-        <div class="hidden">
-          <a href="login.html">
-            <button class="btn-white courier">Faça login</button>
-          </a>
-        </div>
         <div class="login-user">
           <span id="helloUser">{{ mensagem }}</span>
           <button
@@ -39,19 +33,26 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
+      <!-- ComponenteNavbar -->
+      <div style="font-size: 50px; color: #ffffff">
+        <ComponenteNavbar :autenticacao="autenticado" />
+      </div>
     </div>
   </header>
 </template>
 
 <script>
+import ComponenteNavbar from "./ComponenteNavbar.vue";
 export default {
   name: "ComponenteHeaderBanner",
+  components: { ComponenteNavbar },
   data() {
     return {
       imagem: "",
       texto: "",
       mensagem: "",
       botao: "",
+      autenticado: "",
       banners: [
         {
           id: 1,
@@ -108,9 +109,11 @@ export default {
       if (dados) {
         this.mensagem = `Olá ${dados.email}`;
         this.botao = "Sair";
+        this.autenticado = true;
       } else {
         this.mensagem = `Olá usuário!`;
         this.botao = "Fazer Login";
+        this.autenticado = false;
       }
     },
     removerLocalStorage() {

@@ -34,7 +34,8 @@
                                     .servicos"
                                 :key="servico.nome"
                             >
-                                ✅ {{ servico.nome }} - {{ this.moeda(servico.preco) }}
+                                ✅ {{ servico.nome }} -
+                                {{ this.moeda(servico.preco) }}
                             </li>
                         </ul>
                     </li>
@@ -130,22 +131,31 @@ export default {
             const roomPrice = this.$store.getters.bookingData.quartoPreco
 
             if (this.temCupom == false) {
-                if (
-                    this.$store.getters.bookingData.cupomDesconto.length &&
-                    this.$store.getters.bookingData.cupomDesconto !== this.cupom
-                ) {
-                    alert('Cupom inválido! Tente outro.')
-                    return
+                if (this.cupom === '') {
+                    const respostaCupom = confirm('Quer usar o cupom agora?')
+                    if (respostaCupom) {
+                        return
+                    }
+                } else {
+                    if (
+                        (this.$store.getters.bookingData.cupomDesconto.length &&
+                            this.$store.getters.bookingData.cupomDesconto !==
+                                this.cupom)
+                    ) {
+                        alert('Cupom inválido! Tente outro.')
+                        return
+                    }
+                    if (
+                        this.$store.getters.bookingData.cupomDesconto ===
+                        this.cupom
+                    ) {
+                        this.salvar(
+                            'cupom',
+                            this.$store.getters.bookingData.cupomDesconto
+                        )
+                        this.$store.commit('storeQuartoPreco', roomPrice * 0.9)
+                    }
                 }
-                if (this.$store.getters.bookingData.cupomDesconto === this.cupom){
-
-                    this.salvar(
-                        'cupom',
-                        this.$store.getters.bookingData.cupomDesconto
-                    )
-                    this.$store.commit('storeQuartoPreco', roomPrice * 0.9)
-                }
-                
             }
 
             if (!this.$store.getters.bookingData.servicos.length) {
@@ -191,11 +201,12 @@ export default {
                     1 +
                     (Number(this.$store.getters.bookingData.adultos) - 1) * 0.15
             }
-            const totalReserva =
-                this.moeda((this.totalServicos() +
+            const totalReserva = this.moeda(
+                (this.totalServicos() +
                     Number(this.$store.getters.bookingData.quartoPreco) *
                         this.$store.getters.bookingData.noites) *
-                adultos)
+                    adultos
+            )
             return totalReserva ? totalReserva : 0
         },
         limpar() {
@@ -217,6 +228,9 @@ export default {
                 currency: 'BRL',
             })
         },
+    },
+    updated() {
+        console.log(this.cupom)
     },
     created() {
         if (!localStorage.getItem('cupom')) {

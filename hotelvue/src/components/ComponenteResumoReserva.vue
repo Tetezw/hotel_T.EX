@@ -154,6 +154,7 @@ export default {
                             this.$store.getters.bookingData.cupomDesconto
                         )
                         this.$store.commit('storeQuartoPreco', roomPrice * 0.9)
+                        this.temCupom = true
                     }
                 }
             }

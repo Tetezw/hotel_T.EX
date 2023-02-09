@@ -3,16 +3,10 @@
         <h2>Resumo da Reserva</h2>
         <div class="resumo-box">
             <ul>
-                <div>
                     <li>
                         Apartamento:
                         <span>{{ $store.getters.bookingData.acomodacao }}</span>
                     </li>
-                    <li>
-                        Nº de pessoas:
-                        <span>{{ $store.getters.bookingData.adultos }}</span>
-                    </li>
-                </div>
                 <div>
                     <li>
                         Check-in:
@@ -23,9 +17,14 @@
                         <span>{{ $store.getters.bookingData.checkout }}</span>
                     </li>
                     <li>
+                        Nº de pessoas:
+                        <span>{{ $store.getters.bookingData.adultos }}</span>
+                    </li>
+                    <li>
                         Noites:
                         <span>{{ $store.getters.bookingData.noites }}</span>
                     </li>
+                </div>
                     <li>
                         Serviços:
                         <ul>
@@ -33,17 +32,16 @@
                                 v-for="servico in $store.state.dadosReserva
                                     .servicos"
                                 :key="servico.nome"
-                            >
-                                ✅ {{ servico.nome }} - {{ this.moeda(servico.preco) }}
+                            ><span>
+                                ✅ {{ servico.nome }} - {{ this.moeda(servico.preco) }}</span>
                             </li>
                         </ul>
                     </li>
-                </div>
             </ul>
         </div>
         <CompServicos />
         <div>
-            <details v-if="this.temCupom == false">
+            <details class="detalhesCupom" v-if="this.temCupom == false">
                 <summary>Aplique seu cupom de desconto</summary>
                 <h4>Seu cupom é: {{ cupomAleatorio }}</h4>
                 <input

@@ -28,9 +28,8 @@ const routes = [
     component: () => import("../views/LoginView.vue"),
   },
   {
-
     path: "/minhasreservas",
-    name: "MinhasReservas",
+    name: "minhasReservas",
     component: () => import("../views/MinhasReservasView.vue"),
   },
   {

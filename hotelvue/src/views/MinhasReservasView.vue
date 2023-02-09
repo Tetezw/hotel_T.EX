@@ -1,30 +1,24 @@
 <template>
-
-  <main>   
-            <section>
-                <div class="container">
-                    <h2 class="titulo-h2 courier">
-                        <span class="link-border-bottom"
-                            >Minhas Reservas</span
-                        >
-                    </h2>
-                    <componente-ComponenteMinhaReserva />
-                    <ComponenteMinhaReserva />
-                </div>
-
-            </section>
-        </main>
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="titulo-h2 courier">
+                    <span class="link-border-bottom">Minhas Reservas</span>
+                </h2>
+                <ComponenteMinhaReserva />
+            </div>
+        </section>
+    </main>
 </template>
 
 <script>
-
-import ComponenteMinhaReserva from '@/components/ComponenteMinhaReserva.vue';
+import ComponenteMinhaReserva from '@/components/ComponenteMinhaReserva.vue'
 
 export default {
-  name: 'MinhasReservasView',
-  components: {
-   ComponenteMinhaReserva,
-  }
+    name: 'MinhasReservasView',
+    components: {
+        ComponenteMinhaReserva,
+    },
 }
 </script>
 <style scoped>

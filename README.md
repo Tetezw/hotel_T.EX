@@ -7,16 +7,22 @@ Projeto desenvolvido como parte integrante do curso Full Stack Javascript Develo
 
 ### O projeto
 - [x] Rascunho inicial de um site de hotel construído com HTML e CSS.
+- [x] Responsividade das telas (em public e hotelvue): 414px e 1024px em portrait; e 915px e 1194px em landscape.
 
 - [x] Landing page construída fazendo uso de SASS, o pré-processador CSS. 
 
 - [x] Pasta public totalmente refatorada em SASS.
-- [x] Implementação de Javascript (em  public): banner aleatório na página Home e estruturação da página de reservas.
+- [x] Implementação de Javascript (em  public): banner aleatório na página Home e estruturação inicial da página de reservas.
   
-- [x] Implementação de Vue 3 <i>(em desenvolvimento)</i>.
+- [x] Implementação de Vue 3: 
+  - Dinâmica da página reserva;
+  - Serviços adicionais;
+  - Autenticação de usuário;
+  - Extra: cupom de desconto de uso único na página reserva.
 
 ## Páginas 
 - [GitHub Pages](https://tetezw.github.io/hotel_T.EX/):
+  
   - [Public](public/home.html)
 
   - [Landing Page](landingPage/singlePage.html)

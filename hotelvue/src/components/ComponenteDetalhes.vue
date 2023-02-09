@@ -18,7 +18,7 @@
         <div class="modal__detalhes__itens">
           <i
             class="fa-sharp fa-solid fa-xmark fechar"
-            id="btn__fechar__detalhes"
+            id="btn__fechar__detalhes" @click="showModal = false"
           ></i>
           <div v-for="item in this.reserva" :key="item" class="detalhes">
             <div class="modal__detalhes__itens__img">
@@ -43,7 +43,7 @@
               <p class="total"><span>Total:</span> {{ this.moeda(item.valorTotal) }}</p>
             </div>
           </div>
-          <button type="button">Sair</button>
+          <button type="button" @click="showModal = false">Sair</button>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ export default {
         style: "currency",
         currency: "BRL",
       });
-    },
+    },    
   },
   mounted() {
     this.reserva = this.obterDados("reserva");

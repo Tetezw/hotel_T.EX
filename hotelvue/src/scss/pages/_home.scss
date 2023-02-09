@@ -1,0 +1,68 @@
+@use "../variaveis" as v;
+@use "../mixins" as mx;
+@use '../function' as f;
+/* Página Home */
+/*Sobre*/
+.box-sobre {
+  width: 100%;
+}
+.img-sobre {
+  & img {
+    margin-right: 30px;
+    box-shadow: 0 0 10px #ccc;
+  }
+}
+/* Acomodações */
+.box-acomodacoes {
+  background: v.$fundoCinza;
+}
+.cards-quartos-titulo {
+  & a {
+    color: v.$branco;
+  }
+}
+
+.quartos-home {
+  height: 500px;
+  width: calc((100% / 3) - 20px);
+  border: 10px solid v.$branco;
+}
+
+/* Ilha        */
+.box-ilha {
+  background: linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
+    url(f.imagem('./../assets/images/header.png'));
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+}
+.ilha {
+  height: 350px;
+  h2 {
+    a {
+      color: v.$branco;
+    }
+  }
+}
+
+/* Serviços    */
+.btn-conheca-mais {
+  margin: 40px 0;
+  a {
+    button {
+      @include mx.botao(v.$azulEscuro);
+      font-size: 1.5rem;
+      padding: 15px 40px 15px 40px;
+    }
+  }
+}
+
+/* Gastronomia */
+.foto-texto-gastronomia {
+  gap: 30px;
+  margin-bottom: 20px;
+  img {
+    width: 50%;
+    align-self: flex-start;
+  }
+}

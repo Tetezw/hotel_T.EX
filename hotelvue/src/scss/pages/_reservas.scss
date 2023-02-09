@@ -1,0 +1,150 @@
+@use "../variaveis" as v;
+@use "../mixins" as mx;
+
+/*Página Reserva*/
+.reserva {
+  border: none;
+  background-color: v.$azulEscuro;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff1a;
+  box-shadow: 0px 0px 15px 0px v.$azulClaro;
+  font-weight: 500;
+  color: v.$branco;
+  letter-spacing: 0.5px;
+  margin: 20px 0;
+  & form {
+    margin: 10px 0 10px 0px;
+    width: 100%;
+    padding: 20px 20px;
+  }
+  ul {
+    color: v.$pretoClaro;
+    li {
+      margin: auto;
+      display: v.$display-f;
+      label {
+        margin: 0 0 0 5px;
+        font-size: 18px;
+        color: v.$branco;
+        font-weight: bold;
+      }
+      input {
+        margin-left: 10px;
+        color: v.$pretoClaro;
+      }
+    }
+  }
+}
+
+/*Seção dos quartos na página reserva*/
+.quartos-resumo {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.todos-os-quartos-reserva {
+  width: 63%;
+  position: relative;
+}
+
+.quarto-box label {
+  padding: 10px 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.quarto-reserva {
+  background: v.$fundoCinza;
+  box-shadow: 0 0 10px #00000033;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.img-reserva + div {
+  margin-left: 15px;
+}
+
+.cada-quarto-reserva {
+  h3 {
+    font-size: 1.5rem;
+    font-family: v.$courier;
+    font-weight: 800;
+    margin: 10px 0;
+    text-align: justify;
+    white-space: wrap;
+  }
+  p {
+    text-align: justify;
+    margin: 0 10px 0 0;
+    white-space: wrap;
+  }
+}
+.text-valor-reserva {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.radio-reserva {
+  margin: 20px 0 20px 0;
+  accent-color: v.$azulEscuro;
+}
+
+/* Caixa Flutuante de Resumo reserva */
+.resumo-reserva {
+  width: 33%;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  background-color: v.$azulEscuro;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #ffffff1a;
+  box-shadow: 0px 0px 15px 0px v.$azulClaro;
+  font-family: v.$noto-sans;
+  font-weight: 500;
+  color: v.$branco;
+  letter-spacing: 0.5px;
+  padding: 50px;
+  h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+  }
+  a {
+    color: v.$branco;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  button {
+    font-family: v.$noto-sans;
+    font-size: 16px;
+    background-color: v.$branco;
+    border: none;
+    cursor: pointer;
+    margin: 30px auto 0px auto;
+    padding: 10px;
+  }
+  p {
+    margin: 30px 0;
+    font-weight: bold;
+    text-align: center;
+    border: solid 2px v.$laranja;
+    padding: 2px;
+  }
+}
+
+.resumo-box {
+  background-color: v.$branco;
+  opacity: 90%;
+  width: auto;
+  color: v.$azulEscuro;
+  font-size: 14px;
+  padding: 10px;
+  li span {
+    font-weight: bold;
+  }
+}
+
+.quadro-reserva {
+  display: v.$display-f;
+}

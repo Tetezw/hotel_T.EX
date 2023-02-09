@@ -1,0 +1,137 @@
+@use '../variaveis' as v;
+@use '../mixins' as mx;
+
+/* PÁGINA CONTATO */
+.container-contato {
+    padding: 30px;
+}
+
+.form-contato {
+    width: 40%;
+    height: auto;
+    font-size: 14px;
+    background: v.$azulEscuro;
+    border-radius: 8px;
+    margin: 0 auto;
+    box-shadow: 0 0 40px -10px v.$azulEscuro;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: v.$branco;
+    letter-spacing: 0.5px;
+    h2 {
+        margin: 10px 0;
+        padding-bottom: 10px;
+        width: 60%;
+        border-bottom: 3px solid v.$laranja;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 42px;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        before {
+            content: attr(type);
+            display: block;
+            margin: 28px 0 0;
+            font-size: 14px;
+        }
+        input {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            font-size: 0.9rem;
+            resize: none;
+            border: 0;
+            transition: all 0.3s;
+            border-radius: 3px;
+            outline: none;
+        }
+    }
+}
+
+.titulo-form-contato {
+    text-align: center;
+    color: v.$azulClaro;
+    margin-bottom: 30px;
+    h2 {
+        display: v.$display-f;
+        text-align: center;
+    }
+}
+
+.telefone-contato {
+    width: 49%;
+    display: inline-block;
+}
+
+.assunto-contato {
+    width: 50%;
+    display: inline-block;
+    margin-left: 1%;
+    select {
+        width: 100%;
+        height: 50px;
+        border-radius: 3px;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+    }
+}
+
+.comentários-contato > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid v.$azulClaro;
+    border-radius: 3px;
+    resize: none;
+    outline: none;
+}
+
+.send-message {
+    gap: 5px;
+}
+
+.btn-enviar-contato {
+    width: 100px;
+    height: 50px;
+    margin-top: 28px;
+    border: none;
+    background-color: v.$azulClaro;
+    color: v.$branco;
+    padding: 16px 0 16px 0;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-enviar-contato:hover {
+    background-color: v.$laranja;
+    transition: 0.2s;
+    box-shadow: 10px 10px 40px -14px v.$azulEscuro;
+}
+
+div.linha-final {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 16px 0 16px 0;
+    margin-top: 28px;
+    background: v.$azulClaro;
+    color: v.$branco;
+    border-radius: 3px;
+    box-shadow: 10px 10px 40px -14px v.$azulEscuro;
+}
+
+div.linha-final > a {
+    text-decoration: none;
+    color: v.$branco;
+}
+
+div.linha-final a i {
+    margin-right: 8px;
+}

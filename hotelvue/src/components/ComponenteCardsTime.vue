@@ -5,7 +5,7 @@
                 <span class="link-border-bottom">Nosso Time</span>
             </h2>
             <div class="container-time">
-                <ul class="display-f justify-csb align-c">
+                <ul class="display-f align-c">
                     <li
                         v-for="funcionario in funcionarios"
                         :key="funcionario.id"

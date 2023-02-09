@@ -140,6 +140,9 @@
   color: v.$azulEscuro;
   font-size: 14px;
   padding: 10px;
+  li span {
+    font-weight: bold;
+  }
 }
 
 .quadro-reserva {

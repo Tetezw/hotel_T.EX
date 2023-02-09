@@ -36,6 +36,7 @@
 }
 .container-img {
   gap: 10px;
+  justify-content: space-between;
 }
 .img-hero {
   width: 11.5rem;
@@ -80,6 +81,9 @@
     text-transform: uppercase;
     color: v.$laranja;
     font-weight: bold;
+  }
+  ul {
+    justify-content: space-between;
   }
 }
 .box-time {

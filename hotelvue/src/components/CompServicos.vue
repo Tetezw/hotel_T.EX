@@ -1,5 +1,5 @@
 <template>
-    <details>
+    <details class='detalhesServicos'>
         <summary>Serviços Adicionais</summary>
         <div v-for="item in servicos" :key="item.nome">
             <input

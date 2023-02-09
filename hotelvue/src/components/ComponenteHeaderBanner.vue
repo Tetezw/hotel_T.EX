@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import ComponenteNavbar from "./ComponenteNavbar.vue";
+import ComponenteNavbar from "@/components/ComponenteNavbar.vue";
 export default {
   name: "ComponenteHeaderBanner",
   components: { ComponenteNavbar },

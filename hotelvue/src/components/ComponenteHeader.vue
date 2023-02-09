@@ -16,7 +16,7 @@
             <div class="header-logo-slogan display-f align-c">
                 <div class="img-logo">
                     <img
-                        src="../assets/images/Logo-Branca.png"
+                        src=".@/assets/images/Logo-Branca.png"
                         alt="Logo Hotel"
                         width="200"
                     />
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import ComponenteNavbar from './ComponenteNavbar.vue'
+import ComponenteNavbar from '@/components/ComponenteNavbar.vue'
 export default {
     name: 'ComponenteHeader',
     components: { ComponenteNavbar },

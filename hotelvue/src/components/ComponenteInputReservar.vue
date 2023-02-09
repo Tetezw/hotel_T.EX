@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { DadosInputReservar } from './DadosInputReservar.js'
+import { DadosInputReservar } from '@/components/DadosInputReservar.js'
 export default {
     name: 'ComponenteInputReservar',
     data() {

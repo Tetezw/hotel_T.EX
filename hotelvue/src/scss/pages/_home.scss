@@ -31,7 +31,7 @@
 /* Ilha        */
 .box-ilha {
   background: linear-gradient(0deg, rgba(6, 63, 87, 1), rgba(6, 63, 87, 0.3)),
-    url(f.imagem('./../assets/images/header.png'));
+    url(f.imagem('@/assets/images/header.png'));
   background-size: cover;
   background-attachment: fixed;
   height: 400px;

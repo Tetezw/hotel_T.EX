@@ -5,5 +5,5 @@ module.exports = defineConfig({
 
 module.exports = {
     publicPath:
-        process.env.NODE_ENV === 'production' ? '/hotel_T.EX/hotelvue' : '/',
+        process.env.NODE_ENV === 'production' ? '/hotel_T.EX/hotelvue/' : '/',
 }

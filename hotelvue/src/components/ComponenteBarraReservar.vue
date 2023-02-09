@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import ComponenteInputReservar from './ComponenteInputReservar.vue'
+import ComponenteInputReservar from '@/components/ComponenteInputReservar.vue'
 export default {
     name: 'ComponenteBarraReservar',
     components: { ComponenteInputReservar },

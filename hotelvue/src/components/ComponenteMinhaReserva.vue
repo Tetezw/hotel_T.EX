@@ -49,7 +49,7 @@
 </template>
 
 <script>
-import ComponenteDetalhes from './ComponenteDetalhes.vue'
+import ComponenteDetalhes from '@/components/ComponenteDetalhes.vue'
 
 export default {
     name: 'ComponenteMinhaReserva',

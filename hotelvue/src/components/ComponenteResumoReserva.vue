@@ -65,7 +65,7 @@
 </template>
 
 <script>
-import CompServicos from './CompServicos.vue'
+import CompServicos from '@/components/CompServicos.vue'
 export default {
     name: 'ComponenteResumoReserva',
     cupomAleatorio: '',

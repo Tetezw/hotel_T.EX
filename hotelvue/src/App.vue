@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import ComponenteHeaderBanner from './components/ComponenteHeaderBanner.vue'
-import ComponenteFooter from './components/ComponenteFooter.vue'
+import ComponenteHeaderBanner from '@/components/ComponenteHeaderBanner.vue'
+import ComponenteFooter from '@/components/ComponenteFooter.vue'
 
 export default {
     name: 'App',
@@ -24,4 +24,4 @@ export default {
 }
 </script>
 
-<style lang="scss" src="./scss/style.scss" />
+<style lang="scss" src="@/scss/style.scss" />

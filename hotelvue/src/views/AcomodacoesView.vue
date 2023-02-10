@@ -53,7 +53,7 @@
 </template>
 
 <script>
-import ComponeteCard from './../components/ComponeteCard.vue'
+import ComponeteCard from '@/components/ComponeteCard.vue'
 export default {
     name: 'CardTemplate',
     components: {

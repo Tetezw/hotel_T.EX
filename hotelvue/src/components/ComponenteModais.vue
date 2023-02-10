@@ -169,7 +169,7 @@ export default {
     width: 50%;
 }
 .popupDetails .img {
-    background-image: url('../assets/images/acomodacao1.png');
+    background-image: url('@/assets/images/acomodacao1.png');
     width: 50%;
     border: 20px solid white;
     border-radius: 50px 50px;

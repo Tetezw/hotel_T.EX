@@ -104,8 +104,8 @@
 </template>
 
 <script>
-import ComponenteCardsDiferenciais from '../components/ComponenteCardsDiferenciais.vue';
-import ComponenteCardsTime from '../components/ComponenteCardsTime.vue';
+import ComponenteCardsDiferenciais from '@/components/ComponenteCardsDiferenciais.vue';
+import ComponenteCardsTime from '@/components/ComponenteCardsTime.vue';
 
 export default {
   name: 'SobreView',

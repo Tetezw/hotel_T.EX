@@ -34,19 +34,19 @@
 
         <div class="suporte display-f flex-dc">
           <h3 class="mb1">Suporte</h3>
-          <a href="contatos.html"> Deixe aqui sua dúvida </a>
+          <router-link :to="{ path: '/contato' }">Deixe aqui sua dúvida</router-link>  
         </div>
 
         <div class="links">
           <h3 class="mb1">Links</h3>
           <nav class="navbar-footer">
             <ul class="noto-sans display-f flex-dc">
-              <li><a href="home.html">Home</a></li>
-              <li><a href="sobre.html">Sobre</a></li>
-              <li><a href="acomodacoes.html">Quartos</a></li>
-              <li><a href="contatos.html">Contato</a></li>
+              <li><router-link :to="{ path: '/' }">Home</router-link></li>
+              <li><router-link :to="{ path: '/sobre' }">Sobre</router-link></li>
+              <li><router-link :to="{ path: '/acomodacoes' }">Quartos</router-link></li>
+              <li><router-link :to="{ path: '/contato' }">Contato</router-link></li>
               <li>
-                <a href="reservas.html">Faça sua reserva</a>
+                <router-link :to="{ path: '/reserva' }">Faça sua reserva</router-link>
               </li>
             </ul>
           </nav>

@@ -23,6 +23,7 @@ Projeto desenvolvido como parte integrante do curso Full Stack Javascript Develo
 ## Páginas 
 - [GitHub Pages](https://tetezw.github.io/hotel_T.EX/):
   
+  - [Site implementado com Vue](https://tetezw.github.io/hotel_T.EX/hotelvue/dist/#/)
   - [Public](public/home.html)
 
   - [Landing Page](landingPage/singlePage.html)

@@ -118,7 +118,7 @@ export default {
     },
     removerLocalStorage() {
       localStorage.removeItem("cliente");
-      window.location.href = "/login";
+      this.$router.push({ path: 'login' })
     },
   },
   created() {

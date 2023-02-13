@@ -13,9 +13,7 @@
         <section class="box-sobre pb5">
           <article class="container">
             <h2 class="titulo-h2 courier">
-              <a class="link-border-bottom" href="sobre.html"
-                >SOBRE O NOSSO HOTEL</a
-              >
+              <router-link class="link-border-bottom" :to="{ path: '/sobre' }"> SOBRE O NOSSO HOTEL</router-link>
             </h2>
 
             <div class="img-sobre display-f justify-c pt3">
@@ -56,7 +54,7 @@
                   desfrutar de uma estadia relaxante e rejuvenescedora neste
                   oásis de bem-estar natural e praiano.
                 </p>
-                <a class="saiba-mais" href="sobre.html">Saiba mais</a>
+                <router-link class="saiba-mais" :to="{ path: '/sobre' }">Saiba mais</router-link>
               </div>
             </div>
           </article>
@@ -67,9 +65,8 @@
             <div class="cards-quartos">
               <div class="courier">
                 <h2 class="titulo-h2">
-                  <a class="link-border-bottom" href="acomodacoes.html"
-                    >CONFIRA NOSSAS ACOMODAÇÕES</a
-                  >
+                  <router-link class="link-border-bottom" :to="{ path: '/acomodacoes' }">
+                  CONFIRA NOSSAS ACOMODAÇÕES</router-link>
                 </h2>
               </div>
               <div class="quartos display-f justify-csb align-c pt3">
@@ -85,7 +82,7 @@
           <article class="container">
             <div class="ilha display-f justify-c align-c">
               <h2 class="titulo-h2 courier">
-                <a class="link-border-all" href="#">CONHEÇA A ILHA</a>
+                <a class="link-border-all" target="_blank" href="https://fundacaobaiaviva.org.br/baia-de-todos-os-santos/#principaisilhas">CONHEÇA A ILHA</a>
               </h2>
             </div>
           </article>
@@ -94,9 +91,9 @@
         <section class="box-action">
           <article class="container">
             <div class="btn-conheca-mais noto-sans display-f justify-c">
-              <a href="#">
+              <router-link :to="{ path: '/acomodacoes' }">
                 <button>Conheça mais sobre nossos serviços</button>
-              </a>
+              </router-link>
             </div>
           </article>
         </section>

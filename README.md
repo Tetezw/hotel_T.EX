@@ -3,11 +3,11 @@
 <img src="public/images/Logo%20Hotel.jpeg" width="60%" alt="Logo Hotel Recanto dos Códigos"/>
 
 ## Sobre
-Projeto desenvolvido como parte integrante do curso Full Stack Javascript Developer da T.EX.
+Projeto front-end desenvolvido como parte integrante do curso Full Stack Javascript Developer da T.EX.
 
 ### O projeto
 - [x] Rascunho inicial de um site de hotel construído com HTML e CSS.
-- [x] Responsividade das telas (em public e hotelvue): 414px e 1024px em portrait; e 915px e 1194px em landscape.
+- [x] Responsividade das telas (em public e projeto com Vue): 414px e 1024px em portrait; e 915px e 1194px em landscape.
 
 - [x] Landing page construída fazendo uso de SASS, o pré-processador CSS. 
 
@@ -27,7 +27,12 @@ Projeto desenvolvido como parte integrante do curso Full Stack Javascript Develo
   - [Public](public/home.html)
 
   - [Landing Page](landingPage/singlePage.html)
-  - [Admin](admin/home_admin.html)
+  - [Admin](admin/home_admin.html) (rascunho inicial)
+
+## Back-end
+Continuação deste projeto implementando back-end: 
+
+- [Link do novo repositório](https://github.com/hewertonfl/PROJETO_HOTEL_T.EX_FULLSTACK)
 
 ## Licença
 [GPLv3](https://choosealicense.com/licenses/gpl-3.0/)

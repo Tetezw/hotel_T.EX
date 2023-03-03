@@ -94,9 +94,9 @@
                     <h4>Precisa de ajuda?</h4>
                     <p>Nossa equipe está pronta para lhe atender!</p>
                     <button class="btn-blue">
-                        <a href="http://127.0.0.1:5500/public/contatos.html">
+                        <router-link :to="{ path: '/contato' }">
                             Entre em contato
-                        </a>
+                        </router-link>
                     </button>
                 </div>
             </section>

@@ -1,9 +1,4 @@
 <template>
-    <!-- <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/sobre">Sobre</router-link>
-    
-  </nav>  -->
     <body>
         <ComponenteHeaderBanner />
         <router-view></router-view>

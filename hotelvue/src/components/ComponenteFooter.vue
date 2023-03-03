@@ -54,7 +54,7 @@
       </div>
 
       <div class="direitos display-f justify-c">
-        <span> Hotel Recanto dos Códigos &copy; 2022 </span>
+        <span> Hotel Recanto dos Códigos &copy; 2023 </span>
       </div>
     </div>
   </footer>
